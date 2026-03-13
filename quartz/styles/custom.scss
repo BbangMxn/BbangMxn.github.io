@@ -1516,6 +1516,17 @@ footer,
   color: var(--gray);
 }
 
+footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--nomos-line);
+  opacity: 1;
+}
+
+footer ul {
+  margin-top: -0.25rem;
+  gap: 1.1rem;
+}
+
 footer a,
 .page-footer a {
   color: var(--secondary);
@@ -1564,6 +1575,7 @@ footer a,
 .landing-page .landing-button,
 .section-dashboard .landing-button {
   min-height: 2.65rem;
+  min-width: 8.2rem;
   border-radius: 0.86rem;
   box-shadow: none;
 }
@@ -1585,6 +1597,11 @@ footer a,
 .folder-hub .hub-note {
   gap: 0.42rem;
   padding: 1.1rem 0;
+}
+
+.portfolio-home .portfolio-item strong,
+.folder-hub .hub-item strong {
+  max-width: 30rem;
 }
 
 .section-dashboard + .page-listing .section,
@@ -1719,6 +1736,10 @@ footer a,
   gap: 0.05rem;
 }
 
+.page:has(article.portfolio-home) article.portfolio-home .portfolio-actions {
+  gap: 0.65rem;
+}
+
 .page:has(article.portfolio-home) article.portfolio-home .portfolio-item > a {
   padding: 1rem 0 1.1rem;
 }
@@ -1752,6 +1773,10 @@ footer a,
 
 .page:has(article.folder-hub) .folder-hub + .page-listing .section > .desc > h3 {
   margin: 0;
+}
+
+.page:has(article.folder-hub) .folder-hub + .page-listing .section > .desc > h3 > a {
+  line-height: 1.35;
 }
 
 .page:has(article.folder-hub) .folder-hub + .page-listing .section .meta {
@@ -1798,8 +1823,17 @@ footer a,
   max-width: 43rem;
 }
 
+.page:has(article.research-note) article.research-note > h2 + p {
+  color: var(--dark);
+}
+
 .page:has(article.research-note) article.research-note h2 + :is(p, ul, ol) {
   margin-top: -0.2rem;
+}
+
+.page:has(article.research-note) article.research-note ul li::marker,
+.page:has(article.research-note) article.research-note ol li::marker {
+  color: var(--gray);
 }
 
 .page:has(article.research-note) .sidebar.right {
@@ -1857,6 +1891,16 @@ footer a,
     gap: 1.25rem;
   }
 
+  .page:has(article.portfolio-home) article.portfolio-home .portfolio-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page:has(article.portfolio-home) article.portfolio-home .portfolio-button {
+    width: 100%;
+    min-width: 0;
+  }
+
   .page:has(article.portfolio-home) article.portfolio-home .portfolio-block + .portfolio-block,
   .page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
     padding-top: 1rem;
@@ -1864,5 +1908,15 @@ footer a,
 
   .page:has(article.research-note) .page-header {
     padding-bottom: 0.85rem;
+  }
+
+  footer {
+    padding-top: 0.85rem;
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0;
   }
 }
