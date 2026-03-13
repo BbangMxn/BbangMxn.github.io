@@ -138,6 +138,35 @@ body[data-slug="index"] {
       linear-gradient(180deg, color-mix(in srgb, var(--secondary) 10%, var(--light)) 0%, var(--light) 100%);
   }
 
+  .hero-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .hero-profile img {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+    box-shadow: 0 14px 30px rgba(34, 29, 25, 0.12);
+  }
+
+  .hero-profile strong,
+  .hero-profile span {
+    display: block;
+  }
+
+  .hero-profile strong {
+    font-size: 1.05rem;
+    color: var(--dark);
+  }
+
+  .hero-profile span {
+    margin-top: 0.2rem;
+    color: var(--darkgray);
+  }
+
   .panel-list {
     list-style: none;
     padding: 0;

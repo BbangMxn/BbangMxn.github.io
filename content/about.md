@@ -2,25 +2,33 @@
 title: About
 tags:
   - about
+  - profile
+  - backend
 ---
 
-개인 프로젝트와 기술 학습 과정을 포트폴리오와 지식 문서 형태로 함께 쌓아가는 공간입니다.
+실시간 데이터 파이프라인과 캐싱 아키텍처에 관심을 두고 작업하는 백엔드 개발자 이문규의 작업 공간입니다. 이 사이트는 Obsidian에 쌓인 메모를 Quartz로 퍼블리시해서, 연구 노트와 포트폴리오를 같은 구조 안에서 관리하기 위해 만들었습니다.
 
-## 목적
+## 지금 집중하는 것
 
-- 흩어진 메모를 하나의 지식 베이스로 축적하기
-- 삽질 기록을 다시 찾을 수 있게 남기기
-- 결과물은 포트폴리오처럼, 내부 기록은 위키처럼 운영하기
+- 3-Tier 캐싱 구조와 무효화 전략 정리
+- Java 런타임 구조와 JVM 한계 분석
+- Obsidian 기반 문서 워크플로를 GitHub Pages에 맞게 다듬기
 
-## 사이트 구조
+## 이 사이트를 쓰는 방식
 
-- [[projects/index|Projects]]: 만든 결과물과 사례 정리
-- [[research/index|Research]]: 실험 메모와 진행 중 기록
-- [[wiki/index|Wiki]]: 오래 유지할 지식 문서
+- 로컬에서는 `content/`를 Obsidian vault처럼 연다.
+- 메모는 우선 `research/`에 빠르게 쌓고, 충분히 정리되면 `wiki/`나 `projects/`로 옮긴다.
+- 퍼블리시는 Quartz가 맡고, GitHub Actions가 GitHub Pages 배포를 처리한다.
 
-## 다룰 주제
+## 섹션 안내
 
-- 웹 프론트엔드
-- 백엔드와 배포
-- AI 도구 활용
-- 개발 워크플로 개선
+- [[projects/index|Projects]]: 완성도 있는 결과물과 구조 선택의 이유
+- [[research/index|Research]]: 실험 중인 문서, 비교, 설계 초안
+- [[wiki/index|Wiki]]: 오래 유지할 개념 정리와 운영 메모
+
+## 주요 문서
+
+- [[research/Cache|Cache Research]]
+- [[research/Java|Java Runtime Research]]
+- [[projects/quartz-wiki-site|Quartz 기반 개인 위키 구축]]
+- [[wiki/obsidian-workflow|Obsidian + Quartz 작성 흐름]]

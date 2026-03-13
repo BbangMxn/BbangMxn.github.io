@@ -11,4 +11,11 @@ Projects가 결과물이라면, Wiki는 그 결과물을 만들며 정리한 지
 ## Topics
 
 - [[wiki/github-pages|GitHub Pages]]
+- [[wiki/Java|Java]]
 - [[wiki/obsidian-workflow|Obsidian Workflow]]
+
+## How this folder is used
+
+- 오래 유지할 개념 문서를 정리
+- 반복해서 참조하는 운영 기준을 저장
+- Research에서 정리된 내용을 위키 문서로 승격

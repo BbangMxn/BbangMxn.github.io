@@ -8,11 +8,11 @@ cssclasses:
 
 <div class="hero-grid">
   <div class="hero-copy">
-    <p class="eyebrow">PORTFOLIO + KNOWLEDGE BASE</p>
-    <h1>만들고 기록하고 다시 연결하는 개발 위키</h1>
+    <p class="eyebrow">BACKEND PORTFOLIO + OBSIDIAN VAULT</p>
+    <h1>백엔드 연구와 작업 기록을 연결하는 개인 위키</h1>
     <p class="lede">
-      개인 프로젝트, 배포 실험, 개발 생산성 개선 과정을 포트폴리오와 지식 문서로 함께 쌓는 공간입니다.
-      홈은 포트폴리오처럼 보여주고, 내부는 Projects, Research, Wiki 구조로 정리합니다.
+      이 사이트는 Obsidian에서 작성한 메모를 Quartz와 GitHub Pages로 퍼블리시하는 구조입니다.
+      캐시 아키텍처, Java 런타임, 배포 메모처럼 실제로 파고 있는 주제를 Projects, Research, Wiki로 나눠 축적합니다.
     </p>
     <div class="hero-actions">
       <a class="landing-button primary" href="./projects">프로젝트 보기</a>
@@ -21,11 +21,18 @@ cssclasses:
     </div>
   </div>
   <div class="hero-panel">
-    <p class="panel-label">Current setup</p>
+    <div class="hero-profile">
+      <img src="./static/profile.png" alt="BbangMxn profile" />
+      <div>
+        <p class="panel-label">Profile</p>
+        <strong>이문규</strong>
+        <span>Backend Developer</span>
+      </div>
+    </div>
     <ul class="panel-list">
-      <li><strong>Writing</strong><span>Obsidian + Markdown</span></li>
+      <li><strong>Writing</strong><span>Obsidian + Markdown Vault</span></li>
       <li><strong>Publishing</strong><span>Quartz + GitHub Pages</span></li>
-      <li><strong>Focus</strong><span>Frontend, Deployment, AI Workflow</span></li>
+      <li><strong>Focus</strong><span>Cache, JVM, Backend Architecture</span></li>
     </ul>
   </div>
 </div>
@@ -48,10 +55,10 @@ cssclasses:
 <section class="landing-section">
   <div class="section-copy">
     <p class="section-kicker">Portfolio</p>
-    <h2>작업 결과와 방향을 한눈에 볼 수 있게</h2>
+    <h2>지금 만들고 있는 것과 연구 중인 것을 같이 보여줍니다</h2>
     <p>
-      화면은 포트폴리오처럼, 내부 구조는 위키처럼 설계했습니다.
-      그래서 방문자는 무엇을 만드는지 빠르게 볼 수 있고, 나는 같은 내용을 반복 정리하지 않아도 됩니다.
+      홈은 포트폴리오처럼 보이지만 내부는 Obsidian 노트 구조를 그대로 살렸습니다.
+      그래서 프로젝트, 실험, 지식 문서가 끊기지 않고 이어집니다.
     </p>
   </div>
   <div class="card-grid">
@@ -60,15 +67,15 @@ cssclasses:
       <strong>Quartz 기반 개인 위키 구축</strong>
       <p>옵시디언 작성 흐름과 GitHub Pages 자동 배포를 결합한 현재 사이트 구조입니다.</p>
     </a>
+    <a class="landing-card" href="./research/Cache">
+      <span class="card-kicker">Research</span>
+      <strong>Cache Research</strong>
+      <p>3-Tier 캐싱 구조, 알고리즘 비교, 벤치마크 해석을 논문형으로 정리한 리서치 묶음입니다.</p>
+    </a>
     <a class="landing-card" href="./projects">
       <span class="card-kicker">Selected Work</span>
-      <strong>프로젝트 모아보기</strong>
-      <p>작업 의도, 사용한 스택, 정리 방식까지 함께 볼 수 있는 포트폴리오 입구입니다.</p>
-    </a>
-    <a class="landing-card" href="./about">
-      <span class="card-kicker">Profile</span>
-      <strong>이 사이트를 운영하는 방식</strong>
-      <p>무엇을 기록하고 어떤 주제를 다루는지, 이 위키의 운영 목적을 정리했습니다.</p>
+      <strong>Quartz 기반 개인 위키 구축</strong>
+      <p>지금 이 사이트 자체를 어떻게 만들고 운영하는지 정리한 프로젝트 문서입니다.</p>
     </a>
   </div>
 </section>
@@ -76,10 +83,10 @@ cssclasses:
 <section class="landing-section">
   <div class="section-copy">
     <p class="section-kicker">Knowledge Structure</p>
-    <h2>리서치와 위키를 분리해서 생각을 축적합니다</h2>
+    <h2>Obsidian에서 쌓은 노트를 성격별로 정리합니다</h2>
     <p>
-      Projects는 결과물을, Research는 실험 중인 메모를, Wiki는 오래 유지할 문서를 담당합니다.
-      그래서 임시 메모와 정제된 문서가 서로 섞이지 않고 자연스럽게 성장할 수 있습니다.
+      Projects는 결과물, Research는 실험과 탐구, Wiki는 오래 유지할 기준 문서를 담당합니다.
+      같은 vault를 쓰더라도 읽는 입구는 더 선명하게 나뉘도록 구성했습니다.
     </p>
   </div>
   <div class="card-grid">
@@ -107,8 +114,11 @@ cssclasses:
     <h2>지금 정리하고 있는 것들</h2>
   </div>
   <div class="focus-links">
+    <a href="./about">프로필과 운영 방향</a>
+    <a href="./research/Cache">Cache Research</a>
+    <a href="./research/Java">Java Runtime Research</a>
     <a href="./wiki/github-pages">GitHub Pages 운영 메모</a>
+    <a href="./wiki/Java">Java Wiki</a>
     <a href="./wiki/obsidian-workflow">Obsidian + Quartz 작성 흐름</a>
-    <a href="./research/2026-03-13-first-setup">Quartz 첫 세팅 로그</a>
   </div>
 </section>
