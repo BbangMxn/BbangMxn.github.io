@@ -27,7 +27,10 @@ export default ((userOpts?: Partial<SearchOptions>) => {
               <circle cx="8" cy="8" r="7" />
             </g>
           </svg>
-          <p>{i18n(cfg.locale).components.search.title}</p>
+          <span class="search-copy">
+            <p>{i18n(cfg.locale).components.search.title}</p>
+            <span class="search-hint">#tag / Ctrl+K</span>
+          </span>
         </button>
         <div class="search-container">
           <div class="search-space">

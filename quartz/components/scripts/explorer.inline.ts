@@ -63,6 +63,30 @@ function toggleFolder(evt: MouseEvent) {
   const isCollapsed = !childFolderContainer.classList.contains("open")
   setFolderState(childFolderContainer, isCollapsed)
 
+  const parentList = folderContainer.parentElement?.parentElement as MaybeHTMLElement
+  const isTopLevelFolder = parentList?.classList.contains("explorer-ul")
+
+  if (isTopLevelFolder && !isCollapsed && parentList) {
+    for (const sibling of Array.from(parentList.children)) {
+      const siblingElement = sibling as HTMLElement
+      const siblingContainer = siblingElement.querySelector(":scope > .folder-container") as
+        | HTMLElement
+        | undefined
+      const siblingOuter = siblingElement.querySelector(":scope > .folder-outer") as
+        | HTMLElement
+        | undefined
+
+      if (!siblingContainer || !siblingOuter || siblingContainer === folderContainer) continue
+      setFolderState(siblingOuter, true)
+      const siblingState = currentExplorerState.find(
+        (item) => item.path === siblingContainer.dataset.folderpath,
+      )
+      if (siblingState) {
+        siblingState.collapsed = true
+      }
+    }
+  }
+
   const currentFolderState = currentExplorerState.find(
     (item) => item.path === folderContainer.dataset.folderpath,
   )

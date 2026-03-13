@@ -3,7 +3,7 @@ import * as Component from "./quartz/components"
 
 const sectionExplorer = Component.Explorer({
   title: "Sections",
-  folderDefaultState: "open",
+  folderDefaultState: "collapsed",
   useSavedState: false,
 })
 
@@ -34,22 +34,20 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
+    Component.Search(),
     Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
+      components: [{ Component: Component.Darkmode() }, { Component: Component.ReaderMode() }],
+      gap: "0.5rem",
     }),
     sectionExplorer,
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
-    Component.Graph(),
+    Component.ConditionalRender({
+      component: Component.Graph(),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
   ],
 }
 
@@ -66,14 +64,10 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
+    Component.Search(),
     Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-      ],
+      components: [{ Component: Component.Darkmode() }],
+      gap: "0.5rem",
     }),
     sectionExplorer,
   ],
