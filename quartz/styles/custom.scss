@@ -79,7 +79,7 @@
 }
 
 .sidebar.left .search > .search-button {
-  height: 2.3rem;
+  height: 2.45rem;
   padding-right: 0.85rem;
   border-radius: 0.75rem;
   border-color: color-mix(in srgb, var(--darkgray) 14%, transparent);
@@ -122,8 +122,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.3rem;
-  height: 2.3rem;
+  width: 2.45rem;
+  height: 2.45rem;
   border-radius: 0.75rem;
   border: 1px solid color-mix(in srgb, var(--darkgray) 14%, transparent);
   background: color-mix(in srgb, var(--light) 97%, white);
@@ -574,6 +574,67 @@ body[data-slug="index"] {
   }
 }
 
+.section-dashboard .hero-grid {
+  grid-template-columns: minmax(0, 1.7fr) minmax(15rem, 0.8fr);
+  gap: 1.25rem;
+  align-items: start;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--darkgray) 10%, transparent);
+}
+
+.section-dashboard .hero-copy,
+.section-dashboard .hero-panel {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.section-dashboard .hero-copy .lede {
+  max-width: 36rem;
+}
+
+.section-dashboard .hero-panel {
+  padding-left: 1rem;
+  border-left: 1px solid color-mix(in srgb, var(--darkgray) 10%, transparent);
+}
+
+.section-dashboard .panel-list {
+  margin-top: 0.15rem;
+}
+
+.section-dashboard .panel-list li {
+  padding: 0.85rem 0;
+}
+
+.section-dashboard .landing-section {
+  gap: 0.8rem;
+}
+
+.section-dashboard .card-grid {
+  gap: 1.1rem;
+}
+
+.section-dashboard .landing-card {
+  min-height: 0;
+  padding: 0.9rem 0 0.25rem;
+  border: none;
+  border-top: 1px solid color-mix(in srgb, var(--darkgray) 10%, transparent);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.section-dashboard .landing-card:hover {
+  border-color: color-mix(in srgb, var(--secondary) 20%, transparent);
+  box-shadow: none;
+}
+
+.section-dashboard .landing-card p {
+  max-width: 28ch;
+}
+
 .section-dashboard .hero-copy > h2 {
   font-size: clamp(1.7rem, 3vw, 2.5rem);
 }
@@ -637,6 +698,20 @@ body[data-slug="index"] {
     font-size: 1.18rem;
   }
 
+  .sidebar.left .page-title .brand-subtitle {
+    display: none;
+  }
+
+  .sidebar.left .search > .search-button {
+    height: 2.6rem;
+  }
+
+  .sidebar.left .darkmode,
+  .sidebar.left .readermode {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
   .sidebar.left .explorer-content ul li > a,
   .sidebar.left .folder-container > div > a,
   .sidebar.left .folder-container > div > button {
@@ -645,6 +720,22 @@ body[data-slug="index"] {
 
   .sidebar.left .search > .search-button .search-hint {
     display: none;
+  }
+
+  .section-dashboard .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .section-dashboard .hero-panel {
+    padding-left: 0;
+    padding-top: 0.2rem;
+    border-left: none;
+  }
+
+  .section-dashboard .card-grid {
+    gap: 0.7rem;
   }
 
   .section-dashboard + .page-listing .section {
