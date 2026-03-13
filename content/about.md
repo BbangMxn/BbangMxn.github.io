@@ -25,6 +25,7 @@ tags:
 - [[projects/index|Projects]]: 완성도 있는 결과물과 구조 선택의 이유
 - [[research/index|Research]]: 실험 중인 문서, 비교, 설계 초안
 - [[wiki/index|Wiki]]: 오래 유지할 개념 정리와 운영 메모
+- [[Diary/index|Diary]]: 공개 가능한 짧은 기록과 메모
 
 ## 주요 문서
 

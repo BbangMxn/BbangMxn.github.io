@@ -4,16 +4,27 @@ tags:
   - research
   - java
   - jvm
+cssclasses:
+  - folder-hub
 ---
 
-Java 런타임과 JVM 구조를 연구하는 문서를 모아둔 섹션입니다. 언어 문법보다 실행 구조, 메모리 모델, 런타임 한계와 같은 시스템 관점의 내용을 중심으로 정리합니다.
+<div class="hub-header">
+  <p class="hub-kicker">Research / Java</p>
+  <h2>Java 런타임과 JVM 구조를 연구하는 문서 묶음입니다</h2>
+  <p class="hub-lede">
+    언어 문법보다 실행 구조, 메모리 모델, 런타임 한계처럼 시스템 관점의 내용을 중심으로 정리합니다.
+  </p>
+</div>
 
-## Sections
-
-- [[research/Java/Java Runtime Research/00 Index|Java Runtime Research Index]]
-
-## Focus
-
-- JVM이 Java 코드를 어떻게 실행하는지 구조적으로 이해하기
-- 런타임 오버헤드와 GC, 워밍업 문제를 정리하기
-- 기존 JVM의 한계를 바탕으로 새로운 런타임 방향을 탐색하기
+<div class="hub-grid">
+  <a class="hub-card" href="./Java Runtime Research">
+    <span class="hub-label">Folder</span>
+    <strong>Java Runtime Research</strong>
+    <p>실행 구조, 설계 초안, 런타임 분석 문서를 모아둔 상위 허브입니다.</p>
+  </a>
+  <a class="hub-card" href="./Java Runtime Research/00 Index">
+    <span class="hub-label">Entry</span>
+    <strong>00 Index</strong>
+    <p>연구 전체 흐름을 빠르게 훑을 수 있는 시작 문서입니다.</p>
+  </a>
+</div>
