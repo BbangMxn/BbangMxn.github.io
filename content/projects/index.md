@@ -16,20 +16,37 @@ cssclasses:
   </p>
 </div>
 
-<div class="hub-grid">
-  <a class="hub-card" href="./quartz-wiki-site">
-    <span class="hub-label">Project</span>
-    <strong>Quartz 기반 개인 위키 구축</strong>
-    <p>Obsidian 작성 경험, GitHub Pages 배포, 포트폴리오 UI를 하나의 구조로 통합한 프로젝트입니다.</p>
-  </a>
-  <a class="hub-card" href="../research">
-    <span class="hub-label">Related</span>
-    <strong>Research와 연결</strong>
-    <p>구현 전에 검토한 실험과 메모는 Research 섹션에서 이어서 볼 수 있습니다.</p>
-  </a>
-  <a class="hub-card" href="../wiki">
-    <span class="hub-label">Reference</span>
-    <strong>운영 기준 문서</strong>
-    <p>배포 방식, 작성 흐름, 반복 참조할 기준은 Wiki 섹션에서 관리합니다.</p>
-  </a>
-</div>
+<section class="hub-section">
+  <p class="hub-section-kicker">Featured</p>
+  <h3>대표 프로젝트</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./quartz-wiki-site">
+        <span class="hub-label">Project</span>
+        <strong>Quartz 기반 개인 위키 구축</strong>
+        <p>Obsidian 작성 경험, GitHub Pages 배포, 포트폴리오 UI를 하나의 구조로 연결한 현재 사이트 프로젝트입니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Connected</p>
+  <h3>같이 보면 좋은 섹션</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="../research">
+        <span class="hub-label">Research</span>
+        <strong>Research</strong>
+        <p>구현 전에 검토한 실험, 비교 메모, 설계 초안은 Research에서 이어서 볼 수 있습니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="../wiki">
+        <span class="hub-label">Reference</span>
+        <strong>Wiki</strong>
+        <p>배포, 작성 방식, 반복 참조할 운영 기준은 Wiki에 정리돼 있습니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>

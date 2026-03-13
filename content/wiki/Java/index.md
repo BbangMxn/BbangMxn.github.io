@@ -15,10 +15,16 @@ cssclasses:
   </p>
 </div>
 
-<div class="hub-grid single">
-  <a class="hub-card" href="./javac">
-    <span class="hub-label">Topic</span>
-    <strong>javac</strong>
-    <p>Java 컴파일 과정에서 반복해서 확인할 핵심 개념 정리입니다.</p>
-  </a>
-</div>
+<section class="hub-section">
+  <p class="hub-section-kicker">Reference</p>
+  <h3>현재 공개된 Java 위키 문서</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./javac">
+        <span class="hub-label">Topic</span>
+        <strong>javac</strong>
+        <p>Java 컴파일 과정에서 반복해서 확인할 핵심 개념 정리입니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>

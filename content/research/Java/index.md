@@ -16,15 +16,23 @@ cssclasses:
   </p>
 </div>
 
-<div class="hub-grid">
-  <a class="hub-card" href="./Java Runtime Research">
-    <span class="hub-label">Folder</span>
-    <strong>Java Runtime Research</strong>
-    <p>실행 구조, 설계 초안, 런타임 분석 문서를 모아둔 상위 허브입니다.</p>
-  </a>
-  <a class="hub-card" href="./Java Runtime Research/00 Index">
-    <span class="hub-label">Entry</span>
-    <strong>00 Index</strong>
-    <p>연구 전체 흐름을 빠르게 훑을 수 있는 시작 문서입니다.</p>
-  </a>
-</div>
+<section class="hub-section">
+  <p class="hub-section-kicker">Browse</p>
+  <h3>문서 허브와 시작 문서</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./Java Runtime Research">
+        <span class="hub-label">Folder</span>
+        <strong>Java Runtime Research</strong>
+        <p>실행 구조, 설계 초안, 런타임 분석 문서를 모아둔 상위 허브입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="./Java Runtime Research/00 Index">
+        <span class="hub-label">Entry</span>
+        <strong>00 Index</strong>
+        <p>연구 전체 흐름을 빠르게 훑을 수 있는 시작 문서입니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>

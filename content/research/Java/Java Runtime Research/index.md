@@ -16,15 +16,23 @@ cssclasses:
   </p>
 </div>
 
-<div class="hub-grid">
-  <a class="hub-card" href="./00 Index">
-    <span class="hub-label">Index</span>
-    <strong>00 Index</strong>
-    <p>연구 전체 구조와 읽기 순서를 정리한 문서입니다.</p>
-  </a>
-  <a class="hub-card" href="./01 Execution Path">
-    <span class="hub-label">Folder</span>
-    <strong>01 Execution Path</strong>
-    <p>JVM 실행 경로와 구조 분석 문서를 묶어둔 하위 허브입니다.</p>
-  </a>
-</div>
+<section class="hub-section">
+  <p class="hub-section-kicker">Browse</p>
+  <h3>읽기 순서</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./00 Index">
+        <span class="hub-label">Index</span>
+        <strong>00 Index</strong>
+        <p>연구 전체 구조와 읽기 순서를 먼저 훑을 수 있는 시작 문서입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="./01 Execution Path">
+        <span class="hub-label">Folder</span>
+        <strong>01 Execution Path</strong>
+        <p>JVM 실행 경로와 구조 분석 문서를 묶어둔 하위 허브입니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
