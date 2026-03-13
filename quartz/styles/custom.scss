@@ -2,6 +2,8 @@
 
 .sidebar.left {
   gap: 0.7rem;
+  max-height: none;
+  overflow: visible;
 }
 
 .sidebar.left .page-title {
