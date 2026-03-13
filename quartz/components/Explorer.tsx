@@ -103,7 +103,13 @@ export default ((userOpts?: Partial<Options>) => {
           data-mobile={false}
           aria-expanded={true}
         >
-          <h2>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h2>
+          <span class="explorer-heading-copy">
+            <span class="explorer-kicker">Vault Navigation</span>
+            <span class="explorer-heading-row">
+              <h2>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h2>
+              <span class="explorer-caption">Folders and linked notes</span>
+            </span>
+          </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
