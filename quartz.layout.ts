@@ -1,6 +1,16 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+const sectionExplorer = Component.Explorer({
+  title: "Sections",
+  mapFn: (node) => {
+    // Keep the sidebar focused on top-level section entry points.
+    if (node.isFolder && node.slug.split("/").length === 2) {
+      node.children = []
+    }
+  },
+})
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -38,7 +48,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    sectionExplorer,
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
@@ -69,7 +79,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    sectionExplorer,
   ],
   right: [Component.RecentNotes({ limit: 6 })],
 }

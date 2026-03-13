@@ -110,6 +110,12 @@ function createFolderNode(
 
   const folderPath = node.slug
   folderContainer.dataset.folderpath = folderPath
+  const isLeafFolder = node.children.length === 0
+
+  if (isLeafFolder) {
+    li.classList.add("folder-leaf-item")
+    folderContainer.classList.add("folder-leaf")
+  }
 
   if (currentSlug === folderPath) {
     folderContainer.classList.add("active")

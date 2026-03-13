@@ -3,22 +3,49 @@ title: Projects
 tags:
   - portfolio
   - projects
+cssclasses:
+  - section-dashboard
 ---
 
-포트폴리오 성격의 작업들을 모아둔 공간입니다.
+<div class="hero-grid">
+  <div class="hero-copy">
+    <p class="eyebrow">Section Dashboard</p>
+    <h2>만든 결과물과 구조 선택의 이유를 사례 중심으로 정리합니다</h2>
+    <p class="lede">
+      Projects는 단순 결과물 목록이 아니라, 문제 정의부터 구현 이후 회고까지 한 흐름으로 읽히는 포트폴리오 섹션입니다.
+      완성된 작업은 이곳에서 가장 먼저 보이게 정리합니다.
+    </p>
+  </div>
+  <div class="hero-panel">
+    <p class="panel-label">What belongs here</p>
+    <ul class="panel-list">
+      <li><strong>Problem</strong><span>무엇을 해결하려고 했는지</span></li>
+      <li><strong>Decision</strong><span>왜 이 구조와 스택을 선택했는지</span></li>
+      <li><strong>Outcome</strong><span>구현 후 배운 점과 운영 방식</span></li>
+    </ul>
+  </div>
+</div>
 
-## Selected work
-
-- [[projects/quartz-wiki-site|Quartz 기반 개인 위키 구축]]
-
-## Current direction
-
-- 문서와 포트폴리오를 한 저장소에서 함께 운영
-- Obsidian 작성 경험을 유지한 채 정적 배포 자동화
-- Research와 Wiki에서 쌓인 내용을 프로젝트 문서와 연결
-
-## How I document projects
-
-- 문제를 어떻게 정의했는지
-- 왜 그 구조를 선택했는지
-- 구현 후 무엇을 배웠는지
+<section class="landing-section compact">
+  <div class="section-copy">
+    <p class="section-kicker">Featured</p>
+    <h2>대표 프로젝트</h2>
+  </div>
+  <div class="card-grid">
+    <a class="landing-card" href="./quartz-wiki-site">
+      <span class="card-kicker">Live Project</span>
+      <strong>Quartz 기반 개인 위키 구축</strong>
+      <p>Obsidian 작성 경험, 정적 배포, 개인 포트폴리오 UI를 하나의 저장소 구조로 통합한 프로젝트입니다.</p>
+    </a>
+    <a class="landing-card" href="../research">
+      <span class="card-kicker">Research Context</span>
+      <strong>구현 배경이 된 리서치</strong>
+      <p>프로젝트에 반영하기 전 검토한 실험과 메모는 Research에서 이어서 볼 수 있습니다.</p>
+    </a>
+    <a class="landing-card" href="../wiki">
+      <span class="card-kicker">Documentation</span>
+      <strong>운영 기준 문서</strong>
+      <p>배포 방식, 작성 흐름, 반복 참조할 운영 메모는 Wiki에서 관리합니다.</p>
+    </a>
+  </div>
+</section>
