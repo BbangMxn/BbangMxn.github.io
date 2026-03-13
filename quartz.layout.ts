@@ -3,12 +3,8 @@ import * as Component from "./quartz/components"
 
 const sectionExplorer = Component.Explorer({
   title: "Sections",
-  mapFn: (node) => {
-    // Keep the sidebar focused on top-level section entry points.
-    if (node.isFolder && node.slug.split("/").length === 2) {
-      node.children = []
-    }
-  },
+  folderDefaultState: "open",
+  useSavedState: false,
 })
 
 // components shared across all pages
