@@ -31,15 +31,15 @@ cssclasses:
 
 ## 읽는 순서
 
-1. [[01 research|연구 배경과 목적]]
+1. [[01 초록|연구 배경과 목적]]
    연구 질문, 목적, 평가 기준을 먼저 정리한 문서다.
-2. [[research/Cache/02-cache-taxonomy-and-system-design|캐시 구조와 시스템 설계]]
+2. [[02 cache|캐시 구조와 시스템 설계]]
    계층 구조, 자료구조, 무효화 전략을 구조적으로 정리한다.
-3. [[research/Cache/03-benchmark-method-and-results|벤치마크 설계와 결과]]
+3. [[03 benchmark|벤치마크 설계와 결과]]
    알고리즘 비교 실험과 결과를 수치 중심으로 보여준다.
-4. [[research/Cache/04-discussion-and-implications|해석과 실무 시사점]]
+4. [[04 정리|해석과 실무 시사점]]
    평균값의 함정과 실무 선택 기준을 해석한다.
-5. [[research/Cache/05-future-work|향후 연구 방향]]
+5. [[05 작업 방향|향후 연구 방향]]
    적응형 캐싱과 예측 기반 접근으로의 확장 방향을 정리한다.
 
 ## 읽기 안내

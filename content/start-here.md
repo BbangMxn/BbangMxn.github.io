@@ -26,7 +26,7 @@ tags:
 - [[projects/index|projects]]: 결과물, 사례, 포트폴리오용 정리
 - [[research/index|research]]: 실험 메모, 로그, 비교 기록
 - [[wiki/index|wiki]]: 개념 정리, 트러블슈팅, 치트시트
-- [[Diary/index|Diary]]: 공개 가능한 짧은 기록과 일상 메모
+- [[Diary/00 index|Diary]]: 공개 가능한 짧은 기록과 일상 메모
 
 ## 메타데이터 예시
 

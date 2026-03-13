@@ -26,4 +26,4 @@ tags:
 
 ## Related
 
-- [[research/Java/Java Runtime Research/01 Execution Path/01 JVM|JVM 구조 개요]]
+- [[01 JVM|JVM 구조 개요]]
