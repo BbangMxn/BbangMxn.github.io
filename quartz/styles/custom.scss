@@ -250,16 +250,11 @@
   color: var(--secondary);
   font-weight: 700;
   background: color-mix(in srgb, var(--secondary) 7%, transparent);
-  box-shadow: inset 2px 0 0 color-mix(in srgb, var(--secondary) 88%, transparent);
 }
 
 .sidebar.left .explorer-ul > li > .folder-container > div > a,
 .sidebar.left .explorer-ul > li > .folder-container > div > button {
   font-size: 1rem;
-}
-
-.sidebar.left .explorer-content ul li > a.active {
-  box-shadow: inset 2px 0 0 color-mix(in srgb, var(--secondary) 88%, transparent);
 }
 
 .sidebar.left .folder-outer {
@@ -268,8 +263,8 @@
 
 .sidebar.left .folder-outer > ul {
   margin-left: 1.16rem;
-  padding-left: 0.88rem;
-  border-left: 1px solid color-mix(in srgb, var(--darkgray) 14%, transparent);
+  padding-left: 0.62rem;
+  border-left: none;
 }
 
 .sidebar.left .folder-icon {
