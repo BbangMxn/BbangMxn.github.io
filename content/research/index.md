@@ -31,8 +31,8 @@ cssclasses:
     <li class="hub-item">
       <a href="./Java">
         <span class="hub-label">Focus</span>
-        <strong>Java Runtime Research</strong>
-        <p>JVM 실행 구조와 런타임 한계를 시스템 관점에서 분석하는 문서 모음입니다.</p>
+        <strong>Java Object Research</strong>
+        <p>JVM 위에서 동작하는 객체 모델과 런타임 오버헤드를 시스템 관점에서 분석하는 문서 모음입니다.</p>
       </a>
     </li>
   </ul>

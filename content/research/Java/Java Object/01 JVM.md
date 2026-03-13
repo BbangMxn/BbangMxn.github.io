@@ -4,6 +4,8 @@ tags:
   - java
   - jvm
   - research
+cssclasses:
+  - research-note
 ---
 
 ## JVM이란?
@@ -190,5 +192,5 @@ JVM 연구의 핵심은 다음 세 가지를 이해하는 것이다.
 
 ## Related
 
-- [[research/Java/Java Runtime Research/01 Execution Path/02 JVM문제점 분석|JVM 구조적 한계 분석]]
+- [[02 JVM문제점 분석|JVM 구조적 한계 분석]]
 - [[wiki/Java/javac|javac]]

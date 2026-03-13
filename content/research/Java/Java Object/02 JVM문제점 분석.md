@@ -5,6 +5,8 @@ tags:
   - java
   - jvm
   - runtime
+cssclasses:
+  - research-note
 ---
 
 ## 1. Java Runtime의 구조적 한계
@@ -102,5 +104,5 @@ JVM의 비용은 하나의 원인이 아니라, 실행 계층 증가, 힙 중심
 
 ## Related
 
-- [[research/Java/Java Runtime Research/01 Execution Path/01 JVM|JVM 구조 개요]]
-- [[research/Java/Java Runtime Research/01 Execution Path/03 설계|연구 목표와 설계 방향]]
+- [[01 JVM|JVM 구조 개요]]
+- [[03 설계|연구 목표와 설계 방향]]
