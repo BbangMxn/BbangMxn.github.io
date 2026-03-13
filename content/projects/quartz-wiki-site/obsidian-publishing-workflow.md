@@ -1,9 +1,11 @@
 ---
-title: Obsidian Workflow
+title: Obsidian Publishing Workflow
 tags:
   - obsidian
   - workflow
   - quartz
+cssclasses:
+  - research-note
 ---
 
 ## 로컬 작성
@@ -24,3 +26,8 @@ tags:
 - 오래 유지할 지식은 `wiki/`로 정리하기
 - 결과물은 `projects/`에 사례로 남기기
 - 새 문서는 기존 문서와 최소 1개 이상 링크 연결하기
+
+## Related
+
+- [[projects/quartz-wiki-site|Quartz 기반 개인 위키 구축]]
+- [[projects/quartz-wiki-site/github-pages-deployment|GitHub Pages 배포 구조]]

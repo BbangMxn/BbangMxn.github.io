@@ -1,9 +1,11 @@
 ---
-title: GitHub Pages
+title: GitHub Pages 배포 구조
 tags:
   - github-pages
   - deployment
   - quartz
+cssclasses:
+  - research-note
 ---
 
 ## 현재 구성
@@ -20,5 +22,5 @@ tags:
 
 ## 관련 문서
 
-- [[wiki/obsidian-workflow|Obsidian + Quartz 작성 흐름]]
-- [[research/2026-03-13-first-setup|첫 세팅 로그]]
+- [[projects/quartz-wiki-site/obsidian-publishing-workflow|Obsidian + Quartz 작성 흐름]]
+- [[projects/quartz-wiki-site/first-setup-log|첫 세팅 로그]]

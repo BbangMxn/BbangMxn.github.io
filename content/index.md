@@ -43,9 +43,9 @@ cssclasses:
       </a>
     </li>
     <li class="portfolio-item">
-      <a href="./wiki/obsidian-workflow">
+      <a href="./projects/quartz-wiki-site/obsidian-publishing-workflow">
         <span class="portfolio-badge">Workflow</span>
-        <strong>Obsidian Workflow</strong>
+        <strong>Obsidian Publishing Workflow</strong>
         <p>작성, 링크, 발행이 실제로 어떻게 이어지는지 운영 기준으로 정리한 문서입니다.</p>
       </a>
     </li>

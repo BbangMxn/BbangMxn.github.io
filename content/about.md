@@ -30,6 +30,6 @@ tags:
 ## 주요 문서
 
 - [[research/Cache|Cache Research]]
-- [[research/Java|Java Runtime Research]]
+- [[research/Java|Java Object Research]]
 - [[projects/quartz-wiki-site|Quartz 기반 개인 위키 구축]]
-- [[wiki/obsidian-workflow|Obsidian + Quartz 작성 흐름]]
+- [[projects/quartz-wiki-site/obsidian-publishing-workflow|Obsidian + Quartz 작성 흐름]]

@@ -45,7 +45,7 @@ cssclasses:
       <a href="../wiki">
         <span class="hub-label">Reference</span>
         <strong>Wiki</strong>
-        <p>배포, 작성 방식, 반복 참조할 운영 기준은 Wiki에 정리돼 있습니다.</p>
+        <p>언어 개념, 반복 참조 문서, 오래 유지할 기준 문서는 Wiki에 정리돼 있습니다.</p>
       </a>
     </li>
   </ul>

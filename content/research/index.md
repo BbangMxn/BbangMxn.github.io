@@ -39,14 +39,14 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Log</p>
-  <h3>구조와 운영 기록</h3>
+  <p class="hub-section-kicker">Connected</p>
+  <h3>프로젝트로 정리된 구현 문서</h3>
   <ul class="hub-list">
     <li class="hub-item">
-      <a href="./2026-03-13-first-setup">
-        <span class="hub-label">Setup</span>
-        <strong>Quartz 첫 세팅 기록</strong>
-        <p>현재 사이트 구조를 만들며 남긴 초기 설정 로그와 배포 메모입니다.</p>
+      <a href="../projects/quartz-wiki-site">
+        <span class="hub-label">Project</span>
+        <strong>Quartz 기반 개인 위키 구축</strong>
+        <p>배포 구조, 작성 흐름, 초기 설정 로그처럼 구현 문서는 Projects 섹션으로 옮겨 정리했습니다.</p>
       </a>
     </li>
   </ul>

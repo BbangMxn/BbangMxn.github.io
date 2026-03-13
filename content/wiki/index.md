@@ -20,24 +20,17 @@ cssclasses:
   <h3>자주 확인하는 기준 문서</h3>
   <ul class="hub-list">
     <li class="hub-item">
-      <a href="./github-pages">
-        <span class="hub-label">Deploy</span>
-        <strong>GitHub Pages</strong>
-        <p>현재 사이트의 배포 구조와 운영 시 기억해야 할 기준을 정리한 문서입니다.</p>
-      </a>
-    </li>
-    <li class="hub-item">
-      <a href="./obsidian-workflow">
-        <span class="hub-label">Workflow</span>
-        <strong>Obsidian Workflow</strong>
-        <p>문서 작성에서 링크, 미리보기, 퍼블리시까지 이어지는 실제 작성 흐름을 설명합니다.</p>
-      </a>
-    </li>
-    <li class="hub-item">
       <a href="./Java">
         <span class="hub-label">Language</span>
         <strong>Java Wiki</strong>
         <p>Java 런타임 리서치와 연결되는 기본 개념과 반복 참조 문서를 모아둡니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="../projects/quartz-wiki-site">
+        <span class="hub-label">Project</span>
+        <strong>사이트 운영 문서</strong>
+        <p>GitHub Pages 배포 구조와 Obsidian 퍼블리싱 흐름은 프로젝트 문서 안으로 이동해 정리했습니다.</p>
       </a>
     </li>
   </ul>
