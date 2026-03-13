@@ -1682,3 +1682,187 @@ footer a,
     gap: 0.25rem;
   }
 }
+
+.page:has(article.portfolio-home) .sidebar.right,
+.page:has(article.folder-hub) .sidebar.right {
+  display: none;
+}
+
+.page:has(article.portfolio-home) .page-header,
+.page:has(article.folder-hub) .page-header,
+.page:has(article.research-note) .page-header {
+  margin-bottom: 0.2rem;
+}
+
+.page:has(article.folder-hub) .page-header .content-meta {
+  display: none;
+}
+
+.page:has(article.portfolio-home) article.portfolio-home {
+  gap: 2rem;
+}
+
+.page:has(article.portfolio-home) article.portfolio-home .portfolio-intro {
+  padding-bottom: 1.45rem;
+}
+
+.page:has(article.portfolio-home) article.portfolio-home .portfolio-block {
+  gap: 0.85rem;
+}
+
+.page:has(article.portfolio-home) article.portfolio-home .portfolio-block + .portfolio-block {
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--nomos-line);
+}
+
+.page:has(article.portfolio-home) article.portfolio-home .portfolio-list {
+  gap: 0.05rem;
+}
+
+.page:has(article.portfolio-home) article.portfolio-home .portfolio-item > a {
+  padding: 1rem 0 1.1rem;
+}
+
+.page:has(article.folder-hub) article.folder-hub {
+  gap: 1.7rem;
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-header {
+  padding-bottom: 1.35rem;
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-section {
+  gap: 0.8rem;
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--nomos-line);
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-item > a,
+.page:has(article.folder-hub) article.folder-hub .hub-note {
+  gap: 0.36rem;
+}
+
+.page:has(article.folder-hub) .folder-hub + .page-listing {
+  margin-top: 0.8rem;
+  padding-top: 1.2rem;
+}
+
+.page:has(article.folder-hub) .folder-hub + .page-listing .section > .desc > h3 {
+  margin: 0;
+}
+
+.page:has(article.folder-hub) .folder-hub + .page-listing .section .meta {
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page:has(article.research-note) .page-header {
+  display: grid;
+  gap: 0.45rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--nomos-line);
+}
+
+.page:has(article.research-note) .page-header > .popover-hint {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.page:has(article.research-note) .page-header .content-meta {
+  font-size: 0.82rem;
+}
+
+.page:has(article.research-note) .page-header .tags {
+  margin-top: 0.15rem;
+}
+
+.page:has(article.research-note) article.research-note {
+  gap: 1.45rem;
+}
+
+.page:has(article.research-note) article.research-note > :first-child {
+  margin-top: 0;
+}
+
+.page:has(article.research-note) article.research-note > h2:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.page:has(article.research-note) article.research-note > :is(p, ul, ol, blockquote, table, .table-container) {
+  max-width: 43rem;
+}
+
+.page:has(article.research-note) article.research-note h2 + :is(p, ul, ol) {
+  margin-top: -0.2rem;
+}
+
+.page:has(article.research-note) .sidebar.right {
+  gap: 1rem;
+}
+
+.page:has(article.research-note) .sidebar.right > * {
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--nomos-line);
+}
+
+.page:has(article.research-note) .sidebar.right > *:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.page:has(article.research-note) .sidebar.right .toc ul.toc-content.overflow,
+.page:has(article.research-note) .sidebar.right .backlinks > ul.overflow {
+  margin-top: 0.55rem;
+}
+
+.page:has(article.research-note) .sidebar.right .toc ul.toc-content.overflow > li > a {
+  display: block;
+  padding: 0.18rem 0;
+}
+
+.page:has(article.research-note) .sidebar.right .backlinks > ul.overflow > li > a {
+  display: block;
+  padding: 0.2rem 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.page:has(article.research-note) .sidebar.right .graph > .graph-outer {
+  height: 220px;
+}
+
+@media all and (min-width: 1200px) {
+  .page:has(article.portfolio-home) > #quartz-body,
+  .page:has(article.folder-hub) > #quartz-body {
+    grid-template-columns: 320px minmax(0, 45rem);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "grid-sidebar-left grid-header"
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-footer";
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .page:has(article.portfolio-home) article.portfolio-home,
+  .page:has(article.folder-hub) article.folder-hub,
+  .page:has(article.research-note) article.research-note {
+    gap: 1.25rem;
+  }
+
+  .page:has(article.portfolio-home) article.portfolio-home .portfolio-block + .portfolio-block,
+  .page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
+    padding-top: 1rem;
+  }
+
+  .page:has(article.research-note) .page-header {
+    padding-bottom: 0.85rem;
+  }
+}
