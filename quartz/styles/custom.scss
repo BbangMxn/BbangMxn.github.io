@@ -2,8 +2,12 @@
 
 .sidebar.left {
   gap: 0.7rem;
+}
+
+.page > #quartz-body > .sidebar.left {
   max-height: none;
   overflow: visible;
+  overflow-y: visible;
 }
 
 .sidebar.left .page-title {
@@ -12,9 +16,10 @@
 
 .sidebar.left .page-title .brand-card {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 0.9rem;
-  padding: 0.05rem 0 0.3rem;
+  gap: 0.55rem;
+  padding: 0.05rem 0 0.35rem;
   color: var(--dark);
   text-decoration: none;
 }
@@ -24,17 +29,17 @@
 }
 
 .sidebar.left .page-title .brand-avatar {
-  width: 3.35rem;
-  height: 3.35rem;
-  border-radius: 1rem;
+  width: 4.35rem;
+  height: 4.35rem;
+  border-radius: 1.15rem;
   object-fit: cover;
   border: 1px solid color-mix(in srgb, var(--darkgray) 14%, transparent);
 }
 
 .sidebar.left .page-title .brand-copy {
   display: grid;
-  gap: 0.1rem;
-  padding-top: 0.45rem;
+  gap: 0.08rem;
+  padding-top: 0;
 }
 
 .sidebar.left .page-title .brand-kicker {
@@ -46,7 +51,7 @@
 }
 
 .sidebar.left .page-title .brand-title {
-  font-size: 1.42rem;
+  font-size: 1.5rem;
   font-weight: 800;
   line-height: 1.02;
   color: var(--dark);
@@ -1105,8 +1110,8 @@ body[data-slug="index"] {
   }
 
   .sidebar.left .page-title .brand-avatar {
-    width: 2.9rem;
-    height: 2.9rem;
+    width: 3.7rem;
+    height: 3.7rem;
   }
 
   .sidebar.left .page-title .brand-title {
@@ -1114,7 +1119,7 @@ body[data-slug="index"] {
   }
 
   .sidebar.left .page-title .brand-copy {
-    padding-top: 0.28rem;
+    padding-top: 0;
   }
 
   .sidebar.left .page-title .brand-subtitle {
