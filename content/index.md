@@ -9,11 +9,11 @@ cssclasses:
 
 <div class="hero-grid">
   <div class="hero-copy">
-    <p class="eyebrow">Backend Portfolio</p>
-    <h1>백엔드 구조를 만들고, 실험하고, 문서로 남깁니다</h1>
+    <p class="eyebrow">Backend Developer</p>
+    <h1>이문규의 포트폴리오</h1>
     <p class="lede">
-      Bbang은 프로젝트 결과물, 리서치 노트, 위키 문서를 한 흐름으로 연결한 개인 포트폴리오입니다.
-      Obsidian에서 작성한 메모를 Quartz로 퍼블리시하면서, 캐시 구조와 JVM 같은 주제를 실제 작업과 함께 정리합니다.
+      캐시, JVM, 문서 시스템을 중심으로 작업한 내용과 연구 기록을 정리합니다.
+      홈은 결과물을 빠르게 보여주고, 내부 섹션은 Obsidian 기반 작업 대시보드처럼 연결해 두었습니다.
     </p>
     <div class="hero-actions">
       <a class="landing-button primary" href="./projects">Projects</a>
@@ -33,87 +33,57 @@ cssclasses:
     <ul class="panel-list">
       <li><strong>Focus</strong><span>Cache, JVM, Backend Architecture</span></li>
       <li><strong>Workflow</strong><span>Obsidian -> Quartz -> GitHub Pages</span></li>
-      <li><strong>Writing Style</strong><span>구현 기록과 기술 문서를 같은 구조에서 관리</span></li>
+      <li><strong>Current Site</strong><span>Portfolio landing + section dashboards</span></li>
     </ul>
-  </div>
-</div>
-
-<div class="landing-metrics">
-  <div class="metric-card">
-    <span class="metric-value">Projects</span>
-    <p>완성한 결과물과 구조 선택의 이유를 사례 중심으로 정리합니다.</p>
-  </div>
-  <div class="metric-card">
-    <span class="metric-value">Research</span>
-    <p>실험, 비교, 메모를 쌓아 설계 방향과 검증 과정을 남깁니다.</p>
-  </div>
-  <div class="metric-card">
-    <span class="metric-value">Wiki</span>
-    <p>오래 유지할 개념 문서와 운영 기준을 별도 허브로 정리합니다.</p>
   </div>
 </div>
 
 <section class="landing-section">
   <div class="section-copy">
-    <p class="section-kicker">Selected Work</p>
-    <h2>지금 보고 싶은 작업부터 바로 들어갈 수 있게 구성했습니다</h2>
-    <p>프로젝트 문서만 따로 떼어내지 않고, 그 뒤에 있는 실험과 기준 문서까지 연결해서 보여줍니다.</p>
+    <p class="section-kicker">Sections</p>
+    <h2>세 개의 입구로 단순하게 나눴습니다</h2>
+    <p>프로젝트, 리서치, 위키를 역할별로 분리해서 처음 들어와도 어디를 봐야 하는지 바로 알 수 있게 구성했습니다.</p>
+  </div>
+  <div class="card-grid">
+    <a class="landing-card" href="./projects">
+      <span class="card-kicker">Projects</span>
+      <strong>결과물과 사례</strong>
+      <p>만든 시스템을 문제 정의, 구조 선택, 구현 결과 중심으로 정리합니다.</p>
+    </a>
+    <a class="landing-card" href="./research">
+      <span class="card-kicker">Research</span>
+      <strong>실험과 비교 노트</strong>
+      <p>캐시, JVM, 설계 초안처럼 진행 중인 탐구 과정을 기록합니다.</p>
+    </a>
+    <a class="landing-card" href="./wiki">
+      <span class="card-kicker">Wiki</span>
+      <strong>기준 문서와 지식 정리</strong>
+      <p>반복해서 보는 개념과 운영 기준을 오래 유지하는 문서 영역입니다.</p>
+    </a>
+  </div>
+</section>
+
+<section class="landing-section">
+  <div class="section-copy">
+    <p class="section-kicker">Selected</p>
+    <h2>먼저 보면 좋은 문서</h2>
+    <p>현재 사이트 구조와 집중 주제를 가장 빠르게 보여주는 문서만 앞에 배치했습니다.</p>
   </div>
   <div class="card-grid">
     <a class="landing-card" href="./projects/quartz-wiki-site">
       <span class="card-kicker">Project</span>
       <strong>Quartz 기반 개인 위키 구축</strong>
-      <p>옵시디언 작성 흐름과 GitHub Pages 배포를 하나의 포트폴리오 사이트로 연결한 프로젝트입니다.</p>
+      <p>이 사이트 자체를 어떻게 만들고 운영하는지 정리한 프로젝트 문서입니다.</p>
     </a>
     <a class="landing-card" href="./research/Cache">
       <span class="card-kicker">Research</span>
       <strong>Cache Research</strong>
-      <p>캐시 계층 구조, 무효화 전략, 비교 관점을 논문형 구조로 정리한 리서치 묶음입니다.</p>
+      <p>캐시 구조와 무효화 전략을 중심으로 정리 중인 대표 리서치 묶음입니다.</p>
     </a>
     <a class="landing-card" href="./wiki/obsidian-workflow">
       <span class="card-kicker">Workflow</span>
       <strong>Obsidian Workflow</strong>
-      <p>문서 작성, 링크 관리, 로컬 미리보기, 배포까지 이어지는 실제 작성 흐름을 설명합니다.</p>
+      <p>작성부터 퍼블리시까지 이어지는 현재 문서 작업 흐름을 설명합니다.</p>
     </a>
-  </div>
-</section>
-
-<section class="landing-section">
-  <div class="section-copy">
-    <p class="section-kicker">Structure</p>
-    <h2>홈은 포트폴리오이고, 내부는 계속 자라는 작업 저장소입니다</h2>
-    <p>메인 화면은 결과물을 보여주는 입구로 두고, 각 폴더는 독립적인 대시보드처럼 동작하게 구성했습니다.</p>
-  </div>
-  <div class="card-grid">
-    <a class="landing-card" href="./projects">
-      <span class="card-kicker">Projects</span>
-      <strong>만든 결과물과 사례 정리</strong>
-      <p>작업한 시스템을 왜 그런 방식으로 만들었는지까지 같이 읽을 수 있는 섹션입니다.</p>
-    </a>
-    <a class="landing-card" href="./research">
-      <span class="card-kicker">Research</span>
-      <strong>진행 중인 실험과 비교 노트</strong>
-      <p>아직 정리 중인 주제와 검증 과정을 남기고, 충분히 쌓이면 프로젝트나 위키로 연결합니다.</p>
-    </a>
-    <a class="landing-card" href="./wiki">
-      <span class="card-kicker">Wiki</span>
-      <strong>오래 유지할 기술 문서</strong>
-      <p>트러블슈팅, 운영 기준, 개념 정리를 다시 찾기 쉬운 형태로 유지합니다.</p>
-    </a>
-  </div>
-</section>
-
-<section class="landing-section compact">
-  <div class="section-copy">
-    <p class="section-kicker">Current Focus</p>
-    <h2>최근 정리하고 있는 핵심 문서</h2>
-  </div>
-  <div class="focus-links">
-    <a href="./about">프로필과 작업 방향</a>
-    <a href="./research/Cache">Cache Research</a>
-    <a href="./research/Java">Java Runtime Research</a>
-    <a href="./wiki/github-pages">GitHub Pages 운영 메모</a>
-    <a href="./wiki/Java">Java Wiki</a>
-    <a href="./start-here">Start Here</a>
   </div>
 </section>
