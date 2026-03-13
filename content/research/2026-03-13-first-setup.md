@@ -1,6 +1,7 @@
 ---
 title: Quartz 첫 세팅
 tags:
+  - research
   - setup
   - quartz
   - github-pages

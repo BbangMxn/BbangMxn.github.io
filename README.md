@@ -1,6 +1,6 @@
 # BbangMxn Quartz Wiki
 
-Obsidian-like technical wiki and blog powered by [Quartz](https://quartz.jzhao.xyz/).
+Portfolio-first knowledge site powered by [Quartz](https://quartz.jzhao.xyz/).
 
 ## Local workflow
 
@@ -31,8 +31,9 @@ Obsidian-like technical wiki and blog powered by [Quartz](https://quartz.jzhao.x
 ## Content structure
 
 - `content/index.md`: homepage
+- `content/projects/`: portfolio and case studies
+- `content/research/`: experiments, logs, working notes
 - `content/wiki/`: evergreen notes
-- `content/journal/`: dated log posts
 - `content/about.md`: about page
 - `content/start-here.md`: onboarding page
 

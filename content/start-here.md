@@ -16,8 +16,9 @@ tags:
 
 ## 폴더 규칙
 
+- [[projects/index|projects]]: 결과물, 사례, 포트폴리오용 정리
+- [[research/index|research]]: 실험 메모, 로그, 비교 기록
 - [[wiki/index|wiki]]: 개념 정리, 트러블슈팅, 치트시트
-- [[journal/index|journal]]: 날짜 기반 로그, 회고, 삽질기
 
 ## 메타데이터 예시
 

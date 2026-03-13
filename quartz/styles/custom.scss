@@ -1,3 +1,295 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+body[data-slug="index"] {
+  .page-header .content-meta,
+  .page-header > .popover-hint > h1 {
+    display: none;
+  }
+
+  .center > article.landing-page {
+    display: grid;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .center > article.landing-page + hr {
+    margin-top: 0;
+  }
+}
+
+.landing-page {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(18rem, 0.9fr);
+    gap: 1.25rem;
+    align-items: stretch;
+  }
+
+  .hero-copy,
+  .hero-panel,
+  .metric-card,
+  .landing-card,
+  .focus-links a {
+    border: 1px solid color-mix(in srgb, var(--darkgray) 10%, transparent);
+    border-radius: 1.5rem;
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--light) 95%, white) 0%, var(--light) 100%);
+    box-shadow: 0 18px 50px rgba(34, 29, 25, 0.06);
+  }
+
+  .hero-copy {
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    background:
+      radial-gradient(circle at top right, color-mix(in srgb, var(--tertiary) 28%, transparent) 0, transparent 32%),
+      linear-gradient(135deg, color-mix(in srgb, var(--secondary) 11%, var(--light)) 0%, var(--light) 62%);
+  }
+
+  .hero-copy::after {
+    content: "";
+    position: absolute;
+    inset: auto -3.5rem -3.5rem auto;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--secondary) 16%, transparent);
+    filter: blur(12px);
+  }
+
+  .eyebrow,
+  .section-kicker,
+  .card-kicker,
+  .panel-label {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--secondary);
+  }
+
+  .hero-copy > h1 {
+    margin: 0.85rem 0 1rem 0;
+    font-size: clamp(2.4rem, 4vw, 4.2rem);
+    line-height: 0.98;
+    max-width: 10ch;
+    text-wrap: balance;
+  }
+
+  .lede {
+    max-width: 42rem;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--darkgray);
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .landing-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.9rem;
+    padding: 0.7rem 1.05rem;
+    border-radius: 999px;
+    font-weight: 700;
+    transition:
+      transform 0.18s ease,
+      background-color 0.18s ease,
+      color 0.18s ease;
+  }
+
+  .landing-button:hover,
+  .landing-card:hover,
+  .focus-links a:hover {
+    transform: translateY(-2px);
+  }
+
+  .landing-button.primary {
+    background: var(--dark);
+    color: var(--light);
+  }
+
+  .landing-button.primary:hover {
+    color: var(--light);
+    background: color-mix(in srgb, var(--dark) 88%, var(--secondary));
+  }
+
+  .landing-button.secondary {
+    background: transparent;
+    color: var(--dark);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--darkgray) 12%, transparent);
+  }
+
+  .landing-button.secondary:hover {
+    color: var(--dark);
+    background: color-mix(in srgb, var(--secondary) 10%, transparent);
+  }
+
+  .hero-panel {
+    padding: 1.4rem;
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--secondary) 10%, var(--light)) 0%, var(--light) 100%);
+  }
+
+  .panel-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .panel-list li {
+    display: grid;
+    gap: 0.2rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid color-mix(in srgb, var(--darkgray) 12%, transparent);
+  }
+
+  .panel-list li:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .panel-list span {
+    color: var(--darkgray);
+  }
+
+  .landing-metrics,
+  .card-grid,
+  .focus-links {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .landing-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .metric-card {
+    padding: 1.2rem;
+  }
+
+  .metric-card p {
+    margin-bottom: 0;
+  }
+
+  .metric-value {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--dark);
+  }
+
+  .landing-section {
+    display: grid;
+    gap: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .landing-section.compact {
+    gap: 0.85rem;
+  }
+
+  .section-copy {
+    max-width: 48rem;
+  }
+
+  .section-copy h2 {
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+    font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+  }
+
+  .section-copy p {
+    margin: 0;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .landing-card {
+    display: grid;
+    gap: 0.7rem;
+    min-height: 12rem;
+    padding: 1.3rem;
+    color: inherit;
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease;
+  }
+
+  .landing-card strong {
+    color: var(--dark);
+    font-size: 1.08rem;
+    line-height: 1.35;
+  }
+
+  .landing-card p {
+    margin: 0;
+    color: var(--darkgray);
+  }
+
+  .focus-links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .focus-links a {
+    display: block;
+    padding: 1rem 1.1rem;
+    color: var(--dark);
+    font-weight: 700;
+  }
+
+  @media all and (max-width: 1100px) {
+    .hero-grid,
+    .landing-metrics,
+    .card-grid,
+    .focus-links {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-copy > h1 {
+      max-width: 100%;
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    .hero-copy,
+    .hero-panel,
+    .metric-card,
+    .landing-card {
+      border-radius: 1.15rem;
+    }
+
+    .hero-copy {
+      padding: 1.35rem;
+    }
+
+    .hero-panel,
+    .metric-card,
+    .landing-card,
+    .focus-links a {
+      padding: 1rem;
+    }
+
+    .hero-copy > h1 {
+      font-size: 2.2rem;
+    }
+
+    .lede {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  }
+}

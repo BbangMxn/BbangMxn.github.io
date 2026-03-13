@@ -21,4 +21,4 @@ tags:
 ## 관련 문서
 
 - [[wiki/obsidian-workflow|Obsidian + Quartz 작성 흐름]]
-- [[journal/2026-03-13-first-setup|첫 세팅 로그]]
+- [[research/2026-03-13-first-setup|첫 세팅 로그]]
