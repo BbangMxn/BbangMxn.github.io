@@ -14,7 +14,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
         <span class="brand-copy">
           <span class="brand-kicker">Portfolio</span>
           <span class="brand-title">{title}</span>
-          <span class="brand-subtitle">Projects / Research / Notes</span>
+          <span class="brand-subtitle">Projects / Research / Wiki / Diary</span>
         </span>
       </a>
     </div>
