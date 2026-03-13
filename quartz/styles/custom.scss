@@ -969,6 +969,72 @@ body[data-slug="index"] {
   display: none;
 }
 
+.center > article.research-note {
+  display: grid;
+  gap: 1.2rem;
+  max-width: 46rem;
+  padding-bottom: 1rem;
+}
+
+.center > article.research-note + hr {
+  display: none;
+}
+
+.research-note h2 {
+  margin: 0.35rem 0 0;
+  padding-top: 1rem;
+  font-size: clamp(1.2rem, 2.1vw, 1.55rem);
+  line-height: 1.2;
+  border-top: 1px solid color-mix(in srgb, var(--darkgray) 10%, transparent);
+}
+
+.research-note h3 {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.research-note p,
+.research-note li {
+  line-height: 1.82;
+}
+
+.research-note ul,
+.research-note ol {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.research-note li + li {
+  margin-top: 0.35rem;
+}
+
+.research-note blockquote {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  color: var(--darkgray);
+  border-left: 2px solid color-mix(in srgb, var(--secondary) 35%, transparent);
+  background: color-mix(in srgb, var(--lightgray) 45%, transparent);
+}
+
+.research-note table {
+  display: block;
+  width: 100%;
+  margin: 0.25rem 0;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.research-note th,
+.research-note td {
+  min-width: 7.5rem;
+  vertical-align: top;
+}
+
+.research-note pre {
+  overflow-x: auto;
+}
+
 @media all and (max-width: 800px) {
   .sidebar.left .page-title .brand-card {
     gap: 0.65rem;
@@ -1034,6 +1100,14 @@ body[data-slug="index"] {
   .folder-hub .hub-item > a,
   .folder-hub .hub-note {
     padding: 0.85rem 0;
+  }
+
+  .center > article.research-note {
+    gap: 1rem;
+  }
+
+  .research-note h2 {
+    padding-top: 0.85rem;
   }
 
   .section-dashboard .hero-grid {

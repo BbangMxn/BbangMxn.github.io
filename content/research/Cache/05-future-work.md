@@ -5,6 +5,8 @@ tags:
   - cache
   - ai
   - iot
+cssclasses:
+  - research-note
 ---
 
 ## 문제의식

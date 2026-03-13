@@ -4,6 +4,8 @@ tags:
   - research
   - cache
   - analysis
+cssclasses:
+  - research-note
 ---
 
 ## 왜 평균 히트율 차이는 작은가

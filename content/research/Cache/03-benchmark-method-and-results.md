@@ -4,6 +4,8 @@ tags:
   - research
   - cache
   - benchmark
+cssclasses:
+  - research-note
 ---
 
 ## 실험 개요

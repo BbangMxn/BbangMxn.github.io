@@ -4,6 +4,8 @@ tags:
   - research
   - cache
   - architecture
+cssclasses:
+  - research-note
 ---
 
 ## 캐시의 기본 분류

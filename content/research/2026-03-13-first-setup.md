@@ -5,6 +5,8 @@ tags:
   - setup
   - quartz
   - github-pages
+cssclasses:
+  - research-note
 ---
 
 GitHub Pages 사용자 사이트 저장소를 Quartz 기반의 위키형 블로그 구조로 전환했다.
