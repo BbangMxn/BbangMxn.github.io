@@ -7,13 +7,14 @@ import { Root as HTMLRoot } from "hast"
 import { MarkdownContent, ProcessedContent } from "../plugins/vfile"
 import { PerfTimer } from "../util/perf"
 import { read } from "to-vfile"
-import { FilePath, QUARTZ, slugifyFilePath } from "../util/path"
+import { FilePath, QUARTZ } from "../util/path"
 import path from "path"
 import workerpool, { Promise as WorkerPromise } from "workerpool"
 import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
 import { BuildCtx, WorkerSerializableBuildCtx } from "../util/ctx"
 import { styleText } from "util"
+import { resolvePublishedSlug } from "../util/folderIndexAlias"
 
 export type QuartzMdProcessor = Processor<MDRoot, MDRoot, MDRoot>
 export type QuartzHtmlProcessor = Processor<undefined, MDRoot, HTMLRoot>
@@ -102,7 +103,7 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         // base data properties that plugins may use
         file.data.filePath = file.path as FilePath
         file.data.relativePath = path.posix.relative(argv.directory, file.path) as FilePath
-        file.data.slug = slugifyFilePath(file.data.relativePath)
+        file.data.slug = resolvePublishedSlug(file.data.relativePath, ctx.allFiles)
 
         const ast = processor.parse(file)
         const newAst = await processor.run(ast, file)
