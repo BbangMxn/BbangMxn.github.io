@@ -1,0 +1,10 @@
+:root {
+  --nomos-line: color-mix(in srgb, var(--dark) 8%, transparent);
+  --nomos-line-strong: color-mix(in srgb, var(--dark) 13%, transparent);
+  --nomos-surface: color-mix(in srgb, white 42%, var(--light));
+  --nomos-surface-soft: color-mix(in srgb, white 22%, var(--light));
+  --nomos-surface-muted: color-mix(in srgb, var(--lightgray) 10%, var(--light));
+  --nomos-hover: color-mix(in srgb, var(--secondary) 5%, transparent);
+  --nomos-hover-strong: color-mix(in srgb, var(--secondary) 9%, transparent);
+  --nomos-shadow: 0 1px 0 rgba(17, 17, 17, 0.02), 0 6px 18px rgba(17, 17, 17, 0.025);
+}
