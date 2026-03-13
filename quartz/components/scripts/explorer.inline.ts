@@ -104,15 +104,27 @@ function toggleFolder(evt: MouseEvent) {
 }
 
 function createFileNode(currentSlug: FullSlug, node: FileTrieNode): HTMLLIElement {
+  return createLinkNode(currentSlug, node.slug, node.displayName)
+}
+
+function createLinkNode(
+  currentSlug: FullSlug,
+  targetSlug: FullSlug,
+  label: string,
+  classNames: string[] = [],
+): HTMLLIElement {
   const template = document.getElementById("template-file") as HTMLTemplateElement
   const clone = template.content.cloneNode(true) as DocumentFragment
   const li = clone.querySelector("li") as HTMLLIElement
   const a = li.querySelector("a") as HTMLAnchorElement
-  a.href = resolveRelative(currentSlug, node.slug)
-  a.dataset.for = node.slug
-  a.textContent = node.displayName
+  a.href = resolveRelative(currentSlug, targetSlug)
+  a.dataset.for = targetSlug
+  a.textContent = label
+  if (classNames.length > 0) {
+    a.classList.add(...classNames)
+  }
 
-  if (currentSlug === node.slug) {
+  if (currentSlug === targetSlug) {
     a.classList.add("active")
   }
 
@@ -135,13 +147,14 @@ function createFolderNode(
   const folderPath = node.slug
   folderContainer.dataset.folderpath = folderPath
   const isLeafFolder = node.children.length === 0
+  const hasOverviewPage = node.data !== null
 
   if (isLeafFolder) {
     li.classList.add("folder-leaf-item")
     folderContainer.classList.add("folder-leaf")
   }
 
-  if (currentSlug === folderPath) {
+  if (currentSlug === folderPath && !hasOverviewPage) {
     folderContainer.classList.add("active")
   }
 
@@ -172,6 +185,10 @@ function createFolderNode(
 
   if (!isCollapsed || folderIsPrefixOfCurrentSlug) {
     folderOuter.classList.add("open")
+  }
+
+  if (hasOverviewPage) {
+    ul.appendChild(createLinkNode(currentSlug, folderPath, "Overview", ["folder-overview"]))
   }
 
   for (const child of node.children) {
