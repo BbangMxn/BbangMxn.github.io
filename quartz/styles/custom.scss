@@ -1,5 +1,216 @@
 @use "./base.scss";
 
+.sidebar.left {
+  gap: 0.95rem;
+}
+
+.sidebar.left .page-title {
+  margin-bottom: 0;
+}
+
+.sidebar.left .page-title .brand-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--darkgray) 12%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--light) 96%, white) 0%, var(--light) 100%);
+  box-shadow: 0 12px 30px rgba(34, 29, 25, 0.06);
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.sidebar.left .page-title .brand-card:hover {
+  border-color: color-mix(in srgb, var(--secondary) 22%, transparent);
+}
+
+.sidebar.left .page-title .brand-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.95rem;
+  object-fit: cover;
+  box-shadow: 0 10px 22px rgba(34, 29, 25, 0.12);
+}
+
+.sidebar.left .page-title .brand-copy {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.sidebar.left .page-title .brand-kicker {
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.sidebar.left .page-title .brand-title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  line-height: 1.05;
+  color: var(--dark);
+}
+
+.sidebar.left > .flex-component {
+  gap: 0.65rem !important;
+  padding: 0.45rem;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--darkgray) 10%, transparent);
+  background: color-mix(in srgb, var(--light) 94%, transparent);
+}
+
+.sidebar.left .search {
+  max-width: none;
+  width: 100%;
+}
+
+.sidebar.left .search > .search-button {
+  height: 2.75rem;
+  padding-right: 1rem;
+  border-radius: 999px;
+  border-color: color-mix(in srgb, var(--darkgray) 14%, transparent);
+  background: color-mix(in srgb, var(--light) 98%, transparent);
+  transition:
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.sidebar.left .search > .search-button:hover {
+  border-color: color-mix(in srgb, var(--secondary) 35%, transparent);
+  background: color-mix(in srgb, var(--secondary) 8%, var(--light));
+}
+
+.sidebar.left .search > .search-button > p {
+  color: var(--darkgray);
+  font-weight: 600;
+}
+
+.sidebar.left .darkmode,
+.sidebar.left .readermode {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--darkgray) 14%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--light) 96%, white) 0%, var(--light) 100%);
+  color: var(--darkgray);
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.sidebar.left .darkmode:hover,
+.sidebar.left .readermode:hover {
+  border-color: color-mix(in srgb, var(--secondary) 36%, transparent);
+  color: var(--secondary);
+}
+
+.sidebar.left .explorer {
+  padding: 0.8rem;
+  border-radius: 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--darkgray) 10%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--secondary) 4%, var(--light)) 0%, var(--light) 100%);
+  box-shadow: 0 12px 32px rgba(34, 29, 25, 0.05);
+}
+
+.sidebar.left .explorer button.desktop-explorer {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.15rem 0.1rem 0.55rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--darkgray) 10%, transparent);
+}
+
+.sidebar.left .explorer button.desktop-explorer h2 {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.sidebar.left .explorer .fold {
+  margin-left: 0;
+}
+
+.sidebar.left .explorer-content {
+  margin-top: 0.7rem;
+  padding-right: 0.15rem;
+}
+
+.sidebar.left .explorer-content ul li > a,
+.sidebar.left .folder-container > div > a,
+.sidebar.left .folder-container > div > button {
+  width: 100%;
+  border-radius: 0.85rem;
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    opacity 0.18s ease,
+    transform 0.18s ease;
+}
+
+.sidebar.left .explorer-content ul li > a {
+  display: block;
+  padding: 0.38rem 0.6rem;
+}
+
+.sidebar.left .folder-container {
+  gap: 0.15rem;
+  border-radius: 0.9rem;
+}
+
+.sidebar.left .folder-container > div {
+  flex: 1;
+}
+
+.sidebar.left .folder-container > div > a,
+.sidebar.left .folder-container > div > button {
+  display: flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.24rem 0.45rem;
+}
+
+.sidebar.left .explorer-content ul li > a:hover,
+.sidebar.left .folder-container > div > a:hover,
+.sidebar.left .folder-container > div > button:hover,
+.sidebar.left .folder-container.active {
+  background: color-mix(in srgb, var(--secondary) 10%, transparent);
+}
+
+.sidebar.left .explorer-content ul li > a:hover,
+.sidebar.left .folder-container > div > a:hover,
+.sidebar.left .folder-container > div > button:hover {
+  color: var(--dark);
+  opacity: 1;
+}
+
+.sidebar.left .explorer-content ul li > a.active {
+  opacity: 1;
+  color: var(--secondary);
+  font-weight: 700;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--secondary) 14%, transparent) 0%, transparent 100%);
+}
+
+.sidebar.left .folder-outer > ul {
+  margin-left: 0.35rem;
+  padding-left: 0.95rem;
+  border-left: 1px solid color-mix(in srgb, var(--darkgray) 14%, transparent);
+}
+
+.sidebar.left .folder-icon {
+  margin-right: 0.1rem;
+}
+
 body[data-slug="index"] {
   .page-header .content-meta,
   .page-header > .popover-hint > h1 {
@@ -294,6 +505,27 @@ body[data-slug="index"] {
   }
 
   @media all and (max-width: 800px) {
+    .sidebar.left .page-title .brand-card {
+      gap: 0.75rem;
+      padding: 0.8rem 0.85rem;
+      border-radius: 1rem;
+    }
+
+    .sidebar.left .page-title .brand-avatar {
+      width: 2.65rem;
+      height: 2.65rem;
+      border-radius: 0.85rem;
+    }
+
+    .sidebar.left .page-title .brand-kicker {
+      letter-spacing: 0.12em;
+    }
+
+    .sidebar.left > .flex-component,
+    .sidebar.left .explorer {
+      border-radius: 1rem;
+    }
+
     .hero-copy,
     .hero-panel,
     .metric-card,

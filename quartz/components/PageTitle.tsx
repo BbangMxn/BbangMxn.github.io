@@ -8,7 +8,17 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}>{title}</a>
+      <a href={baseDir} class="brand-card">
+        <img
+          class="brand-avatar"
+          src={`${baseDir}/static/profile.png`}
+          alt={`${title} profile`}
+        />
+        <span class="brand-copy">
+          <span class="brand-kicker">Obsidian Publishing Hub</span>
+          <span class="brand-title">{title}</span>
+        </span>
+      </a>
     </h2>
   )
 }
