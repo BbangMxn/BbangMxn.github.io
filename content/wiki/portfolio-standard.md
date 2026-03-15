@@ -85,6 +85,25 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Naming</p>
+  <h3>파일 이름 규칙</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Folder Hub</span>
+        <p>폴더의 공식 진입 문서는 `index.md`를 사용합니다. 허브 역할과 경로를 동시에 분명하게 만들기 위한 기본 규칙입니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Start Document</span>
+        <p>허브가 이미 있는 폴더 안에서 읽는 순서와 핵심 결과를 먼저 안내하는 문서는 `start-here.md`를 사용합니다. 숫자 접두사 기반의 예전 시작 문서 이름은 더 이상 쓰지 않습니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Writing</p>
   <h3>문장 규칙</h3>
   <ul class="hub-list">

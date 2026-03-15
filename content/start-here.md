@@ -5,29 +5,27 @@ tags:
   - workflow
 ---
 
-이 사이트는 `content/` 폴더를 중심으로 관리합니다. 로컬에서는 Obsidian vault처럼 열고, 웹에서는 Quartz가 이를 위키 형태로 렌더링합니다.
+이 사이트는 처음 보는 사람이 짧은 시간 안에 전체 구조를 파악할 수 있도록 나눠져 있습니다. 가장 빠른 읽기 순서는 `Projects -> Research -> Wiki -> Diary`입니다.
 
-## 권장 흐름
+## 권장 읽기 순서
 
-1. `content/` 안에서 Markdown 문서를 작성합니다.
-2. 문서 연결은 `[[문서명]]` 또는 `[[경로/문서명|표시 이름]]`으로 만듭니다.
-3. 로컬 미리보기는 `npm run dev`로 확인합니다.
-4. 완료되면 커밋하고 `main`에 푸시합니다.
+1. [[projects/index|Projects]]에서 대표 프로젝트를 먼저 읽습니다.
+2. 판단의 배경이나 실험 근거가 궁금하면 [[research/index|Research]]로 이어서 봅니다.
+3. 문서 규격과 공통 기준은 [[wiki/index|Wiki]]에서 확인합니다.
+4. 공개 가능한 짧은 기록은 [[Diary/index|Diary]]에서 봅니다.
 
-## Obsidian 연결 기준
+## 섹션 역할
 
-- 폴더 구조는 되도록 유지합니다.
-- 문서 링크는 `[[위키링크]]`를 우선 사용합니다.
-- 초안은 `research/`에서 시작하고, 정리된 문서는 `wiki/` 또는 `projects/`로 연결합니다.
-- 허브 페이지는 기본적으로 `index.md`를 사용하고, 예전 구조가 남아 있는 경우만 `00 index.md`를 유지합니다.
-- 프로젝트 문서는 [[wiki/portfolio-standard|Portfolio Standard]] 기준에 맞춰 같은 형식으로 정리합니다.
+- [[projects/index|Projects]]: 문제 재정의와 구조 선택을 설득형 문서로 정리한 결과물
+- [[research/index|Research]]: 아직 결론이 나지 않은 질문, 실험, 설계 검토의 입구
+- [[wiki/index|Wiki]]: 오래 유지할 기준 문서와 반복 참조용 정리
+- [[Diary/index|Diary]]: 공개 가능한 짧은 기록과 관찰
 
-## 폴더 규칙
+## 파일 이름 규칙
 
-- [[projects/index|projects]]: 결과물, 사례, 포트폴리오용 정리
-- [[research/index|research]]: 실험 메모, 로그, 비교 기록
-- [[wiki/index|wiki]]: 개념 정리, 트러블슈팅, 치트시트
-- [[Diary/00 index|Diary]]: 공개 가능한 짧은 기록과 일상 메모
+- 폴더 허브는 `index.md`를 기본으로 사용합니다.
+- 허브가 이미 있는 폴더 안의 시작 문서는 `start-here.md`로 통일합니다.
+- 프로젝트 루트 문서는 [[wiki/portfolio-standard|Portfolio Standard]] 기준으로 같은 주장 구조를 유지합니다.
 
 ## 메타데이터 예시
 

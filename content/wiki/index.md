@@ -8,10 +8,10 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Wiki</p>
-  <h2>오래 유지할 기준 문서입니다</h2>
+  <h2>오래 남길 기준과 공통 언어를 모읍니다</h2>
   <p class="hub-lede">
-    반복해서 보는 개념과 운영 기준을 모아둡니다.
-    Research에서 정리된 내용을 더 안정적인 형태로 남깁니다.
+    반복해서 참고할 개념, 문서 규격, 운영 기준을 안정적인 형태로 남기는 섹션입니다.
+    Projects와 Research를 읽다가 다시 확인해야 하는 기준 문서는 여기로 모읍니다.
   </p>
 </div>
 
@@ -37,7 +37,7 @@ cssclasses:
       <a href="./portfolio-standard">
         <span class="hub-label">Standard</span>
         <strong>Portfolio Standard</strong>
-        <p>프로젝트를 어떤 형식으로 정리하고, GitHub 저장소를 어떤 기준으로 가져올지 정한 규격 문서입니다.</p>
+        <p>프로젝트를 어떤 형식으로 꾸밀지가 아니라, 어떤 판단을 어떤 근거로 설득할지 정한 공개 포트폴리오 기준입니다.</p>
       </a>
     </li>
   </ul>

@@ -11,9 +11,10 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Research / Java Object</p>
-  <h2>Java 객체와 JVM 비용 구조를 봅니다</h2>
+  <h2>객체 모델이 만드는 JVM 비용을 추적합니다</h2>
   <p class="hub-lede">
-    JVM 구조 이해에서 시작해 객체 오버헤드와 설계 방향까지 한 흐름으로 정리합니다.
+    이 폴더는 JVM 구조 이해에서 시작해 객체 헤더, 참조 추적, 메모리 오버헤드,
+    그리고 대안 설계 방향까지 한 흐름으로 읽을 수 있게 구성한 연구 허브입니다.
   </p>
 </div>
 
@@ -22,10 +23,10 @@ cssclasses:
   <h3>먼저 읽을 문서</h3>
   <ul class="hub-list">
     <li class="hub-item">
-      <a href="./00 Index">
+      <a href="./start-here">
         <span class="hub-label">Index</span>
-        <strong>00 Index</strong>
-        <p>전체 구조와 읽는 순서를 먼저 확인하는 시작 문서입니다.</p>
+        <strong>Start Here</strong>
+        <p>왜 이 연구를 했는지, 읽는 순서가 어떻게 되는지, 먼저 잡아둘 핵심 관찰이 무엇인지 정리한 시작 문서입니다.</p>
       </a>
     </li>
     <li class="hub-item">
@@ -62,6 +63,19 @@ cssclasses:
         <strong>객체 오버헤드 실험</strong>
         <p>객체 헤더와 배열 참조 구조가 만드는 메모리 비용을 실험합니다.</p>
       </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Key Result</p>
+  <h3>이 폴더에서 먼저 확인할 것</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Observed</span>
+        <p>핵심은 Java의 객체 추상화가 무료가 아니라는 점입니다. 헤더, 정렬, 참조 기반 배열 구조가 실제 데이터보다 큰 오버헤드를 만들 수 있다는 관찰을 실험까지 연결해 보여줍니다.</p>
+      </div>
     </li>
   </ul>
 </section>

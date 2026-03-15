@@ -105,12 +105,12 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Next Candidates</p>
-  <h3>다음 적용 후보</h3>
+  <h3>다음 정리 범위</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Later</span>
-        <p>이번 단계에서는 Nazgul만 완성형 기준본으로 재작성하고, Worker와 BagInCoffee는 이후 같은 설득형 규격으로 정리할 후보로 남깁니다.</p>
+        <p>루트 프로젝트 페이지는 같은 설득형 구조로 맞췄고, 다음 단계에서는 하위 설계 문서와 연구 연결 문서까지 같은 공개 기준으로 정리할 예정입니다.</p>
       </div>
     </li>
   </ul>

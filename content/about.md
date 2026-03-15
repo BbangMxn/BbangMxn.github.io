@@ -6,30 +6,23 @@ tags:
   - backend
 ---
 
-실시간 데이터 파이프라인과 캐싱 아키텍처에 관심을 두고 작업하는 백엔드 개발자 이문규의 작업 공간입니다. Obsidian에 쌓인 메모를 Quartz로 퍼블리시해, 연구 노트와 포트폴리오를 같은 구조 안에서 관리합니다.
+이 사이트는 자기소개 페이지가 아니라, 어떤 문제를 어떤 방식으로 다루는지 공개적으로 설명하는 작업 공간입니다. 결과물은 `Projects`, 아직 결론이 나지 않은 질문은 `Research`, 오래 유지할 기준은 `Wiki`, 공개 가능한 짧은 기록은 `Diary`에 두는 방식으로 운영합니다.
 
-## 지금 집중하는 것
+## 공개 기준
 
-- 3-Tier 캐싱 구조와 무효화 전략 정리
-- Java 런타임 구조와 JVM 한계 분석
-- Obsidian 기반 문서 워크플로를 GitHub Pages에 맞게 다듬기
+- 프로젝트 문서는 무엇을 만들었는지보다 어떤 문제를 어떻게 재정의했고 무엇을 근거로 판단했는지가 먼저 보여야 합니다.
+- 연구 문서는 아직 정리 중이어도 괜찮지만, 왜 중요한지와 어디서부터 읽어야 하는지는 첫 화면에서 설명해야 합니다.
+- 위키 문서는 반복해서 참고할 기준과 개념만 남기고, 저장소 목록이나 내부 메모는 공개본에서 제외합니다.
 
-## 이 사이트를 쓰는 방식
+## 읽는 방법
 
-- 로컬에서는 `content/`를 Obsidian vault처럼 연다.
-- 메모는 우선 `research/`에 빠르게 쌓고, 충분히 정리되면 `wiki/`나 `projects/`로 옮긴다.
-- 퍼블리시는 Quartz가 맡고, GitHub Actions가 GitHub Pages 배포를 처리한다.
+1. [[projects/index|Projects]]에서 대표 사례를 먼저 봅니다.
+2. 판단의 근거가 더 궁금하면 [[research/index|Research]]로 내려가 연구 흐름을 읽습니다.
+3. 공통 기준과 문서 규격은 [[wiki/index|Wiki]]에서 확인합니다.
+4. 공개 가능한 짧은 기록은 [[Diary/index|Diary]]에서 봅니다.
 
-## 섹션 안내
+## 공개하지 않는 것
 
-- [[projects/index|Projects]]: 완성도 있는 결과물과 구조 선택의 이유
-- [[research/index|Research]]: 실험 중인 문서, 비교, 설계 초안
-- [[wiki/index|Wiki]]: 오래 유지할 개념 정리와 운영 메모
-- [[Diary/index|Diary]]: 공개 가능한 짧은 기록과 메모
-
-## 주요 문서
-
-- [[research/Cache|Cache Research]]
-- [[research/Java|Java Object Research]]
-- [[projects/worker|Worker]]
-- [[projects/BagInCoffee|BagInCoffee]]
+- 개인 초안, 비공개 메모, 로컬 경로 같은 내부 흔적은 공개본에서 제거합니다.
+- 내용이 비어 있거나 정리되지 않은 문서는 노출하지 않습니다.
+- 설명 가능한 판단이 없는 저장소는 포트폴리오에 가져오지 않습니다.
