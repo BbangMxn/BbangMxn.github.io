@@ -11,7 +11,7 @@ cssclasses:
   <p class="hub-kicker">Projects</p>
   <h2>만든 것을 사례로 정리합니다</h2>
   <p class="hub-lede">
-    문제, 구조, 결과를 한 줄기로 남기는 섹션입니다.
+    문제, 구조, 결과를 같은 형식으로 남기는 포트폴리오 섹션입니다.
   </p>
 </div>
 
@@ -71,6 +71,34 @@ cssclasses:
         <span class="hub-label">Automation Line</span>
         <p><a href="./worker">Worker</a>는 개인 업무 도구를 AI Agent와 함께 다시 설계해보는 별도 실험 축입니다.</p>
       </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Imported</p>
+  <h3>GitHub에서 추가로 가져온 프로젝트</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./smartfactory">
+        <span class="hub-label">IoT Platform</span>
+        <strong>Smart Factory</strong>
+        <p>Go, TimescaleDB, Redis를 기반으로 한 스마트 팩토리 모니터링 연구 및 구현입니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Standard</p>
+  <h3>정리 기준</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="../wiki/portfolio-standard">
+        <span class="hub-label">Portfolio</span>
+        <strong>Portfolio Standard</strong>
+        <p>프로젝트를 어떤 형식으로 정리하고, 어떤 저장소를 가져올지에 대한 공통 규격은 Wiki 문서로 유지합니다.</p>
+      </a>
     </li>
   </ul>
 </section>

@@ -33,5 +33,12 @@ cssclasses:
         <p>이 사이트를 왜 만들었는지와 문서를 어떤 기준으로 배치하는지는 About에서 설명합니다.</p>
       </a>
     </li>
+    <li class="hub-item">
+      <a href="./portfolio-standard">
+        <span class="hub-label">Standard</span>
+        <strong>Portfolio Standard</strong>
+        <p>프로젝트를 어떤 형식으로 정리하고, GitHub 저장소를 어떤 기준으로 가져올지 정한 규격 문서입니다.</p>
+      </a>
+    </li>
   </ul>
 </section>
