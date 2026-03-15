@@ -10,106 +10,75 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Wiki / Standard</p>
-  <h2>포트폴리오 문서를 같은 형식으로 읽히게 만드는 기준</h2>
+  <h2>포트폴리오 문서를 정보 정리가 아니라 판단을 설득하는 글로 만드는 기준</h2>
   <p class="hub-lede">
-    프로젝트를 많이 늘리는 것보다, 각 문서가 같은 질문에 답하게 만드는 편이 더 중요합니다. 이 문서는 홈, Projects, Research, Wiki가 어떤 역할을 갖고 프로젝트 페이지가 어떤 구조를 따라야 하는지 정리합니다.
+    이 문서는 프로젝트를 예쁘게 정리하는 규칙이 아닙니다. 채용담당자와 실무 엔지니어가 모두 읽을 수 있게, 내가 어떤 문제를 어떻게 재정의했고 무엇을 근거로 그 판단을 내렸는지를 설득하기 위한 글 규격입니다.
   </p>
 </div>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Sections</p>
-  <h3>섹션 역할</h3>
+  <p class="hub-section-kicker">Audience</p>
+  <h3>누구를 설득하는 문서인가</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Home</span>
-        <p>방문자가 무엇을 만들었는지 빠르게 파악하는 입구입니다. 대표 프로젝트 2~3개와 사이트 읽는 순서만 보여줍니다.</p>
+        <span class="hub-label">Mixed Reader</span>
+        <p>독자는 채용담당자와 실무 엔지니어가 섞여 있다고 가정합니다. 그래서 문서는 짧게 읽어도 방향이 보여야 하고, 조금 더 읽으면 판단의 근거까지 확인할 수 있어야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Projects</span>
-        <p>문제, 구조, 결과가 정리된 최종 사례만 둡니다. 저장소가 있다고 바로 올리지 않고, 설명 가능한 것만 넣습니다.</p>
+        <span class="hub-label">30 Seconds</span>
+        <p>첫 화면 30초 안에는 무엇을 만들었는지가 아니라 어떤 문제를 어떻게 다시 정의했는지가 보여야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Research</span>
-        <p>실험 중인 구조와 비교, 아이디어, 설계 초안을 쌓는 공간입니다. 충분히 설명 가능해지면 Projects나 Wiki로 이동합니다.</p>
-      </div>
-    </li>
-    <li class="hub-item">
-      <div class="hub-note">
-        <span class="hub-label">Wiki</span>
-        <p>오래 유지할 기준 문서만 둡니다. 반복해서 참조할 규칙, 개념, 운영 방식이 여기에 들어갑니다.</p>
+        <span class="hub-label">3 Minutes</span>
+        <p>조금 더 읽는 독자에게는 왜 그런 구조를 택했고 무엇을 버렸는지, 무엇이 실제로 검증됐는지까지 이어서 설명해야 합니다.</p>
       </div>
     </li>
   </ul>
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Project Page</p>
-  <h3>프로젝트 페이지 기본 구조</h3>
+  <p class="hub-section-kicker">Structure</p>
+  <h3>프로젝트 페이지의 주장 구조</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Header</span>
-        <p>한 줄로 프로젝트 정체성을 말합니다. 무엇을 만들었는지보다 어떤 문제를 어떤 방식으로 다뤘는지가 먼저 보여야 합니다.</p>
+        <p>프로젝트 정체성이 아니라 핵심 주장 한 문장으로 시작합니다. 방문자는 여기서 이미 이 문서의 결론을 잡아야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Overview</span>
-        <p><strong>Goal</strong>, <strong>Role</strong>, <strong>State</strong> 세 개의 카드로 프로젝트의 범위와 현재성을 먼저 설명합니다.</p>
+        <span class="hub-label">Why This Project</span>
+        <p>왜 이 문제가 중요했고, 기존 접근으로는 왜 부족했는지를 먼저 설명합니다. 시작 배경보다 문제 재정의가 우선입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Source</span>
-        <p>GitHub 원본 위치와 관련 프로젝트를 연결합니다. 저장소가 비어 있거나 설명이 부족하면 아직 가져오지 않습니다.</p>
+        <span class="hub-label">Key Decisions</span>
+        <p>무엇을 구현했는가보다 무엇을 판단했는가를 적습니다. 핵심 판단은 3개 정도로 제한하고, 각 판단에는 반드시 이유가 붙어야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Built</span>
-        <p>기능 목록이 아니라 핵심 구현 축 3개 정도만 적습니다. 사용자가 이 프로젝트의 구조를 이해할 수 있을 정도면 충분합니다.</p>
+        <span class="hub-label">What Was Proven</span>
+        <p>실제로 연결된 구조, 관측된 사실, 검증 범위를 적습니다. 수치가 없어도 되지만 검증됐다는 말만 하고 끝내면 안 됩니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Results</span>
-        <p>가능하면 관측값 하나와 배운 점 하나를 남깁니다. 수치가 없어도, 무엇이 검증됐고 무엇이 남았는지는 분명히 적습니다.</p>
+        <span class="hub-label">Limits and Next</span>
+        <p>아직 안 되는 것과 다음 판단 지점을 숨기지 않습니다. 설득력은 완성도보다도 경계 인식에서 나옵니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Structure</span>
-        <p>저장소 구조나 하위 모듈이 있다면 코드 블록 하나로 끝냅니다. 세부 구현은 하위 문서에서 다룹니다.</p>
-      </div>
-    </li>
-  </ul>
-</section>
-
-<section class="hub-section">
-  <p class="hub-section-kicker">Import Rules</p>
-  <h3>GitHub 저장소를 가져오는 기준</h3>
-  <ul class="hub-list">
-    <li class="hub-item">
-      <div class="hub-note">
-        <span class="hub-label">Include</span>
-        <p>README가 있고, 역할과 결과를 설명할 수 있으며, 현재 포트폴리오 서사와 연결되는 공개 저장소만 가져옵니다.</p>
-      </div>
-    </li>
-    <li class="hub-item">
-      <div class="hub-note">
-        <span class="hub-label">Hold</span>
-        <p>빈 저장소, 메모만 있는 저장소, 아직 방향이 불명확한 저장소는 보류합니다. DataPipline 같은 경우가 여기에 해당합니다.</p>
-      </div>
-    </li>
-    <li class="hub-item">
-      <div class="hub-note">
-        <span class="hub-label">Exclude</span>
-        <p>현재 포트폴리오 메시지와 맞지 않거나, 지금 보여주고 싶지 않은 저장소는 허브에 올리지 않습니다. 예시는 그때그때 제외합니다.</p>
+        <p>저장소 구조는 끝에 짧게 둡니다. 구조 설명이 본문 주장을 방해하면 안 되고, 세부 구현은 하위 문서로 넘깁니다.</p>
       </div>
     </li>
   </ul>
@@ -121,20 +90,107 @@ cssclasses:
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">One Line</span>
-        <p>첫 문장은 기술 이름 나열이 아니라 문제와 방향을 한 문장으로 요약합니다.</p>
+        <span class="hub-label">Do Not Start With Stack</span>
+        <p>첫 문단을 기술 스택으로 시작하지 않습니다. 독자는 도구 목록이 아니라 문제와 판단을 먼저 읽어야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Three Axes</span>
-        <p>각 프로젝트는 가능하면 문제 정의, 구조 선택, 결과 혹은 회고의 세 축으로 읽혀야 합니다.</p>
+        <span class="hub-label">Do Not Dump Features</span>
+        <p>기능 목록만 길게 나열하지 않습니다. 기능을 적을 때도 왜 그 기능 축이 중요했는지 함께 적습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Naming</span>
-        <p>프로젝트 루트 문서는 기본적으로 <code>index.md</code>를 사용하고, 하위 작업 문서만 번호를 붙입니다.</p>
+        <span class="hub-label">Do Not Oversell</span>
+        <p>과장된 표현을 쓰지 않습니다. 대신 무엇이 확인됐고 어디서부터는 아직 불안정한지 정확히 구분합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Show Discarded Paths</span>
+        <p>버린 선택지와 이유를 남깁니다. 좋은 포트폴리오는 정답만 적는 문서가 아니라 재판단 과정을 보여주는 문서입니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Evidence</p>
+  <h3>근거 규칙</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">At Least Two</span>
+        <p>각 대표 프로젝트는 최소 두 가지를 포함해야 합니다. 관측 사실, 검증 범위, 실패 혹은 한계 중에서 두 개 이상이 반드시 있어야 합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Qualitative First</span>
+        <p>수치가 없어도 괜찮지만, 구조가 어디까지 실제로 연결됐는지는 분명히 적어야 합니다. 모호한 성공 표현은 근거로 인정하지 않습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Observed Scope</span>
+        <p>검증을 적을 때는 환경, 질의, 흐름, 관측 범위를 함께 적습니다. 예를 들면 Nazgul의 로컬 Ollama 실험처럼 맥락이 붙어야 합니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Import</p>
+  <h3>GitHub 저장소를 가져오는 기준</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Include</span>
+        <p>README가 있다는 이유만으로는 충분하지 않습니다. 이 저장소가 어떤 판단을 보여주는지 설명할 수 있을 때만 포트폴리오에 가져옵니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Hold</span>
+        <p>빈 저장소, 메모만 있는 저장소, 아직 문제 정의가 없는 저장소는 보류합니다. DataPipline 같은 경우가 여기에 해당합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Exclude</span>
+        <p>현재 포트폴리오 메시지와 맞지 않거나 지금 보여주고 싶지 않은 저장소는 의도적으로 제외합니다. 포트폴리오는 저장소 목록이 아닙니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Example</p>
+  <h3>Nazgul 예시 문장</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Weak</span>
+        <p>Nazgul은 취미 기반 SNS에 RAG를 붙인 프로젝트입니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Why Weak</span>
+        <p>무엇을 붙였는지는 보이지만 왜 그 방향으로 문제를 다시 정의했는지, 어떤 판단이 있었는지가 드러나지 않습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Strong</span>
+        <p>Nazgul은 취미 SNS를 만드는 데서 멈추지 않고, 커뮤니티 문제를 개인화 RAG 연구 문제로 다시 정의한 프로젝트입니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Why Strong</span>
+        <p>단순 구현이 아니라 문제 재정의와 판단이 먼저 보이고, 이후 독자가 그 판단의 근거를 읽고 싶게 만듭니다.</p>
       </div>
     </li>
   </ul>

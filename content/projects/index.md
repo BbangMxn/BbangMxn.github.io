@@ -11,7 +11,7 @@ cssclasses:
   <p class="hub-kicker">Projects</p>
   <h2>만든 것을 사례로 정리합니다</h2>
   <p class="hub-lede">
-    문제, 구조, 결과를 같은 형식으로 남기는 포트폴리오 섹션입니다.
+    무엇을 만들었는지보다 어떤 문제를 어떻게 재정의했고 무엇을 근거로 판단했는지를 남기는 포트폴리오 섹션입니다.
   </p>
 </div>
 
@@ -37,7 +37,7 @@ cssclasses:
       <a href="./nazgul">
         <span class="hub-label">RAG Prototype</span>
         <strong>Nazgul</strong>
-        <p>취미 기반 SNS에서 출발해 개인화 RAG 구조를 검증하는 연구형 프로젝트입니다.</p>
+        <p>취미 SNS 문제를 개인화 RAG 연구 문제로 다시 정의한 프로젝트로, 연구형 설득 문서의 기준본입니다.</p>
       </a>
     </li>
     <li class="hub-item">
@@ -97,8 +97,21 @@ cssclasses:
       <a href="../wiki/portfolio-standard">
         <span class="hub-label">Portfolio</span>
         <strong>Portfolio Standard</strong>
-        <p>프로젝트를 어떤 형식으로 정리하고, 어떤 저장소를 가져올지에 대한 공통 규격은 Wiki 문서로 유지합니다.</p>
+        <p>프로젝트를 어떤 형식으로 정리할지가 아니라, 어떤 판단을 어떻게 설득할지에 대한 공통 기준은 Wiki 문서로 유지합니다.</p>
       </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Next Candidates</p>
+  <h3>다음 적용 후보</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Later</span>
+        <p>이번 단계에서는 Nazgul만 완성형 기준본으로 재작성하고, Worker와 BagInCoffee는 이후 같은 설득형 규격으로 정리할 후보로 남깁니다.</p>
+      </div>
     </li>
   </ul>
 </section>
