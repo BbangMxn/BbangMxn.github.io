@@ -54,6 +54,12 @@
   gap: 1rem;
 }
 
+.folder-hub .hub-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .folder-hub .hub-grid.single {
   grid-template-columns: minmax(0, 24rem);
 }
@@ -83,6 +89,58 @@
   margin: 0;
   max-width: 28ch;
   color: var(--darkgray);
+}
+
+.folder-hub .hub-proof-card {
+  display: grid;
+  gap: 0.72rem;
+  padding: 1rem;
+  border: 1px solid var(--nomos-line);
+  border-radius: 1rem;
+  background: var(--nomos-surface-soft);
+}
+
+.folder-hub .hub-proof-card strong {
+  max-width: none;
+  font-size: 1.02rem;
+  line-height: 1.4;
+  color: var(--dark);
+}
+
+.folder-hub .hub-proof-card p {
+  margin: 0;
+  max-width: none;
+  color: var(--darkgray);
+  line-height: 1.72;
+}
+
+.folder-hub .hub-proof-media {
+  overflow: hidden;
+  border: 1px solid var(--nomos-line);
+  border-radius: 0.9rem;
+  background: var(--light);
+}
+
+.folder-hub .hub-proof-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.folder-hub .hub-proof-code {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  background: var(--light);
+}
+
+.folder-hub .hub-proof-code code {
+  display: block;
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+  line-height: 1.65;
+  color: var(--darkgray);
+  white-space: pre;
 }
 
 .folder-hub .hub-label,
@@ -146,6 +204,11 @@
 
 .portfolio-home .portfolio-meta span {
   color: var(--darkgray);
+}
+
+.portfolio-home .portfolio-meta span a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--secondary) 45%, transparent);
 }
 
 .portfolio-home .portfolio-actions {
@@ -349,6 +412,7 @@
   }
 
   .folder-hub .hub-grid,
+  .folder-hub .hub-proof-grid,
   .folder-hub .hub-grid.single {
     grid-template-columns: 1fr;
     gap: 0.7rem;

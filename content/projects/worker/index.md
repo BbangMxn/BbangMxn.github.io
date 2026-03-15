@@ -19,6 +19,34 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Proof</p>
+  <h3>메인 페이지에서 바로 확인할 수 있는 증거</h3>
+  <div class="hub-proof-grid">
+    <div class="hub-proof-card">
+      <div class="hub-proof-media">
+        <pre class="hub-proof-code"><code>User Request
+     |
+Intent + Proposal
+     |
+Classification Rules
+     |
+Realtime Sync (SSE)
+     |
+Personalized Reply</code></pre>
+      </div>
+      <span class="hub-label">Proof Diagram</span>
+      <strong>Proposal, 분류, 동기화, 답장을 하나의 업무 워크플로로 묶어 AI를 안전하게 배치했습니다</strong>
+      <p>기존 <code>docs/ARCHITECTURE.md</code> 구조를 압축하면, Worker의 핵심은 AI가 바로 실행하지 않고 제안과 확인, 분류와 동기화, 개인화 답장으로 이어지는 흐름을 갖는다는 점입니다.</p>
+    </div>
+    <div class="hub-proof-card">
+      <span class="hub-label">Observed Scope</span>
+      <strong>Proposal 생성, Gmail 실시간 동기화, 7단계 분류, 문체 학습 답장까지 이어지는 흐름을 실제로 검증했습니다</strong>
+      <p>이메일 자동 번역, 분류, 요약, Gmail 실시간 동기화, RAG 기반 개인화 답장 구조를 확인했고, 7단계 분류 파이프라인으로 LLM 호출량을 약 75% 줄이는 방향도 검증했습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
   <h3>왜 이 프로젝트를 다시 보게 되었는가</h3>
   <ul class="hub-list">

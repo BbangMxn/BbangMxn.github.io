@@ -22,14 +22,14 @@ cssclasses:
   <h3>어디서부터 읽을지</h3>
   <ul class="hub-list">
     <li class="hub-item">
-      <a href="./Java Object">
+      <a href="./Java-Object">
         <span class="hub-label">Folder</span>
         <strong>Java Object</strong>
         <p>JVM 구조, 객체 오버헤드, 설계 방향을 한 흐름으로 묶은 연구 허브입니다.</p>
       </a>
     </li>
     <li class="hub-item">
-      <a href="./Java Object/start-here">
+      <a href="./Java-Object/start-here">
         <span class="hub-label">Entry</span>
         <strong>Start Here</strong>
         <p>왜 이 연구를 했는지, 어떤 순서로 읽으면 되는지, 핵심 관찰이 무엇인지 먼저 확인하는 시작 문서입니다.</p>

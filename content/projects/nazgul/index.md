@@ -19,6 +19,42 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Proof</p>
+  <h3>메인 페이지에서 바로 확인할 수 있는 증거</h3>
+  <div class="hub-proof-grid">
+    <div class="hub-proof-card">
+      <div class="hub-proof-media">
+        <img src="/projects/nazgul/image/nazgul-home.jpg" alt="Nazgul 홈 피드 화면" />
+      </div>
+      <span class="hub-label">Product Proof</span>
+      <strong>취미 커뮤니티가 실제 제품 화면으로 존재했기 때문에, RAG 도메인이 추상 개념으로 끝나지 않았습니다</strong>
+      <p>홈 피드와 게시물 흐름을 먼저 제품 형태로 만들었기 때문에, 이후 검색과 추천 문제를 실제 사용자 행동 위에서 다시 정의할 수 있었습니다.</p>
+    </div>
+    <div class="hub-proof-card">
+      <div class="hub-proof-media">
+        <img src="/projects/nazgul/image/nazgul-explore.png" alt="Nazgul 탐색 화면" />
+      </div>
+      <span class="hub-label">Search Proof</span>
+      <strong>탐색 화면이 있었기 때문에 검색을 단순 벡터 조회가 아니라 제품 탐색 경험으로 다룰 수 있었습니다</strong>
+      <p>탐색 UI가 실제로 존재했기 때문에, 어떤 카드와 포스트를 어떤 순서로 보여줘야 하는지 제품 흐름 기준으로 RAG 구조를 설계할 수 있었습니다.</p>
+    </div>
+    <div class="hub-proof-card">
+      <div class="hub-proof-media">
+        <img src="/projects/nazgul/image/nazgul-hobbies.png" alt="Nazgul 취미 선택 화면" />
+      </div>
+      <span class="hub-label">Personalization Proof</span>
+      <strong>취미 선택 구조가 실제 UI와 연결돼 있었기 때문에 개인화 입력 모델을 설명할 수 있었습니다</strong>
+      <p>취미 선택과 프로필 기반 분류가 제품 플로우에 있었기 때문에, RAG 카드 단위를 사용자 관심사와 연결하는 설명이 가능해졌습니다.</p>
+    </div>
+    <div class="hub-proof-card">
+      <span class="hub-label">Observed Query</span>
+      <strong>2026년 3월 12일 기준, 카드 3개와 추천 포스트 3개를 반환하며 평균 60,531ms를 기록했습니다</strong>
+      <p><code>러닝 초보 루틴</code> 질의에서 <code>Card -&gt; Chunk -&gt; Answer -&gt; Trace</code> 흐름이 실제로 이어졌고, 느리지만 현재 병목과 검증 범위를 분명하게 잡을 수 있었습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
   <h3>왜 이 프로젝트를 다시 정의했는가</h3>
   <ul class="hub-list">

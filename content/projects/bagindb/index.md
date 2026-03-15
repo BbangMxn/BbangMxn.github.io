@@ -17,6 +17,34 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Proof</p>
+  <h3>메인 페이지에서 바로 확인할 수 있는 증거</h3>
+  <div class="hub-proof-grid">
+    <div class="hub-proof-card">
+      <div class="hub-proof-media">
+        <pre class="hub-proof-code"><code>BagInCoffee Client
+        |
+Community Flow
+        |
+     BagInDB
+   /          \
+JSONB Specs   Redis Cache
+        |
+   Product Search</code></pre>
+      </div>
+      <span class="hub-label">Boundary Proof</span>
+      <strong>커뮤니티 흐름과 장비 탐색 흐름의 리듬이 달랐기 때문에, BagInDB를 별도 도메인 서비스로 분리하는 편이 맞았습니다</strong>
+      <p>BagInDB는 단순 CRUD 서버가 아니라, 브랜드와 제품 스펙 탐색을 커뮤니티 피드와 다른 데이터 경계로 옮겨야 한다는 판단을 백엔드 구조로 증명한 프로젝트입니다.</p>
+    </div>
+    <div class="hub-proof-card">
+      <span class="hub-label">Observed Metrics</span>
+      <strong>캐시 적중 시 10ms 이하 응답, 캐시 적중률 85% 이상, 15개 이상 엔드포인트와 다국어 모델링까지 연결했습니다</strong>
+      <p>브랜드, 카테고리, 제품 목록과 상세, 필터 검색, JWT 검증 흐름을 실제로 구성하면서 JSONB와 Redis 조합이 이 도메인에 유효한지 검증했습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
   <h3>왜 별도 도메인 서비스가 필요했는가</h3>
   <ul class="hub-list">

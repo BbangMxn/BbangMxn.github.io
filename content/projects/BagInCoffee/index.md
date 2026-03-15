@@ -19,6 +19,42 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Proof</p>
+  <h3>메인 페이지에서 바로 확인할 수 있는 증거</h3>
+  <div class="hub-proof-grid">
+    <div class="hub-proof-card">
+      <div class="hub-proof-media">
+        <img src="/projects/BagInCoffee/image/web-feed.jpg" alt="BagInCoffee 웹 피드 화면" />
+      </div>
+      <span class="hub-label">Web Prototype</span>
+      <strong>웹 프로토타입으로 커뮤니티 핵심 흐름을 먼저 검증했기 때문에 무엇을 유지하고 무엇을 버릴지 결정할 수 있었습니다</strong>
+      <p>초기 웹 피드와 콘텐츠 흐름이 있었기 때문에, 제품의 핵심 경험은 살리고 클라이언트 기술만 다시 선택하는 판단이 가능했습니다.</p>
+    </div>
+    <div class="hub-proof-card">
+      <div class="hub-proof-media">
+        <img src="/projects/BagInCoffee/image/mobile-main.png" alt="BagInCoffee 모바일 메인 화면" />
+      </div>
+      <span class="hub-label">Flutter Migration</span>
+      <strong>Flutter 전환은 단순 재구현이 아니라 웹과 모바일 경험을 하나의 코드베이스로 묶기 위한 판단이었습니다</strong>
+      <p>모바일 메인 화면까지 실제로 이어졌기 때문에, SvelteKit에서 Flutter로의 이동이 선언이 아니라 동작 가능한 제품 방향임을 보여줄 수 있습니다.</p>
+    </div>
+    <div class="hub-proof-card">
+      <div class="hub-proof-media">
+        <img src="/projects/BagInCoffee/image/web-brands.png" alt="BagInCoffee 브랜드 탐색 화면" />
+      </div>
+      <span class="hub-label">Domain Split</span>
+      <strong>브랜드와 장비 탐색 화면이 커질수록 커뮤니티 백엔드와 다른 도메인 리듬이 드러나 BagInDB 분리가 필요해졌습니다</strong>
+      <p>브랜드, 카테고리, 제품 스펙 탐색은 커뮤니티 피드와 요구사항이 달랐기 때문에, 별도 장비 API로 나눌 이유를 실제 UI와 데이터 흐름으로 설명할 수 있습니다.</p>
+    </div>
+    <div class="hub-proof-card">
+      <span class="hub-label">Observed Scope</span>
+      <strong>브랜드 67개, 카테고리 34개, 제품 62개, 3개 언어 지원과 캐시 적중률 85% 이상 목표까지 구조를 확장했습니다</strong>
+      <p>이 프로젝트는 화면만 만든 수준이 아니라 제품 데이터와 장비 API를 함께 키워가며, 클라이언트 전환과 도메인 분리가 실제로 필요한 순간을 검증한 사례입니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
   <h3>왜 이 프로젝트를 다시 설계했는가</h3>
   <ul class="hub-list">

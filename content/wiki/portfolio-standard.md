@@ -12,7 +12,7 @@ cssclasses:
   <p class="hub-kicker">Wiki / Standard</p>
   <h2>포트폴리오 문서를 정보 정리가 아니라 판단을 설득하는 글로 만드는 기준</h2>
   <p class="hub-lede">
-    이 문서는 프로젝트를 예쁘게 정리하는 규칙이 아닙니다. 채용담당자와 실무 엔지니어가 모두 읽을 수 있게, 내가 어떤 문제를 어떻게 재정의했고 무엇을 근거로 그 판단을 내렸는지를 설득하기 위한 글 규격입니다.
+    이 문서는 프로젝트를 예쁘게 정리하는 규칙이 아닙니다. 단독 포트폴리오로 읽혀도 지원자를 설명할 수 있게, 내가 어떤 문제를 어떻게 재정의했고 무엇을 근거로 그 판단을 내렸는지를 설득하기 위한 글 규격입니다.
   </p>
 </div>
 
@@ -22,20 +22,39 @@ cssclasses:
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Mixed Reader</span>
-        <p>독자는 채용담당자와 실무 엔지니어가 섞여 있다고 가정합니다. 그래서 문서는 짧게 읽어도 방향이 보여야 하고, 조금 더 읽으면 판단의 근거까지 확인할 수 있어야 합니다.</p>
+        <span class="hub-label">Engineer First</span>
+        <p>주 독자는 실무 엔지니어입니다. 다만 단독 포트폴리오이므로 채용담당자도 길을 잃지 않게, 첫 화면에서 직무 방향과 대표 프로젝트가 바로 보여야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">30 Seconds</span>
-        <p>첫 화면 30초 안에는 무엇을 만들었는지가 아니라 어떤 문제를 어떻게 다시 정의했는지가 보여야 합니다.</p>
+        <span class="hub-label">10 Seconds</span>
+        <p>홈 첫 화면 10초 안에는 지원 직무, 강한 문제 영역, 대표 프로젝트 3개, 왜 이 사람이 백엔드 제품개발자로 읽혀야 하는지가 보여야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">3 Minutes</span>
-        <p>조금 더 읽는 독자에게는 왜 그런 구조를 택했고 무엇을 버렸는지, 무엇이 실제로 검증됐는지까지 이어서 설명해야 합니다.</p>
+        <p>조금 더 읽는 독자에게는 왜 그런 구조를 택했고 무엇을 버렸는지, 무엇이 실제로 검증됐는지, 한계가 어디까지인지까지 이어서 설명해야 합니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Entry</p>
+  <h3>단독 포트폴리오 기준</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Home</span>
+        <p>홈은 섹션 소개가 아니라 지원자를 요약하는 페이지여야 합니다. 한 줄 역할 정의, 강한 문제 영역, 대표 프로젝트 3개가 먼저 보여야 합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">About</span>
+        <p>About은 운영 규칙 문서가 아니라 resume-lite 역할을 해야 합니다. 강점, 다루는 문제, 일하는 방식, 먼저 볼 프로젝트를 짧게 정리합니다.</p>
       </div>
     </li>
   </ul>
@@ -49,6 +68,12 @@ cssclasses:
       <div class="hub-note">
         <span class="hub-label">Header</span>
         <p>프로젝트 정체성이 아니라 핵심 주장 한 문장으로 시작합니다. 방문자는 여기서 이미 이 문서의 결론을 잡아야 합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Proof</span>
+        <p>대표 프로젝트는 Header 바로 아래에 `Proof` 섹션을 둡니다. 시각 자료, 다이어그램, 관측값 중 하나 이상으로 핵심 증거를 메인 페이지 안에서 바로 보여줘야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
@@ -73,6 +98,12 @@ cssclasses:
       <div class="hub-note">
         <span class="hub-label">Limits and Next</span>
         <p>아직 안 되는 것과 다음 판단 지점을 숨기지 않습니다. 설득력은 완성도보다도 경계 인식에서 나옵니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Source</span>
+        <p>GitHub와 연결 프로젝트는 끝부분에 짧게 정리합니다. 메인 설득은 외부 링크가 아니라 현재 페이지 안에서 끝나야 합니다.</p>
       </div>
     </li>
     <li class="hub-item">
@@ -154,6 +185,12 @@ cssclasses:
       <div class="hub-note">
         <span class="hub-label">Observed Scope</span>
         <p>검증을 적을 때는 환경, 질의, 흐름, 관측 범위를 함께 적습니다. 예를 들면 Nazgul의 로컬 Ollama 실험처럼 맥락이 붙어야 합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Visual Proof</span>
+        <p>시각 자료가 있다면 메인 페이지에서 바로 보여줍니다. 캡션은 화면 설명이 아니라 주장과 근거를 연결하는 문장이어야 하고, 이미지가 없으면 다이어그램이나 구조 카드로 대체합니다.</p>
       </div>
     </li>
   </ul>
