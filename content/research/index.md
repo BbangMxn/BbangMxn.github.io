@@ -43,10 +43,10 @@ cssclasses:
   <h3>프로젝트로 정리된 구현 문서</h3>
   <ul class="hub-list">
     <li class="hub-item">
-      <a href="../projects/quartz-wiki-site">
-        <span class="hub-label">Project</span>
-        <strong>Quartz 기반 개인 위키 구축</strong>
-        <p>배포 구조와 작성 흐름 같은 구현 문서는 Projects에서 이어집니다.</p>
+      <a href="../projects">
+        <span class="hub-label">Projects</span>
+        <strong>Projects Hub</strong>
+        <p>리서치에서 정리된 문제의식이 실제 구현과 구조 선택으로 이어진 결과물은 Projects 허브에서 모아봅니다.</p>
       </a>
     </li>
   </ul>

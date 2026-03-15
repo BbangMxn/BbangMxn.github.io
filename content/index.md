@@ -12,9 +12,8 @@ cssclasses:
     밖에서는 포트폴리오처럼 읽히고, 안에서는 Obsidian 작업 흐름이 그대로 이어집니다.
   </p>
   <ul class="portfolio-meta">
-    <li><strong>Focus</strong><span>Cache, JVM, Backend Architecture</span></li>
-    <li><strong>Workflow</strong><span>Obsidian -> Quartz -> GitHub Pages</span></li>
-    <li><strong>Format</strong><span>Landing, section hubs, working notes</span></li>
+    <li><strong>Language</strong><span>Java, Go, Rust</span></li>
+    <li><strong>Framework</strong><span>Obsidian -> Quartz -> GitHub Pages</span></li>
   </ul>
   <div class="portfolio-actions">
     <a class="portfolio-button primary" href="./projects">Projects</a>
@@ -29,10 +28,10 @@ cssclasses:
   <h2>대표 문서</h2>
   <ul class="portfolio-list">
     <li class="portfolio-item">
-      <a href="./projects/quartz-wiki-site">
+      <a href="./projects/worker">
         <span class="portfolio-badge">Project</span>
-        <strong>Quartz 기반 개인 위키 구축</strong>
-        <p>Obsidian, GitHub Pages, 포트폴리오 UI를 한 구조로 묶은 프로젝트입니다.</p>
+        <strong>Worker</strong>
+        <p>이메일, 캘린더, 연락처와 AI Agent를 묶어 업무 자동화를 검증한 워크스페이스 프로젝트입니다.</p>
       </a>
     </li>
     <li class="portfolio-item">
@@ -43,10 +42,10 @@ cssclasses:
       </a>
     </li>
     <li class="portfolio-item">
-      <a href="./projects/quartz-wiki-site/obsidian-publishing-workflow">
-        <span class="portfolio-badge">Workflow</span>
-        <strong>Obsidian Publishing Workflow</strong>
-        <p>작성부터 배포까지 이어지는 실제 작업 흐름을 정리한 문서입니다.</p>
+      <a href="./projects/BagInCoffee">
+        <span class="portfolio-badge">Project</span>
+        <strong>BagInCoffee</strong>
+        <p>커피 커뮤니티를 만들며 Flutter 전환과 BagInDB 분리까지 경험한 제품 실험 프로젝트입니다.</p>
       </a>
     </li>
   </ul>

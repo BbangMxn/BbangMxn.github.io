@@ -31,5 +31,5 @@ tags:
 
 - [[research/Cache|Cache Research]]
 - [[research/Java|Java Object Research]]
-- [[projects/quartz-wiki-site|Quartz 기반 개인 위키 구축]]
-- [[projects/quartz-wiki-site/obsidian-publishing-workflow|Obsidian + Quartz 작성 흐름]]
+- [[projects/worker|Worker]]
+- [[projects/BagInCoffee|BagInCoffee]]
