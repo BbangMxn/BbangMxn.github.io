@@ -9,31 +9,31 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">가이드</p>
-  <h2>가장 짧은 읽기 경로</h2>
+  <h2>무엇이 궁금한지에 따라 읽으면 됩니다</h2>
   <p class="hub-lede">
-    이 사이트는 결과물 목록보다 구조 판단과 검증 근거를 먼저 읽게 만드는 포트폴리오입니다.
-    그래서 무엇이 궁금한지에 따라 출발점이 달라집니다. 가장 빠른 개요, 구조 중심 읽기, 연구 배경 읽기를 나눠서 안내합니다.
+    이 사이트는 프로젝트 수보다 문제와 판단을 먼저 보여주는 포트폴리오라서 읽는 목적에 따라 출발점이 다릅니다.
+    3분 안에 요약을 보고 싶은 사람, 구조를 먼저 보고 싶은 사람, 연구까지 보고 싶은 사람의 경로를 나눠서 안내합니다.
   </p>
 </div>
 
 <section class="hub-section">
   <p class="hub-section-kicker">경로</p>
-  <h3>상황별 추천 읽기 경로</h3>
+  <h3>목적별 가장 짧은 경로</h3>
   <div class="hub-grid">
     <a class="hub-card" href="./about">
-      <span class="hub-label">빠른 개요</span>
-      <strong>소개 -&gt; 프로젝트 -&gt; 연구</strong>
-      <p>지원자의 역할과 강점을 먼저 파악한 뒤 대표 프로젝트와 기술 깊이로 이어지는 가장 짧은 경로입니다.</p>
+      <span class="hub-label">빠른 요약</span>
+      <strong>소개 -&gt; 프로젝트 -&gt; BagInCoffee</strong>
+      <p>지원자의 역할과 강점을 먼저 보고, 대표 프로젝트 한 개만 확인하고 싶을 때 가장 짧은 경로입니다.</p>
     </a>
     <a class="hub-card" href="./projects">
       <span class="hub-label">구조 먼저</span>
-      <strong>프로젝트 -&gt; 각 프로젝트의 아키텍처</strong>
-      <p>구조 경계와 폴더 구성을 먼저 보고 싶다면 프로젝트 허브에서 각 아키텍처 페이지로 바로 들어가는 편이 맞습니다.</p>
+      <strong>프로젝트 -&gt; 아키텍처 -&gt; 메인 문서</strong>
+      <p>구조 경계와 폴더 구성을 먼저 보고 싶다면 프로젝트 허브에서 각 아키텍처 문서로 바로 들어가는 편이 맞습니다.</p>
     </a>
-    <a class="hub-card" href="./projects/BagInCoffee/start-here">
-      <span class="hub-label">흐름 먼저</span>
-      <strong>프로젝트 시작 가이드 -&gt; 세부 문서</strong>
-      <p>무슨 순서로 판단이 쌓였는지가 궁금하면 각 프로젝트의 시작 가이드 문서에서 개발 흐름부터 따라가면 됩니다.</p>
+    <a class="hub-card" href="./research">
+      <span class="hub-label">연구 먼저</span>
+      <strong>연구 -&gt; 관련 프로젝트</strong>
+      <p>캐시, JVM, 검색 구조 같은 기술 배경부터 읽고 싶다면 연구에서 시작해 관련 프로젝트로 내려오면 됩니다.</p>
     </a>
   </div>
 </section>
@@ -45,7 +45,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">먼저</span>
-        <p><a href="./projects">프로젝트</a>에서 대표 프로젝트 3개를 먼저 읽습니다. 이 섹션이 전체 포트폴리오의 핵심 주장과 구조 축을 가장 빨리 보여줍니다.</p>
+        <p><a href="./projects">프로젝트</a>에서 대표 프로젝트 3개를 먼저 읽습니다. 이 섹션이 전체 포트폴리오의 핵심 주장과 문제 축을 가장 빨리 보여줍니다.</p>
       </div>
     </li>
     <li class="hub-item">
@@ -71,7 +71,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">섹션</p>
-  <h3>섹션별 역할</h3>
+  <h3>각 섹션을 언제 보면 되는가</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./projects">
@@ -105,25 +105,31 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">기준</p>
-  <h3>문서 정리 기준</h3>
+  <p class="hub-section-kicker">문서</p>
+  <h3>문서 종류별 역할</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">파일 이름</span>
-        <p>폴더 허브는 <code>index.md</code>를 기본으로 사용하고, 허브 안의 시작 문서는 <code>start-here.md</code>로 통일합니다.</p>
+        <span class="hub-label">메인 문서</span>
+        <p>프로젝트 메인 페이지는 문제, 판단, 검증 범위를 빠르게 읽게 만드는 대표 문서입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">아키텍처</span>
-        <p>프로젝트의 폴더 구조와 실행 흐름은 메인 페이지에 다 밀어 넣지 않고 <code>architecture.md</code>로 별도 분리합니다.</p>
+        <p>프로젝트의 폴더 구조와 실행 흐름, 계층 책임은 아키텍처 문서에서 따로 설명합니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">문서 기준</span>
-        <p>프로젝트 루트 문서는 <a href="./wiki/portfolio-standard">포트폴리오 기준</a>을 바탕으로 같은 주장 구조를 유지합니다.</p>
+        <span class="hub-label">읽기 가이드</span>
+        <p><code>start-here</code> 문서는 개발 순서와 추천 읽기 순서를 빠르게 잡아 주는 입구입니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">연구와 위키</span>
+        <p><a href="./research">연구</a>는 기술 배경과 실험, <a href="./wiki">위키</a>는 오래 남길 기준 문서를 보는 섹션입니다.</p>
       </div>
     </li>
   </ul>

@@ -81,6 +81,37 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">사례</p>
+  <h3>개발자 포트폴리오 사례에서 반복해서 보인 요소</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">첫 문장</span>
+        <p>좋은 개발자 포트폴리오는 첫 화면에서 역할을 바로 말합니다. 분명한 헤드라인, 짧은 소개, 대표 프로젝트 입구가 한 화면 안에 같이 있습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">선별</span>
+        <p>프로젝트를 많이 보여주기보다 설명력이 큰 몇 개만 전면에 둡니다. 품질이 수량보다 중요하고, 프로젝트별 역할과 결과를 짧게 잡아 주는 구성이 반복해서 보였습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">세부 문서</span>
+        <p>강한 사례는 프로젝트 카드만 두지 않고 별도 상세 페이지를 둡니다. 문제, 역할, 해결 방식, 결과를 자세히 풀어 쓰는 전용 페이지가 있으면 설득력이 크게 올라갑니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">브랜드</span>
+        <p>소개 문구와 프로젝트 설명의 톤이 일관됩니다. 화려한 연출보다 역할, 강점, 작업 방식이 같은 언어로 반복돼야 기억에 남습니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">제목</p>
   <h3>제목과 헤더에서 바로 적용해야 하는 원칙</h3>
   <ul class="hub-list">
@@ -240,6 +271,20 @@ cssclasses:
       </a>
     </li>
     <li class="hub-item">
+      <a href="https://careerfoundry.com/blog/web-development/software-engineer-portfolio/">
+        <span class="hub-label">개발자 사례</span>
+        <strong>CareerFoundry - Software Engineer Portfolio Guide</strong>
+        <p>명확한 헤드라인, 선별된 프로젝트, 간결한 소개, 한눈에 읽히는 요약이 왜 중요한지 실제 개발자 포트폴리오 사례와 함께 설명한 가이드입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="https://www.frontendmentor.io/articles/building-an-effective-frontend-developer-portfolio--7cE8BfMG_">
+        <span class="hub-label">개발자 사례</span>
+        <strong>Frontend Mentor - Effective Developer Portfolio</strong>
+        <p>프로젝트별 상세 페이지, 역할과 해결 문제를 함께 보여주는 카드 구성, 개인 소개와 사회적 증거 배치가 왜 효과적인지 사례와 함께 설명한 글입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
       <a href="https://blog.uxfol.io/ux-recruiters-and-hiring-managers-portfolio-advice/">
         <span class="hub-label">채용 조사</span>
         <strong>UXfolio - Recruiters and Hiring Managers Portfolio Advice</strong>
@@ -251,6 +296,13 @@ cssclasses:
         <span class="hub-label">포트폴리오</span>
         <strong>Toptal - UX Portfolio Tips</strong>
         <p>스캔 가능한 구조, 짧은 프로젝트 설명, 문제와 결과 중심 서술을 강조한 포트폴리오 실무 조언입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="https://elementor.com/blog/inspiring-web-developer-portfolio-examples/">
+        <span class="hub-label">개발자 사례</span>
+        <strong>Elementor - Web Developer Portfolio Examples</strong>
+        <p>미니멀한 구조, 강한 첫 화면, 명확한 프로젝트 카드, 충분한 여백과 시각 계층이 왜 잘 읽히는지 실제 개발자 포트폴리오 사례와 함께 보여주는 참고 글입니다.</p>
       </a>
     </li>
   </ul>

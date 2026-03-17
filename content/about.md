@@ -12,25 +12,37 @@ cssclasses:
   <p class="hub-kicker">소개</p>
   <h2>구조를 다시 나누는 백엔드 개발자</h2>
   <p class="hub-lede">
-    이 포트폴리오는 구현 결과를 나열하기보다, 제품 문제를 서비스 경계와 데이터 흐름의 문제로 다시 정의하는 방식을 보여주기 위해 만들었습니다.
-    클라이언트 전환, 도메인 분리, retrieval 구조, AI 안전장치처럼 운영 비용이 커지는 지점을 먼저 보고 설계를 고릅니다.
+    커뮤니티 앱, 업무 도구, 검색 실험을 만들면서 제품이 커질 때 구조를 어디서 다시 나눠야 하는지에 집중해 왔습니다.
+    웹에서 Flutter로 전환한 시점, 장비 도메인을 분리한 이유, AI 제안을 바로 실행하지 않게 막은 설계처럼 기능 구현보다 경계 재설계를 먼저 설명하는 문서를 남깁니다.
   </p>
 </div>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">역할</p>
-  <h3>한 줄 역할 정의</h3>
+  <p class="hub-section-kicker">요약</p>
+  <h3>5초 요약</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">정의</span>
-        <p>제품을 만들다가 생기는 구조 문제를 API, 데이터 모델, 캐시, 서비스 경계, AI 안전장치 재설계로 풀어내는 백엔드 제품개발자입니다.</p>
+        <span class="hub-label">역할</span>
+        <p>제품을 만들다가 생기는 구조 문제를 API, 데이터 모델, 캐시, 서비스 경계 재설계로 푸는 백엔드 제품개발자입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">집중</span>
-        <p>문제를 기능 목록이 아니라 구조 전환 시점과 운영 상충 관계로 읽고, 왜 그런 선택을 했는지를 한 페이지 안에서 닫히게 설명하는 데 집중합니다.</p>
+        <span class="hub-label">사용 언어</span>
+        <p>Java, Rust, Dart, TypeScript</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">잘 맞는 문제</span>
+        <p>클라이언트 전환, 도메인 분리, 검색 구조, 캐시 전략, AI 안전장치</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">추천 프로젝트</span>
+        <p>BagInCoffee, Worker, Nazgul</p>
       </div>
     </li>
   </ul>
@@ -43,7 +55,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">재정의</span>
-        <p>제품 문제를 백엔드 구조 판단으로 바꿉니다. 클라이언트 전환, 도메인 분리, 검색 구조 재정의처럼 제품 변화가 시스템 경계를 어떻게 바꾸는지 설명할 수 있습니다.</p>
+        <p>제품 문제를 백엔드 구조 문제로 다시 정의합니다. 제품 변화가 시스템 경계를 어떻게 바꾸는지 문서로 설명할 수 있습니다.</p>
       </div>
     </li>
     <li class="hub-item">
@@ -55,38 +67,38 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">운영</span>
-        <p>운영 비용을 같이 봅니다. 캐시, 다중 DB, AI 제안 안전장치, 추적 가능성처럼 기능보다 유지 가능성과 위험 제어를 함께 고려합니다.</p>
+        <p>운영 비용을 같이 봅니다. 캐시, 다중 DB, AI 제안 안전장치, 추적 가능성처럼 기능보다 유지 가능성과 위험 제어를 함께 봅니다.</p>
       </div>
     </li>
   </ul>
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">문제</p>
-  <h3>주로 다루는 문제 유형</h3>
+  <p class="hub-section-kicker">적합</p>
+  <h3>잘 맞는 문제와 환경</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">전환</span>
-        <p>제품이 커질 때 웹 프로토타입을 언제 다른 클라이언트 구조로 옮겨야 하는가</p>
+        <span class="hub-label">초기 제품</span>
+        <p>빠르게 만든 구조를 다음 단계에 맞게 다시 나눠야 하는 팀과 잘 맞습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">분리</span>
-        <p>커뮤니티, 장비, 문서, 업무 데이터처럼 성격이 다른 도메인을 어디서 분리해야 하는가</p>
+        <p>커뮤니티, 장비, 문서, 업무 데이터처럼 성격이 다른 데이터를 한 서비스에 계속 묶어 두기 어려운 상황을 자주 다룹니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">검색</span>
-        <p>검색과 추천을 붙일 때 설명 가능한 근거와 trace를 어떻게 남겨야 하는가</p>
+        <p>검색과 추천을 붙일 때 설명 가능한 근거와 trace가 필요한 제품 문제를 다룹니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">안전</span>
-        <p>AI 자동화를 붙일 때 무엇을 바로 실행시키지 말아야 하는가</p>
+        <span class="hub-label">자동화</span>
+        <p>AI를 붙이되 바로 실행시키면 안 되는 업무 도구와 승인 흐름 설계에 익숙합니다.</p>
       </div>
     </li>
   </ul>
@@ -98,7 +110,7 @@ cssclasses:
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">재정의</span>
+        <span class="hub-label">정의</span>
         <p>문제를 기능 목록이 아니라 구조 문제로 다시 정의합니다.</p>
       </div>
     </li>
@@ -106,6 +118,12 @@ cssclasses:
       <div class="hub-note">
         <span class="hub-label">가정</span>
         <p>가장 먼저 깨질 경계와 운영 비용을 가정하고 설계를 고릅니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">검증</span>
+        <p>실제로 연결된 구조와 검증 범위를 확인하고, 확인하지 못한 부분은 한계로 남깁니다.</p>
       </div>
     </li>
     <li class="hub-item">

@@ -9,22 +9,22 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">프로젝트</p>
-  <h2>구조 판단이 남은 프로젝트</h2>
+  <h2>설명력이 큰 프로젝트 다섯 개</h2>
   <p class="hub-lede">
-    이 섹션은 기능 목록보다 구조 판단을 먼저 읽게 하는 프로젝트 포트폴리오입니다.
-    대표 프로젝트 3개로 제품 구조 전환, 업무 자동화 파이프라인, 검색 구조 재정의를 먼저 보여주고,
-    나머지 프로젝트는 분리된 도메인과 운영 경험을 보강하는 축으로 배치했습니다.
+    이 허브에는 설명력이 큰 프로젝트 다섯 개만 남겼습니다.
+    BagInCoffee, Worker, Nazgul을 메인 축으로 두고, BagInDB와 Smart Factory를 보강 축으로 배치했습니다.
+    각 문서는 문제, 역할, 판단, 검증 범위를 빠르게 읽을 수 있게 정리했습니다.
   </p>
 </div>
 
 <section class="hub-section">
   <p class="hub-section-kicker">읽는 기준</p>
-  <h3>어떤 기준으로 읽을지 먼저 고를 수 있습니다</h3>
+  <h3>먼저 고를 입구</h3>
   <div class="hub-grid">
     <a class="hub-card" href="./BagInCoffee/architecture">
       <span class="hub-label">구조 먼저</span>
       <strong>BagInCoffee 아키텍처</strong>
-      <p>클라이언트 전환과 도메인 분리처럼 제품 구조가 어떻게 갈라졌는지부터 보고 싶다면 여기서 시작하면 됩니다.</p>
+      <p>클라이언트 전환과 도메인 분리처럼 제품 구조가 실제로 어디서 갈라졌는지부터 보고 싶다면 여기서 시작하면 됩니다.</p>
     </a>
     <a class="hub-card" href="./worker/start-here">
       <span class="hub-label">흐름 먼저</span>
@@ -41,7 +41,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">대표</p>
-  <h3>구조 판단이 먼저 보이는 대표 프로젝트</h3>
+  <h3>먼저 볼 세 프로젝트</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./BagInCoffee">
@@ -69,7 +69,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">보조</p>
-  <h3>대표 구조를 보강하는 보조 프로젝트</h3>
+  <h3>깊이를 보강하는 두 프로젝트</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./bagindb">
@@ -89,8 +89,8 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">구조 축</p>
-  <h3>프로젝트를 읽는 구조 축</h3>
+  <p class="hub-section-kicker">축</p>
+  <h3>프로젝트를 연결하는 세 축</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -115,7 +115,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">아키텍처</p>
-  <h3>구조부터 읽는 입구</h3>
+  <h3>구조 문서 바로가기</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./BagInCoffee/architecture">
@@ -156,8 +156,8 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">개발 흐름</p>
-  <h3>개발 순서를 읽는 입구</h3>
+  <p class="hub-section-kicker">흐름</p>
+  <h3>읽는 순서를 따라가는 입구</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./BagInCoffee/start-here">
@@ -185,13 +185,19 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">기준</p>
-  <h3>정리 기준</h3>
+  <h3>선별 기준</h3>
   <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">선별</span>
+        <p>프로젝트 수를 늘리지 않고 설명력이 큰 다섯 개만 남겼습니다. 구조 전환, 자동화, 검색, 도메인 분리, IoT 수집처럼 서로 다른 문제 축이 겹치지 않도록 골랐습니다.</p>
+      </div>
+    </li>
     <li class="hub-item">
       <a href="../wiki/portfolio-standard">
         <span class="hub-label">문서 기준</span>
         <strong>포트폴리오 기준</strong>
-        <p>프로젝트를 어떤 형식으로 정리할지가 아니라, 어떤 판단을 어떻게 설득할지에 대한 공통 기준은 Wiki 문서로 유지합니다.</p>
+        <p>프로젝트를 어떤 형식으로 정리할지보다, 어떤 판단을 어떻게 설득할지에 대한 공통 기준은 위키 문서로 유지합니다.</p>
       </a>
     </li>
   </ul>
