@@ -11,14 +11,14 @@
 
 .folder-hub {
   display: grid;
-  max-width: 43rem;
-  gap: 1.8rem;
+  max-width: 44rem;
+  gap: 2rem;
 }
 
 .folder-hub .hub-header {
   display: grid;
-  gap: 1rem;
-  padding-bottom: 1.7rem;
+  gap: 1.1rem;
+  padding-bottom: 1.85rem;
   border-bottom: 1px solid var(--nomos-line);
 }
 
@@ -87,6 +87,11 @@
   word-break: keep-all;
 }
 
+.folder-hub .hub-lede {
+  max-width: 35rem;
+  line-height: 1.92;
+}
+
 .folder-hub .hub-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -104,7 +109,7 @@
 .folder-hub .hub-proof-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.2rem;
+  gap: 1.45rem;
   align-items: start;
 }
 
@@ -224,11 +229,11 @@
 
 .folder-hub .hub-proof-card {
   display: grid;
-  gap: 0.9rem;
+  gap: 1rem;
   min-width: 0;
   align-content: start;
   position: relative;
-  padding: 1.15rem 0 0.55rem 0.95rem;
+  padding: 1.25rem 0 0.8rem 1rem;
   border-top: 1px solid var(--nomos-line);
   border-right: 0;
   border-bottom: 0;
@@ -250,8 +255,8 @@
 
 .folder-hub .hub-proof-card strong {
   max-width: none;
-  font-size: 1.02rem;
-  line-height: 1.4;
+  font-size: 1.03rem;
+  line-height: 1.48;
   color: var(--dark);
 }
 
@@ -259,10 +264,16 @@
   margin: 0;
   max-width: none;
   color: var(--darkgray);
-  line-height: 1.72;
+  line-height: 1.8;
 }
 
 .folder-hub .hub-proof-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(15rem, 28vw, 19rem);
+  max-height: 20rem;
+  padding: 1rem;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--nomos-line) 82%, transparent);
   border-radius: 0.75rem;
@@ -272,7 +283,8 @@
 .folder-hub .hub-proof-media img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
 }
 
 .folder-hub .hub-proof-code {
@@ -308,6 +320,10 @@
 
 .center > article.portfolio-home {
   padding-top: 2.35rem;
+}
+
+.center > article.folder-hub {
+  padding-top: 2.15rem;
 }
 
 .center > article.portfolio-home + hr,
@@ -929,11 +945,12 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
 
   .folder-hub .hub-proof-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.2rem 1.35rem;
+    gap: 1.4rem 1.6rem;
   }
 
   .folder-hub .hub-proof-grid > .hub-proof-card:last-child:not(:has(.hub-proof-media)) {
     grid-column: 1 / -1;
+    max-width: 34rem;
   }
 
   .folder-hub .hub-list,
@@ -1032,6 +1049,12 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   .portfolio-home .portfolio-entry-grid {
     grid-template-columns: 1fr;
     gap: 0.9rem;
+  }
+
+  .folder-hub .hub-proof-media {
+    min-height: 13rem;
+    max-height: 16rem;
+    padding: 0.85rem;
   }
 
   .folder-hub + .page-listing .section {

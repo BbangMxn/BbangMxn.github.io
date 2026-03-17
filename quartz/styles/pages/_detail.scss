@@ -124,19 +124,19 @@
 }
 
 .page:has(article.folder-hub) article.folder-hub {
-  gap: 1.9rem;
+  gap: 2.15rem;
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-header {
-  padding-bottom: 1.6rem;
+  padding-bottom: 1.8rem;
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-section {
-  gap: 0.95rem;
+  gap: 1.05rem;
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
-  padding-top: 1.85rem;
+  padding-top: 2.05rem;
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 86%, transparent);
 }
 
@@ -278,8 +278,8 @@
   }
 
   .page:has(article.folder-hub) > #quartz-body {
-    grid-template-columns: 268px minmax(0, 50rem);
-    column-gap: 2.5rem;
+    grid-template-columns: 256px minmax(0, 51rem);
+    column-gap: 2.8rem;
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "grid-sidebar-left grid-header"
