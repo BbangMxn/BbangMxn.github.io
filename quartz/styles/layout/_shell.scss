@@ -48,9 +48,9 @@ body {
 }
 
 .page article
-  a:not(.brand-card):not(.portfolio-button):not(.landing-button):not(.internal.tag-link):not(
-    .folder-overview
-  ):not(:has(p, strong, div, section, ul, ol, img)) {
+  a:not(.brand-card):not(.internal.tag-link):not(.folder-overview):not(
+    :has(p, strong, div, section, ul, ol, img)
+  ) {
   text-decoration: underline;
   text-decoration-color: color-mix(in srgb, var(--secondary) 18%, transparent);
   text-decoration-thickness: 0.08em;
