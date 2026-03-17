@@ -1,12 +1,10 @@
 ---
-title: Start Here
+title: BagInCoffee Start Here
 tags:
   - portfolio
   - guide
   - product
 ---
-
-# BagInCoffee 읽는 순서
 
 BagInCoffee는 커뮤니티 앱 하나를 만든 기록이 아니라, 제품을 실제로 키우는 과정에서 클라이언트 전략과 서비스 경계를 다시 정한 프로젝트입니다. 이 폴더를 읽을 때는 기능 개수보다 "어느 시점에 어떤 판단을 했는가"를 따라가는 편이 맞습니다.
 

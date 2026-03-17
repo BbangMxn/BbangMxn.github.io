@@ -1,16 +1,20 @@
 ---
-title: Start Here
+title: Worker Start Here
 tags:
   - portfolio
   - guide
   - workflow
 ---
 
-# Worker 읽는 순서
-
 Worker는 화면 통합, AI 안전장치, 메일 분류 파이프라인이 같이 있는 프로젝트라서 읽는 순서를 잡아 주는 편이 좋습니다. 이 폴더는 "AI가 업무 도구 안에서 실제로 어떤 위치를 가져야 하는가"를 읽는 입구입니다.
 
-## 먼저 볼 문서
+## 먼저 잡아야 하는 전제
+
+- Worker의 핵심은 AI 기능 수가 아니라 AI를 어디까지 허용할지 정한 제품 제약이라는 점
+- 워크스페이스 UI, 동기화 백엔드, Proposal 안전장치가 같이 읽혀야 구조가 보인다는 점
+- 분류 파이프라인은 단순 자동화가 아니라 운영 정책 문서라는 점
+
+## 추천 읽기 순서
 
 1. [Worker 메인 페이지](./index)
 2. [Architecture](./architecture)

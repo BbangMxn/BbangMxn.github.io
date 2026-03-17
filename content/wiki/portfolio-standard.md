@@ -156,6 +156,37 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Title System</p>
+  <h3>제목과 헤더 규격</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Browser Title</span>
+        <p><code>title</code>은 항상 짧고 고유해야 합니다. 프로젝트 하위 문서는 <code>BagInCoffee Architecture</code>, <code>Worker Start Here</code>, <code>Nazgul Retrieval Map</code>처럼 주제를 앞에 두고 역할을 뒤에 붙입니다. <code>Architecture</code>, <code>Start Here</code>, <code>API Surface</code>처럼 일반명사만 쓰는 제목은 쓰지 않습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">One Page Title</span>
+        <p>화면 안에는 페이지 수준 제목을 하나만 둡니다. <code>folder-hub</code>와 <code>portfolio-home</code>은 내부 hero/header가 제목 역할을 하므로 기본 페이지 헤더를 숨기고, 일반 문서는 페이지 헤더 제목을 그대로 쓰며 본문 첫 줄에서 같은 H1을 반복하지 않습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Section Headers</span>
+        <p>섹션 헤더는 독자가 무엇을 얻는지 바로 보이게 써야 합니다. <code>먼저 잡아야 하는 전제</code>, <code>추천 읽기 순서</code>, <code>왜 다중 프로토콜 구조를 가정했는가</code>처럼 역할이 앞에 나오는 제목을 우선하고, <code>Introduction</code>, <code>Background</code>, <code>Summary</code> 같은 모호한 표기는 피합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Depth</span>
+        <p>프로젝트 문서는 기본적으로 H2와 H3까지만 씁니다. Start Here 계열은 공통으로 <code>먼저 잡아야 하는 전제 -> 추천 읽기 순서 -> 문서별 역할 -> 개발 순서를 짧게 요약하면 -> 이 폴더를 읽고 얻어야 하는 결론</code> 순서를 유지합니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Writing</p>
   <h3>문장 규칙</h3>
   <ul class="hub-list">

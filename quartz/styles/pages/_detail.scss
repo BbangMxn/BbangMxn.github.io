@@ -70,13 +70,12 @@
 }
 
 .page:has(article.portfolio-home) .page-header,
-.page:has(article.folder-hub) .page-header,
-.page:has(article.research-note) .page-header {
-  margin-bottom: 0.2rem;
+.page:has(article.folder-hub) .page-header {
+  display: none;
 }
 
-.page:has(article.folder-hub) .page-header .content-meta {
-  display: none;
+.page:has(article.research-note) .page-header {
+  margin-bottom: 0.2rem;
 }
 
 .page:has(article.portfolio-home) article.portfolio-home {

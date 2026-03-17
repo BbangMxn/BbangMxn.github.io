@@ -1,16 +1,20 @@
 ---
-title: Start Here
+title: Smart Factory Start Here
 tags:
   - portfolio
   - guide
   - iot
 ---
 
-# Smart Factory 읽는 순서
-
 Smart Factory는 구현 저장소이면서 동시에 연구 노트입니다. 그래서 코드를 읽기 전에 어떤 프로토콜과 저장 구조를 택했는지 먼저 보는 편이 맞습니다. 이 문서는 연구 문서와 구현체가 왜 한 저장소에 같이 있는지 설명하는 입구입니다.
 
-## 먼저 볼 문서
+## 먼저 잡아야 하는 전제
+
+- Smart Factory는 완성 제품보다 설계 검토와 구조 검증 비중이 더 큰 프로젝트라는 점
+- 연구 문서와 구현 구조가 같은 저장소 안에 있어야 판단 근거가 이어진다는 점
+- 코드를 읽기 전에 프로토콜과 시계열 파이프라인 축을 먼저 잡아야 한다는 점
+
+## 추천 읽기 순서
 
 1. [Smart Factory 메인 페이지](./index)
 2. [Architecture](./architecture)

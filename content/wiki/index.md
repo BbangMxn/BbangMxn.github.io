@@ -1,5 +1,5 @@
 ---
-title: Wiki
+title: Reference Wiki
 tags:
   - wiki
 cssclasses:

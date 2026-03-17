@@ -1,12 +1,10 @@
 ---
-title: Timeseries Pipeline
+title: Smart Factory Timeseries Pipeline
 tags:
   - portfolio
   - timescaledb
   - realtime
 ---
-
-# Timeseries Pipeline
 
 Smart Factory의 핵심은 데이터를 받는 것보다, 시간축 데이터를 어떻게 저장하고 다시 보여 줄 것인가에 있습니다. 이 문서는 시스템의 중간 이후, 즉 적재와 실시간 전송 축을 설명합니다.
 
@@ -24,7 +22,7 @@ Smart Factory의 핵심은 데이터를 받는 것보다, 시간축 데이터를
 - 최근 상태와 과거 이력을 동시에 다뤄야 했습니다.
 - 저장소 선택이 곧 운영 방식 선택과 연결되는 영역이었습니다.
 
-## 이 구조를 택한 이유
+## 왜 이 파이프라인 구성이 필요했는가
 
 - 단순 CRUD보다 시간축 조회가 더 중요했습니다.
 - 최근 상태와 과거 이력을 같이 다뤄야 해서 저장소와 전송 계층을 분리할 필요가 있었습니다.

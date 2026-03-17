@@ -1,5 +1,5 @@
 ---
-title: Retrieval Map
+title: Nazgul Retrieval Map
 tags:
   - portfolio
   - rag
@@ -7,8 +7,6 @@ tags:
 cssclasses:
   - research-note
 ---
-
-# Retrieval Map
 
 Nazgul의 검색 흐름은 질의 하나를 바로 청크에 던지는 구조가 아니라, 카드와 청크, 답변, Trace를 분리하는 방식입니다. 이 문서는 연구형 파이프라인을 제품 문제와 연결해서 읽기 위한 압축본입니다.
 

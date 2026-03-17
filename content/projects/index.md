@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Project Portfolio
 tags:
   - portfolio
   - projects

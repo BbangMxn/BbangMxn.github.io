@@ -81,6 +81,37 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Headings</p>
+  <h3>제목과 헤더에서 바로 적용해야 하는 원칙</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Front Load</span>
+        <p>페이지 제목과 섹션 헤더는 중요한 단어를 앞에 둬야 합니다. 사용자는 스캔할 때 앞부분만 보고 판단하므로, 프로젝트명이나 주제어를 먼저 쓰고 역할 단어는 뒤에 붙이는 편이 더 빨리 읽힙니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Unique Title</span>
+        <p>페이지 제목은 서로 구분돼야 하고, 화면에서 보이는 제목 체계와 충돌하지 않아야 합니다. 브라우저 제목은 고유하게 유지하고, 화면 안에는 페이지 수준 제목을 하나만 두는 편이 가장 깔끔합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Descriptive Headers</span>
+        <p><code>Introduction</code>, <code>Overview</code>, <code>Summary</code> 같은 범용 제목보다, 섹션의 역할을 바로 드러내는 제목이 더 효과적입니다. 좋은 헤더는 문단을 읽지 않아도 왜 이 섹션이 있는지 설명합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Stable Hierarchy</span>
+        <p>H1은 페이지에 한 번만 쓰고, 본문은 H2와 H3로 내려가는 편이 읽기와 접근성 모두에 유리합니다. 제목 단계가 흔들리면 문서 구조가 약해지고, TOC와 보조기기 해석도 같이 불안정해집니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Applied</p>
   <h3>이 사이트 메인 페이지에 바로 적용할 기준</h3>
   <ul class="hub-list">
@@ -164,6 +195,34 @@ cssclasses:
         <span class="hub-label">Official</span>
         <strong>ONS Service Manual - Structuring Content</strong>
         <p>사용자가 스캔 가능한 제목 구조와 문서 정보 배치 원칙을 설명한 공공 서비스 문서 가이드입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="https://developers.google.com/style/headings-targets">
+        <span class="hub-label">Official</span>
+        <strong>Google Developer Style Guide - Headings and Titles</strong>
+        <p>앞부분에 핵심어를 두고, 짧고 설명적인 제목을 쓰라는 문서 제목 규칙을 정리한 공식 스타일 가이드입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="https://webaim.org/techniques/headings/">
+        <span class="hub-label">Accessibility</span>
+        <strong>WebAIM - Headings</strong>
+        <p>제목 계층을 건너뛰지 않고 의미 있는 구조를 만드는 것이 읽기와 접근성에 왜 중요한지 설명한 가이드입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="https://digital.gov/guides/plain-language/">
+        <span class="hub-label">Official</span>
+        <strong>Digital.gov - Plain Language Guide</strong>
+        <p>짧고 명확한 제목, 앞부분에 중요한 단어를 두는 방식, 스캔 가능한 공공 웹 콘텐츠 원칙을 정리한 가이드입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G88.html">
+        <span class="hub-label">W3C</span>
+        <strong>W3C - G88: Providing Descriptive Titles</strong>
+        <p>페이지 제목을 고유하고 설명 가능하게 유지해야 하는 이유를 WCAG 관점에서 정리한 기준 문서입니다.</p>
       </a>
     </li>
     <li class="hub-item">

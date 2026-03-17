@@ -1,5 +1,5 @@
 ---
-title: Related Systems
+title: Nazgul Related Systems
 tags:
   - portfolio
   - rag
@@ -8,8 +8,6 @@ tags:
 cssclasses:
   - research-note
 ---
-
-# Related Systems
 
 Nazgul의 retrieval 구조를 정리하면서 참고한 외부 시스템 비교 메모입니다. 어떤 아이디어를 가져왔고, 무엇은 아직 가져오지 않았는지 빠르게 정리합니다.
 

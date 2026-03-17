@@ -1,12 +1,10 @@
 ---
-title: Architecture
+title: Nazgul Architecture
 tags:
   - portfolio
   - architecture
   - rag
 ---
-
-# Nazgul Architecture
 
 Nazgul은 프론트엔드와 백엔드가 단순히 분리된 프로젝트가 아닙니다. `취미 SNS 도메인`을 유지하는 클라이언트와, 그 도메인을 `RAG 실험 서버`로 다시 읽는 백엔드가 서로 다른 책임을 맡고 있습니다. 그래서 이 프로젝트는 먼저 `제품 입력을 만드는 쪽`과 `검색 구조를 실험하는 쪽`을 나눠서 봐야 합니다.
 

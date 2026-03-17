@@ -1,12 +1,10 @@
 ---
-title: Architecture
+title: BagInCoffee Architecture
 tags:
   - portfolio
   - architecture
   - flutter
 ---
-
-# BagInCoffee Architecture
 
 BagInCoffee는 하나의 앱 폴더만 보면 이해되는 프로젝트가 아닙니다. 이 저장소는 `웹 프로토타입 -> Flutter 전환 -> 장비 도메인 분리`가 모두 남아 있는 우산 구조라서, 루트 폴더 자체가 아키텍처 설명 역할을 합니다.
 

@@ -1,12 +1,10 @@
 ---
-title: Start Here
+title: BagInDB Start Here
 tags:
   - portfolio
   - guide
   - backend
 ---
-
-# BagInDB 읽는 순서
 
 BagInDB는 장비 API를 하나 만든 프로젝트보다, 장비 도메인을 별도 서비스로 떼어냈을 때 어떤 계층과 어떤 최적화 대상이 생기는지를 읽는 프로젝트입니다. 이 폴더는 구현 파일 설명보다 도메인 읽는 법을 먼저 정리합니다.
 

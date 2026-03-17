@@ -1,14 +1,18 @@
 ---
-title: Start Here
+title: Nazgul Start Here
 tags:
   - portfolio
   - guide
   - rag
 ---
 
-# Nazgul 읽는 순서
-
 Nazgul은 메인 페이지 하나만 보면 제품 재정의까지는 보이지만, 실제 연구 흐름은 하위 문서까지 같이 봐야 명확합니다. 이 폴더는 "취미 SNS를 왜 retrieval 연구 문제로 다시 읽었는가"를 단계별로 따라가게 만드는 입구입니다.
+
+## 먼저 잡아야 하는 전제
+
+- Nazgul의 출발점은 RAG 실험이 아니라 취미 SNS 제품 도메인이었다는 점
+- retrieval 구조는 제품 입력과 탐색 경험을 다시 해석하면서 생긴 연구 계층이라는 점
+- 세부 연구 문서는 메인 주장과 검증 범위를 보강하는 자료라는 점
 
 ## 추천 읽기 순서
 

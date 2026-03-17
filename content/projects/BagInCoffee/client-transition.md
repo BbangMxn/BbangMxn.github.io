@@ -1,12 +1,10 @@
 ---
-title: Client Transition
+title: BagInCoffee Client Transition
 tags:
   - portfolio
   - flutter
   - sveltekit
 ---
-
-# Client Transition
 
 BagInCoffee의 클라이언트 역사는 웹에서 모바일로 확장한 것이 아니라, 제품 검증 단계와 운영 단계에서 서로 다른 클라이언트 전략을 선택한 기록입니다. 핵심은 기술 교체가 아니라, 어떤 단계에서 어떤 도구가 맞았는지 분리해서 봤다는 점입니다.
 
@@ -48,4 +46,3 @@ BagInCoffee의 클라이언트 역사는 웹에서 모바일로 확장한 것이
 - Flutter 중심 전략이 실제 운영에서도 가장 단순한 선택인지
 - 클라이언트 통합이 백엔드 경계와 얼마나 안정적으로 맞물리는지
 - 이후 기능 확장에서 어느 시점에 다시 분리 판단이 필요할지
-

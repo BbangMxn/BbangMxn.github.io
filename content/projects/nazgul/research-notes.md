@@ -1,5 +1,5 @@
 ---
-title: Research Notes
+title: Nazgul Research Notes
 tags:
   - portfolio
   - rag

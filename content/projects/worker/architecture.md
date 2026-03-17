@@ -1,12 +1,10 @@
 ---
-title: Architecture
+title: Worker Architecture
 tags:
   - portfolio
   - architecture
   - ai-agent
 ---
-
-# Worker Architecture
 
 Worker는 프론트엔드와 백엔드가 분리된 정도가 아니라, 백엔드 안에서도 `API 프로세스`와 `Worker 프로세스`가 나뉘고, 그 안에 `AI Agent`, `분류 파이프라인`, `외부 동기화`, `여러 저장소`가 함께 들어 있는 복합 구조입니다. 그래서 이 프로젝트는 먼저 큰 프로세스 경계를 잡고, 그다음 폴더를 읽는 편이 맞습니다.
 

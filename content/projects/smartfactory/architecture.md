@@ -1,12 +1,10 @@
 ---
-title: Architecture
+title: Smart Factory Architecture
 tags:
   - portfolio
   - architecture
   - iot
 ---
-
-# Smart Factory Architecture
 
 Smart Factory는 구현 저장소 하나만 읽는 프로젝트가 아니라, `왜 이런 시스템을 택했는가`를 설명하는 연구 폴더와 `그 판단을 코드로 옮긴 구현 폴더`가 같이 있는 프로젝트입니다. 그래서 이 저장소는 먼저 `연구`, 그 다음 `구현` 순서로 읽는 편이 맞습니다.
 

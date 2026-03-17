@@ -1,12 +1,10 @@
 ---
-title: Architecture
+title: BagInDB Architecture
 tags:
   - portfolio
   - architecture
   - rust
 ---
-
-# BagInDB Architecture
 
 BagInDB는 크기가 큰 백엔드가 아니라, 읽기 중심 장비 도메인을 별도 서비스로 떼어냈을 때 어떤 계층이 필요한지를 보여 주는 작은 서비스입니다. 그래서 이 프로젝트는 폴더 수보다 `요청이 어디를 거쳐 응답으로 나가는가`를 먼저 잡고 읽는 편이 맞습니다.
 

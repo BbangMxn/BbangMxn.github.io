@@ -1,12 +1,23 @@
+.folder-hub,
+.portfolio-home {
+  --folio-label-column: clamp(6.6rem, 10vw, 8.5rem);
+  --folio-column-gap: clamp(1.05rem, 1.8vw, 1.4rem);
+  --folio-block-gap: clamp(0.75rem, 1.1vw, 0.9rem);
+  --folio-card-shift: 0.5rem;
+  --folio-note-indent: 0.8rem;
+  --folio-rail-size: 2px;
+  --folio-hover-tint: color-mix(in srgb, var(--secondary) 3%, transparent);
+}
+
 .folder-hub {
   display: grid;
   max-width: 44rem;
-  gap: 1.3rem;
+  gap: 1.35rem;
 }
 
 .folder-hub .hub-header {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.75rem;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--nomos-line);
 }
@@ -61,25 +72,28 @@
   margin: 0;
   max-width: 44rem;
   color: color-mix(in srgb, var(--darkgray) 92%, var(--dark));
-  line-height: 1.8;
+  line-height: 1.82;
 }
 
 .folder-hub .hub-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.85rem;
+  align-items: start;
 }
 
 .portfolio-home .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.85rem;
+  align-items: start;
 }
 
 .folder-hub .hub-proof-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.9rem;
+  align-items: start;
 }
 
 .folder-hub .hub-grid.single {
@@ -90,6 +104,8 @@
   display: grid;
   gap: 0.45rem;
   min-height: 0;
+  min-width: 0;
+  align-content: start;
   position: relative;
   padding: 0.9rem 0 0.25rem 0.25rem;
   color: inherit;
@@ -115,13 +131,13 @@
 
 .folder-hub .hub-card:hover {
   color: var(--dark);
-  padding-left: 0.65rem;
+  padding-left: var(--folio-card-shift);
   border-color: color-mix(in srgb, var(--secondary) 20%, transparent);
-  background: linear-gradient(90deg, color-mix(in srgb, var(--secondary) 4%, transparent) 0%, transparent 38%);
+  background: linear-gradient(90deg, var(--folio-hover-tint) 0%, transparent 42%);
 }
 
 .folder-hub .hub-card:hover::before {
-  width: 2px;
+  width: var(--folio-rail-size);
 }
 
 .folder-hub .hub-card strong {
@@ -141,6 +157,8 @@
   display: grid;
   gap: 0.45rem;
   min-height: 0;
+  min-width: 0;
+  align-content: start;
   position: relative;
   padding: 0.9rem 0 0.25rem 0.25rem;
   color: inherit;
@@ -166,13 +184,13 @@
 
 .portfolio-home .portfolio-card:hover {
   color: var(--dark);
-  padding-left: 0.65rem;
+  padding-left: var(--folio-card-shift);
   border-color: color-mix(in srgb, var(--secondary) 20%, transparent);
-  background: linear-gradient(90deg, color-mix(in srgb, var(--secondary) 4%, transparent) 0%, transparent 38%);
+  background: linear-gradient(90deg, var(--folio-hover-tint) 0%, transparent 42%);
 }
 
 .portfolio-home .portfolio-card:hover::before {
-  width: 2px;
+  width: var(--folio-rail-size);
 }
 
 .portfolio-home .portfolio-card strong {
@@ -191,6 +209,8 @@
 .folder-hub .hub-proof-card {
   display: grid;
   gap: 0.72rem;
+  min-width: 0;
+  align-content: start;
   position: relative;
   padding: 1rem 0 0.3rem 0.8rem;
   border-top: 1px solid var(--nomos-line);
@@ -208,7 +228,7 @@
   inset-inline-start: 0;
   top: 1rem;
   bottom: 0.35rem;
-  width: 2px;
+  width: var(--folio-rail-size);
   background: color-mix(in srgb, var(--secondary) 42%, transparent);
 }
 
@@ -282,7 +302,7 @@
 
 .portfolio-home .portfolio-intro {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.75rem;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--nomos-line);
 }
@@ -368,7 +388,8 @@
 .portfolio-home .portfolio-block,
 .folder-hub .hub-section {
   display: grid;
-  gap: 0.75rem;
+  gap: var(--folio-block-gap);
+  align-content: start;
 }
 
 .portfolio-home .portfolio-list,
@@ -390,6 +411,8 @@
 .folder-hub .hub-note {
   display: grid;
   gap: 0.48rem;
+  min-width: 0;
+  align-content: start;
   padding: 1.1rem 0 1.1rem 0.25rem;
   border-top: 1px solid var(--nomos-line);
   border-right: 0;
@@ -431,14 +454,14 @@
 
 .portfolio-home .portfolio-item > a:hover,
 .folder-hub .hub-item > a:hover {
-  padding-left: 0.65rem;
+  padding-left: var(--folio-card-shift);
   border-color: color-mix(in srgb, var(--secondary) 24%, transparent);
-  background: linear-gradient(90deg, color-mix(in srgb, var(--secondary) 4%, transparent) 0%, transparent 42%);
+  background: linear-gradient(90deg, var(--folio-hover-tint) 0%, transparent 46%);
 }
 
 .portfolio-home .portfolio-item > a:hover::before,
 .folder-hub .hub-item > a:hover::before {
-  width: 2px;
+  width: var(--folio-rail-size);
 }
 
 .portfolio-home .portfolio-item strong,
@@ -468,7 +491,7 @@
 
 .folder-hub .hub-note {
   position: relative;
-  padding: 1rem 0 0.15rem 0.8rem;
+  padding: 1rem 0 0.15rem var(--folio-note-indent);
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
   border-right: 0;
   border-bottom: 0;
@@ -484,7 +507,7 @@
   inset-inline-start: 0;
   top: 1rem;
   bottom: 0.15rem;
-  width: 2px;
+  width: var(--folio-rail-size);
   background: color-mix(in srgb, var(--secondary) 30%, transparent);
 }
 
@@ -684,6 +707,145 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary strong 
 body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   margin: 0;
   max-width: none;
+}
+
+@media all and (min-width: 960px) {
+  .folder-hub .hub-header {
+    grid-template-columns: var(--folio-label-column) minmax(0, 1fr);
+    column-gap: var(--folio-column-gap);
+    row-gap: 0.55rem;
+    align-items: start;
+  }
+
+  .folder-hub .hub-kicker {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    padding-top: 0.2rem;
+  }
+
+  .folder-hub .hub-header > h2,
+  .folder-hub .hub-header > .hub-lede {
+    grid-column: 2;
+  }
+
+  .portfolio-home .portfolio-intro {
+    grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 16rem);
+    column-gap: 1.9rem;
+    row-gap: 0.8rem;
+    align-items: start;
+  }
+
+  .portfolio-home .portfolio-kicker,
+  .portfolio-home h1,
+  .portfolio-home .portfolio-lede,
+  .portfolio-home .portfolio-actions {
+    grid-column: 1;
+  }
+
+  .portfolio-home .portfolio-meta {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    align-self: start;
+    gap: 0.65rem;
+    margin-top: 0.1rem;
+    padding-inline-start: 1.1rem;
+    border-inline-start: 1px solid color-mix(in srgb, var(--nomos-line) 92%, transparent);
+  }
+
+  .portfolio-home .portfolio-meta li {
+    padding-top: 0.72rem;
+  }
+
+  .portfolio-home .portfolio-block,
+  .folder-hub .hub-section {
+    grid-template-columns: var(--folio-label-column) minmax(0, 1fr);
+    column-gap: var(--folio-column-gap);
+    row-gap: 0.55rem;
+    align-items: start;
+  }
+
+  .portfolio-home .portfolio-block-kicker,
+  .folder-hub .hub-section-kicker {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    padding-top: 0.2rem;
+  }
+
+  .portfolio-home .portfolio-block > h2,
+  .folder-hub .hub-section > h3 {
+    grid-column: 2;
+  }
+
+  .portfolio-home .portfolio-block > :not(.portfolio-block-kicker):not(h2),
+  .folder-hub .hub-section > :not(.hub-section-kicker):not(h3) {
+    grid-column: 2;
+  }
+
+  .portfolio-home .portfolio-grid,
+  .folder-hub .hub-grid:not(.single) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.2rem;
+  }
+
+  .portfolio-home .portfolio-grid > :last-child:nth-child(odd),
+  .folder-hub .hub-grid:not(.single) > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
+  .folder-hub .hub-proof-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.2rem;
+  }
+
+  .folder-hub .hub-proof-grid > .hub-proof-card:last-child:not(:has(.hub-proof-media)) {
+    grid-column: 1 / -1;
+  }
+
+  .folder-hub .hub-list,
+  .portfolio-home .portfolio-list {
+    gap: 0.05rem;
+  }
+
+  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow {
+    gap: 1.35rem;
+  }
+
+  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 1.25rem;
+    padding: 1rem 0 0.35rem;
+    border: 0;
+    border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
+    border-radius: 0;
+    background: transparent;
+  }
+
+  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step:not(:last-child)::after {
+    display: none;
+  }
+
+  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step:nth-child(even) .nazgul-flow-step-media {
+    order: 2;
+  }
+
+  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step:nth-child(even) .nazgul-flow-step-body {
+    order: 1;
+  }
+
+  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step-media {
+    min-height: 19rem;
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step-body {
+    padding-top: 0.15rem;
+  }
 }
 
 @media all and (max-width: 800px) {
