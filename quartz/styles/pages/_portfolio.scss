@@ -15,12 +15,26 @@
 .folder-hub .hub-section-kicker,
 .portfolio-home .portfolio-kicker,
 .portfolio-home .portfolio-block-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   margin: 0;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--secondary);
+}
+
+.folder-hub .hub-kicker::before,
+.folder-hub .hub-section-kicker::before,
+.portfolio-home .portfolio-kicker::before,
+.portfolio-home .portfolio-block-kicker::before {
+  content: "";
+  display: inline-block;
+  width: 1.75rem;
+  height: 1px;
+  background: color-mix(in srgb, var(--secondary) 30%, var(--nomos-line));
 }
 
 .folder-hub h2,
@@ -38,13 +52,15 @@
 .folder-hub h3,
 .portfolio-home .portfolio-block h2 {
   font-size: clamp(1.1rem, 2vw, 1.4rem);
+  max-width: 34rem;
+  letter-spacing: -0.015em;
 }
 
 .folder-hub .hub-lede,
 .portfolio-home .portfolio-lede {
   margin: 0;
   max-width: 44rem;
-  color: var(--darkgray);
+  color: color-mix(in srgb, var(--darkgray) 92%, var(--dark));
   line-height: 1.8;
 }
 
@@ -74,15 +90,38 @@
   display: grid;
   gap: 0.45rem;
   min-height: 0;
-  padding: 0.9rem 0 0.25rem;
+  position: relative;
+  padding: 0.9rem 0 0.25rem 0.25rem;
   color: inherit;
   border-top: 1px solid var(--nomos-line);
   background: transparent;
+  text-decoration: none;
+  transition:
+    border-color 0.18s ease,
+    padding-left 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.folder-hub .hub-card::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.95rem;
+  bottom: 0.3rem;
+  width: 0;
+  background: color-mix(in srgb, var(--secondary) 45%, transparent);
+  transition: width 0.18s ease;
 }
 
 .folder-hub .hub-card:hover {
   color: var(--dark);
+  padding-left: 0.65rem;
   border-color: color-mix(in srgb, var(--secondary) 20%, transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--secondary) 4%, transparent) 0%, transparent 38%);
+}
+
+.folder-hub .hub-card:hover::before {
+  width: 2px;
 }
 
 .folder-hub .hub-card strong {
@@ -102,16 +141,38 @@
   display: grid;
   gap: 0.45rem;
   min-height: 0;
-  padding: 0.9rem 0 0.25rem;
+  position: relative;
+  padding: 0.9rem 0 0.25rem 0.25rem;
   color: inherit;
   border-top: 1px solid var(--nomos-line);
   background: transparent;
   text-decoration: none;
+  transition:
+    border-color 0.18s ease,
+    padding-left 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.portfolio-home .portfolio-card::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.95rem;
+  bottom: 0.3rem;
+  width: 0;
+  background: color-mix(in srgb, var(--secondary) 45%, transparent);
+  transition: width 0.18s ease;
 }
 
 .portfolio-home .portfolio-card:hover {
   color: var(--dark);
+  padding-left: 0.65rem;
   border-color: color-mix(in srgb, var(--secondary) 20%, transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--secondary) 4%, transparent) 0%, transparent 38%);
+}
+
+.portfolio-home .portfolio-card:hover::before {
+  width: 2px;
 }
 
 .portfolio-home .portfolio-card strong {
@@ -130,7 +191,8 @@
 .folder-hub .hub-proof-card {
   display: grid;
   gap: 0.72rem;
-  padding: 1rem 0 0.3rem;
+  position: relative;
+  padding: 1rem 0 0.3rem 0.8rem;
   border-top: 1px solid var(--nomos-line);
   border-right: 0;
   border-bottom: 0;
@@ -138,6 +200,16 @@
   border-radius: 0;
   background: transparent;
   box-shadow: none;
+}
+
+.folder-hub .hub-proof-card::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 1rem;
+  bottom: 0.35rem;
+  width: 2px;
+  background: color-mix(in srgb, var(--secondary) 42%, transparent);
 }
 
 .folder-hub .hub-proof-card strong {
@@ -318,7 +390,7 @@
 .folder-hub .hub-note {
   display: grid;
   gap: 0.48rem;
-  padding: 1.1rem 0;
+  padding: 1.1rem 0 1.1rem 0.25rem;
   border-top: 1px solid var(--nomos-line);
   border-right: 0;
   border-bottom: 0;
@@ -330,6 +402,27 @@
   text-decoration: none;
 }
 
+.portfolio-home .portfolio-item > a,
+.folder-hub .hub-item > a {
+  position: relative;
+  transition:
+    border-color 0.18s ease,
+    padding-left 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.portfolio-home .portfolio-item > a::before,
+.folder-hub .hub-item > a::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 1rem;
+  bottom: 0.3rem;
+  width: 0;
+  background: color-mix(in srgb, var(--secondary) 48%, transparent);
+  transition: width 0.18s ease;
+}
+
 .portfolio-home .portfolio-list > .portfolio-item:first-child > a,
 .folder-hub .hub-list > .hub-item:first-child > a,
 .folder-hub .hub-section > .hub-note:first-child {
@@ -338,7 +431,14 @@
 
 .portfolio-home .portfolio-item > a:hover,
 .folder-hub .hub-item > a:hover {
+  padding-left: 0.65rem;
   border-color: color-mix(in srgb, var(--secondary) 24%, transparent);
+  background: linear-gradient(90deg, color-mix(in srgb, var(--secondary) 4%, transparent) 0%, transparent 42%);
+}
+
+.portfolio-home .portfolio-item > a:hover::before,
+.folder-hub .hub-item > a:hover::before {
+  width: 2px;
 }
 
 .portfolio-home .portfolio-item strong,
@@ -348,6 +448,13 @@
   font-size: 1.05rem;
   line-height: 1.35;
   color: var(--dark);
+}
+
+.portfolio-home .portfolio-item > a:hover strong,
+.folder-hub .hub-item > a:hover strong,
+.folder-hub .hub-card:hover strong,
+.portfolio-home .portfolio-card:hover strong {
+  color: color-mix(in srgb, var(--dark) 88%, var(--secondary));
 }
 
 .portfolio-home .portfolio-item p,
@@ -361,7 +468,7 @@
 
 .folder-hub .hub-note {
   position: relative;
-  padding: 1rem 0 0.15rem;
+  padding: 1rem 0 0.15rem 0.8rem;
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
   border-right: 0;
   border-bottom: 0;
@@ -372,6 +479,16 @@
 }
 
 .folder-hub .hub-note::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 1rem;
+  bottom: 0.15rem;
+  width: 2px;
+  background: color-mix(in srgb, var(--secondary) 30%, transparent);
+}
+
+.folder-hub .hub-note::after {
   content: "";
   position: absolute;
   inset-inline-start: 0;
@@ -600,7 +717,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   .portfolio-home .portfolio-item > a,
   .folder-hub .hub-item > a,
   .folder-hub .hub-note {
-    padding: 0.85rem 0;
+    padding: 0.85rem 0 0.85rem 0.2rem;
   }
 
   .folder-hub {

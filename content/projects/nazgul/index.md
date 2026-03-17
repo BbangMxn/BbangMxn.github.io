@@ -212,8 +212,22 @@ cssclasses:
       <div class="hub-note">
         <span class="hub-label">Step 4</span>
         <strong>로컬 환경에서 느린 실험 결과까지 남기며 병목과 연구 범위를 같이 기록했습니다</strong>
-        <p>SQLite와 Ollama 기반 실험은 느렸지만, 어떤 병목이 있고 현재 구조가 어디까지 유효한지 확인할 수 있었습니다. 더 자세한 설계는 <a href="./start-here">Start Here</a>, <a href="./retrieval-map">Retrieval Map</a>, <a href="./04%20Technical%20Design%20Document">Technical Design Document</a>에서 이어집니다.</p>
+        <p>SQLite와 Ollama 기반 실험은 느렸지만, 어떤 병목이 있고 현재 구조가 어디까지 유효한지 확인할 수 있었습니다. 더 자세한 설계는 <a href="./start-here">Start Here</a>, <a href="./retrieval-map">Retrieval Map</a>, <a href="./research-notes">Research Notes</a>, <a href="./technical-design">Technical Design</a>에서 이어집니다.</p>
       </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Research Notes</p>
+  <h3>세부 연구 자료는 별도 허브로 묶었습니다</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./research-notes">
+        <span class="hub-label">Research Track</span>
+        <strong>Nazgul Research Notes</strong>
+        <p>Entity Card 구조, retrieval 엔진 설계, 관련 시스템 비교, 기술 설계 문서를 한 번에 정리한 연구 허브입니다.</p>
+      </a>
     </li>
   </ul>
 </section>
@@ -232,7 +246,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Note</span>
-        <p>메인 페이지는 문제 재정의와 검증 범위에 집중하고, 세부 retrieval 설계는 하위 문서로 분리해 두었습니다.</p>
+        <p>메인 페이지는 문제 재정의와 검증 범위에 집중하고, 세부 retrieval 설계와 연구 메모는 <a href="./research-notes">Research Notes</a> 아래로 분리해 두었습니다.</p>
       </div>
     </li>
   </ul>

@@ -17,6 +17,27 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Research Link</p>
+  <h3>이 기준을 보강하는 웹 글쓰기 근거</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./portfolio-writing-guide">
+        <span class="hub-label">Guide</span>
+        <strong>Portfolio Writing Guide</strong>
+        <p>이 문서의 원칙을 웹 읽기 패턴과 포트폴리오 조사 근거로 다시 정리한 보조 기준 문서입니다. 메인 페이지와 프로젝트 카피를 더 조정할 때는 이 문서를 같이 봅니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="./portfolio-visual-guide">
+        <span class="hub-label">Design</span>
+        <strong>Portfolio Visual Guide</strong>
+        <p>섹션 경계, 시각 계층, 대비, 가독성을 미니멀한 톤 안에서 어떻게 잡을지 정리한 시각 기준 문서입니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Audience</p>
   <h3>누구를 설득하는 문서인가</h3>
   <ul class="hub-list">

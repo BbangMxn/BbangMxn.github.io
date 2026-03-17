@@ -1,3 +1,13 @@
+---
+title: Entity Card RAG
+tags:
+  - portfolio
+  - rag
+  - research
+cssclasses:
+  - research-note
+---
+
 # Hierarchical Graph-based Entity Card Architecture
 
 > 개인 연구 목적
@@ -416,14 +426,8 @@ Mitigation: Depth 제한 + relevance pruning
 
 ---
 
-## Technical Design Document
+## Related Notes
 
-[Technical Design Document](https://www.notion.so/Technical-Design-Document-3170de9c810b80daa6e4c159c55f4071?pvs=21)
-
-## Big Data
-
-[Research data](https://www.notion.so/Research-data-3170de9c810b805896e8cfd8f2fc5e1c?pvs=21)
-
-## Entity Card
-
-[Page](https://www.notion.so/Page-3170de9c810b80e68c86dbf84c0ece01?pvs=21)
+- [Technical Design](./technical-design)
+- [Related Systems](./related-systems)
+- [Retrieval Engine Design](./retrieval-engine-design)

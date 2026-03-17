@@ -4,6 +4,8 @@ tags:
   - portfolio
   - rag
   - architecture
+cssclasses:
+  - research-note
 ---
 
 # Retrieval Map

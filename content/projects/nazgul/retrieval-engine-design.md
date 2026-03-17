@@ -1,3 +1,18 @@
+---
+title: Retrieval Engine Design
+tags:
+  - portfolio
+  - rag
+  - research
+  - design
+cssclasses:
+  - research-note
+---
+
+# Retrieval Engine Design
+
+Nazgul의 retrieval 엔진을 제품과 실험 양쪽에서 성립하게 만들기 위해 정리한 구현 메모입니다. 검색 단위, trace, 테스트 가능성, 개발 순서를 어떻게 고정할지에 집중합니다.
+
 ## 목표
 
 > “운영 가능한 RAG 엔진”을 만들기 위해,

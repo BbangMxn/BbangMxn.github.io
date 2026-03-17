@@ -1,3 +1,18 @@
+---
+title: Technical Design
+tags:
+  - portfolio
+  - rag
+  - architecture
+  - design
+cssclasses:
+  - research-note
+---
+
+# Technical Design
+
+Nazgul retrieval 실험을 로컬 환경에서 구현 가능한 형태로 고정한 기술 설계 문서입니다. Entity, 저장소, 검색 정책, Tool API를 어떤 기준으로 자를지에 집중합니다.
+
 # 0. 목표와 범위
 
 ### 목표

@@ -40,5 +40,19 @@ cssclasses:
         <p>프로젝트를 어떤 형식으로 꾸밀지가 아니라, 어떤 판단을 어떤 근거로 설득할지 정한 공개 포트폴리오 기준입니다.</p>
       </a>
     </li>
+    <li class="hub-item">
+      <a href="./portfolio-writing-guide">
+        <span class="hub-label">Writing</span>
+        <strong>Portfolio Writing Guide</strong>
+        <p>웹에서 빨리 읽히는 메인 페이지와 프로젝트 글이 어떤 구조를 가져야 하는지 외부 근거와 함께 정리한 문서입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="./portfolio-visual-guide">
+        <span class="hub-label">Design</span>
+        <strong>Portfolio Visual Guide</strong>
+        <p>미니멀한 포트폴리오에서도 섹션 경계, 대비, 시각 계층, 가독성을 어떻게 잡아야 하는지 정리한 시각 기준 문서입니다.</p>
+      </a>
+    </li>
   </ul>
 </section>

@@ -92,8 +92,8 @@
 }
 
 .page:has(article.portfolio-home) article.portfolio-home .portfolio-block + .portfolio-block {
-  padding-top: 1.3rem;
-  border-top: 1px solid var(--nomos-line);
+  padding-top: 1.55rem;
+  border-top: 1px solid color-mix(in srgb, var(--nomos-line) 86%, transparent);
 }
 
 .page:has(article.portfolio-home) article.portfolio-home .portfolio-list {
@@ -127,8 +127,8 @@
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--nomos-line);
+  padding-top: 1.55rem;
+  border-top: 1px solid color-mix(in srgb, var(--nomos-line) 86%, transparent);
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-item > a,
