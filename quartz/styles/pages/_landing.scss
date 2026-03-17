@@ -5,15 +5,13 @@ body[data-slug="index"] {
     display: none;
   }
 
-  .center > article.landing-page,
-  .center > article.portfolio-home {
+  .center > article.landing-page {
     display: grid;
     gap: 1.5rem;
     padding-bottom: 1rem;
   }
 
-  .center > article.landing-page + hr,
-  .center > article.portfolio-home + hr {
+  .center > article.landing-page + hr {
     margin-top: 0;
   }
 }
