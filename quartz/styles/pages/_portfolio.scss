@@ -7,16 +7,21 @@
   --folio-note-indent: 1.05rem;
   --folio-rail-size: 2px;
   --folio-hover-tint: color-mix(in srgb, var(--secondary) 3%, transparent);
+  --folio-copy-width: 35rem;
+  --folio-header-gap: 1.1rem;
+  --folio-header-padding: 1.85rem;
+  --folio-header-min-height: 11rem;
+  --folio-page-top: 2.2rem;
 }
 
 .folder-hub {
-  --hub-shell-width: 44rem;
+  --hub-shell-width: var(--folio-center-width, 44rem);
   --hub-shell-gap: 2rem;
-  --hub-copy-width: 35rem;
-  --hub-header-gap: 1.1rem;
-  --hub-header-padding: 1.85rem;
-  --hub-header-min-height: 11rem;
-  --hub-page-top: 2.2rem;
+  --hub-copy-width: var(--folio-copy-width);
+  --hub-header-gap: var(--folio-header-gap);
+  --hub-header-padding: var(--folio-header-padding);
+  --hub-header-min-height: var(--folio-header-min-height);
+  --hub-page-top: var(--folio-page-top);
   --hub-grid-gap: 1.1rem;
   --hub-grid-gap-desktop: 1.2rem 1.35rem;
   --hub-card-gap: 0.6rem;
@@ -341,7 +346,7 @@
 }
 
 .center > article.portfolio-home {
-  padding-top: 2.35rem;
+  padding-top: var(--folio-page-top);
 }
 
 .center > article.folder-hub {
@@ -354,13 +359,16 @@
 }
 
 .portfolio-home {
-  max-width: 43rem;
+  width: 100%;
+  max-width: var(--folio-center-width, 44rem);
 }
 
 .portfolio-home .portfolio-intro {
   display: grid;
-  gap: 1.2rem;
-  padding-bottom: 2rem;
+  gap: var(--folio-header-gap);
+  min-height: var(--folio-header-min-height);
+  align-content: start;
+  padding-bottom: var(--folio-header-padding);
   border-bottom: 1px solid var(--nomos-line);
 }
 
@@ -425,7 +433,7 @@
 
 .portfolio-home .portfolio-support {
   margin: 0.35rem 0 0;
-  max-width: 34rem;
+  max-width: var(--folio-copy-width);
   color: var(--gray);
   font-size: 0.95rem;
   line-height: 1.95;
@@ -436,7 +444,7 @@
 }
 
 .portfolio-home .portfolio-intro .portfolio-lede {
-  max-width: 32rem;
+  max-width: var(--folio-copy-width);
   font-size: 1rem;
   line-height: 1.98;
   word-break: keep-all;
@@ -901,7 +909,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   }
 
   .portfolio-home .portfolio-lede {
-    max-width: 32rem;
+    max-width: var(--folio-copy-width);
   }
 
   .portfolio-home .portfolio-entry-grid {
@@ -927,7 +935,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   }
 
   .portfolio-home .portfolio-support {
-    max-width: 32rem;
+    max-width: var(--folio-copy-width);
   }
 
   .portfolio-home .portfolio-block,
