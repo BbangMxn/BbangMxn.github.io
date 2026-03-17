@@ -71,24 +71,16 @@
 
 .page:has(article.folder-hub) article.folder-hub {
   --hub-shell-gap: 2.15rem;
+  --hub-shell-width: 44rem;
+  --hub-copy-width: 35rem;
   --hub-header-padding: 1.8rem;
+  --hub-header-min-height: 11rem;
+  --hub-page-top: 2.2rem;
   --folio-block-gap: 1.05rem;
   --hub-section-padding: 2.05rem;
-  --hub-list-gap: 0.36rem;
-}
-
-body:is(
-    [data-slug="about"],
-    [data-slug="start-here"],
-    [data-slug="projects/index"],
-    [data-slug="wiki/index"],
-    [data-slug="research/index"],
-    [data-slug="Diary/index"]
-  )
-  article.folder-hub {
-  --hub-shell-width: 45rem;
-  --hub-copy-width: 36rem;
-  --hub-grid-gap-desktop: 1.25rem 1.55rem;
+  --hub-list-gap: 0.42rem;
+  --hub-grid-gap-desktop: 1.25rem 1.5rem;
+  --hub-proof-grid-gap-desktop: 1.35rem 1.5rem;
 }
 
 .page:has(article.portfolio-home) .page-header,
@@ -110,7 +102,7 @@ body:is(
 }
 
 .page:has(article.folder-hub) > #quartz-body > .sidebar.left {
-  padding-top: 4.2rem;
+  padding-top: 4rem;
   padding-bottom: 1.35rem;
 }
 
@@ -291,8 +283,8 @@ body:is(
   }
 
   .page:has(article.folder-hub) > #quartz-body {
-    grid-template-columns: 256px minmax(0, 51rem);
-    column-gap: 2.8rem;
+    grid-template-columns: 248px minmax(0, 50rem);
+    column-gap: 2.85rem;
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "grid-sidebar-left grid-header"
