@@ -327,26 +327,6 @@
   color: color-mix(in srgb, var(--secondary) 84%, var(--dark));
 }
 
-.center > article.portfolio-home,
-.center > article.folder-hub {
-  display: grid;
-  gap: 2.5rem;
-  padding-bottom: 1.7rem;
-}
-
-.center > article.portfolio-home {
-  padding-top: var(--folio-page-top);
-}
-
-.center > article.folder-hub {
-  padding-top: var(--hub-page-top);
-}
-
-.center > article.portfolio-home + hr,
-.center > article.folder-hub + hr {
-  display: none;
-}
-
 .portfolio-home {
   width: 100%;
   max-width: var(--folio-center-width, 44rem);
@@ -1020,11 +1000,6 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
 }
 
 @media all and (max-width: 800px) {
-  .center > article.portfolio-home,
-  .center > article.folder-hub {
-    gap: 1.8rem;
-  }
-
   .portfolio-home .portfolio-meta li,
   .folder-hub + .page-listing .section {
     grid-template-columns: 1fr;
