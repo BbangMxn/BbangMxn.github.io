@@ -10,11 +10,11 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   return (
     <div class={classNames(displayClass, "page-title")}>
       <a href={baseDir} class="brand-card">
-        <img class="brand-avatar" src={`${baseDir}/static/profile.png`} alt={`${title} profile`} />
+        <img class="brand-avatar" src={`${baseDir}/static/profile.png`} alt={`${title} 프로필`} />
         <span class="brand-copy">
-          <span class="brand-kicker">Portfolio</span>
+          <span class="brand-kicker">포트폴리오</span>
           <span class="brand-title">{title}</span>
-          <span class="brand-subtitle">Projects / Research / Wiki / Diary</span>
+          <span class="brand-subtitle">프로젝트 / 연구 / 위키 / 다이어리</span>
         </span>
       </a>
     </div>

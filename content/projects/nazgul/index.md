@@ -11,7 +11,7 @@ cssclasses:
 ---
 
 <div class="hub-header">
-  <p class="hub-kicker">Projects / RAG Prototype</p>
+  <p class="hub-kicker">프로젝트 / 검색 실험</p>
   <h2>취미 커뮤니티를 RAG 문제로 다시 정의한 실험</h2>
   <p class="hub-lede">
     처음에는 취미 기반 SNS를 구현하는 것이 목표였지만, 검색과 추천을 단순 피드 문제로 다루는 방식으로는 한계가 분명했습니다.
@@ -20,7 +20,7 @@ cssclasses:
 </div>
 
 <section class="hub-section nazgul-flow-section">
-  <p class="hub-section-kicker">Product Flow</p>
+  <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>
   <p class="hub-lede nazgul-flow-intro">
     Nazgul이 왜 단순 SNS MVP에서 멈추지 않았는지는 이 세 장의 화면으로 가장 먼저 설명됩니다.
@@ -35,7 +35,7 @@ cssclasses:
         <div class="nazgul-flow-step-header">
           <span class="nazgul-flow-step-number">01</span>
           <div class="nazgul-flow-step-title">
-            <span class="hub-label">Community Base</span>
+            <span class="hub-label">커뮤니티 기반</span>
             <strong>홈 피드로 커뮤니티의 출발점을 만들었습니다</strong>
           </div>
         </div>
@@ -51,7 +51,7 @@ cssclasses:
         <div class="nazgul-flow-step-header">
           <span class="nazgul-flow-step-number">02</span>
           <div class="nazgul-flow-step-title">
-            <span class="hub-label">Search Experience</span>
+            <span class="hub-label">탐색 경험</span>
             <strong>탐색 화면으로 검색을 제품 경험으로 묶었습니다</strong>
           </div>
         </div>
@@ -67,7 +67,7 @@ cssclasses:
         <div class="nazgul-flow-step-header">
           <span class="nazgul-flow-step-number">03</span>
           <div class="nazgul-flow-step-title">
-            <span class="hub-label">Personalization Input</span>
+            <span class="hub-label">개인화 입력</span>
             <strong>취미 선택 구조로 개인화 입력을 명확히 남겼습니다</strong>
           </div>
         </div>
@@ -77,31 +77,31 @@ cssclasses:
     </article>
   </div>
   <div class="nazgul-flow-summary">
-    <span class="hub-label">Observed Query</span>
+    <span class="hub-label">관찰 질의</span>
     <strong>2026년 3월 12일 기준, 카드 3개와 추천 포스트 3개를 반환하며 평균 60,531ms를 기록했습니다</strong>
     <p><code>러닝 초보 루틴</code> 질의에서 <code>Card -&gt; Chunk -&gt; Answer -&gt; Trace</code> 흐름이 실제로 이어졌고, 지금은 이 결과를 기준으로 병목 지점과 다음 검증 범위를 좁히고 있습니다.</p>
   </div>
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Why This Project</p>
+  <p class="hub-section-kicker">배경</p>
   <h3>배경</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Problem</span>
+        <span class="hub-label">문제</span>
         <p>처음 만든 취미 SNS MVP는 홈 피드와 탐색 흐름은 있었지만, 검색과 추천을 피드 보강 수준으로만 다루고 있어 이후 AI와 연결할 근거 구조가 부족했습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Shift</span>
+        <span class="hub-label">전환</span>
         <p>그래서 Nazgul은 단순 커뮤니티 사이트가 아니라, 취미 데이터를 Entity Card와 Trace 중심 retrieval 구조로 다시 정의하고 LLM과 연결하는 연구형 프로젝트로 목표를 바꿨습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Scope</span>
+        <span class="hub-label">범위</span>
         <p>1인 개발로 제품 방향, 프론트엔드, 백엔드, 도메인 설계, 로컬 AI 실험, 문서화를 직접 맡았고, 현재는 초기 연구 프로토타입 단계입니다.</p>
       </div>
     </li>
@@ -109,24 +109,24 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Key Decisions</p>
+  <p class="hub-section-kicker">판단</p>
   <h3>판단</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Decision 1</span>
+        <span class="hub-label">판단 1</span>
         <p>단순 chunk 검색 대신 Entity Card 구조를 택했습니다. 취미 도메인을 바로 청크로 평탄화하면 맥락과 출처 설명이 약해진다고 봤기 때문입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Decision 2</span>
+        <span class="hub-label">판단 2</span>
         <p>카드를 중심으로 계층형 retrieval을 설계했습니다. 취미를 하나의 카테고리 축으로 묶고, 도서관처럼 관리 가능한 단위로 유지해야 검색 결과와 추천 근거를 함께 설명하기 쉬웠기 때문입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Decision 3</span>
+        <span class="hub-label">판단 3</span>
         <p>결과만 저장하지 않고 RecommendationTrace를 분리했습니다. 연구형 프로젝트에서는 정답보다도 실패와 지연, 후보 선택 과정을 나중에 다시 볼 수 있어야 한다고 판단했기 때문입니다.</p>
       </div>
     </li>
@@ -134,24 +134,24 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">What Was Proven</p>
+  <p class="hub-section-kicker">검증</p>
   <h3>검증</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">MVP Base</span>
+        <span class="hub-label">기반</span>
         <p>44개 취미와 9개 카테고리를 바탕으로 홈 피드, 탐색, 프로필, 게시물 작성, 취미 선택 구조를 만들었고, 이 도메인을 RAG 실험의 베이스로 활용할 수 있음을 확인했습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Observed Flow</span>
+        <span class="hub-label">관찰 흐름</span>
         <p>2026년 3월 12일 기준, <code>러닝 초보 루틴</code> 질의에서 카드 3개와 추천 포스트 3개를 반환하며 Card -> Chunk -> Answer -> Trace 흐름이 실제로 이어지는 것을 확인했습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Benchmark</span>
+        <span class="hub-label">지표</span>
         <p>SQLite와 Ollama(qwen3:8b) 조합에서 평균 60,531ms로 느렸지만, 그 덕분에 현재 병목이 어디 있고 이 구조가 어디까지 검증된 상태인지는 분명하게 잡을 수 있었습니다.</p>
       </div>
     </li>
@@ -159,24 +159,24 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Limits and Next</p>
+  <p class="hub-section-kicker">한계</p>
   <h3>한계</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Limit</span>
+        <span class="hub-label">한계</span>
         <p>정량 평가 지표인 Recall@k, MRR, nDCG 수준의 비교는 아직 충분하지 않고, 데이터셋 자체도 연구를 일반화하기에는 작습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Risk</span>
+        <span class="hub-label">위험</span>
         <p>복합 질의의 랭킹 안정성은 아직 부족하고, 현재 실험은 로컬 Ollama 응답 시간에 크게 의존해 실사용 성능을 말할 단계는 아닙니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Next</span>
+        <span class="hub-label">다음</span>
         <p>다음 단계는 더 큰 데이터셋과 정량 평가 체계를 붙여서, 지금의 구조적 판단이 실제 검색 품질 개선으로 이어지는지 확인하는 것입니다.</p>
       </div>
     </li>
@@ -184,48 +184,48 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Development Flow</p>
+  <p class="hub-section-kicker">흐름</p>
   <h3>흐름</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Step 1</span>
+        <span class="hub-label">1단계</span>
         <strong>처음에는 취미 SNS를 실제 제품 화면으로 먼저 만들었습니다</strong>
         <p>홈 피드, 탐색, 프로필, 게시물 작성, 취미 선택 구조를 먼저 구현해서 도메인 기반을 만들었습니다. 이 단계가 있었기 때문에 이후 검색 문제를 추상 연구가 아니라 실제 사용자 흐름 위에서 다시 정의할 수 있었습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Step 2</span>
+        <span class="hub-label">2단계</span>
         <strong>탐색 경험과 개인화 입력을 남긴 뒤, 이를 RAG 입력 구조로 재해석했습니다</strong>
         <p>탐색 화면과 취미 선택 UI를 단순 화면이 아니라 검색과 추천의 입력으로 보기 시작했습니다. 그래서 개인화는 추측이 아니라 실제 UI 상태에서 가져오는 맥락이 됐습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Step 3</span>
+        <span class="hub-label">3단계</span>
         <strong>서버 쪽에서는 Entity Card에서 Chunk, Answer, Trace로 이어지는 검색 파이프라인을 만들었습니다</strong>
         <p><a href="./retrieval-map">Retrieval Map</a>처럼 질의를 바로 청크에 던지지 않고 카드 중심 중간 계층을 뒀습니다. 그리고 RecommendationTrace를 남겨 어떤 후보가 선택됐는지 다시 볼 수 있게 했습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Step 4</span>
+        <span class="hub-label">4단계</span>
         <strong>로컬 환경에서 느린 실험 결과까지 남기며 병목과 연구 범위를 같이 기록했습니다</strong>
-        <p>SQLite와 Ollama 기반 실험은 느렸지만, 어떤 병목이 있고 현재 구조가 어디까지 유효한지 확인할 수 있었습니다. 더 자세한 설계는 <a href="./start-here">Start Here</a>, <a href="./retrieval-map">Retrieval Map</a>, <a href="./research-notes">Research Notes</a>, <a href="./technical-design">Technical Design</a>에서 이어집니다.</p>
+        <p>SQLite와 Ollama 기반 실험은 느렸지만, 어떤 병목이 있고 현재 구조가 어디까지 유효한지 확인할 수 있었습니다. 더 자세한 설계는 <a href="./start-here">시작 가이드</a>, <a href="./retrieval-map">검색 흐름</a>, <a href="./research-notes">연구 노트</a>, <a href="./technical-design">기술 설계</a>에서 이어집니다.</p>
       </div>
     </li>
   </ul>
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Research Notes</p>
+  <p class="hub-section-kicker">연구</p>
   <h3>연구</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./research-notes">
-        <span class="hub-label">Research Track</span>
-        <strong>Nazgul Research Notes</strong>
+        <span class="hub-label">연구 묶음</span>
+        <strong>Nazgul 연구 노트</strong>
         <p>Entity Card 구조, retrieval 엔진 설계, 관련 시스템 비교, 기술 설계 문서를 한 번에 정리한 연구 허브입니다.</p>
       </a>
     </li>
@@ -233,33 +233,33 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Source</p>
+  <p class="hub-section-kicker">원본</p>
   <h3>원본</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="https://github.com/BbangMxn/Nazgul">
-        <span class="hub-label">GitHub</span>
+        <span class="hub-label">깃허브</span>
         <strong>BbangMxn/Nazgul</strong>
         <p>취미 SNS MVP와 Java/Spring Boot 기반 RAG 실험 서버를 함께 담은 공개 저장소입니다.</p>
       </a>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Note</span>
-        <p>메인 페이지는 문제 재정의와 검증 범위에 집중하고, 세부 retrieval 설계와 연구 메모는 <a href="./research-notes">Research Notes</a> 아래로 분리해 두었습니다.</p>
+        <span class="hub-label">메모</span>
+        <p>메인 페이지는 문제 재정의와 검증 범위에 집중하고, 세부 retrieval 설계와 연구 메모는 <a href="./research-notes">연구 노트</a> 아래로 분리해 두었습니다.</p>
       </div>
     </li>
   </ul>
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Architecture</p>
+  <p class="hub-section-kicker">구조</p>
   <h3>구조</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./architecture">
-        <span class="hub-label">Code Structure</span>
-        <strong>Nazgul Architecture</strong>
+        <span class="hub-label">코드 구조</span>
+        <strong>Nazgul 아키텍처</strong>
         <p><code>client</code>가 만드는 제품 입력과 <code>server/rag</code>가 수행하는 retrieval 실험 구조를 별도 페이지에서 나눠 설명합니다.</p>
       </a>
     </li>
@@ -267,7 +267,7 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">Structure</p>
+  <p class="hub-section-kicker">파일</p>
   <h3>파일 구조</h3>
 
 ```text
@@ -281,6 +281,6 @@ Nazgul/
 └── docs/     # 이미지 및 보조 문서
 ```
 
-<p>루트 구조만 보면 단순하지만, 실제 핵심은 `client`가 만드는 제품 맥락과 `server/rag`가 수행하는 retrieval 실험이 어떻게 분리되는가에 있습니다. 이 흐름은 <a href="./architecture">Architecture</a>에서 모듈 기준으로 이어서 설명합니다.</p>
+<p>루트 구조만 보면 단순하지만, 실제 핵심은 `client`가 만드는 제품 맥락과 `server/rag`가 수행하는 retrieval 실험이 어떻게 분리되는가에 있습니다. 이 흐름은 <a href="./architecture">아키텍처</a>에서 모듈 기준으로 이어서 설명합니다.</p>
 
 </section>

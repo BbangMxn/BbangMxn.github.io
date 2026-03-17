@@ -36,7 +36,7 @@ export default {
       title: "탐색기",
     },
     footer: {
-      createdWith: "Created with",
+      createdWith: "제작 도구",
     },
     graph: {
       title: "그래프 뷰",
@@ -57,7 +57,7 @@ export default {
       title: "목차",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `${minutes} min read`,
+      readingTime: ({ minutes }) => `${minutes}분 읽기`,
     },
   },
   pages: {
@@ -66,7 +66,7 @@ export default {
       lastFewNotes: ({ count }) => `최근 ${count} 건`,
     },
     error: {
-      title: "Not Found",
+      title: "찾을 수 없음",
       notFound: "페이지가 존재하지 않거나 비공개 설정이 되어 있습니다.",
       home: "홈페이지로 돌아가기",
     },

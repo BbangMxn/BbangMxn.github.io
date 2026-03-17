@@ -1,24 +1,24 @@
 .folder-hub,
 .portfolio-home {
-  --folio-label-column: clamp(6.6rem, 10vw, 8.5rem);
-  --folio-column-gap: clamp(1.05rem, 1.8vw, 1.4rem);
-  --folio-block-gap: clamp(0.75rem, 1.1vw, 0.9rem);
-  --folio-card-shift: 0.5rem;
-  --folio-note-indent: 0.8rem;
+  --folio-label-column: clamp(5.4rem, 8.5vw, 6.4rem);
+  --folio-column-gap: clamp(1.1rem, 1.9vw, 1.5rem);
+  --folio-block-gap: clamp(1.15rem, 1.8vw, 1.4rem);
+  --folio-card-shift: 0.42rem;
+  --folio-note-indent: 1.05rem;
   --folio-rail-size: 2px;
   --folio-hover-tint: color-mix(in srgb, var(--secondary) 3%, transparent);
 }
 
 .folder-hub {
   display: grid;
-  max-width: 44rem;
-  gap: 1.35rem;
+  max-width: 43rem;
+  gap: 1.8rem;
 }
 
 .folder-hub .hub-header {
   display: grid;
-  gap: 0.75rem;
-  padding-bottom: 1.25rem;
+  gap: 1rem;
+  padding-bottom: 1.7rem;
   border-bottom: 1px solid var(--nomos-line);
 }
 
@@ -30,11 +30,10 @@
   align-items: center;
   gap: 0.55rem;
   margin: 0;
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--secondary);
+  letter-spacing: 0.03em;
+  color: color-mix(in srgb, var(--secondary) 88%, var(--dark));
 }
 
 .folder-hub .hub-kicker::before,
@@ -50,10 +49,20 @@
 
 .folder-hub h2,
 .folder-hub h3,
+.portfolio-home h1,
 .portfolio-home h2 {
   margin: 0;
   line-height: 1.16;
   text-wrap: balance;
+  word-break: keep-all;
+}
+
+.portfolio-home h1 {
+  max-width: 11ch;
+  font-size: clamp(2rem, 3.2vw, 2.85rem);
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+  color: var(--dark);
 }
 
 .folder-hub h2,
@@ -75,26 +84,27 @@
   max-width: 44rem;
   color: color-mix(in srgb, var(--darkgray) 92%, var(--dark));
   line-height: 1.82;
+  word-break: keep-all;
 }
 
 .folder-hub .hub-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.85rem;
+  gap: 1.1rem;
   align-items: start;
 }
 
 .portfolio-home .portfolio-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.85rem;
+  gap: 1.1rem;
   align-items: start;
 }
 
 .folder-hub .hub-proof-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.9rem;
+  gap: 1.2rem;
   align-items: start;
 }
 
@@ -104,12 +114,12 @@
 
 .folder-hub .hub-card {
   display: grid;
-  gap: 0.45rem;
+  gap: 0.6rem;
   min-height: 0;
   min-width: 0;
   align-content: start;
   position: relative;
-  padding: 0.9rem 0 0.25rem 0.25rem;
+  padding: 1.1rem 0 0.5rem 0.3rem;
   color: inherit;
   border-top: 1px solid var(--nomos-line);
   background: transparent;
@@ -144,8 +154,9 @@
 
 .folder-hub .hub-card strong {
   font-size: 1.05rem;
-  line-height: 1.35;
+  line-height: 1.42;
   color: var(--dark);
+  word-break: keep-all;
 }
 
 .folder-hub .hub-card p {
@@ -153,16 +164,17 @@
   max-width: 38rem;
   color: var(--darkgray);
   line-height: 1.75;
+  word-break: keep-all;
 }
 
 .portfolio-home .portfolio-card {
   display: grid;
-  gap: 0.45rem;
+  gap: 0.6rem;
   min-height: 0;
   min-width: 0;
   align-content: start;
   position: relative;
-  padding: 0.9rem 0 0.25rem 0.25rem;
+  padding: 1.1rem 0 0.5rem 0.3rem;
   color: inherit;
   border-top: 1px solid var(--nomos-line);
   background: transparent;
@@ -197,8 +209,9 @@
 
 .portfolio-home .portfolio-card strong {
   font-size: 1.05rem;
-  line-height: 1.35;
+  line-height: 1.42;
   color: var(--dark);
+  word-break: keep-all;
 }
 
 .portfolio-home .portfolio-card p {
@@ -206,15 +219,16 @@
   max-width: 38rem;
   color: var(--darkgray);
   line-height: 1.75;
+  word-break: keep-all;
 }
 
 .folder-hub .hub-proof-card {
   display: grid;
-  gap: 0.72rem;
+  gap: 0.9rem;
   min-width: 0;
   align-content: start;
   position: relative;
-  padding: 1rem 0 0.3rem 0.8rem;
+  padding: 1.15rem 0 0.55rem 0.95rem;
   border-top: 1px solid var(--nomos-line);
   border-right: 0;
   border-bottom: 0;
@@ -279,18 +293,21 @@
 
 .folder-hub .hub-label,
 .portfolio-home .portfolio-badge {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--secondary);
+  letter-spacing: 0.03em;
+  color: color-mix(in srgb, var(--secondary) 84%, var(--dark));
 }
 
 .center > article.portfolio-home,
 .center > article.folder-hub {
   display: grid;
-  gap: 1.75rem;
-  padding-bottom: 1rem;
+  gap: 2.5rem;
+  padding-bottom: 1.7rem;
+}
+
+.center > article.portfolio-home {
+  padding-top: 2.35rem;
 }
 
 .center > article.portfolio-home + hr,
@@ -299,28 +316,128 @@
 }
 
 .portfolio-home {
-  max-width: 44rem;
+  max-width: 43rem;
 }
 
 .portfolio-home .portfolio-intro {
   display: grid;
-  gap: 0.75rem;
-  padding-bottom: 1.25rem;
+  gap: 1.2rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid var(--nomos-line);
 }
 
-.portfolio-home h1 {
+.portfolio-home .portfolio-entry-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.15rem;
+  margin-top: 0.55rem;
+}
+
+.portfolio-home .portfolio-entry-card {
+  display: grid;
+  gap: 0.56rem;
+  position: relative;
+  align-content: start;
+  padding: 1.35rem 0.15rem 1rem 0.32rem;
+  border-top: 1px solid var(--nomos-line);
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+  transition:
+    border-color 0.18s ease,
+    padding-left 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.portfolio-home .portfolio-entry-card::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 1rem;
+  bottom: 0.35rem;
+  width: 0;
+  background: color-mix(in srgb, var(--secondary) 48%, transparent);
+  transition: width 0.18s ease;
+}
+
+.portfolio-home .portfolio-entry-card:hover {
+  padding-left: 0.55rem;
+  border-color: color-mix(in srgb, var(--secondary) 24%, transparent);
+  background: linear-gradient(90deg, var(--folio-hover-tint) 0%, transparent 46%);
+}
+
+.portfolio-home .portfolio-entry-card:hover::before {
+  width: calc(var(--folio-rail-size) + 1px);
+}
+
+.portfolio-home .portfolio-entry-card strong {
+  font-size: 1.14rem;
+  line-height: 1.35;
+  color: var(--dark);
+  word-break: keep-all;
+}
+
+.portfolio-home .portfolio-entry-card p {
   margin: 0;
-  font-size: clamp(2rem, 4.4vw, 3.6rem);
-  line-height: 0.99;
-  letter-spacing: -0.045em;
-  max-width: 15ch;
-  text-wrap: balance;
+  max-width: 31rem;
+  color: var(--darkgray);
+  line-height: 1.82;
+  word-break: keep-all;
+}
+
+.portfolio-home .portfolio-support {
+  margin: 0.35rem 0 0;
+  max-width: 34rem;
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.95;
+}
+
+.portfolio-home .portfolio-support a {
+  color: var(--secondary);
+}
+
+.portfolio-home .portfolio-intro .portfolio-lede {
+  max-width: 32rem;
+  font-size: 1rem;
+  line-height: 1.98;
+  word-break: keep-all;
+}
+
+.portfolio-home .portfolio-facts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-home .portfolio-facts li {
+  display: grid;
+  gap: 0.3rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
+}
+
+.portfolio-home .portfolio-facts span {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: color-mix(in srgb, var(--secondary) 82%, var(--dark));
+}
+
+.portfolio-home .portfolio-facts p {
+  margin: 0;
+  max-width: 28rem;
+  color: var(--dark);
+  line-height: 1.72;
+  word-break: keep-all;
 }
 
 .portfolio-home .portfolio-meta {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.8rem 1rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -329,17 +446,23 @@
 .portfolio-home .portfolio-meta li {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.2rem;
-  padding-top: 0.82rem;
-  border-top: 1px solid var(--nomos-line);
+  gap: 0.32rem;
+  padding: 0.2rem 0 0;
+  border-top: none;
 }
 
 .portfolio-home .portfolio-meta strong {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--dark);
 }
 
 .portfolio-home .portfolio-meta span {
+  max-width: 26rem;
   color: var(--darkgray);
+  line-height: 1.65;
 }
 
 .portfolio-home .portfolio-meta span a {
@@ -350,21 +473,21 @@
 .portfolio-home .portfolio-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  padding-top: 0.2rem;
+  gap: 0.6rem;
+  padding-top: 0.15rem;
 }
 
 .portfolio-home .portfolio-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 8.2rem;
-  min-height: 2.65rem;
-  padding: 0 1rem;
+  min-width: 7.55rem;
+  min-height: 2.45rem;
+  padding: 0 0.92rem;
   color: var(--dark);
   border: 1px solid var(--nomos-line-strong);
-  border-radius: 0.86rem;
-  background: var(--nomos-surface);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--nomos-surface-soft) 88%, white);
   font-weight: 700;
   letter-spacing: -0.01em;
   text-decoration: none;
@@ -414,10 +537,10 @@
 .folder-hub .hub-item > a,
 .folder-hub .hub-note {
   display: grid;
-  gap: 0.48rem;
+  gap: 0.62rem;
   min-width: 0;
   align-content: start;
-  padding: 1.1rem 0 1.1rem 0.25rem;
+  padding: 1.42rem 0 1.32rem 0.3rem;
   border-top: 1px solid var(--nomos-line);
   border-right: 0;
   border-bottom: 0;
@@ -473,8 +596,9 @@
 .folder-hub .hub-note strong {
   max-width: 30rem;
   font-size: 1.05rem;
-  line-height: 1.35;
+  line-height: 1.42;
   color: var(--dark);
+  word-break: keep-all;
 }
 
 .portfolio-home .portfolio-item > a:hover strong,
@@ -491,11 +615,12 @@
   max-width: 40rem;
   color: var(--darkgray);
   line-height: 1.75;
+  word-break: keep-all;
 }
 
 .folder-hub .hub-note {
   position: relative;
-  padding: 1rem 0 0.15rem var(--folio-note-indent);
+  padding: 1.32rem 0 0.45rem var(--folio-note-indent);
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
   border-right: 0;
   border-bottom: 0;
@@ -715,80 +840,86 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
 
 @media all and (min-width: 960px) {
   .folder-hub .hub-header {
-    grid-template-columns: var(--folio-label-column) minmax(0, 1fr);
-    column-gap: var(--folio-column-gap);
-    row-gap: 0.55rem;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.9rem;
     align-items: start;
   }
 
   .folder-hub .hub-kicker {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    padding-top: 0.2rem;
+    grid-column: auto;
+    grid-row: auto;
+    padding-top: 0;
   }
 
   .folder-hub .hub-header > h2,
   .folder-hub .hub-header > .hub-lede {
-    grid-column: 2;
+    grid-column: auto;
   }
 
   .portfolio-home .portfolio-intro {
-    grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 16rem);
-    column-gap: 1.9rem;
-    row-gap: 0.8rem;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1rem;
     align-items: start;
   }
 
-  .portfolio-home .portfolio-kicker,
-  .portfolio-home h1,
-  .portfolio-home .portfolio-lede,
-  .portfolio-home .portfolio-actions {
-    grid-column: 1;
+  .portfolio-home .portfolio-lede {
+    max-width: 32rem;
   }
 
-  .portfolio-home .portfolio-meta {
-    grid-column: 2;
-    grid-row: 1 / span 4;
-    align-self: start;
-    gap: 0.65rem;
-    margin-top: 0.1rem;
-    padding-inline-start: 1.1rem;
-    border-inline-start: 1px solid color-mix(in srgb, var(--nomos-line) 92%, transparent);
+  .portfolio-home .portfolio-entry-grid {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
   }
 
-  .portfolio-home .portfolio-meta li {
-    padding-top: 0.72rem;
+  .portfolio-home .portfolio-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem 1.45rem;
+  }
+
+  .portfolio-home .portfolio-facts p {
+    max-width: 16rem;
+  }
+
+  .portfolio-home .portfolio-entry-card {
+    min-height: 100%;
+  }
+
+  .portfolio-home .portfolio-entry-card p {
+    max-width: none;
+  }
+
+  .portfolio-home .portfolio-support {
+    max-width: 32rem;
   }
 
   .portfolio-home .portfolio-block,
   .folder-hub .hub-section {
-    grid-template-columns: var(--folio-label-column) minmax(0, 1fr);
-    column-gap: var(--folio-column-gap);
-    row-gap: 0.55rem;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 1rem;
     align-items: start;
   }
 
   .portfolio-home .portfolio-block-kicker,
   .folder-hub .hub-section-kicker {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    padding-top: 0.2rem;
+    grid-column: auto;
+    grid-row: auto;
+    padding-top: 0;
   }
 
   .portfolio-home .portfolio-block > h2,
   .folder-hub .hub-section > h3 {
-    grid-column: 2;
+    grid-column: auto;
   }
 
   .portfolio-home .portfolio-block > :not(.portfolio-block-kicker):not(h2),
   .folder-hub .hub-section > :not(.hub-section-kicker):not(h3) {
-    grid-column: 2;
+    grid-column: auto;
   }
 
   .portfolio-home .portfolio-grid,
   .folder-hub .hub-grid:not(.single) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem 1.2rem;
+    gap: 1.2rem 1.35rem;
   }
 
   .portfolio-home .portfolio-grid > :last-child:nth-child(odd),
@@ -798,7 +929,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
 
   .folder-hub .hub-proof-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem 1.2rem;
+    gap: 1.2rem 1.35rem;
   }
 
   .folder-hub .hub-proof-grid > .hub-proof-card:last-child:not(:has(.hub-proof-media)) {
@@ -855,11 +986,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
 @media all and (max-width: 800px) {
   .center > article.portfolio-home,
   .center > article.folder-hub {
-    gap: 1.25rem;
-  }
-
-  .portfolio-home h1 {
-    font-size: 2.35rem;
+    gap: 1.8rem;
   }
 
   .portfolio-home .portfolio-meta li,
@@ -890,6 +1017,10 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
     gap: 1rem;
   }
 
+  .center > article.portfolio-home {
+    padding-top: 1.35rem;
+  }
+
   .folder-hub .hub-header {
     padding-bottom: 0.8rem;
   }
@@ -897,9 +1028,10 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   .folder-hub .hub-grid,
   .folder-hub .hub-proof-grid,
   .folder-hub .hub-grid.single,
-  .portfolio-home .portfolio-grid {
+  .portfolio-home .portfolio-grid,
+  .portfolio-home .portfolio-entry-grid {
     grid-template-columns: 1fr;
-    gap: 0.7rem;
+    gap: 0.9rem;
   }
 
   .folder-hub + .page-listing .section {

@@ -1,11 +1,13 @@
 .sidebar.left {
-  gap: 0.7rem;
+  gap: 0.78rem;
 }
 
 .page > #quartz-body > .sidebar.left {
-  max-height: none;
-  overflow: visible;
-  overflow-y: visible;
+  max-height: 100dvh;
+  height: 100dvh;
+  min-height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: contain;
 }
 
 .sidebar.left .page-title {
@@ -27,9 +29,9 @@
 }
 
 .sidebar.left .page-title .brand-avatar {
-  width: 7.6rem;
-  height: 7.6rem;
-  border-radius: 1.85rem;
+  width: 6.7rem;
+  height: 6.7rem;
+  border-radius: 1.55rem;
   object-fit: cover;
   border: 1px solid var(--nomos-line-strong);
   box-shadow: none;
@@ -42,15 +44,14 @@
 }
 
 .sidebar.left .page-title .brand-kicker {
-  font-size: 0.54rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
   color: var(--gray);
 }
 
 .sidebar.left .page-title .brand-title {
-  font-size: 1.8rem;
+  font-size: 1.68rem;
   font-weight: 760;
   line-height: 0.98;
   letter-spacing: -0.05em;
@@ -59,7 +60,7 @@
 }
 
 .sidebar.left .page-title .brand-subtitle {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   line-height: 1.4;
   letter-spacing: -0.01em;
   color: var(--gray);
@@ -153,26 +154,30 @@
 }
 
 .sidebar.left .explorer {
-  padding: 0.2rem 0 0;
-  border: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 0.5rem 0 0;
+  margin-top: 0.1rem;
+  border-top: 1px solid color-mix(in srgb, var(--nomos-line) 92%, transparent);
   background: transparent;
   box-shadow: none;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .sidebar.left .explorer button.desktop-explorer {
   width: 100%;
   justify-content: space-between;
-  padding: 0.35rem 0 0.55rem;
-  border-bottom: 1px solid var(--nomos-line);
+  padding: 0 0 0.58rem;
+  border-bottom: none;
 }
 
 .sidebar.left .explorer button.desktop-explorer h2 {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
   color: var(--gray);
 }
 
@@ -181,14 +186,31 @@
 }
 
 .sidebar.left .explorer-content {
-  margin-top: 0.5rem;
-  padding-right: 0;
-  overflow: visible;
+  flex: 1 1 0;
+  min-height: 0;
+  max-height: 100%;
+  height: auto;
+  margin-top: 0.32rem;
+  padding-right: 0.12rem;
+  overflow-x: visible;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  mask-image: linear-gradient(180deg, transparent 0, black 12px, black calc(100% - 18px), transparent 100%);
+}
+
+.sidebar.left .explorer-content::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .sidebar.left .explorer-content > ul.overflow {
   max-height: none;
   overflow: visible;
+  min-height: max-content;
+  padding-bottom: 0.75rem;
 }
 
 .sidebar.left .explorer-content ul {
@@ -209,7 +231,7 @@
 .sidebar.left .explorer-content ul li > a {
   display: block;
   position: relative;
-  padding: 0.42rem 0.2rem 0.42rem 1rem;
+  padding: 0.4rem 0.18rem 0.4rem 0.92rem;
   border-radius: 0.68rem;
   font-weight: 600;
 }
@@ -234,7 +256,7 @@
   align-items: center;
   min-height: 1.9rem;
   min-width: 0;
-  padding: 0.34rem 0.18rem 0.34rem 0.2rem;
+  padding: 0.32rem 0.18rem 0.32rem 0.2rem;
   border-radius: 0.68rem;
 }
 
@@ -306,7 +328,91 @@
   color: var(--secondary);
 }
 
+.page:has(article.portfolio-home) .sidebar.left {
+  gap: 0.68rem;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .page-title .brand-card {
+  gap: 0.72rem;
+  padding-bottom: 0.28rem;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .page-title .brand-avatar {
+  width: 5.45rem;
+  height: 5.45rem;
+  border-radius: 1.35rem;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .page-title .brand-title {
+  font-size: 1.46rem;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .page-title .brand-subtitle {
+  font-size: 0.63rem;
+  line-height: 1.35;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .search > .search-button {
+  height: 2.45rem;
+  border-radius: 0.95rem;
+  background: transparent;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .darkmode,
+.page:has(article.portfolio-home) .sidebar.left .readermode {
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 0.95rem;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .explorer {
+  padding-top: 0.35rem;
+  margin-top: 0.05rem;
+  border-top-color: color-mix(in srgb, var(--nomos-line) 82%, transparent);
+}
+
+.page:has(article.portfolio-home) .sidebar.left .explorer button.desktop-explorer {
+  padding-bottom: 0.42rem;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .explorer button.desktop-explorer h2 {
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: color-mix(in srgb, var(--gray) 90%, var(--darkgray));
+}
+
+.page:has(article.portfolio-home) .sidebar.left .explorer .fold {
+  color: var(--gray);
+  opacity: 0.55;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .explorer-content {
+  margin-top: 0.18rem;
+  mask-image: none;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .explorer-content ul {
+  gap: 0.02rem;
+}
+
+.page:has(article.portfolio-home) .sidebar.left .explorer-content ul li > a,
+.page:has(article.portfolio-home) .sidebar.left .folder-container > div > a,
+.page:has(article.portfolio-home) .sidebar.left .folder-container > div > button {
+  color: color-mix(in srgb, var(--darkgray) 90%, var(--gray));
+}
+
+.page:has(article.portfolio-home) .sidebar.left .explorer-ul > li > .folder-container > div > a,
+.page:has(article.portfolio-home) .sidebar.left .explorer-ul > li > .folder-container > div > button {
+  font-size: 0.95rem;
+}
+
 @media all and (max-width: 800px) {
+  .page > #quartz-body > .sidebar.left {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+
   .sidebar.left .page-title .brand-card {
     gap: 0.65rem;
   }

@@ -79,19 +79,29 @@
 }
 
 .page:has(article.portfolio-home) article.portfolio-home {
-  gap: 2rem;
+  gap: 2.15rem;
+}
+
+.page:has(article.portfolio-home) > #quartz-body > .sidebar.left {
+  padding-top: 3.9rem;
+  padding-bottom: 1rem;
+}
+
+.page:has(article.folder-hub) > #quartz-body > .sidebar.left {
+  padding-top: 4.4rem;
+  padding-bottom: 1.35rem;
 }
 
 .page:has(article.portfolio-home) article.portfolio-home .portfolio-intro {
-  padding-bottom: 1.45rem;
+  padding-bottom: 1.7rem;
 }
 
 .page:has(article.portfolio-home) article.portfolio-home .portfolio-block {
-  gap: 0.85rem;
+  gap: 1rem;
 }
 
 .page:has(article.portfolio-home) article.portfolio-home .portfolio-block + .portfolio-block {
-  padding-top: 1.55rem;
+  padding-top: 1.9rem;
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 86%, transparent);
 }
 
@@ -114,19 +124,19 @@
 }
 
 .page:has(article.folder-hub) article.folder-hub {
-  gap: 1.7rem;
+  gap: 1.9rem;
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-header {
-  padding-bottom: 1.35rem;
+  padding-bottom: 1.6rem;
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-section {
-  gap: 0.8rem;
+  gap: 0.95rem;
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
-  padding-top: 1.55rem;
+  padding-top: 1.85rem;
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 86%, transparent);
 }
 
@@ -256,9 +266,20 @@
 }
 
 @media all and (min-width: 1200px) {
-  .page:has(article.portfolio-home) > #quartz-body,
+  .page:has(article.portfolio-home) > #quartz-body {
+    grid-template-columns: 236px minmax(0, 52rem);
+    column-gap: 3rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "grid-sidebar-left grid-header"
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-footer";
+    justify-content: center;
+  }
+
   .page:has(article.folder-hub) > #quartz-body {
-    grid-template-columns: 320px minmax(0, 45rem);
+    grid-template-columns: 268px minmax(0, 50rem);
+    column-gap: 2.5rem;
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "grid-sidebar-left grid-header"
@@ -292,7 +313,7 @@
 
   .page:has(article.portfolio-home) article.portfolio-home .portfolio-block + .portfolio-block,
   .page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
-    padding-top: 1rem;
+    padding-top: 1.25rem;
   }
 
   .page:has(article.research-note) .page-header {
