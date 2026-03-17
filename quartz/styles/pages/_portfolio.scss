@@ -7,30 +7,19 @@
   --folio-note-indent: 1.05rem;
   --folio-rail-size: 2px;
   --folio-hover-tint: color-mix(in srgb, var(--secondary) 3%, transparent);
-  --folio-copy-width: 35rem;
-  --folio-header-gap: 1.1rem;
-  --folio-header-padding: 1.85rem;
-  --folio-header-min-height: 11rem;
-  --folio-page-top: 2.2rem;
 }
 
 .folder-hub {
-  --hub-shell-width: var(--folio-center-width, 44rem);
-  --hub-shell-gap: 2rem;
-  --hub-copy-width: var(--folio-copy-width);
-  --hub-header-gap: var(--folio-header-gap);
-  --hub-header-padding: var(--folio-header-padding);
-  --hub-header-min-height: var(--folio-header-min-height);
-  --hub-page-top: var(--folio-page-top);
   --hub-grid-gap: 1.1rem;
-  --hub-grid-gap-desktop: 1.2rem 1.35rem;
+  --hub-grid-gap-desktop: 1.25rem 1.5rem;
   --hub-card-gap: 0.6rem;
   --hub-card-padding: 1.1rem 0 0.5rem 0.3rem;
-  --hub-list-gap: 0.62rem;
+  --hub-list-gap: 0.42rem;
   --hub-list-padding: 1.42rem 0 1.32rem 0.3rem;
   --hub-note-padding: 1.32rem 0 0.45rem var(--folio-note-indent);
+  --hub-section-padding: 2.05rem;
   --hub-proof-grid-gap: 1.45rem;
-  --hub-proof-grid-gap-desktop: 1.4rem 1.6rem;
+  --hub-proof-grid-gap-desktop: 1.35rem 1.5rem;
   --hub-proof-card-gap: 1rem;
   --hub-proof-card-padding: 1.25rem 0 0.8rem 1rem;
   --hub-proof-media-min-height: clamp(15rem, 28vw, 19rem);
@@ -1061,13 +1050,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   }
 
   .folder-hub {
-    --hub-header-min-height: auto;
-    --hub-page-top: 1.35rem;
     gap: 1rem;
-  }
-
-  .center > article.portfolio-home {
-    padding-top: 1.35rem;
   }
 
   .folder-hub .hub-header {
