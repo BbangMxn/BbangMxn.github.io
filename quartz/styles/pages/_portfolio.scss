@@ -54,6 +54,12 @@
   gap: 0.85rem;
 }
 
+.portfolio-home .portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+}
+
 .folder-hub .hub-proof-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -87,8 +93,38 @@
 
 .folder-hub .hub-card p {
   margin: 0;
-  max-width: 28ch;
+  max-width: 38rem;
   color: var(--darkgray);
+  line-height: 1.75;
+}
+
+.portfolio-home .portfolio-card {
+  display: grid;
+  gap: 0.45rem;
+  min-height: 0;
+  padding: 0.9rem 0 0.25rem;
+  color: inherit;
+  border-top: 1px solid var(--nomos-line);
+  background: transparent;
+  text-decoration: none;
+}
+
+.portfolio-home .portfolio-card:hover {
+  color: var(--dark);
+  border-color: color-mix(in srgb, var(--secondary) 20%, transparent);
+}
+
+.portfolio-home .portfolio-card strong {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  color: var(--dark);
+}
+
+.portfolio-home .portfolio-card p {
+  margin: 0;
+  max-width: 38rem;
+  color: var(--darkgray);
+  line-height: 1.75;
 }
 
 .folder-hub .hub-proof-card {
@@ -562,7 +598,8 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
 
   .folder-hub .hub-grid,
   .folder-hub .hub-proof-grid,
-  .folder-hub .hub-grid.single {
+  .folder-hub .hub-grid.single,
+  .portfolio-home .portfolio-grid {
     grid-template-columns: 1fr;
     gap: 0.7rem;
   }

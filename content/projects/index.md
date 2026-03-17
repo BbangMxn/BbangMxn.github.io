@@ -18,6 +18,28 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Read by Purpose</p>
+  <h3>어떤 기준으로 읽을지 먼저 고를 수 있습니다</h3>
+  <div class="hub-grid">
+    <a class="hub-card" href="./BagInCoffee/architecture">
+      <span class="hub-label">Structure First</span>
+      <strong>BagInCoffee Architecture</strong>
+      <p>클라이언트 전환과 도메인 분리처럼 제품 구조가 어떻게 갈라졌는지부터 보고 싶다면 여기서 시작하면 됩니다.</p>
+    </a>
+    <a class="hub-card" href="./worker/start-here">
+      <span class="hub-label">Build Path First</span>
+      <strong>Worker Start Here</strong>
+      <p>판단이 어떤 순서로 쌓였는지, 그리고 어떤 흐름으로 AI 워크스페이스가 만들어졌는지 따라가는 입구입니다.</p>
+    </a>
+    <a class="hub-card" href="./nazgul/retrieval-map">
+      <span class="hub-label">Research First</span>
+      <strong>Nazgul Retrieval Map</strong>
+      <p>retrieval 실험 구조와 trace 흐름부터 짧게 보고 싶을 때 바로 들어가는 기술 입구입니다.</p>
+    </a>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Featured</p>
   <h3>구조 판단이 먼저 보이는 대표 프로젝트</h3>
   <ul class="hub-list">

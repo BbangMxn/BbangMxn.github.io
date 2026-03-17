@@ -6,11 +6,11 @@ cssclasses:
 
 <section class="portfolio-intro">
   <p class="portfolio-kicker">Portfolio</p>
-  <h1>백엔드 제품개발자로서 서비스 문제를 구조 판단과 증거로 설명합니다</h1>
+  <h1>제품 문제를 구조 판단, 운영 tradeoff, 검증 근거로 설명합니다</h1>
   <p class="portfolio-lede">
-    이 사이트는 한국 채용 시장에서 단독으로 읽혀도 지원자를 설명할 수 있는 포트폴리오를 목표로 합니다.
-    제품 문제를 API, 데이터 경계, 캐시, AI 안전장치 같은 백엔드 판단으로 어떻게 옮겼는지,
-    그리고 그 판단을 어떤 화면과 관측값으로 증명했는지를 한 흐름으로 정리했습니다.
+    이 사이트는 단독으로 읽혀도 지원자의 문제 정의 방식과 구조 판단이 보이도록 만든 포트폴리오입니다.
+    구현 목록보다 서비스 경계, 데이터 흐름, 캐시, AI 안전장치 같은 백엔드 선택을 먼저 보여주고,
+    그 선택이 어떤 화면과 관측값으로 검증됐는지까지 한 흐름으로 정리했습니다.
   </p>
   <ul class="portfolio-meta">
     <li><strong>Role</strong><span>백엔드 제품개발</span></li>
@@ -27,6 +27,56 @@ cssclasses:
 </section>
 
 <section class="portfolio-block">
+  <p class="portfolio-block-kicker">Read First</p>
+  <h2>가장 빠른 세 가지 입구</h2>
+  <div class="portfolio-grid">
+    <a class="portfolio-card" href="./projects">
+      <span class="portfolio-badge">Hub</span>
+      <strong>Projects</strong>
+      <p>대표 프로젝트와 보조 프로젝트를 구조 축 기준으로 정리한 허브입니다. 전체 지형을 가장 빨리 파악하려면 여기서 시작하는 편이 맞습니다.</p>
+    </a>
+    <a class="portfolio-card" href="./start-here">
+      <span class="portfolio-badge">Guide</span>
+      <strong>Start Here</strong>
+      <p>구조부터 읽을지, 개발 순서부터 읽을지, 연구 배경까지 볼지에 따라 가장 짧은 읽기 경로를 안내합니다.</p>
+    </a>
+    <a class="portfolio-card" href="./about">
+      <span class="portfolio-badge">Profile</span>
+      <strong>About</strong>
+      <p>한 줄 역할 정의, 강점, 다루는 문제, 추천 프로젝트를 먼저 확인하고 싶을 때 보는 resume-lite 문서입니다.</p>
+    </a>
+  </div>
+</section>
+
+<section class="portfolio-block">
+  <p class="portfolio-block-kicker">Architecture First</p>
+  <h2>구조부터 읽고 싶다면</h2>
+  <ul class="portfolio-list">
+    <li class="portfolio-item">
+      <a href="./projects/BagInCoffee/architecture">
+        <span class="portfolio-badge">Product Architecture</span>
+        <strong>BagInCoffee Architecture</strong>
+        <p>웹 프로토타입에서 Flutter로 전환하고 장비 도메인을 BagInDB로 분리한 구조를 먼저 읽을 수 있습니다.</p>
+      </a>
+    </li>
+    <li class="portfolio-item">
+      <a href="./projects/worker/architecture">
+        <span class="portfolio-badge">Workflow Architecture</span>
+        <strong>Worker Architecture</strong>
+        <p>업무 워크스페이스 안에서 AI 제안, 분류, 동기화가 어떤 경계로 나뉘는지 구조 기준으로 정리한 페이지입니다.</p>
+      </a>
+    </li>
+    <li class="portfolio-item">
+      <a href="./projects/nazgul/architecture">
+        <span class="portfolio-badge">Retrieval Architecture</span>
+        <strong>Nazgul Architecture</strong>
+        <p>취미 SNS 도메인과 RAG 실험 서버가 어떻게 나뉘는지, 그리고 retrieval 계층을 어떻게 읽어야 하는지 보여줍니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="portfolio-block">
   <p class="portfolio-block-kicker">Featured</p>
   <h2>대표 프로젝트 3개</h2>
   <ul class="portfolio-list">
@@ -34,21 +84,21 @@ cssclasses:
       <a href="./projects/BagInCoffee">
         <span class="portfolio-badge">Project</span>
         <strong>BagInCoffee</strong>
-        <p>커뮤니티 제품을 만들며 SvelteKit에서 Flutter로 전환하고, 장비 도메인을 별도 서비스로 분리해야 한다는 판단까지 검증한 프로젝트입니다.</p>
+        <p>웹 프로토타입에서 Flutter로 전환하고, 인증과 장비 도메인을 언제 분리해야 하는지 구조적으로 검증한 프로젝트입니다.</p>
       </a>
     </li>
     <li class="portfolio-item">
       <a href="./projects/worker">
         <span class="portfolio-badge">Project</span>
         <strong>Worker</strong>
-        <p>업무 자동화를 AI Agent에 맡길 때 무엇을 바로 실행시키지 말아야 하는지, Proposal 안전장치와 분류 파이프라인으로 직접 검증한 프로젝트입니다.</p>
+        <p>업무 도구 안에 AI Agent를 넣을 때 Proposal 안전장치, 분류 파이프라인, 동기화 경계를 어떻게 나눴는지 보여주는 프로젝트입니다.</p>
       </a>
     </li>
     <li class="portfolio-item">
       <a href="./projects/nazgul">
         <span class="portfolio-badge">Project</span>
         <strong>Nazgul</strong>
-        <p>취미 SNS를 만드는 데서 멈추지 않고, 제품 문제를 개인화 RAG 연구 문제로 다시 정의해 검색 구조와 근거 trace를 함께 검증한 프로젝트입니다.</p>
+        <p>취미 SNS 아이디어를 retrieval 문제로 다시 정의하고, Entity Card 기반 검색 구조와 trace 흐름까지 검증한 프로젝트입니다.</p>
       </a>
     </li>
   </ul>
@@ -105,27 +155,6 @@ cssclasses:
         <span class="portfolio-badge">Diary</span>
         <strong>공개 가능한 짧은 기록</strong>
         <p>결과물보다는 관찰과 판단 변화에 가까운 짧은 기록만 제한적으로 공개합니다.</p>
-      </a>
-    </li>
-  </ul>
-</section>
-
-<section class="portfolio-block">
-  <p class="portfolio-block-kicker">Info</p>
-  <h2>지원자를 먼저 파악하려면</h2>
-  <ul class="portfolio-list">
-    <li class="portfolio-item">
-      <a href="./about">
-        <span class="portfolio-badge">About</span>
-        <strong>About</strong>
-        <p>한 줄 역할 정의, 강점, 다루는 문제, 먼저 볼 프로젝트를 빠르게 파악할 수 있는 resume-lite 문서입니다.</p>
-      </a>
-    </li>
-    <li class="portfolio-item">
-      <a href="./start-here">
-        <span class="portfolio-badge">Guide</span>
-        <strong>Start Here</strong>
-        <p>프로젝트, 연구, 위키를 어떤 순서로 읽으면 전체 구조가 가장 빨리 보이는지 안내합니다.</p>
       </a>
     </li>
   </ul>

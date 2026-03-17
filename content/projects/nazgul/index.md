@@ -14,7 +14,8 @@ cssclasses:
   <p class="hub-kicker">Projects / RAG Prototype</p>
   <h2>Nazgul은 SNS MVP를 만드는 데서 멈추지 않고, 취미 커뮤니티 문제를 개인화 RAG 연구 문제로 다시 정의한 프로젝트입니다</h2>
   <p class="hub-lede">
-    처음에는 취미 기반 SNS를 구현하는 것이 목표였지만, 검색과 추천을 단순 피드 문제로 다루는 방식으로는 한계가 명확했습니다. 그래서 Nazgul은 SNS 커뮤니티 구현 프로젝트에서 출발해, 커뮤니티 데이터를 어떻게 더 구조적으로 검색하고 추후 AI가 제대로 새로운 RAG를 통해 출처까지 다양한 부분을 검증하는 연구형 프로젝트로 방향을 바꿨습니다.
+    처음에는 취미 기반 SNS를 구현하는 것이 목표였지만, 검색과 추천을 단순 피드 문제로 다루는 방식으로는 한계가 분명했습니다.
+    그래서 Nazgul은 커뮤니티 MVP에서 출발해, 취미 데이터를 어떻게 더 구조적으로 검색하고 개인화된 추천 근거와 trace까지 남길 수 있는지 검증하는 연구형 프로젝트로 방향을 바꿨습니다.
   </p>
 </div>
 
@@ -89,13 +90,13 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Problem</span>
-        <p>취미 기반 SNS 형태를 사용하여 개발을 하였지만, 초창기에 개발하여 너무 조약하였습니다. 또한 단순한 SNS에서는 추후 AI와 연결하는 부분에서 어렵다라는 생각이 들었습니다. </p>
+        <p>처음 만든 취미 SNS MVP는 홈 피드와 탐색 흐름은 있었지만, 검색과 추천을 피드 보강 수준으로만 다루고 있어 이후 AI와 연결할 근거 구조가 부족했습니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Shift</span>
-        <p>그래서 Nazgul은 취미기반의 SNS를 지향하는 커뮤니티 사이트가 아니라 다양한 취미 데이터를 RAG로 정의해 LLM을 접목함으로써 쉽게 정보를 수집하고 최신정보를 공유해 빠르게 LLM과 상호작용을 하는 것을 목표로 정의 하였습니다.</p>
+        <p>그래서 Nazgul은 단순 커뮤니티 사이트가 아니라, 취미 데이터를 Entity Card와 Trace 중심 retrieval 구조로 다시 정의하고 LLM과 연결하는 연구형 프로젝트로 목표를 바꿨습니다.</p>
       </div>
     </li>
     <li class="hub-item">
@@ -109,18 +110,18 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Key Decisions</p>
-  <h3>설계</h3>
+  <h3>무엇을 구현했는가보다 무엇을 판단했는가</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Decision 1</span>
-        <p>단순 chunk 검색 대신 Entity Card 구조를 택했습니다. RAG를 연구를 하면서 도출해낸 결과로써 Entity Card 라는 형태로써 설계를 했습니다. </p>
+        <p>단순 chunk 검색 대신 Entity Card 구조를 택했습니다. 취미 도메인을 바로 청크로 평탄화하면 맥락과 출처 설명이 약해진다고 봤기 때문입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Decision 2</span>
-        <p>카드의 형태로 RAG를 설계한 이유는 커뮤니티에서 중요한 출처에 대한 문제 그리고 RAG를 관리하기 쉬운 형태를 연구하여 도서관이라는 형태로써 만들기로 지정을 하였고 취미라는 형태를 하나의 카테고리로써 계층형 RAG를 만들었고 그 형태를 Entity Card라고 하여 만들었습니다.</p>
+        <p>카드를 중심으로 계층형 retrieval을 설계했습니다. 취미를 하나의 카테고리 축으로 묶고, 도서관처럼 관리 가능한 단위로 유지해야 검색 결과와 추천 근거를 함께 설명하기 쉬웠기 때문입니다.</p>
       </div>
     </li>
     <li class="hub-item">
@@ -151,15 +152,11 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Benchmark</span>
-        <p>SQLite와 Ollama(qwen3:8b) 조합에서 평균 60,531ms 수준으로 느렸지만, 느렸던 원인의 문제는 테스트한 컴퓨터의 성능이 낮았지만병목이 어디 있는지와 현재 검증 범위가 어디까지인지는 분명하게 잡을 수 있었습니다.</p>
+        <p>SQLite와 Ollama(qwen3:8b) 조합에서 평균 60,531ms로 느렸지만, 그 덕분에 현재 병목이 어디 있고 이 구조가 어디까지 검증된 상태인지는 분명하게 잡을 수 있었습니다.</p>
       </div>
     </li>
   </ul>
 </section>
-### Entity Card
-```Java
-
-```
 
 <section class="hub-section">
   <p class="hub-section-kicker">Limits and Next</p>
@@ -215,7 +212,7 @@ cssclasses:
       <div class="hub-note">
         <span class="hub-label">Step 4</span>
         <strong>로컬 환경에서 느린 실험 결과까지 남기며 병목과 연구 범위를 같이 기록했습니다</strong>
-        <p>SQLite와 Ollama 기반 실험은 느렸지만, 어떤 병목이 있고 현재 구조가 어디까지 유효한지 확인할 수 있었습니다. 더 자세한 설계는 <a href="./start-here">Start Here</a>와 <a href="./04%20Technical%20Design%20Document">Technical Design Document</a>에서 이어집니다.</p>
+        <p>SQLite와 Ollama 기반 실험은 느렸지만, 어떤 병목이 있고 현재 구조가 어디까지 유효한지 확인할 수 있었습니다. 더 자세한 설계는 <a href="./start-here">Start Here</a>, <a href="./retrieval-map">Retrieval Map</a>, <a href="./04%20Technical%20Design%20Document">Technical Design Document</a>에서 이어집니다.</p>
       </div>
     </li>
   </ul>
@@ -235,7 +232,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Note</span>
-        <p>세부 설계와 작업 문서는 하위 문서에 두고, 메인 페이지는 왜 이 프로젝트가 연구형 설득 문서로 읽혀야 하는지에 집중합니다.</p>
+        <p>메인 페이지는 문제 재정의와 검증 범위에 집중하고, 세부 retrieval 설계는 하위 문서로 분리해 두었습니다.</p>
       </div>
     </li>
   </ul>
