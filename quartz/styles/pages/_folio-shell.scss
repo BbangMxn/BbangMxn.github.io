@@ -15,13 +15,13 @@
   --folio-sidebar-bottom: 1.2rem;
 }
 
-.page:has(article.portfolio-home) .sidebar.right,
-.page:has(article.folder-hub) .sidebar.right {
+.page:has(article.portfolio-home) > #quartz-body > .sidebar.right,
+.page:has(article.folder-hub) > #quartz-body > .sidebar.right {
   display: none;
 }
 
-.page:has(article.portfolio-home) .page-header,
-.page:has(article.folder-hub) .page-header {
+.page:has(article.portfolio-home) > #quartz-body > .center > .page-header,
+.page:has(article.folder-hub) > #quartz-body > .center > .page-header {
   display: none;
 }
 
@@ -29,6 +29,16 @@
 .page:has(article.folder-hub) > #quartz-body > .sidebar.left {
   padding-top: var(--folio-sidebar-top);
   padding-bottom: var(--folio-sidebar-bottom);
+}
+
+.page:has(article.portfolio-home) > #quartz-body > .center,
+.page:has(article.folder-hub) > #quartz-body > .center {
+  width: 100%;
+  max-width: var(--folio-shell-main-width);
+  min-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  justify-self: stretch;
 }
 
 .page:has(article.portfolio-home) .center > :is(.page-header, .popover-hint, article, .page-footer),
