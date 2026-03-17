@@ -106,6 +106,12 @@
 
 .page:has(article.portfolio-home) article.portfolio-home .portfolio-item > a {
   padding: 1rem 0 1.1rem;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .page:has(article.folder-hub) article.folder-hub {
@@ -128,6 +134,19 @@
 .page:has(article.folder-hub) article.folder-hub .hub-item > a,
 .page:has(article.folder-hub) article.folder-hub .hub-note {
   gap: 0.36rem;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-item,
+.page:has(article.folder-hub) article.folder-hub .hub-list,
+.page:has(article.folder-hub) article.folder-hub .hub-section {
+  background: transparent;
+  box-shadow: none;
 }
 
 .page:has(article.folder-hub) .folder-hub + .page-listing {
