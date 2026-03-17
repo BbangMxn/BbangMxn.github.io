@@ -75,7 +75,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Flex({
-      components: [{ Component: Component.Darkmode() }],
+      components: [{ Component: Component.Darkmode() }, { Component: Component.ReaderMode() }],
       gap: "0.5rem",
     }),
     sectionExplorer,
