@@ -194,6 +194,12 @@ cssclasses:
       </div>
     </li>
     <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">문서 구조</span>
+        <p>대표 프로젝트는 공통으로 <code>메인 페이지 -&gt; architecture -&gt; start-here -&gt; 세부 문서</code> 순서를 가집니다. 메인 페이지는 주장과 검증, <code>architecture</code>는 폴더와 실행 구조, <code>start-here</code>는 읽는 순서를 맡습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
       <a href="../wiki/portfolio-standard">
         <span class="hub-label">문서 기준</span>
         <strong>포트폴리오 기준</strong>

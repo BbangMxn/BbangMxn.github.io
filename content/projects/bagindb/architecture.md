@@ -44,18 +44,20 @@ PostgreSQL JSONB / Redis
 ```text
 BagInDB/
 ├── src/
+├── docs/            # 구조, 운영, 배포 보조 문서
 ├── supabase/        # migration, seed, local config
-├── docs/            # 보조 문서
+├── ADMIN_SETUP_GUIDE.md
 ├── DB_SCHEMA.md
 ├── DB_STRUCTURE.md
+├── DEPLOYMENT.md
 ├── JSONB_FILTER_GUIDE.md
 ├── Cargo.toml
 └── README.md
 ```
 
 - `src/`는 실제 서버 코드입니다.
+- `docs/`와 루트 문서는 이 프로젝트가 코드만 있는 서버가 아니라, 구조와 운영 기준까지 같이 남긴 실험이라는 점을 보여 줍니다.
 - `supabase/`는 데이터베이스 초기화와 마이그레이션 관리 축입니다.
-- 루트의 여러 `.md` 문서는 이 프로젝트가 코드만 있는 서버가 아니라, 데이터 구조와 운영 기준까지 같이 남긴 실험이라는 점을 보여 줍니다.
 
 ## 소스 구조
 
@@ -80,6 +82,7 @@ src/
 
 - `repository/`처럼 추상 이름보다 `handlers`, `db`, `cache`를 앞에 둔 구조는 실제 병목이 어디 있는지 더 직접적으로 보여 줍니다.
 - `supabase/migrations/`가 루트에서 함께 관리되기 때문에, 데이터 모델 변경도 서비스 코드와 같이 읽게 됩니다.
+- `docs/`와 루트 설명 문서가 따로 있기 때문에 API 구조, DB 구조, 배포 기준을 코드 밖에서도 빠르게 이어서 읽을 수 있습니다.
 - 장비 데이터가 커뮤니티 서비스 안의 부속 테이블이 아니라 독립 서비스로 취급된다는 점이 폴더 경계에서 바로 드러납니다.
 
 ## 읽기 순서
