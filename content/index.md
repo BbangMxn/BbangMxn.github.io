@@ -11,45 +11,72 @@ cssclasses:
     서비스 경계, 데이터 흐름, 캐시, AI 안전장치 같은 판단을 제품과 검증으로 연결해 설명하는 포트폴리오입니다.
     구현 목록보다 어떤 문제를 어떻게 다시 정의했고 무엇을 끝까지 확인했는지를 먼저 읽히게 구성했습니다.
   </p>
-  <ul class="portfolio-facts">
-    <li>
-      <span>역할</span>
-      <p>백엔드 제품개발, 구조 설계 중심</p>
+</section>
+
+<section class="portfolio-block">
+  <p class="portfolio-block-kicker">기본</p>
+  <h2>지원자 기본 정보</h2>
+  <ul class="portfolio-list">
+    <li class="portfolio-item">
+      <div class="portfolio-note">
+        <span class="portfolio-badge">역할</span>
+        <p>백엔드 제품개발, 구조 설계 중심</p>
+      </div>
     </li>
-    <li>
-      <span>사용 언어</span>
-      <p>Java, Rust, Dart, TypeScript</p>
+    <li class="portfolio-item">
+      <div class="portfolio-note">
+        <span class="portfolio-badge">사용 언어</span>
+        <p>Java, Rust, Dart, TypeScript</p>
+      </div>
     </li>
-    <li>
-      <span>집중 영역</span>
-      <p>서비스 경계 재설계, 검색 구조, 캐시 전략, AI 워크플로우</p>
+    <li class="portfolio-item">
+      <div class="portfolio-note">
+        <span class="portfolio-badge">집중 영역</span>
+        <p>서비스 경계 재설계, 검색 구조, 캐시 전략, AI 워크플로우</p>
+      </div>
     </li>
-    <li>
-      <span>대표 프로젝트</span>
-      <p>BagInCoffee, Worker, Nazgul</p>
+    <li class="portfolio-item">
+      <div class="portfolio-note">
+        <span class="portfolio-badge">대표 프로젝트</span>
+        <p>BagInCoffee, Worker, Nazgul</p>
+      </div>
     </li>
   </ul>
-  <div class="portfolio-entry-grid">
-    <a class="portfolio-entry-card" href="./projects/BagInCoffee/architecture">
-      <span class="portfolio-badge">대표 구조</span>
-      <strong>구조부터 보기</strong>
-      <p>대표 구조 세 개부터 읽고 싶다면 여기서 시작합니다. 제품 구조 전환, AI 워크플로우, 검색 계층을 바로 볼 수 있습니다.</p>
-    </a>
-    <a class="portfolio-entry-card" href="./projects">
-      <span class="portfolio-badge">프로젝트</span>
-      <strong>프로젝트 모아보기</strong>
-      <p>대표 프로젝트와 보조 프로젝트를 문제, 판단, 검증 기준으로 정리한 허브입니다. 전체 지형을 가장 빨리 파악하는 입구입니다.</p>
-    </a>
-    <a class="portfolio-entry-card" href="./about">
-      <span class="portfolio-badge">소개</span>
-      <strong>지원자 소개</strong>
-      <p>역할 정의, 주로 다루는 문제, 추천 시작점을 짧게 확인하고 싶을 때 보는 요약 소개 페이지입니다.</p>
-    </a>
+</section>
+
+<section class="portfolio-block">
+  <p class="portfolio-block-kicker">입구</p>
+  <h2>가장 먼저 볼 세 문서</h2>
+  <ul class="portfolio-list">
+    <li class="portfolio-item">
+      <a href="./projects/BagInCoffee/architecture">
+        <span class="portfolio-badge">대표 구조</span>
+        <strong>구조부터 보기</strong>
+        <p>대표 구조 세 개부터 읽고 싶다면 여기서 시작합니다. 제품 구조 전환, AI 워크플로우, 검색 계층을 바로 볼 수 있습니다.</p>
+      </a>
+    </li>
+    <li class="portfolio-item">
+      <a href="./projects">
+        <span class="portfolio-badge">프로젝트</span>
+        <strong>프로젝트 모아보기</strong>
+        <p>대표 프로젝트와 보조 프로젝트를 문제, 판단, 검증 기준으로 정리한 허브입니다. 전체 지형을 가장 빨리 파악하는 입구입니다.</p>
+      </a>
+    </li>
+    <li class="portfolio-item">
+      <a href="./about">
+        <span class="portfolio-badge">소개</span>
+        <strong>지원자 소개</strong>
+        <p>역할 정의, 주로 다루는 문제, 추천 시작점을 짧게 확인하고 싶을 때 보는 요약 소개 페이지입니다.</p>
+      </a>
+    </li>
+  </ul>
+  <div class="portfolio-note">
+    <span class="portfolio-badge">보조 경로</span>
+    <p>
+      더 깊은 기술 배경은 <a href="./research">연구</a>로 내리고, 역할과 작업 방식은 <a href="./about">소개</a>에서 보강했습니다.
+      읽기 순서가 정말 필요할 때만 <a href="./start-here">읽기 가이드</a>를 참고하면 됩니다.
+    </p>
   </div>
-  <p class="portfolio-support">
-    더 깊은 기술 배경은 <a href="./research">연구</a>로 내리고, 역할과 작업 방식은 <a href="./about">소개</a>에서 보강했습니다.
-    읽기 순서가 정말 필요할 때만 <a href="./start-here">읽기 가이드</a>를 참고하면 됩니다.
-  </p>
 </section>
 
 <section class="portfolio-block">

@@ -74,9 +74,9 @@
 }
 
 .portfolio-home h1 {
-  max-width: 11ch;
-  font-size: clamp(2rem, 3.2vw, 2.85rem);
-  line-height: 1.1;
+  max-width: 12ch;
+  font-size: clamp(1.85rem, 2.95vw, 2.55rem);
+  line-height: 1.08;
   letter-spacing: -0.055em;
   color: var(--dark);
 }
@@ -275,116 +275,14 @@
   gap: var(--folio-header-gap);
   min-height: var(--folio-header-min-height);
   align-content: start;
-  padding-bottom: var(--folio-header-padding);
+  padding-bottom: calc(var(--folio-header-padding) - 0.2rem);
   border-bottom: 1px solid var(--nomos-line);
-}
-
-.portfolio-home .portfolio-entry-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.15rem;
-  margin-top: 0.55rem;
-}
-
-.portfolio-home .portfolio-entry-card {
-  display: grid;
-  gap: 0.56rem;
-  position: relative;
-  align-content: start;
-  padding: 1.35rem 0.15rem 1rem 0.32rem;
-  border-top: 1px solid var(--nomos-line);
-  color: inherit;
-  background: transparent;
-  text-decoration: none;
-  transition:
-    border-color 0.18s ease,
-    padding-left 0.18s ease,
-    background-color 0.18s ease;
-}
-
-.portfolio-home .portfolio-entry-card::before {
-  content: "";
-  position: absolute;
-  inset-inline-start: 0;
-  top: 1rem;
-  bottom: 0.35rem;
-  width: 0;
-  background: color-mix(in srgb, var(--secondary) 48%, transparent);
-  transition: width 0.18s ease;
-}
-
-.portfolio-home .portfolio-entry-card:hover {
-  padding-left: 0.55rem;
-  border-color: color-mix(in srgb, var(--secondary) 24%, transparent);
-  background: linear-gradient(90deg, var(--folio-hover-tint) 0%, transparent 46%);
-}
-
-.portfolio-home .portfolio-entry-card:hover::before {
-  width: calc(var(--folio-rail-size) + 1px);
-}
-
-.portfolio-home .portfolio-entry-card strong {
-  font-size: 1.14rem;
-  line-height: 1.35;
-  color: var(--dark);
-  word-break: keep-all;
-}
-
-.portfolio-home .portfolio-entry-card p {
-  margin: 0;
-  max-width: 31rem;
-  color: var(--darkgray);
-  line-height: 1.82;
-  word-break: keep-all;
-}
-
-.portfolio-home .portfolio-support {
-  margin: 0.35rem 0 0;
-  max-width: var(--folio-copy-width);
-  color: var(--gray);
-  font-size: 0.95rem;
-  line-height: 1.95;
-}
-
-.portfolio-home .portfolio-support a {
-  color: var(--secondary);
 }
 
 .portfolio-home .portfolio-intro .portfolio-lede {
   max-width: var(--folio-copy-width);
   font-size: 1rem;
   line-height: 1.98;
-  word-break: keep-all;
-}
-
-.portfolio-home .portfolio-facts {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.7rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.portfolio-home .portfolio-facts li {
-  display: grid;
-  gap: 0.3rem;
-  padding-top: 0.95rem;
-  border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
-}
-
-.portfolio-home .portfolio-facts span {
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: color-mix(in srgb, var(--secondary) 82%, var(--dark));
-}
-
-.portfolio-home .portfolio-facts p {
-  margin: 0;
-  max-width: 28rem;
-  color: var(--dark);
-  line-height: 1.72;
   word-break: keep-all;
 }
 
@@ -411,7 +309,8 @@
 
 .portfolio-home .portfolio-item > a,
 .folder-hub .hub-item > a,
-.folder-hub .hub-note {
+.folder-hub .hub-note,
+.portfolio-home .portfolio-note {
   display: grid;
   gap: var(--hub-list-gap, 0.62rem);
   min-width: 0;
@@ -451,7 +350,8 @@
 
 .portfolio-home .portfolio-list > .portfolio-item:first-child > a,
 .folder-hub .hub-list > .hub-item:first-child > a,
-.folder-hub .hub-section > .hub-note:first-child {
+.folder-hub .hub-section > .hub-note:first-child,
+.portfolio-home .portfolio-block > .portfolio-note:first-child {
   border-top: 1px solid var(--nomos-line);
 }
 
@@ -485,7 +385,8 @@
 
 .portfolio-home .portfolio-item p,
 .folder-hub .hub-item p,
-.folder-hub .hub-note p {
+.folder-hub .hub-note p,
+.portfolio-home .portfolio-note p {
   margin: 0;
   max-width: 40rem;
   color: var(--darkgray);
@@ -493,7 +394,8 @@
   word-break: keep-all;
 }
 
-.folder-hub .hub-note {
+.folder-hub .hub-note,
+.portfolio-home .portfolio-note {
   position: relative;
   padding: var(--hub-note-padding);
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
@@ -505,7 +407,8 @@
   box-shadow: none;
 }
 
-.folder-hub .hub-note::before {
+.folder-hub .hub-note::before,
+.portfolio-home .portfolio-note::before {
   content: "";
   position: absolute;
   inset-inline-start: 0;
@@ -515,7 +418,8 @@
   background: color-mix(in srgb, var(--secondary) 30%, transparent);
 }
 
-.folder-hub .hub-note::after {
+.folder-hub .hub-note::after,
+.portfolio-home .portfolio-note::after {
   content: "";
   position: absolute;
   inset-inline-start: 0;
@@ -525,7 +429,8 @@
   background: color-mix(in srgb, var(--secondary) 26%, var(--nomos-line));
 }
 
-.folder-hub .hub-note .hub-label {
+.folder-hub .hub-note .hub-label,
+.portfolio-home .portfolio-note .portfolio-badge {
   margin-bottom: 0.05rem;
 }
 
@@ -741,32 +646,6 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
     max-width: var(--folio-copy-width);
   }
 
-  .portfolio-home .portfolio-entry-grid {
-    grid-template-columns: 1fr;
-    gap: 1.35rem;
-  }
-
-  .portfolio-home .portfolio-facts {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.9rem 1.45rem;
-  }
-
-  .portfolio-home .portfolio-facts p {
-    max-width: 16rem;
-  }
-
-  .portfolio-home .portfolio-entry-card {
-    min-height: 100%;
-  }
-
-  .portfolio-home .portfolio-entry-card p {
-    max-width: none;
-  }
-
-  .portfolio-home .portfolio-support {
-    max-width: var(--folio-copy-width);
-  }
-
   .portfolio-home .portfolio-block,
   .folder-hub .hub-section {
     grid-template-columns: minmax(0, 1fr);
@@ -879,7 +758,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   .folder-hub .hub-grid,
   .folder-hub .hub-proof-grid,
   .folder-hub .hub-grid.single,
-  .portfolio-home .portfolio-entry-grid {
+  .portfolio-home .portfolio-list {
     grid-template-columns: 1fr;
     gap: 0.9rem;
   }
