@@ -69,6 +69,28 @@
   display: none;
 }
 
+.page:has(article.folder-hub) article.folder-hub {
+  --hub-shell-gap: 2.15rem;
+  --hub-header-padding: 1.8rem;
+  --folio-block-gap: 1.05rem;
+  --hub-section-padding: 2.05rem;
+  --hub-list-gap: 0.36rem;
+}
+
+body:is(
+    [data-slug="about"],
+    [data-slug="start-here"],
+    [data-slug="projects/index"],
+    [data-slug="wiki/index"],
+    [data-slug="research/index"],
+    [data-slug="Diary/index"]
+  )
+  article.folder-hub {
+  --hub-shell-width: 45rem;
+  --hub-copy-width: 36rem;
+  --hub-grid-gap-desktop: 1.25rem 1.55rem;
+}
+
 .page:has(article.portfolio-home) .page-header,
 .page:has(article.folder-hub) .page-header {
   display: none;
@@ -88,7 +110,7 @@
 }
 
 .page:has(article.folder-hub) > #quartz-body > .sidebar.left {
-  padding-top: 4.4rem;
+  padding-top: 4.2rem;
   padding-bottom: 1.35rem;
 }
 
@@ -124,25 +146,16 @@
 }
 
 .page:has(article.folder-hub) article.folder-hub {
-  gap: 2.15rem;
-}
-
-.page:has(article.folder-hub) article.folder-hub .hub-header {
-  padding-bottom: 1.8rem;
-}
-
-.page:has(article.folder-hub) article.folder-hub .hub-section {
-  gap: 1.05rem;
+  gap: var(--hub-shell-gap);
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
-  padding-top: 2.05rem;
+  padding-top: var(--hub-section-padding);
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 86%, transparent);
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-item > a,
 .page:has(article.folder-hub) article.folder-hub .hub-note {
-  gap: 0.36rem;
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
@@ -173,8 +186,8 @@
 
 .page:has(article.folder-hub) .folder-hub + .page-listing .section .meta {
   font-size: 0.74rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-transform: none;
 }
 
 .page:has(article.research-note) .page-header {

@@ -10,15 +10,33 @@
 }
 
 .folder-hub {
+  --hub-shell-width: 44rem;
+  --hub-shell-gap: 2rem;
+  --hub-copy-width: 35rem;
+  --hub-header-gap: 1.1rem;
+  --hub-header-padding: 1.85rem;
+  --hub-grid-gap: 1.1rem;
+  --hub-grid-gap-desktop: 1.2rem 1.35rem;
+  --hub-card-gap: 0.6rem;
+  --hub-card-padding: 1.1rem 0 0.5rem 0.3rem;
+  --hub-list-gap: 0.62rem;
+  --hub-list-padding: 1.42rem 0 1.32rem 0.3rem;
+  --hub-note-padding: 1.32rem 0 0.45rem var(--folio-note-indent);
+  --hub-proof-grid-gap: 1.45rem;
+  --hub-proof-grid-gap-desktop: 1.4rem 1.6rem;
+  --hub-proof-card-gap: 1rem;
+  --hub-proof-card-padding: 1.25rem 0 0.8rem 1rem;
+  --hub-proof-media-min-height: clamp(15rem, 28vw, 19rem);
+  --hub-proof-media-max-height: 20rem;
   display: grid;
-  max-width: 44rem;
-  gap: 2rem;
+  max-width: var(--hub-shell-width);
+  gap: var(--hub-shell-gap);
 }
 
 .folder-hub .hub-header {
   display: grid;
-  gap: 1.1rem;
-  padding-bottom: 1.85rem;
+  gap: var(--hub-header-gap);
+  padding-bottom: var(--hub-header-padding);
   border-bottom: 1px solid var(--nomos-line);
 }
 
@@ -88,14 +106,14 @@
 }
 
 .folder-hub .hub-lede {
-  max-width: 35rem;
+  max-width: var(--hub-copy-width);
   line-height: 1.92;
 }
 
 .folder-hub .hub-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.1rem;
+  gap: var(--hub-grid-gap);
   align-items: start;
 }
 
@@ -109,7 +127,7 @@
 .folder-hub .hub-proof-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.45rem;
+  gap: var(--hub-proof-grid-gap);
   align-items: start;
 }
 
@@ -119,12 +137,12 @@
 
 .folder-hub .hub-card {
   display: grid;
-  gap: 0.6rem;
+  gap: var(--hub-card-gap);
   min-height: 0;
   min-width: 0;
   align-content: start;
   position: relative;
-  padding: 1.1rem 0 0.5rem 0.3rem;
+  padding: var(--hub-card-padding);
   color: inherit;
   border-top: 1px solid var(--nomos-line);
   background: transparent;
@@ -229,11 +247,11 @@
 
 .folder-hub .hub-proof-card {
   display: grid;
-  gap: 1rem;
+  gap: var(--hub-proof-card-gap);
   min-width: 0;
   align-content: start;
   position: relative;
-  padding: 1.25rem 0 0.8rem 1rem;
+  padding: var(--hub-proof-card-padding);
   border-top: 1px solid var(--nomos-line);
   border-right: 0;
   border-bottom: 0;
@@ -271,8 +289,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: clamp(15rem, 28vw, 19rem);
-  max-height: 20rem;
+  min-height: var(--hub-proof-media-min-height);
+  max-height: var(--hub-proof-media-max-height);
   padding: 1rem;
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--nomos-line) 82%, transparent);
@@ -553,7 +571,7 @@
 .folder-hub .hub-item > a,
 .folder-hub .hub-note {
   display: grid;
-  gap: 0.62rem;
+  gap: var(--hub-list-gap, 0.62rem);
   min-width: 0;
   align-content: start;
   padding: 1.42rem 0 1.32rem 0.3rem;
@@ -636,7 +654,7 @@
 
 .folder-hub .hub-note {
   position: relative;
-  padding: 1.32rem 0 0.45rem var(--folio-note-indent);
+  padding: var(--hub-note-padding);
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
   border-right: 0;
   border-bottom: 0;
@@ -684,8 +702,8 @@
   margin: 0 0 0.85rem;
   font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-transform: none;
   color: var(--gray);
 }
 
@@ -935,7 +953,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   .portfolio-home .portfolio-grid,
   .folder-hub .hub-grid:not(.single) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.2rem 1.35rem;
+    gap: var(--hub-grid-gap-desktop);
   }
 
   .portfolio-home .portfolio-grid > :last-child:nth-child(odd),
@@ -945,7 +963,7 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
 
   .folder-hub .hub-proof-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.4rem 1.6rem;
+    gap: var(--hub-proof-grid-gap-desktop);
   }
 
   .folder-hub .hub-proof-grid > .hub-proof-card:last-child:not(:has(.hub-proof-media)) {
