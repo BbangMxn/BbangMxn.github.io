@@ -15,7 +15,7 @@ body {
   row-gap: 0.75rem;
 }
 
-.page > #quartz-body .center > :is(.page-header, article, .page-footer) {
+.page > #quartz-body .center > :is(.page-header, .popover-hint, article, .page-footer) {
   max-width: 45rem;
 }
 
@@ -276,7 +276,7 @@ footer a,
     row-gap: 0.5rem;
   }
 
-  .page > #quartz-body .center > :is(.page-header, article, .page-footer) {
+  .page > #quartz-body .center > :is(.page-header, .popover-hint, article, .page-footer) {
     max-width: 100%;
   }
 

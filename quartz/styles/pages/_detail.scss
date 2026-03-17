@@ -69,9 +69,17 @@
   display: none;
 }
 
+.page:has(article.portfolio-home),
+.page:has(article.folder-hub) {
+  --folio-center-width: 44rem;
+  --folio-shell-sidebar-width: 248px;
+  --folio-shell-main-width: 50rem;
+  --folio-shell-gap: 2.85rem;
+}
+
 .page:has(article.folder-hub) article.folder-hub {
   --hub-shell-gap: 2.15rem;
-  --hub-shell-width: 44rem;
+  --hub-shell-width: var(--folio-center-width);
   --hub-copy-width: 35rem;
   --hub-header-padding: 1.8rem;
   --hub-header-min-height: 11rem;
@@ -88,11 +96,27 @@
   display: none;
 }
 
+.page:has(article.portfolio-home) .center > .popover-hint,
+.page:has(article.folder-hub) .center > .popover-hint,
+.page:has(article.portfolio-home) .center > .page-footer,
+.page:has(article.folder-hub) .center > .page-footer {
+  width: 100%;
+  max-width: var(--folio-center-width);
+}
+
+.page:has(article.portfolio-home) .center > .popover-hint,
+.page:has(article.folder-hub) .center > .popover-hint {
+  display: grid;
+  gap: 0;
+}
+
 .page:has(article.research-note) .page-header {
   margin-bottom: 0.2rem;
 }
 
 .page:has(article.portfolio-home) article.portfolio-home {
+  width: 100%;
+  max-width: none;
   gap: 2.15rem;
 }
 
@@ -138,7 +162,15 @@
 }
 
 .page:has(article.folder-hub) article.folder-hub {
+  width: 100%;
+  max-width: none;
   gap: var(--hub-shell-gap);
+}
+
+.page:has(article.folder-hub) .folder-hub + .page-listing,
+.page:has(article.folder-hub) .page-listing {
+  width: 100%;
+  max-width: none;
 }
 
 .page:has(article.folder-hub) article.folder-hub .hub-section + .hub-section {
@@ -272,8 +304,8 @@
 
 @media all and (min-width: 1200px) {
   .page:has(article.portfolio-home) > #quartz-body {
-    grid-template-columns: 236px minmax(0, 52rem);
-    column-gap: 3rem;
+    grid-template-columns: var(--folio-shell-sidebar-width) minmax(0, var(--folio-shell-main-width));
+    column-gap: var(--folio-shell-gap);
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "grid-sidebar-left grid-header"
@@ -283,8 +315,8 @@
   }
 
   .page:has(article.folder-hub) > #quartz-body {
-    grid-template-columns: 248px minmax(0, 50rem);
-    column-gap: 2.85rem;
+    grid-template-columns: var(--folio-shell-sidebar-width) minmax(0, var(--folio-shell-main-width));
+    column-gap: var(--folio-shell-gap);
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "grid-sidebar-left grid-header"
