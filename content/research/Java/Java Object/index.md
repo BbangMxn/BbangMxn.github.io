@@ -11,7 +11,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Research / Java Object</p>
-  <h2>객체 모델이 만드는 JVM 비용을 추적합니다</h2>
+  <h2>객체 모델과 JVM 비용</h2>
   <p class="hub-lede">
     이 폴더는 JVM 구조 이해에서 시작해 객체 헤더, 참조 추적, 메모리 오버헤드,
     그리고 대안 설계 방향까지 한 흐름으로 읽을 수 있게 구성한 연구 허브입니다.

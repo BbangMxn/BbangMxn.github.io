@@ -10,7 +10,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Research</p>
-  <h2>구현 전에 문제를 해부한 기록입니다</h2>
+  <h2>질문부터 시작한 기술 연구</h2>
   <p class="hub-lede">
     여기는 결론보다 질문이 먼저 있는 섹션입니다.
     각 루트 문서는 왜 이 주제가 중요한지, 어디서부터 읽어야 하는지,

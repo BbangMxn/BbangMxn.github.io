@@ -6,7 +6,7 @@ cssclasses:
 
 <section class="portfolio-intro">
   <p class="portfolio-kicker">Portfolio</p>
-  <h1>제품 문제를 구조 판단, 운영 tradeoff, 검증 근거로 설명합니다</h1>
+  <h1>구조 판단으로 설명하는 백엔드 포트폴리오</h1>
   <p class="portfolio-lede">
     이 사이트는 단독으로 읽혀도 지원자의 문제 정의 방식과 구조 판단이 보이도록 만든 포트폴리오입니다.
     구현 목록보다 서비스 경계, 데이터 흐름, 캐시, AI 안전장치 같은 백엔드 선택을 먼저 보여주고,

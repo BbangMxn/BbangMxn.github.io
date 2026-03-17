@@ -12,7 +12,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Projects / Coffee Community</p>
-  <h2>BagInCoffee는 커뮤니티 앱을 만드는 데서 멈추지 않고, 제품을 만들며 SvelteKit에서 Flutter로 전환하고 장비 도메인을 분리해야 한다는 판단까지 검증한 프로젝트입니다</h2>
+  <h2>목표</h2>
   <p class="hub-lede">
     처음에는 커피 커뮤니티를 빠르게 검증하는 것이 목표였지만, 실제로 제품을 확장하려고 하자 웹 중심 구조와 단일 백엔드만으로는 한계가 분명해졌습니다. BagInCoffee는 기능 구현뿐 아니라, 어떤 시점에 클라이언트와 도메인 구조를 다시 나눠야 하는지를 보여주는 프로젝트입니다.
   </p>
@@ -20,7 +20,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Proof</p>
-  <h3>메인 페이지에서 바로 확인할 수 있는 증거</h3>
+  <h3>실행 화면</h3>
   <div class="hub-proof-grid">
     <div class="hub-proof-card">
       <div class="hub-proof-media">
@@ -56,7 +56,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
-  <h3>왜 이 프로젝트를 다시 설계했는가</h3>
+  <h3>배경</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -81,7 +81,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Key Decisions</p>
-  <h3>무엇을 구현했는가보다 무엇을 판단했는가</h3>
+  <h3>판단</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -106,7 +106,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">What Was Proven</p>
-  <h3>무엇이 실제로 연결됐는가</h3>
+  <h3>검증</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -131,7 +131,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Limits and Next</p>
-  <h3>무엇이 아직 남아 있는가</h3>
+  <h3>한계</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -156,7 +156,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Development Flow</p>
-  <h3>실제로 어떤 순서로 개발했는가</h3>
+  <h3>흐름</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -191,7 +191,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Source</p>
-  <h3>원본과 연결 지점</h3>
+  <h3>원본</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="https://github.com/BbangMxn/BagInCoffee">
@@ -212,7 +212,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Architecture</p>
-  <h3>구조 설명은 별도 페이지로 분리했습니다</h3>
+  <h3>구조</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./architecture">
@@ -226,7 +226,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Structure</p>
-  <h3>저장소 구조</h3>
+  <h3>파일 구조</h3>
 
 ```text
 BagInCoffee/

@@ -9,7 +9,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Wiki / Java</p>
-  <h2>Java 기본 개념을 정리합니다</h2>
+  <h2>Java 기본 개념 메모</h2>
   <p class="hub-lede">
     Research 문서의 배경지식이 되는 개념과 반복해서 볼 기본 문서를 유지합니다.
   </p>

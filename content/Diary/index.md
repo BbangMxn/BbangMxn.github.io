@@ -8,7 +8,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Diary</p>
-  <h2>공개 가능한 짧은 기록만 남깁니다</h2>
+  <h2>공개 가능한 짧은 기록</h2>
   <p class="hub-lede">
     이곳은 결과물보다 관찰과 생각의 변화에 가까운 짧은 기록을 두는 섹션입니다.
     공개 가치가 낮은 개인 초안은 올리지 않고, 읽을 만한 맥락이 생긴 기록만 남깁니다.

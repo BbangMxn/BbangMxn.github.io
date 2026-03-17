@@ -10,7 +10,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Nazgul / Research Notes</p>
-  <h2>메인 포트폴리오 문서와 별도로 연구 메모를 묶어 둡니다</h2>
+  <h2>Nazgul 연구 메모 입구</h2>
   <p class="hub-lede">
     Nazgul은 제품 재정의가 핵심인 프로젝트이지만, 그 배경에는 retrieval 구조와 로컬 RAG 실험을 정리한 연구 메모가 같이 있습니다.
     이 페이지는 메인 주장과 보조 연구 자료의 경계를 나누고, 어떤 문서를 어떤 순서로 읽어야 하는지 정리하는 입구입니다.
@@ -19,7 +19,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Read First</p>
-  <h3>연구 흐름을 가장 짧게 보는 순서</h3>
+  <h3>읽기 순서</h3>
   <div class="hub-grid">
     <a class="hub-card" href="./retrieval-map">
       <span class="hub-label">Compressed View</span>
@@ -41,7 +41,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Notes</p>
-  <h3>연구 메모별 역할</h3>
+  <h3>문서 역할</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./retrieval-map">
@@ -83,7 +83,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Boundary</p>
-  <h3>메인 포트폴리오 문서와의 경계</h3>
+  <h3>경계</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">

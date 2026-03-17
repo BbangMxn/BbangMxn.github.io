@@ -8,7 +8,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Wiki</p>
-  <h2>오래 남길 기준과 공통 언어를 모읍니다</h2>
+  <h2>기준과 공통 언어</h2>
   <p class="hub-lede">
     반복해서 참고할 개념, 문서 규격, 운영 기준을 안정적인 형태로 남기는 섹션입니다.
     Projects와 Research를 읽다가 다시 확인해야 하는 기준 문서는 여기로 모읍니다.

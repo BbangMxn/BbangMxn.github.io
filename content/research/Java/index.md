@@ -10,7 +10,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Research / Java</p>
-  <h2>Java 문법이 아니라 JVM 비용 구조를 연구합니다</h2>
+  <h2>JVM 비용 구조 연구</h2>
   <p class="hub-lede">
     이 트랙은 JVM의 실행 구조를 이해한 뒤, 객체 헤더와 참조 중심 모델이
     실제 시스템 비용에 어떤 제약을 만드는지 추적하는 연구 흐름입니다.

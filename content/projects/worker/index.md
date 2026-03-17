@@ -12,7 +12,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Projects / AI Workspace</p>
-  <h2>Worker는 메일 도구를 하나 더 만드는 대신, 업무 도구 자체를 AI 워크스페이스로 다시 설계하며 과도한 구조를 직접 검증한 프로젝트입니다</h2>
+  <h2>AI 워크스페이스로 다시 설계한 업무 도구</h2>
   <p class="hub-lede">
     처음 목표는 이메일, 캘린더, 연락처를 한 화면에 모으는 것이었지만, 구현을 진행할수록 더 중요한 문제는 AI Agent가 실제 업무 도구 안에서 어떻게 안전하게 동작해야 하는가였습니다. Worker는 기능 구현뿐 아니라 어떤 구조가 과했고 무엇을 줄여야 했는지까지 함께 남긴 프로젝트입니다.
   </p>
@@ -20,7 +20,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Proof</p>
-  <h3>메인 페이지에서 바로 확인할 수 있는 증거</h3>
+  <h3>실행 화면</h3>
   <div class="hub-proof-grid">
     <div class="hub-proof-card">
       <div class="hub-proof-media">
@@ -48,7 +48,7 @@ Personalized Reply</code></pre>
 
 <section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
-  <h3>왜 이 프로젝트를 다시 보게 되었는가</h3>
+  <h3>배경</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -73,7 +73,7 @@ Personalized Reply</code></pre>
 
 <section class="hub-section">
   <p class="hub-section-kicker">Key Decisions</p>
-  <h3>무엇을 구현했는가보다 무엇을 판단했는가</h3>
+  <h3>판단</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -98,7 +98,7 @@ Personalized Reply</code></pre>
 
 <section class="hub-section">
   <p class="hub-section-kicker">What Was Proven</p>
-  <h3>무엇이 실제로 연결됐는가</h3>
+  <h3>검증</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -123,7 +123,7 @@ Personalized Reply</code></pre>
 
 <section class="hub-section">
   <p class="hub-section-kicker">Limits and Next</p>
-  <h3>무엇이 아직 남아 있는가</h3>
+  <h3>한계</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -148,7 +148,7 @@ Personalized Reply</code></pre>
 
 <section class="hub-section">
   <p class="hub-section-kicker">Development Flow</p>
-  <h3>실제로 어떤 순서로 개발했는가</h3>
+  <h3>흐름</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -183,7 +183,7 @@ Personalized Reply</code></pre>
 
 <section class="hub-section">
   <p class="hub-section-kicker">Source</p>
-  <h3>원본과 연결 지점</h3>
+  <h3>원본</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="https://github.com/BbangMxn/worker">
@@ -197,7 +197,7 @@ Personalized Reply</code></pre>
 
 <section class="hub-section">
   <p class="hub-section-kicker">Architecture</p>
-  <h3>복잡한 구조 설명은 별도 페이지로 분리했습니다</h3>
+  <h3>구조</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./architecture">
@@ -211,7 +211,7 @@ Personalized Reply</code></pre>
 
 <section class="hub-section">
   <p class="hub-section-kicker">Structure</p>
-  <h3>프로젝트 구조</h3>
+  <h3>파일 구조</h3>
 
 ```text
 worker/

@@ -11,7 +11,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Projects / IoT Platform</p>
-  <h2>Smart Factory는 IoT 모니터링 기능 목록을 정리한 프로젝트가 아니라, 연구와 구현을 한 저장소 안에 묶어 스마트 팩토리 문제를 어떻게 다뤄야 하는지 검토한 프로젝트입니다</h2>
+  <h2>스마트 팩토리 구조를 검토한 연구형 저장소</h2>
   <p class="hub-lede">
     스마트 팩토리 문제는 단순 대시보드 구현이 아니라, 어떤 프로토콜로 데이터를 수집하고 어떤 저장소에 쌓고 어떤 방식으로 실시간성과 운영성을 맞출 것인가의 문제에 가깝습니다. 이 프로젝트는 그 판단을 연구 문서와 구현 구조를 함께 두는 방식으로 정리했습니다.
   </p>
@@ -19,7 +19,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
-  <h3>왜 연구와 구현을 함께 묶었는가</h3>
+  <h3>배경</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -44,7 +44,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Key Decisions</p>
-  <h3>무엇을 구현했는가보다 무엇을 판단했는가</h3>
+  <h3>판단</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -69,7 +69,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">What Was Proven</p>
-  <h3>무엇이 실제로 정리되고 연결됐는가</h3>
+  <h3>검증</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -94,7 +94,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Limits and Next</p>
-  <h3>무엇이 아직 남아 있는가</h3>
+  <h3>한계</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -119,7 +119,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Development Flow</p>
-  <h3>실제로 어떤 순서로 개발했는가</h3>
+  <h3>흐름</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -154,7 +154,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Architecture</p>
-  <h3>연구와 구현 구조는 별도 페이지에서 읽는 편이 맞습니다</h3>
+  <h3>구조</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./architecture">
@@ -168,7 +168,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Source</p>
-  <h3>원본 위치</h3>
+  <h3>원본</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="https://github.com/BbangMxn/smartfactory">
@@ -189,7 +189,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Structure</p>
-  <h3>저장소 구조</h3>
+  <h3>파일 구조</h3>
 
 ```text
 smartfactory/

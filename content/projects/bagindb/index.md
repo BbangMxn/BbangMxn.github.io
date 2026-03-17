@@ -10,7 +10,7 @@ cssclasses:
 ---
 <div class="hub-header">
   <p class="hub-kicker">Projects / Domain API</p>
-  <h2>BagInDB는 장비 API를 하나 만든 프로젝트가 아니라, 왜 커뮤니티와 장비 데이터를 분리해야 했는지를 서비스 경계 관점에서 검증한 프로젝트입니다</h2>
+  <h2>장비 도메인을 분리한 백엔드</h2>
   <p class="hub-lede">
     커뮤니티 서비스와 장비 데이터 서비스는 같은 저장소 안에 둘 수는 있어도 같은 성격의 도메인은 아니었습니다. 
     BagInDB는 반복 조회가 많고 구조가 자주 변하는 장비 데이터를 Rust, PostgreSQL JSONB, Redis 조합으로 분리하는 편이 맞는지 직접 확인하기 위해 만든 프로젝트입니다.
@@ -19,7 +19,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Proof</p>
-  <h3>메인 페이지에서 바로 확인할 수 있는 증거</h3>
+  <h3>실행 화면</h3>
   <div class="hub-proof-grid">
     <div class="hub-proof-card">
       <div class="hub-proof-media">
@@ -49,7 +49,7 @@ JSONB Specs   Redis Cache
 
 <section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
-  <h3>왜 별도 도메인 서비스가 필요했는가</h3>
+  <h3>배경</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -77,7 +77,7 @@ JSONB Specs   Redis Cache
 
 <section class="hub-section">
   <p class="hub-section-kicker">Key Decisions</p>
-  <h3>설계 방향</h3>
+  <h3>판단</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -102,7 +102,7 @@ JSONB Specs   Redis Cache
 
 <section class="hub-section">
   <p class="hub-section-kicker">What Was Proven</p>
-  <h3>구현 방식</h3>
+  <h3>검증</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -127,7 +127,7 @@ JSONB Specs   Redis Cache
 
 <section class="hub-section">
   <p class="hub-section-kicker">Limits and Next</p>
-  <h3>무엇이 아직 남아 있는가</h3>
+  <h3>한계</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -152,7 +152,7 @@ JSONB Specs   Redis Cache
 
 <section class="hub-section">
   <p class="hub-section-kicker">Development Flow</p>
-  <h3>실제로 어떤 순서로 개발했는가</h3>
+  <h3>흐름</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -187,7 +187,7 @@ JSONB Specs   Redis Cache
 
 <section class="hub-section">
   <p class="hub-section-kicker">Source</p>
-  <h3>원본과 연결 지점</h3>
+  <h3>원본</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="https://github.com/BbangMxn/BagInCoffee/tree/main/BagInDB">
@@ -208,7 +208,7 @@ JSONB Specs   Redis Cache
 
 <section class="hub-section">
   <p class="hub-section-kicker">Architecture</p>
-  <h3>요청 흐름과 파일 구조는 별도 페이지에서 봅니다</h3>
+  <h3>구조</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./architecture">
@@ -222,7 +222,7 @@ JSONB Specs   Redis Cache
 
 <section class="hub-section">
   <p class="hub-section-kicker">Structure</p>
-  <h3>프로젝트 구조</h3>
+  <h3>파일 구조</h3>
 
 ```text
 BagInDB/

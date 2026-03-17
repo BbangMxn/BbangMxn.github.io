@@ -10,7 +10,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Wiki / Standard</p>
-  <h2>포트폴리오 문서를 정보 정리가 아니라 판단을 설득하는 글로 만드는 기준</h2>
+  <h2>판단을 설득하는 문서 규격</h2>
   <p class="hub-lede">
     이 문서는 프로젝트를 예쁘게 정리하는 규칙이 아닙니다. 단독 포트폴리오로 읽혀도 지원자를 설명할 수 있게, 내가 어떤 문제를 어떻게 재정의했고 무엇을 근거로 그 판단을 내렸는지를 설득하기 위한 글 규격입니다.
   </p>
@@ -174,7 +174,13 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">Section Headers</span>
-        <p>섹션 헤더는 독자가 무엇을 얻는지 바로 보이게 써야 합니다. <code>먼저 잡아야 하는 전제</code>, <code>추천 읽기 순서</code>, <code>왜 다중 프로토콜 구조를 가정했는가</code>처럼 역할이 앞에 나오는 제목을 우선하고, <code>Introduction</code>, <code>Background</code>, <code>Summary</code> 같은 모호한 표기는 피합니다.</p>
+        <p>섹션 헤더는 독자가 무엇을 얻는지 바로 보이게 써야 합니다. 프로젝트 메인 페이지는 <code>실행 화면</code>, <code>배경</code>, <code>판단</code>, <code>검증</code>, <code>한계</code>, <code>흐름</code>, <code>원본</code>, <code>구조</code>, <code>파일 구조</code>처럼 짧은 명사형 표제를 우선하고, 긴 설명문은 헤더가 아니라 본문으로 내립니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Headline and Deck</span>
+        <p>허브형 페이지의 메인 헤드라인은 한 번에 스캔 가능한 짧은 구문으로 씁니다. 긴 주장과 배경 설명은 제목에 몰아넣지 말고 바로 아래 lede로 내려서 <code>짧은 제목 + 설명 문단</code> 구조를 유지합니다.</p>
       </div>
     </li>
     <li class="hub-item">

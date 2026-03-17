@@ -12,7 +12,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Projects / RAG Prototype</p>
-  <h2>Nazgul은 SNS MVP를 만드는 데서 멈추지 않고, 취미 커뮤니티 문제를 개인화 RAG 연구 문제로 다시 정의한 프로젝트입니다</h2>
+  <h2>취미 커뮤니티를 RAG 문제로 다시 정의한 실험</h2>
   <p class="hub-lede">
     처음에는 취미 기반 SNS를 구현하는 것이 목표였지만, 검색과 추천을 단순 피드 문제로 다루는 방식으로는 한계가 분명했습니다.
     그래서 Nazgul은 커뮤니티 MVP에서 출발해, 취미 데이터를 어떻게 더 구조적으로 검색하고 개인화된 추천 근거와 trace까지 남길 수 있는지 검증하는 연구형 프로젝트로 방향을 바꿨습니다.
@@ -21,7 +21,7 @@ cssclasses:
 
 <section class="hub-section nazgul-flow-section">
   <p class="hub-section-kicker">Product Flow</p>
-  <h3>세 장의 화면으로 먼저 읽히는 제품 흐름</h3>
+  <h3>실행 화면</h3>
   <p class="hub-lede nazgul-flow-intro">
     Nazgul이 왜 단순 SNS MVP에서 멈추지 않았는지는 이 세 장의 화면으로 가장 먼저 설명됩니다.
     커뮤니티가 실제로 존재했고, 탐색 경험이 있었고, 개인화 입력이 분명했기 때문에 이후 검색과 추천을 RAG 문제로 다시 정의할 수 있었습니다.
@@ -85,7 +85,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Why This Project</p>
-  <h3>왜 이 프로젝트를 다시 정의했는가</h3>
+  <h3>배경</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -110,7 +110,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Key Decisions</p>
-  <h3>무엇을 구현했는가보다 무엇을 판단했는가</h3>
+  <h3>판단</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -135,7 +135,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">What Was Proven</p>
-  <h3>무엇이 실제로 연결됐는가</h3>
+  <h3>검증</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -160,7 +160,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Limits and Next</p>
-  <h3>무엇이 아직 남아 있는가</h3>
+  <h3>한계</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -185,7 +185,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Development Flow</p>
-  <h3>실제로 어떤 순서로 개발했는가</h3>
+  <h3>흐름</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
@@ -220,7 +220,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Research Notes</p>
-  <h3>세부 연구 자료는 별도 허브로 묶었습니다</h3>
+  <h3>연구</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./research-notes">
@@ -234,7 +234,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Source</p>
-  <h3>원본과 세부 문서</h3>
+  <h3>원본</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="https://github.com/BbangMxn/Nazgul">
@@ -254,7 +254,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Architecture</p>
-  <h3>구조 설명은 별도 페이지에서 다룹니다</h3>
+  <h3>구조</h3>
   <ul class="hub-list">
     <li class="hub-item">
       <a href="./architecture">
@@ -268,7 +268,7 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">Structure</p>
-  <h3>저장소 구조</h3>
+  <h3>파일 구조</h3>
 
 ```text
 Nazgul/

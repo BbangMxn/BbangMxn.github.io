@@ -9,7 +9,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">Projects</p>
-  <h2>무엇을 만들었는지보다 어떻게 구조를 나눴는지부터 보여줍니다</h2>
+  <h2>구조 판단이 남은 프로젝트</h2>
   <p class="hub-lede">
     이 섹션은 기능 목록보다 구조 판단을 먼저 읽게 하는 프로젝트 포트폴리오입니다.
     대표 프로젝트 3개로 제품 구조 전환, 업무 자동화 파이프라인, retrieval 재정의를 먼저 보여주고,
