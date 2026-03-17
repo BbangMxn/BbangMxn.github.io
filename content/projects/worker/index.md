@@ -147,6 +147,41 @@ Personalized Reply</code></pre>
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Development Flow</p>
+  <h3>실제로 어떤 순서로 개발했는가</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 1</span>
+        <strong>먼저 이메일, 캘린더, 연락처를 한 화면에서 다루는 워크스페이스 UI를 만들었습니다</strong>
+        <p>출발점은 메일 도구 자체가 아니라 문맥 전환 비용을 줄이는 통합 화면이었습니다. 그래서 프론트엔드는 기능별 앱을 늘리는 대신 하나의 업무 공간을 만드는 방향으로 시작했습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 2</span>
+        <strong>백엔드에서는 Gmail 동기화와 SSE 기반 상태 전송을 먼저 연결했습니다</strong>
+        <p>Go 서버에서 외부 메일 상태를 받고, 필요한 업데이트를 실시간으로 UI에 반영하는 흐름을 만들었습니다. 이 단계가 있어야 이후 AI 처리 결과도 실제 업무 도구 안에서 보일 수 있었습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 3</span>
+        <strong>모든 요청을 바로 LLM으로 보내지 않고 규칙 기반 분류와 후속 AI 처리를 나눴습니다</strong>
+        <p><a href="./classification-pipeline">7단계 분류 파이프라인</a>을 두어, 코드로 처리 가능한 부분과 LLM이 필요한 부분을 분리했습니다. 비용과 설명 가능성을 동시에 잡기 위한 구현이었습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 4</span>
+        <strong>마지막으로 Proposal 단계를 넣어 AI가 바로 실행하지 않도록 안전장치를 걸었습니다</strong>
+        <p><a href="./proposal-safety">Proposal Safety</a>처럼 메일 전송이나 일정 생성은 사용자 확인을 거치게 만들었습니다. 그리고 이 과정을 거치며 4개 DB 구조가 과했다는 점도 같이 확인해, 지금은 더 단순한 구조로 줄이는 방향을 다음 단계로 두고 있습니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Source</p>
   <h3>원본과 연결 지점</h3>
   <ul class="hub-list">
@@ -161,14 +196,36 @@ Personalized Reply</code></pre>
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Architecture</p>
+  <h3>복잡한 구조 설명은 별도 페이지로 분리했습니다</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./architecture">
+        <span class="hub-label">Code Structure</span>
+        <strong>Worker Architecture</strong>
+        <p><code>worker_client</code>, <code>worker_server</code>, 그리고 서버 안의 <code>api/worker mode</code>와 헥사고날 계층을 별도 페이지에서 정리합니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Structure</p>
   <h3>프로젝트 구조</h3>
 
 ```text
 worker/
 ├── worker_client/   # Next.js 14 frontend
+│   └── src/{app,widgets,entities,shared,lib}
 ├── worker_server/   # Go backend
+│   ├── adapter/{in,out}
+│   ├── core/{agent,domain,port,service}
+│   ├── internal/{bootstrap,stream}
+│   ├── migrations/
+│   └── document/
 └── docs/            # 로드맵 및 설계 문서
 ```
+
+<p>Worker는 루트 트리만으로는 읽기 어렵습니다. 실제로는 `worker_client`, `worker_server`, 그리고 서버 안의 `api/worker mode`와 `core/adapter` 경계를 같이 봐야 해서, 자세한 구조 설명은 <a href="./architecture">Architecture</a>에 따로 뒀습니다.</p>
 
 </section>

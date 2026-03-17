@@ -118,6 +118,55 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Development Flow</p>
+  <h3>실제로 어떤 순서로 개발했는가</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 1</span>
+        <strong>먼저 산업 문제와 요구사항을 문서로 정리하며 어떤 시스템을 만들지 범위를 확정했습니다</strong>
+        <p>이 프로젝트는 코드보다 설계 판단이 먼저 필요한 영역이라, 수집 대상 데이터와 운영 조건을 먼저 연구 문서로 정리했습니다. 구현은 그다음 단계였습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 2</span>
+        <strong>수집 계층에서는 OPC UA와 MQTT를 함께 보는 다중 프로토콜 구조를 잡았습니다</strong>
+        <p><a href="./protocol-stack">Protocol Stack</a>에 정리했듯, 현장 환경을 한 가지 표준으로 단순화하지 않고 수집 어댑터를 분리하는 쪽으로 방향을 잡았습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 3</span>
+        <strong>수집 이후에는 시계열 저장과 실시간 전송을 분리한 파이프라인을 설계했습니다</strong>
+        <p><a href="./timeseries-pipeline">Timeseries Pipeline</a>처럼 Collector, Pipeline, TimescaleDB, Redis, WebSocket, Dashboard, Alert로 이어지는 전체 흐름을 단계별로 정리했습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 4</span>
+        <strong>연구 문서와 구현체를 한 저장소에 같이 두어 설계 근거와 구현 방향이 분리되지 않게 했습니다</strong>
+        <p>그래서 이 메인 페이지는 “무엇을 구현했는가”보다 “어떤 문제를 어떤 순서로 다뤘는가”까지 한 번에 보이도록 유지합니다. 더 자세한 입구는 <a href="./start-here">Start Here</a>에서 이어집니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">Architecture</p>
+  <h3>연구와 구현 구조는 별도 페이지에서 읽는 편이 맞습니다</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./architecture">
+        <span class="hub-label">Code Structure</span>
+        <strong>Smart Factory Architecture</strong>
+        <p><code>research</code>와 <code>smartpack</code>이 왜 분리되어 있는지, 구현체는 어떤 파이프라인 기준으로 읽어야 하는지 별도 페이지에서 설명합니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Source</p>
   <h3>원본 위치</h3>
   <ul class="hub-list">
@@ -126,6 +175,13 @@ cssclasses:
         <span class="hub-label">GitHub</span>
         <strong>BbangMxn/smartfactory</strong>
         <p>연구 문서와 실제 구현체를 한 저장소에 담아 스마트 팩토리 시스템을 단계적으로 검증한 프로젝트입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="https://github.com/BbangMxn/smartpack">
+        <span class="hub-label">Implementation</span>
+        <strong>BbangMxn/smartpack</strong>
+        <p>실제 Collector, Processor, Storage, Realtime, Alert 모듈이 나뉜 구현체 저장소입니다.</p>
       </a>
     </li>
   </ul>
@@ -144,7 +200,15 @@ smartfactory/
 └── smartpack/
     ├── cmd/
     ├── internal/
+    │   ├── collector/
+    │   ├── processor/
+    │   ├── storage/
+    │   ├── realtime/
+    │   ├── api/
+    │   └── alert/
     └── deployments/
 ```
+
+<p>이 트리는 연구와 구현이 같이 있다는 사실만 보여 줍니다. 실제로 왜 두 축을 분리했고 구현체는 어떤 파이프라인 기준으로 읽어야 하는지는 <a href="./architecture">Architecture</a>에서 더 자세히 정리했습니다.</p>
 
 </section>

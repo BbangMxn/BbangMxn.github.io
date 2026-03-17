@@ -155,6 +155,41 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Development Flow</p>
+  <h3>실제로 어떤 순서로 개발했는가</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 1</span>
+        <strong>먼저 웹 프로토타입으로 커뮤니티 핵심 흐름을 만들었습니다</strong>
+        <p>초기에는 <a href="./client-transition">SvelteKit 기반 웹 프로토타입</a>으로 피드, 콘텐츠, 브랜드 탐색 흐름을 빠르게 검증했습니다. 이 단계의 목적은 완성도가 아니라 제품의 중심 경험이 무엇인지 먼저 확인하는 것이었습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 2</span>
+        <strong>검증된 흐름을 Flutter로 다시 옮겨 웹과 모바일 전략을 통합했습니다</strong>
+        <p>웹에서 확인한 핵심 경험은 유지하고, 이후 제품 확장 기준에 더 맞는 클라이언트 전략으로 Flutter를 선택했습니다. 그래서 이 프로젝트의 전환은 기술 교체가 아니라 제품 경험을 하나의 코드베이스로 묶는 과정이었습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 3</span>
+        <strong>장비 탐색이 커뮤니티와 다른 리듬으로 움직인다는 점을 확인하고 BagInDB로 분리했습니다</strong>
+        <p><a href="./domain-separation">브랜드, 카테고리, 제품 스펙 탐색</a>은 읽기 패턴과 데이터 모델이 달라 별도 서비스로 떼어냈습니다. 인증은 Supabase를 공통 기준으로 두고, 장비 영역은 별도 API로 연결하는 구조를 검증했습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Step 4</span>
+        <strong>지금의 메인 페이지는 전환과 분리 판단을 한 화면에서 설명하는 완결 문서로 유지합니다</strong>
+        <p>하위 문서는 보조 자료입니다. 더 자세한 경로는 <a href="./start-here">Start Here</a>, 클라이언트 변경은 <a href="./client-transition">Client Transition</a>, 서비스 분리는 <a href="./domain-separation">Domain Separation</a>에서 이어서 읽을 수 있습니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Source</p>
   <h3>원본과 연결 지점</h3>
   <ul class="hub-list">
@@ -176,16 +211,35 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Architecture</p>
+  <h3>구조 설명은 별도 페이지로 분리했습니다</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./architecture">
+        <span class="hub-label">Code Structure</span>
+        <strong>BagInCoffee Architecture</strong>
+        <p>현재 Flutter 클라이언트, 초기 SvelteKit 프로토타입, 분리된 BagInDB 서비스가 어떻게 나뉘는지 별도 페이지에서 정리합니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">Structure</p>
   <h3>저장소 구조</h3>
 
 ```text
 BagInCoffee/
 ├── BagInCoffee-App/   # Flutter Web + Mobile client
+│   └── lib/{api,core,features,shared}
 ├── BagInCoffee-Web/   # 초기 SvelteKit 프로토타입
+│   └── src/{routes,lib}
 ├── BagInDB/           # 장비 도메인 백엔드
+│   └── src/{routes,handlers,cache,db,models}
 ├── screenshots/
 └── README.md
 ```
+
+<p>이 트리는 입구만 보여 줍니다. 실제로 어떤 경계가 현재 클라이언트이고 무엇이 이전 프로토타입이며 어디서 장비 도메인이 분리되는지는 <a href="./architecture">Architecture</a>에서 코드 구조 기준으로 이어서 설명합니다.</p>
 
 </section>
