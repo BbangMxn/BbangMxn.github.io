@@ -34,8 +34,16 @@ Portfolio-first knowledge site powered by [Quartz](https://quartz.jzhao.xyz/).
 - `content/projects/`: portfolio and case studies
 - `content/research/`: experiments, logs, working notes
 - `content/wiki/`: evergreen notes
+- `content/wiki/site/`: site implementation docs for page architecture and folder structure
 - `content/about.md`: about page
 - `content/start-here.md`: onboarding page
+
+## Implementation structure
+
+- `quartz.config.ts`: build pipeline, transformers, emitters
+- `quartz.layout.ts`: shared/content/list page layout composition
+- `quartz/components/pages/`: page body renderers such as `Content.tsx` and `FolderContent.tsx`
+- `quartz/styles/pages/`: page-family styles for home, hubs, and dense notes
 
 ## GitHub Pages
 

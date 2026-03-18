@@ -163,6 +163,13 @@ cssclasses:
         <p><code>research</code>와 <code>smartpack</code>이 왜 분리되어 있는지, 구현체는 어떤 파이프라인 기준으로 읽어야 하는지 별도 페이지에서 설명합니다.</p>
       </a>
     </li>
+    <li class="hub-item">
+      <a href="./folder-feature-map">
+        <span class="hub-label">폴더 기능</span>
+        <strong>Smart Factory 폴더 기능 맵</strong>
+        <p><code>research</code>의 설계 문서와 <code>smartpack</code>의 collector, processor, storage, realtime, alert 기능을 폴더별로 정리합니다.</p>
+      </a>
+    </li>
   </ul>
 </section>
 

@@ -20,6 +20,13 @@ cssclasses:
   <h3>기준 문서</h3>
   <ul class="hub-list">
     <li class="hub-item">
+      <a href="./site">
+        <span class="hub-label">구현</span>
+        <strong>사이트 구조</strong>
+        <p>현재 Quartz 포트폴리오가 어떤 페이지 계층과 폴더 규칙으로 구성되는지 정리한 구현 문서 허브입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
       <a href="./Java">
         <span class="hub-label">언어</span>
         <strong>Java 위키</strong>

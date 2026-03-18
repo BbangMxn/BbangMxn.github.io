@@ -132,5 +132,12 @@ cssclasses:
         <p><a href="./research">연구</a>는 기술 배경과 실험, <a href="./wiki">위키</a>는 오래 남길 기준 문서를 보는 섹션입니다.</p>
       </div>
     </li>
+    <li class="hub-item">
+      <a href="./wiki/site">
+        <span class="hub-label">사이트 구현</span>
+        <strong>페이지 구조와 폴더 구조</strong>
+        <p>이 포트폴리오 사이트 자체가 어떤 페이지 타입과 폴더 규칙으로 운영되는지 보려면 위키의 사이트 구조 문서로 들어가면 됩니다.</p>
+      </a>
+    </li>
   </ul>
 </section>

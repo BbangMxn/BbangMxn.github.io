@@ -215,6 +215,13 @@ Route Handler Cache
         <p><code>main -&gt; routes -&gt; handlers -&gt; cache/db -&gt; models</code> 흐름과 <code>docs</code>, <code>supabase</code> 문서 축을 한 페이지에서 같이 정리합니다.</p>
       </a>
     </li>
+    <li class="hub-item">
+      <a href="./folder-feature-map">
+        <span class="hub-label">폴더 기능</span>
+        <strong>BagInDB 폴더 기능 맵</strong>
+        <p><code>src</code>, <code>supabase</code>, <code>docs</code>와 그 아래 <code>handlers</code>, <code>middleware</code>, <code>cache</code>가 실제로 어떤 기능을 맡는지 기능 단위로 정리합니다.</p>
+      </a>
+    </li>
   </ul>
 </section>
 

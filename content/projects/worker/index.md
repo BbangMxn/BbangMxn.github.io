@@ -206,6 +206,13 @@ Personalized Reply</code></pre>
         <p><code>worker_client</code>, <code>worker_server</code>, 그리고 서버 안의 <code>api/worker mode</code>와 헥사고날 계층을 별도 페이지에서 정리합니다.</p>
       </a>
     </li>
+    <li class="hub-item">
+      <a href="./folder-feature-map">
+        <span class="hub-label">폴더 기능</span>
+        <strong>Worker 폴더 기능 맵</strong>
+        <p><code>worker_client</code>의 화면 기능과 <code>worker_server</code>의 분류, Proposal, Provider 연동 기능을 폴더 기준으로 다시 정리합니다.</p>
+      </a>
+    </li>
   </ul>
 </section>
 

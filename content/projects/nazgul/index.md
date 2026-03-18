@@ -263,6 +263,13 @@ cssclasses:
         <p><code>client</code>가 만드는 제품 입력과 <code>server/rag</code>가 수행하는 retrieval 실험 구조를 별도 페이지에서 나눠 설명합니다.</p>
       </a>
     </li>
+    <li class="hub-item">
+      <a href="./folder-feature-map">
+        <span class="hub-label">폴더 기능</span>
+        <strong>Nazgul 폴더 기능 맵</strong>
+        <p><code>client/pages</code>의 제품 화면과 <code>server/rag</code>, <code>server/optimization</code>의 연구 기능을 폴더별로 다시 정리합니다.</p>
+      </a>
+    </li>
   </ul>
 </section>
 

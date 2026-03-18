@@ -18,8 +18,9 @@ Smart Factory는 구현 저장소이면서 동시에 연구 노트입니다. 그
 
 1. [Smart Factory 메인 페이지](./index)
 2. [Architecture](./architecture)
-3. [Protocol Stack](./protocol-stack)
-4. [Timeseries Pipeline](./timeseries-pipeline)
+3. [Folder Feature Map](./folder-feature-map)
+4. [Protocol Stack](./protocol-stack)
+5. [Timeseries Pipeline](./timeseries-pipeline)
 
 ## 문서 역할
 
@@ -32,6 +33,11 @@ Smart Factory는 구현 저장소이면서 동시에 연구 노트입니다. 그
 
 - `research`와 `smartpack`이 왜 분리되어 있는지, 구현체는 어떤 파이프라인 기준으로 읽어야 하는지 설명합니다.
 - 연구 문서와 실제 코드 구조를 연결하는 저장소 입구 문서입니다.
+
+### `folder-feature-map.md`
+
+- 각 폴더를 열었을 때 실제로 어떤 설계 기능과 구현 기능이 나오는지 설명합니다.
+- `research/planning`, `docs`, `smartpack/internal`을 실행 기능 기준으로 다시 읽는 문서입니다.
 
 ### `protocol-stack.md`
 
