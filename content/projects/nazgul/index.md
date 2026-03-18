@@ -219,6 +219,31 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">아키텍처</p>
+  <h3>아키텍처</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">선택 구조</span>
+        <p>Nazgul은 저장소 전체로 보면 제품 프론트엔드와 연구 서버가 같이 있는 product monolith입니다. 다만 `server` 안에서는 `rag`와 `optimization`이 분리된 modular monolith이고, 그 두 모듈은 헥사고날 경계를 따릅니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">핵심 경계</span>
+        <p><code>client</code>는 홈, 탐색, 취미 선택 같은 제품 입력을 만들고, <code>server/rag</code>는 검색 질의를 처리하고, <code>server/optimization</code>은 카드 생성, ingest, 추천, trace 기록을 맡습니다. 그래서 제품 화면과 연구 파이프라인이 분리된 채 연결됩니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">실행 흐름</span>
+        <p>사용자 관점에서는 커뮤니티 화면이 먼저 보이지만, 내부적으로는 <code>client pages -&gt; rag adapter/service -&gt; persistence / ai -&gt; trace</code> 흐름으로 답이 만들어집니다. 자세한 모듈 구조는 <a href="./folder-feature-map">폴더 기능 맵</a>과 연구 문서에서 이어집니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">연구</p>
   <h3>연구</h3>
   <ul class="hub-list">
@@ -231,6 +256,26 @@ cssclasses:
     </li>
   </ul>
 </section>
+
+```mermaid
+mindmap
+  root((Nazgul))
+    Product monolith
+      client
+        Home explore flow
+        User entry flow
+      server
+        rag
+          adapter in web
+          application service
+          Persistence index
+        optimization
+          ingest
+          recommend
+          trace
+        common
+          global exception
+```
 
 <section class="hub-section">
   <p class="hub-section-kicker">원본</p>
@@ -257,13 +302,6 @@ cssclasses:
   <h3>구조</h3>
   <ul class="hub-list">
     <li class="hub-item">
-      <a href="./architecture">
-        <span class="hub-label">코드 구조</span>
-        <strong>Nazgul 아키텍처</strong>
-        <p><code>client</code>가 만드는 제품 입력과 <code>server/rag</code>가 수행하는 retrieval 실험 구조를 별도 페이지에서 나눠 설명합니다.</p>
-      </a>
-    </li>
-    <li class="hub-item">
       <a href="./folder-feature-map">
         <span class="hub-label">폴더 기능</span>
         <strong>Nazgul 폴더 기능 맵</strong>
@@ -288,6 +326,6 @@ Nazgul/
 └── docs/     # 이미지 및 보조 문서
 ```
 
-<p>루트 구조만 보면 단순하지만, 실제 핵심은 `client`가 만드는 제품 맥락과 `server/rag`가 수행하는 retrieval 실험이 어떻게 분리되는가에 있습니다. 이 흐름은 <a href="./architecture">아키텍처</a>에서 모듈 기준으로 이어서 설명합니다.</p>
+<p>루트 구조만 보면 단순하지만, 실제 핵심은 `client`가 만드는 제품 맥락과 `server/rag`가 수행하는 retrieval 실험이 어떻게 분리되는가에 있습니다. 이 흐름은 위 아키텍처 섹션과 <a href="./folder-feature-map">폴더 기능 맵</a>에서 모듈 기준으로 이어서 설명합니다.</p>
 
 </section>

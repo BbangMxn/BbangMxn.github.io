@@ -104,6 +104,40 @@
   border-top: 1px solid color-mix(in srgb, var(--nomos-line) 86%, transparent);
 }
 
+.page:has(article.folder-hub) article.folder-hub > pre:has(> code.mermaid) {
+  margin: 0.15rem 0 0;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--nomos-line));
+  border-radius: 1rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--nomos-surface-soft) 88%, var(--light)) 0%,
+    color-mix(in srgb, var(--highlight) 38%, transparent) 100%
+  );
+}
+
+.page:has(article.folder-hub) article.folder-hub > pre:has(> code.mermaid) > code.mermaid {
+  padding: 0;
+  overflow: visible;
+}
+
+.page:has(article.folder-hub) article.folder-hub > pre:has(> code.mermaid) svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.page:has(article.folder-hub) article.folder-hub > pre:has(> code.mermaid) svg text,
+.page:has(article.folder-hub) article.folder-hub > pre:has(> code.mermaid) svg tspan {
+  font-family: var(--bodyFont) !important;
+}
+
+.page:has(article.folder-hub) article.folder-hub > pre:has(> code.mermaid) + .hub-section {
+  padding-top: var(--hub-section-padding);
+  border-top: 1px solid color-mix(in srgb, var(--nomos-line) 86%, transparent);
+}
+
 .page:has(article.folder-hub) article.folder-hub .hub-item > a,
 .page:has(article.folder-hub) article.folder-hub .hub-note {
   border-right: 0;

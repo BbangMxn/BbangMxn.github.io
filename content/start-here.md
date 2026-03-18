@@ -27,8 +27,8 @@ cssclasses:
     </a>
     <a class="hub-card" href="./projects">
       <span class="hub-label">구조 먼저</span>
-      <strong>프로젝트 -&gt; 아키텍처 -&gt; 메인 문서</strong>
-      <p>구조 경계와 폴더 구성을 먼저 보고 싶다면 프로젝트 허브에서 각 아키텍처 문서로 바로 들어가는 편이 맞습니다.</p>
+      <strong>프로젝트 -&gt; 메인 페이지 아키텍처 -&gt; 세부 문서</strong>
+      <p>구조 경계와 폴더 구성을 먼저 보고 싶다면 프로젝트 허브에서 각 메인 페이지의 아키텍처 섹션부터 보는 편이 맞습니다.</p>
     </a>
     <a class="hub-card" href="./research">
       <span class="hub-label">연구 먼저</span>
@@ -51,7 +51,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">다음</span>
-        <p>구조가 더 궁금하면 각 프로젝트의 <a href="./projects/BagInCoffee/architecture">아키텍처</a> 문서로 들어가 폴더 구조와 계층 책임을 확인합니다.</p>
+        <p>구조가 더 궁금하면 각 프로젝트 메인 페이지의 아키텍처 섹션과 `start-here`, `folder-feature-map` 같은 세부 문서로 들어가 폴더 구조와 계층 책임을 확인합니다.</p>
       </div>
     </li>
     <li class="hub-item">
@@ -116,8 +116,8 @@ cssclasses:
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">아키텍처</span>
-        <p>프로젝트의 폴더 구조와 실행 흐름, 계층 책임은 아키텍처 문서에서 따로 설명합니다.</p>
+        <span class="hub-label">메인 아키텍처</span>
+        <p>프로젝트의 구조 선택, 실행 흐름, 핵심 경계는 이제 각 메인 페이지 안의 아키텍처 섹션에서 먼저 설명합니다.</p>
       </div>
     </li>
     <li class="hub-item">

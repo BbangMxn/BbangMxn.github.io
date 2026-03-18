@@ -93,8 +93,8 @@ cssclasses:
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">Architecture</span>
-        <p><a href="./architecture">Architecture</a>는 코드 구조와 폴더 책임을 잡는 문서입니다. 제품 입력과 실험 서버를 어디서 나눠 읽어야 하는지 설명합니다.</p>
+        <span class="hub-label">Main Page</span>
+        <p><a href="./index">Nazgul 메인 페이지</a> 안의 아키텍처 섹션은 코드 구조와 폴더 책임을 압축해 보여 줍니다. 제품 입력과 실험 서버를 어디서 나눠 읽어야 하는지 먼저 잡을 때 봅니다.</p>
       </div>
     </li>
     <li class="hub-item">

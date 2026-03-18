@@ -49,16 +49,16 @@ cssclasses:
   <h2>여기서 시작하면 됩니다</h2>
   <ul class="portfolio-list">
     <li class="portfolio-item">
-      <a href="./projects/BagInCoffee/architecture">
+      <a href="./projects/BagInCoffee">
         <span class="portfolio-badge">대표 구조</span>
-        <strong>BagInCoffee 아키텍처</strong>
-        <p>클라이언트 전환과 도메인 분리가 실제로 어디서 일어났는지 가장 빠르게 확인할 수 있는 대표 구조 문서입니다.</p>
+        <strong>BagInCoffee</strong>
+        <p>메인 페이지 안에서 클라이언트 전환과 도메인 분리 아키텍처를 바로 확인할 수 있는 대표 프로젝트입니다.</p>
       </a>
     </li>
     <li class="portfolio-item">
       <a href="./projects">
         <span class="portfolio-badge">프로젝트</span>
-        <strong>프로젝트 포트폴리오</strong>
+        <strong>프로젝트</strong>
         <p>설명력이 큰 프로젝트 다섯 개를 선별해 문제, 역할, 판단, 검증 범위를 한 번에 훑어볼 수 있는 허브입니다.</p>
       </a>
     </li>

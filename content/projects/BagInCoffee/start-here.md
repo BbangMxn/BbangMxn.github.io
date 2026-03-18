@@ -17,10 +17,9 @@ BagInCoffee는 커뮤니티 앱 하나를 만든 기록이 아니라, 제품을 
 ## 읽기 순서
 
 1. [BagInCoffee 메인 페이지](./index)
-2. [Architecture](./architecture)
-3. [Client Transition](./client-transition)
-4. [Domain Separation](./domain-separation)
-5. [BagInDB](../bagindb)
+2. [Client Transition](./client-transition)
+3. [Domain Separation](./domain-separation)
+4. [BagInDB](../bagindb)
 
 ## 문서 역할
 
@@ -28,11 +27,6 @@ BagInCoffee는 커뮤니티 앱 하나를 만든 기록이 아니라, 제품을 
 
 - 이 프로젝트의 핵심 주장을 한 페이지에서 닫습니다.
 - 왜 이 프로젝트가 단순 커뮤니티 앱이 아니라 구조 전환 사례인지 설명합니다.
-
-### `architecture.md`
-
-- 실제 저장소를 열었을 때 `App`, `Web`, `BagInDB`를 어떤 순서로 읽어야 하는지 설명합니다.
-- 아키텍처 경계와 폴더 역할을 같이 잡는 코드 기준 입구 문서입니다.
 
 ### `client-transition.md`
 
@@ -56,4 +50,4 @@ BagInCoffee는 커뮤니티 앱 하나를 만든 기록이 아니라, 제품을 
 - BagInCoffee의 강점은 화면 수가 아니라 구조 전환 타이밍을 실제 구현 위에서 설명할 수 있다는 점입니다.
 - 웹 프로토타입, Flutter 전환, BagInDB 분리는 각각 따로 노는 산출물이 아니라 하나의 제품 판단 흐름입니다.
 - 그래서 이 프로젝트는 "무엇을 만들었는가"보다 "언제 어떤 경계를 다시 그었는가"가 핵심입니다.
-- 코드 구조부터 읽고 싶다면 [Architecture](./architecture)에서 시작하는 편이 가장 빠릅니다.
+- 코드 구조부터 읽고 싶다면 [BagInCoffee 메인 페이지](./index)의 아키텍처 섹션과 파일 구조부터 보는 편이 가장 빠릅니다.

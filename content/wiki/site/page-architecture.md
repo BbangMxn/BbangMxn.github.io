@@ -51,9 +51,9 @@ content/**/*.md
 ### 3. 일반 상세 페이지: 기본 detail
 
 - `cssclasses`를 주지 않은 일반 문서는 기본 상세 페이지로 렌더됩니다.
-- 대표 경로는 `content/projects/*/architecture.md`, `content/projects/*/start-here.md`, 각종 설명형 Markdown 문서입니다.
+- 대표 경로는 `content/projects/*/start-here.md`, `content/projects/*/folder-feature-map.md`, 각종 설명형 Markdown 문서입니다.
 - 이 타입은 `defaultContentPageLayout`을 그대로 사용하므로 breadcrumbs, title, content meta, tag list, TOC, backlinks, graph가 유지됩니다.
-- 프로젝트 메인 허브에서 다 담지 못하는 구조 해설, 읽기 순서, 세부 설계는 이 타입으로 분리하는 편이 맞습니다.
+- 프로젝트 메인 허브에서 다 담지 못하는 폴더 기능 해설, 읽기 순서, 세부 설계는 이 타입으로 분리하는 편이 맞습니다.
 
 ### 4. 연구 노트 페이지: `research-note`
 
@@ -71,22 +71,22 @@ content/**/*.md
 ## 백엔드 중심 프로젝트에서 늘어나는 페이지
 
 - 백엔드 프로젝트는 메인 허브 한 장으로 끝나면 깊이가 잘 안 보입니다.
-- 그래서 현재 구조에서는 `index.md` 아래에 최소 `architecture.md`를 두고, 필요하면 API 표면, 캐시 전략, 파이프라인, trace 설계 문서를 더 붙이는 편이 맞습니다.
-- 이때 메인 허브는 주장과 검증 범위를 맡고, 상세 문서는 실행 흐름과 폴더 책임을 맡습니다.
+- 그래서 현재 구조에서는 `index.md` 안에 아키텍처 섹션을 넣고, 필요하면 `folder-feature-map.md`, API 표면, 캐시 전략, 파이프라인, trace 설계 문서를 더 붙이는 편이 맞습니다.
+- 이때 메인 허브는 주장, 검증 범위, 구조 요약을 맡고, 상세 문서는 폴더 책임과 세부 실행 흐름을 맡습니다.
 - 공통 기준은 [백엔드 아키텍처 기준](./backend-architecture) 문서에 따로 정리했습니다.
 
 ## 실제 경로 매핑
 
-| 경로 패턴                               | 페이지 타입                      | 역할                  |
-| --------------------------------------- | -------------------------------- | --------------------- | -------------------------------- | ---------------- |
-| `content/index.md`                      | `portfolio-home`                 | 지원자 홈             |
-| `content/*/index.md`                    | `folder-hub`                     | 섹션 허브             |
-| `content/projects/*/index.md`           | `folder-hub`                     | 프로젝트 메인 허브    |
-| `content/projects/*/architecture.md`    | 기본 detail                      | 구조 설명             |
-| `content/projects/*/start-here.md`      | 기본 detail 또는 허브 보조 문서  | 읽기 순서             |
-| `content/projects/\*/(api-surface       | cache-strategy                   | technical-design).md` | 기본 detail 또는 `research-note` | 백엔드 세부 설계 |
-| `content/research/**/*.md` 중 깊은 노트 | `research-note`                  | 연구 메모             |
-| `content/wiki/site/*.md` 같은 구현 문서 | `research-note` 또는 기본 detail | 운영/구현 기준        |
+| 경로 패턴                                  | 페이지 타입                      | 역할                  |
+| ------------------------------------------ | -------------------------------- | --------------------- | -------------------------------- | ---------------- |
+| `content/index.md`                         | `portfolio-home`                 | 지원자 홈             |
+| `content/*/index.md`                       | `folder-hub`                     | 섹션 허브             |
+| `content/projects/*/index.md`              | `folder-hub`                     | 프로젝트 메인 허브    |
+| `content/projects/*/folder-feature-map.md` | 기본 detail                      | 폴더 기능 설명        |
+| `content/projects/*/start-here.md`         | 기본 detail 또는 허브 보조 문서  | 읽기 순서             |
+| `content/projects/\*/(api-surface          | cache-strategy                   | technical-design).md` | 기본 detail 또는 `research-note` | 백엔드 세부 설계 |
+| `content/research/**/*.md` 중 깊은 노트    | `research-note`                  | 연구 메모             |
+| `content/wiki/site/*.md` 같은 구현 문서    | `research-note` 또는 기본 detail | 운영/구현 기준        |
 
 ## 레이아웃 책임 분리
 

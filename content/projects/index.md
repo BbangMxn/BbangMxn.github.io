@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 포트폴리오
+title: 프로젝트
 tags:
   - portfolio
   - projects
@@ -21,10 +21,10 @@ cssclasses:
   <p class="hub-section-kicker">읽는 기준</p>
   <h3>먼저 고를 입구</h3>
   <div class="hub-grid">
-    <a class="hub-card" href="./BagInCoffee/architecture">
+    <a class="hub-card" href="./BagInCoffee">
       <span class="hub-label">구조 먼저</span>
-      <strong>BagInCoffee 아키텍처</strong>
-      <p>클라이언트 전환과 도메인 분리처럼 제품 구조가 실제로 어디서 갈라졌는지부터 보고 싶다면 여기서 시작하면 됩니다.</p>
+      <strong>BagInCoffee</strong>
+      <p>클라이언트 전환과 도메인 분리처럼 제품 구조가 실제로 어디서 갈라졌는지 메인 페이지 안의 아키텍처 섹션부터 보고 싶다면 여기서 시작하면 됩니다.</p>
     </a>
     <a class="hub-card" href="./worker/start-here">
       <span class="hub-label">흐름 먼저</span>
@@ -115,41 +115,41 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">아키텍처</p>
-  <h3>구조 문서 바로가기</h3>
+  <h3>메인 페이지 안 아키텍처</h3>
   <ul class="hub-list">
     <li class="hub-item">
-      <a href="./BagInCoffee/architecture">
+      <a href="./BagInCoffee">
         <span class="hub-label">제품 구조</span>
-        <strong>BagInCoffee 아키텍처</strong>
-        <p>Flutter 클라이언트, Supabase 인증, 도메인 분리 지점까지 제품 구조를 먼저 읽을 수 있습니다.</p>
+        <strong>BagInCoffee</strong>
+        <p>Flutter 클라이언트, Supabase 인증, 도메인 분리 지점까지 메인 페이지 안에서 바로 읽을 수 있습니다.</p>
       </a>
     </li>
     <li class="hub-item">
-      <a href="./worker/architecture">
+      <a href="./worker">
         <span class="hub-label">업무 구조</span>
-        <strong>Worker 아키텍처</strong>
-        <p>Electron 데스크톱, 백엔드 API, AI 실행 흐름이 어떻게 연결되는지 구조 기준으로 정리한 페이지입니다.</p>
+        <strong>Worker</strong>
+        <p>워크스페이스 UI, 백엔드 API, AI 실행 흐름이 어떻게 연결되는지 메인 페이지 안에서 구조 기준으로 확인할 수 있습니다.</p>
       </a>
     </li>
     <li class="hub-item">
-      <a href="./nazgul/architecture">
+      <a href="./nazgul">
         <span class="hub-label">검색 구조</span>
-        <strong>Nazgul 아키텍처</strong>
-        <p>ingest, retrieval, trace 생성이 어떤 흐름으로 맞물리는지 RAG 구조 관점에서 바로 들어갈 수 있습니다.</p>
+        <strong>Nazgul</strong>
+        <p>ingest, retrieval, trace 생성이 어떤 흐름으로 맞물리는지 RAG 구조 관점에서 메인 페이지에서 바로 들어갈 수 있습니다.</p>
       </a>
     </li>
     <li class="hub-item">
-      <a href="./bagindb/architecture">
+      <a href="./bagindb">
         <span class="hub-label">도메인 구조</span>
-        <strong>BagInDB 아키텍처</strong>
-        <p>routes, handlers, cache, database 계층으로 분리된 장비 도메인 백엔드 구조를 따로 설명합니다.</p>
+        <strong>BagInDB</strong>
+        <p>routes, handlers, cache, database 계층으로 분리된 장비 도메인 백엔드 구조를 메인 페이지에서 바로 설명합니다.</p>
       </a>
     </li>
     <li class="hub-item">
-      <a href="./smartfactory/architecture">
+      <a href="./smartfactory">
         <span class="hub-label">플랫폼 구조</span>
-        <strong>Smart Factory 아키텍처</strong>
-        <p>수집 프로토콜, 시계열 파이프라인, 운영 대시보드까지 연구형 IoT 구조를 한 번에 읽을 수 있습니다.</p>
+        <strong>Smart Factory</strong>
+        <p>수집 프로토콜, 시계열 파이프라인, 운영 대시보드까지 연구형 IoT 구조를 메인 페이지 안에서 한 번에 읽을 수 있습니다.</p>
       </a>
     </li>
   </ul>
@@ -196,7 +196,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">문서 구조</span>
-        <p>대표 프로젝트는 공통으로 <code>메인 페이지 -&gt; architecture -&gt; start-here -&gt; 세부 문서</code> 순서를 가집니다. 메인 페이지는 주장과 검증, <code>architecture</code>는 폴더와 실행 구조, <code>start-here</code>는 읽는 순서를 맡습니다.</p>
+        <p>대표 프로젝트는 공통으로 <code>메인 페이지(아키텍처 포함) -&gt; start-here -&gt; 세부 문서</code> 순서를 가집니다. 메인 페이지는 주장, 검증, 구조 요약을 함께 맡고, <code>start-here</code>는 읽는 순서를 맡습니다.</p>
       </div>
     </li>
     <li class="hub-item">

@@ -200,6 +200,6 @@ Worker는 프론트엔드, 백엔드, AI 파이프라인이 한 저장소 안에
 
 ## 같이 보면 좋은 문서
 
-- [Architecture](./architecture)
+- [Worker 메인 페이지](./index)
 - [Proposal Safety](./proposal-safety)
 - [Classification Pipeline](./classification-pipeline)

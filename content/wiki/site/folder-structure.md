@@ -44,8 +44,8 @@ content/
 │   ├── index.md
 │   └── <project>/
 │       ├── index.md
-│       ├── architecture.md
 │       ├── start-here.md
+│       ├── folder-feature-map.md
 │       ├── image/
 │       └── *.md
 ├── research/
@@ -70,7 +70,8 @@ content/
 
 - `index.md`는 폴더의 공식 입구입니다.
 - `start-here.md`는 읽는 순서를 설명하는 보조 입구입니다.
-- `architecture.md`는 구조와 폴더 책임을 설명하는 상세 문서입니다.
+- 프로젝트 구조 선택은 메인 `index.md` 안의 아키텍처 섹션에서 먼저 설명합니다.
+- `folder-feature-map.md`는 폴더 책임과 기능을 설명하는 상세 문서입니다.
 - 프로젝트 증거 이미지는 가능한 한 해당 프로젝트 폴더의 `image/`에 같이 둡니다.
 - 공개 기록은 `Diary/`, 진행형 연구는 `research/`, 오래 남길 기준은 `wiki/`로 섞지 않습니다.
 
@@ -78,16 +79,17 @@ content/
 
 ```text
 content/projects/<project>/
-├── index.md           # 주장과 근거를 요약하는 메인 페이지
-├── architecture.md    # 실행 구조와 폴더 책임
-├── start-here.md      # 추천 읽기 순서
-├── image/             # 화면 캡처, 다이어그램
-└── *.md               # 세부 판단 문서
+├── index.md               # 주장, 근거, 아키텍처 요약
+├── start-here.md          # 추천 읽기 순서
+├── folder-feature-map.md  # 폴더 책임과 기능 설명
+├── image/                 # 화면 캡처, 다이어그램
+└── *.md                   # 세부 판단 문서
 ```
 
 - `index.md`는 방문자가 가장 먼저 읽는 문서입니다.
-- `architecture.md`는 저장소 구조와 실행 경계를 설명합니다.
+- `index.md` 안의 아키텍처 섹션이 저장소 구조와 실행 경계를 먼저 설명합니다.
 - `start-here.md`는 메인 페이지와 세부 문서를 어떤 순서로 읽을지 안내합니다.
+- `folder-feature-map.md`는 폴더를 실제 기능 기준으로 풀어 쓰는 문서입니다.
 - 세부 주제 문서는 `client-transition.md`, `domain-separation.md`처럼 의미가 분명한 이름으로 추가합니다.
 
 ## 백엔드 프로젝트 문서 규격
@@ -95,8 +97,8 @@ content/projects/<project>/
 ```text
 content/projects/<backend-project>/
 ├── index.md
-├── architecture.md
 ├── start-here.md
+├── folder-feature-map.md
 ├── image/
 ├── api-surface.md
 ├── cache-strategy.md

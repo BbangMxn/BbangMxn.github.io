@@ -71,10 +71,10 @@ cssclasses:
 - 문제 재정의, 핵심 판단, 실제 검증 범위를 요약합니다.
 - 백엔드 프로젝트라도 메인 페이지는 저장소 설명보다 "왜 이 구조를 택했는가"를 먼저 말해야 합니다.
 
-### 구조 페이지 `architecture.md`
+### 메인 페이지 `index.md`의 아키텍처 섹션
 
-- 실제 폴더 구조와 실행 흐름을 가장 자세하게 씁니다.
-- 백엔드 프로젝트라면 반드시 `요청이 어디서 들어와 어디서 끝나는가`를 트리와 함께 적어야 합니다.
+- 별도 `architecture.md`를 두지 않고, 메인 페이지 안에서 구조 선택과 실행 흐름을 먼저 보여 줍니다.
+- 백엔드 프로젝트라면 반드시 `요청이 어디서 들어와 어디서 끝나는가`, `왜 이 구조를 택했는가`, `핵심 경계가 무엇인가`를 메인 페이지에서 바로 보여 줘야 합니다.
 
 ### 보조 상세 문서
 
@@ -91,9 +91,9 @@ cssclasses:
 ```text
 content/projects/<backend-project>/
 ├── index.md
-├── architecture.md
 ├── start-here.md
 ├── image/
+├── folder-feature-map.md       # 폴더 기능이 핵심일 때
 ├── api-surface.md            # API 계약이 핵심일 때
 ├── cache-strategy.md         # 캐시/성능이 핵심일 때
 ├── classification-pipeline.md
@@ -113,12 +113,12 @@ content/projects/<backend-project>/
 1. Worker와 BagInDB처럼 서버가 중심인 프로젝트는 메인 허브에서도 백엔드 층을 한 번 더 선명하게 드러내야 합니다.
 2. Nazgul은 검색 실험이 핵심이므로 `server/rag`의 입구, 코어, trace 계층을 계속 강조하는 편이 맞습니다.
 3. Smart Factory는 연구형 구조지만, 실제 백엔드 파이프라인인 `collector -> processor -> storage -> realtime -> alert`를 더 전면에 둬야 합니다.
-4. 앞으로 새 백엔드 프로젝트를 추가할 때는 `index -> architecture -> 핵심 파이프라인 문서` 3단 구성을 기본값으로 삼는 편이 좋습니다.
+4. 앞으로 새 백엔드 프로젝트를 추가할 때는 `index(아키텍처 포함) -> start-here -> 핵심 파이프라인 문서` 구성을 기본값으로 삼는 편이 좋습니다.
 
 ## 추천 읽기 순서
 
-1. [BagInDB 아키텍처](../../projects/bagindb/architecture)로 작은 읽기 중심 API 구조를 봅니다.
-2. [Worker 아키텍처](../../projects/worker/architecture)로 프로세스 분리와 헥사고날 구조를 봅니다.
-3. [Nazgul 아키텍처](../../projects/nazgul/architecture)로 RAG 서버 모듈 분리를 봅니다.
-4. [Smart Factory 아키텍처](../../projects/smartfactory/architecture)로 파이프라인형 백엔드 구조를 봅니다.
+1. [BagInDB](../../projects/bagindb) 메인 페이지의 아키텍처 섹션으로 작은 읽기 중심 API 구조를 봅니다.
+2. [Worker](../../projects/worker) 메인 페이지의 아키텍처 섹션으로 프로세스 분리와 헥사고날 구조를 봅니다.
+3. [Nazgul](../../projects/nazgul) 메인 페이지의 아키텍처 섹션으로 RAG 서버 모듈 분리를 봅니다.
+4. [Smart Factory](../../projects/smartfactory) 메인 페이지의 아키텍처 섹션으로 파이프라인형 백엔드 구조를 봅니다.
 5. 그 다음 이 문서를 기준으로 각 프로젝트 메인 페이지가 어느 정도까지 백엔드 포트폴리오로 읽히는지 다시 점검하면 됩니다.

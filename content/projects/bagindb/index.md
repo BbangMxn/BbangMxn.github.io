@@ -11,7 +11,7 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">프로젝트 / 장비 도메인</p>
-  <h2>장비 탐색을 분리한 백엔드</h2>
+  <h2>장비와 브랜드 빅데이터DB 백엔드</h2>
   <p class="hub-lede">
     BagInDB는 장비, 브랜드, 제품 스펙 탐색을 커뮤니티 서비스와 분리해도 되는지 검증한 백엔드입니다.
     핵심은 Rust를 썼다는 사실보다, 읽기 중심 장비 데이터를 별도 도메인으로 떼어냈을 때 어떤 API 계층, 어떤 스키마 유연성, 어떤 캐시 전략이 필요한지 실제 구조로 확인한 점입니다.
@@ -55,7 +55,7 @@ Route Handler Cache
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">문제</span>
-        <p>커뮤니티 데이터는 사용자와 콘텐츠 중심이지만, 장비 데이터는 브랜드, 카테고리, 제품 스펙, 필터 검색, 다국어 표현처럼 전혀 다른 읽기 패턴을 갖고 있었습니다.</p>
+        <p>커뮤니티 데이터는 사용자와 콘텐츠 중심이지만, 장비 데이터는 브랜드, 카테고리, 제품 스펙, 필터 검색, 다국어 표현처럼 전혀 다른 읽기 패턴을 갖고 있었습니다. 그래서 독립적인 DB 시스템으로 진행을 하기로 방향을 정하게됬습니다..</p>
       </div>
     </li>
     <li class="hub-item">
@@ -92,7 +92,7 @@ Route Handler Cache
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">판단 3</span>
-        <p>Rust와 Redis 조합을 선택했습니다. 반복 조회가 많은 API를 낮은 리소스로 운영하려면 응답 비용과 캐시 전략을 처음부터 함께 설계하는 편이 맞다고 판단했기 때문입니다.</p>
+        <p>Rust와 Redis 조합을 선택했습니다. 반복 조회가 많은 API를 낮은 리소스로 운영하려면 응답 비용과 캐시 전략을 처음부터 함께 설계하는 편이 맞다고 판단했기 때문입니다. 여기서 Nas에 서버를 올리는 시스템을 목표로 최적화를 진행하는 부분이기때문에 Rust를 선택하게 됬습니다.</p>
       </div>
     </li>
   </ul>
@@ -184,6 +184,50 @@ Route Handler Cache
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">아키텍처</p>
+  <h3>아키텍처</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">선택 구조</span>
+        <p>BagInDB는 헥사고날이나 마이크로서비스 묶음이 아니라, 장비 탐색만 떼어낸 단일 백엔드 서비스입니다. 내부 구조는 도메인별 핸들러를 중심에 둔 layered architecture에 가깝습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">핵심 경계</span>
+        <p>요청은 <code>main -&gt; routes -&gt; handlers -&gt; cache/db -&gt; models</code> 흐름으로 흘러갑니다. `routes`는 계약, `handlers`는 조회 기능, `cache`는 응답 최적화, `db`는 연결, `models`는 데이터 의미를 고정합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">실행 흐름</span>
+        <p>외부에서는 하나의 장비 API처럼 보이지만, 내부적으로는 브랜드, 카테고리, 제품, 가격 기능이 핸들러 단위로 갈라지고 읽기 요청은 Redis와 PostgreSQL JSONB를 함께 거칩니다. 자세한 메서드와 폴더 기능은 <a href="./folder-feature-map">폴더 기능 맵</a>과 보조 문서에서 이어집니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+```mermaid
+mindmap
+  root((BagInDB))
+    Layered backend
+      main
+        Boot runtime
+      routes
+        HTTP contract
+      handlers
+        Catalog handlers
+        Pricing search
+      cache
+        Redis lookup
+      db
+        PostgreSQL JSONB
+      models
+        DTO schema
+```
+
+<section class="hub-section">
   <p class="hub-section-kicker">원본</p>
   <h3>원본</h3>
   <ul class="hub-list">
@@ -208,13 +252,6 @@ Route Handler Cache
   <p class="hub-section-kicker">구조</p>
   <h3>구조</h3>
   <ul class="hub-list">
-    <li class="hub-item">
-      <a href="./architecture">
-        <span class="hub-label">코드 구조</span>
-        <strong>BagInDB 아키텍처</strong>
-        <p><code>main -&gt; routes -&gt; handlers -&gt; cache/db -&gt; models</code> 흐름과 <code>docs</code>, <code>supabase</code> 문서 축을 한 페이지에서 같이 정리합니다.</p>
-      </a>
-    </li>
     <li class="hub-item">
       <a href="./folder-feature-map">
         <span class="hub-label">폴더 기능</span>
@@ -250,6 +287,6 @@ BagInDB/
 └── Cargo.toml
 ```
 
-<p>이 트리는 입구만 보여 줍니다. 실제 요청 경계, 폴더 역할, 문서 축은 <a href="./architecture">아키텍처</a>에서 코드 구조 기준으로 이어서 설명합니다.</p>
+<p>이 트리는 입구만 보여 줍니다. 실제 요청 경계와 구조 선택은 위 아키텍처 섹션에서, 폴더별 역할은 <a href="./folder-feature-map">폴더 기능 맵</a>에서 이어서 설명합니다.</p>
 
 </section>

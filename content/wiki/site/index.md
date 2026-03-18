@@ -64,7 +64,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">상세</span>
-        <p>아키텍처, 흐름, 설계 해설 문서는 기본 상세 페이지를 사용합니다. 기본 헤더와 TOC, backlinks를 유지하는 문서형 타입입니다.</p>
+        <p>폴더 기능 맵, 흐름, 설계 해설 문서는 기본 상세 페이지를 사용합니다. 기본 헤더와 TOC, backlinks를 유지하는 문서형 타입입니다.</p>
       </div>
     </li>
     <li class="hub-item">
@@ -76,7 +76,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">백엔드</span>
-        <p>백엔드 중심 프로젝트는 메인 허브 외에 <code>architecture</code>, API 표면, 캐시/파이프라인, 데이터 흐름 문서를 같이 가져야 백엔드 포트폴리오로 읽힙니다.</p>
+        <p>백엔드 중심 프로젝트는 메인 허브 안의 아키텍처 섹션과 API 표면, 폴더 기능 맵, 캐시/파이프라인, 데이터 흐름 문서를 같이 가져야 백엔드 포트폴리오로 읽힙니다.</p>
       </div>
     </li>
   </ul>
@@ -126,7 +126,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">프로젝트</span>
-        <p>대표 프로젝트는 공통으로 <code>index.md</code>, <code>architecture.md</code>, <code>start-here.md</code>를 갖고, 증거 이미지는 같은 폴더의 <code>image/</code>에 둡니다.</p>
+        <p>대표 프로젝트는 공통으로 <code>index.md</code>, <code>start-here.md</code>를 갖고, 필요하면 <code>folder-feature-map.md</code>를 두며, 증거 이미지는 같은 폴더의 <code>image/</code>에 둡니다.</p>
       </div>
     </li>
     <li class="hub-item">

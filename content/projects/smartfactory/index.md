@@ -153,16 +153,34 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">아키텍처</p>
+  <h3>아키텍처</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">선택 구조</span>
+        <p>Smart Factory는 연구 문서와 구현체를 같이 둔 umbrella repository이고, 실제 구현인 `smartpack`은 마이크로서비스보다 pipeline-oriented modular monolith에 가깝습니다. 수집, 처리, 저장, 실시간 전송, 알림이 한 서버 구조 안에서 모듈로 나뉩니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">핵심 경계</span>
+        <p><code>research</code>는 문제 정의와 표준 선택 근거를 남기고, <code>smartpack</code>은 `collector`, `processor`, `storage`, `realtime`, `alert`, `api`로 실행 기능을 분리합니다. 여기서는 헥사고날보다 파이프라인 경계가 더 중요합니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">실행 흐름</span>
+        <p>전체 시스템은 <code>OPC UA / MQTT -&gt; collector pipeline -&gt; TimescaleDB / Redis -&gt; realtime / alert -&gt; API</code>로 읽는 편이 가장 빠릅니다. 더 자세한 폴더 역할과 메서드는 <a href="./folder-feature-map">폴더 기능 맵</a>과 파이프라인 문서에서 이어집니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">구조</p>
   <h3>구조</h3>
   <ul class="hub-list">
-    <li class="hub-item">
-      <a href="./architecture">
-        <span class="hub-label">코드 구조</span>
-        <strong>Smart Factory 아키텍처</strong>
-        <p><code>research</code>와 <code>smartpack</code>이 왜 분리되어 있는지, 구현체는 어떤 파이프라인 기준으로 읽어야 하는지 별도 페이지에서 설명합니다.</p>
-      </a>
-    </li>
     <li class="hub-item">
       <a href="./folder-feature-map">
         <span class="hub-label">폴더 기능</span>
@@ -172,6 +190,34 @@ cssclasses:
     </li>
   </ul>
 </section>
+
+```mermaid
+mindmap
+  root((Smart Factory))
+    Research umbrella
+      research
+        planning
+        standards
+        docs
+      smartpack
+        collector
+          MQTT
+          OPC UA
+          pipeline input
+        processor
+          aggregate
+          OEE metrics
+        storage
+          TimescaleDB
+          Redis
+        realtime
+          WebSocket stream
+        alert
+          rules
+          notifier
+        api
+          Dashboard API
+```
 
 <section class="hub-section">
   <p class="hub-section-kicker">원본</p>
@@ -216,6 +262,6 @@ smartfactory/
     └── deployments/
 ```
 
-<p>이 트리는 연구와 구현이 같이 있다는 사실만 보여 줍니다. 실제로 왜 두 축을 분리했고 구현체는 어떤 파이프라인 기준으로 읽어야 하는지는 <a href="./architecture">아키텍처</a>에서 더 자세히 정리했습니다.</p>
+<p>이 트리는 연구와 구현이 같이 있다는 사실만 보여 줍니다. 실제로 왜 두 축을 분리했고 구현체는 어떤 파이프라인 기준으로 읽어야 하는지는 위 아키텍처 섹션과 <a href="./folder-feature-map">폴더 기능 맵</a>에서 더 자세히 정리했습니다.</p>
 
 </section>

@@ -182,6 +182,55 @@ Personalized Reply</code></pre>
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">아키텍처</p>
+  <h3>아키텍처</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">선택 구조</span>
+        <p>Worker는 마이크로서비스가 아니라, 하나의 저장소와 하나의 서버 런타임 안에서 움직이는 hexagonal modular monolith입니다. 프론트엔드와 백엔드는 나뉘어 있지만 서버는 `api`, `worker`, `all` 모드를 가진 하나의 실행 단위입니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">핵심 경계</span>
+        <p>서버는 <code>adapter/in -&gt; core -&gt; adapter/out</code>으로 읽으면 됩니다. 입력 어댑터가 HTTP와 워커 이벤트를 받고, `core/agent`와 `core/service/classification`이 판단을 만들고, 출력 어댑터가 Gmail, 저장소, SSE로 결과를 내보냅니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">실행 흐름</span>
+        <p>전체 흐름은 <code>worker_client -&gt; http adapter -&gt; classification / proposal -&gt; provider sync / realtime</code>입니다. 메인 페이지에서는 이 요약만 보이고, 구체적인 메서드와 폴더 역할은 <a href="./folder-feature-map">폴더 기능 맵</a>과 보조 문서에서 이어집니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+```mermaid
+mindmap
+  root((Worker))
+    Hexagonal monolith
+      worker_client
+        Workspace UI
+        Email calendar contacts
+      worker_server
+        api mode
+        worker mode
+        all mode
+      adapter in
+        HTTP input
+        Worker events
+      core
+        agent
+        classification
+        Proposal
+      adapter out
+        Gmail Outlook
+        persistence
+        realtime SSE
+```
+
+<section class="hub-section">
   <p class="hub-section-kicker">원본</p>
   <h3>원본</h3>
   <ul class="hub-list">
@@ -199,13 +248,6 @@ Personalized Reply</code></pre>
   <p class="hub-section-kicker">구조</p>
   <h3>구조</h3>
   <ul class="hub-list">
-    <li class="hub-item">
-      <a href="./architecture">
-        <span class="hub-label">코드 구조</span>
-        <strong>Worker 아키텍처</strong>
-        <p><code>worker_client</code>, <code>worker_server</code>, 그리고 서버 안의 <code>api/worker mode</code>와 헥사고날 계층을 별도 페이지에서 정리합니다.</p>
-      </a>
-    </li>
     <li class="hub-item">
       <a href="./folder-feature-map">
         <span class="hub-label">폴더 기능</span>
@@ -233,6 +275,6 @@ worker/
 └── docs/            # 로드맵 및 설계 문서
 ```
 
-<p>Worker는 루트 트리만으로는 읽기 어렵습니다. 실제로는 `worker_client`, `worker_server`, 그리고 서버 안의 `api/worker mode`와 `core/adapter` 경계를 같이 봐야 해서, 자세한 구조 설명은 <a href="./architecture">아키텍처</a>에 따로 뒀습니다.</p>
+<p>Worker는 루트 트리만으로는 읽기 어렵습니다. 실제로는 `worker_client`, `worker_server`, 그리고 서버 안의 `api/worker mode`와 `core/adapter` 경계를 같이 봐야 해서, 구조 요약은 위 아키텍처 섹션에서, 세부 폴더 설명은 <a href="./folder-feature-map">폴더 기능 맵</a>에서 이어집니다.</p>
 
 </section>

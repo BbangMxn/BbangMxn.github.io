@@ -190,6 +190,48 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">아키텍처</p>
+  <h3>아키텍처</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">선택 구조</span>
+        <p>BagInCoffee는 하나의 제품을 중심에 둔 다중 경계 구조입니다. 현재 클라이언트는 Flutter, 초기 검증 흔적은 SvelteKit, 장비 도메인은 BagInDB로 분리한 product monorepo 형태에 가깝습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">핵심 경계</span>
+        <p><code>BagInCoffee-App</code>은 현재 제품 경험, <code>BagInCoffee-Web</code>은 초기 프로토타입, <code>BagInDB</code>는 장비 탐색 백엔드, Supabase는 인증 기준점 역할을 맡습니다. 그래서 이 프로젝트의 구조 핵심은 기술 스택보다 경계 재정의에 있습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">실행 흐름</span>
+        <p>사용자는 Flutter 클라이언트에서 커뮤니티와 장비 탐색을 보지만, 내부 구조는 <code>client -&gt; auth -&gt; community flow / BagInDB</code>로 갈라집니다. 세부 읽기 경로는 <a href="./start-here">시작 가이드</a>, <a href="./client-transition">클라이언트 전환</a>, <a href="./domain-separation">도메인 분리</a>에서 이어집니다.</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+```mermaid
+mindmap
+  root((BagInCoffee))
+    Product monorepo
+      BagInCoffee App
+        Current client
+        Community UI
+      BagInCoffee Web
+        Early prototype
+        Fast validation
+      BagInDB
+        Equipment API
+        Catalog domain
+      Supabase
+        Auth baseline
+```
+
+<section class="hub-section">
   <p class="hub-section-kicker">원본</p>
   <h3>원본</h3>
   <ul class="hub-list">
@@ -211,20 +253,6 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">구조</p>
-  <h3>구조</h3>
-  <ul class="hub-list">
-    <li class="hub-item">
-      <a href="./architecture">
-        <span class="hub-label">코드 구조</span>
-        <strong>BagInCoffee 아키텍처</strong>
-        <p>현재 Flutter 클라이언트, 초기 SvelteKit 프로토타입, 분리된 BagInDB 서비스가 어떻게 나뉘는지 별도 페이지에서 정리합니다.</p>
-      </a>
-    </li>
-  </ul>
-</section>
-
-<section class="hub-section">
   <p class="hub-section-kicker">파일</p>
   <h3>파일 구조</h3>
 
@@ -240,6 +268,6 @@ BagInCoffee/
 └── README.md
 ```
 
-<p>이 트리는 입구만 보여 줍니다. 실제로 어떤 경계가 현재 클라이언트이고 무엇이 이전 프로토타입이며 어디서 장비 도메인이 분리되는지는 <a href="./architecture">아키텍처</a>에서 코드 구조 기준으로 이어서 설명합니다.</p>
+<p>이 트리는 입구만 보여 줍니다. 실제로 어떤 경계가 현재 클라이언트이고 무엇이 이전 프로토타입이며 어디서 장비 도메인이 분리되는지는 위 아키텍처 섹션과 <a href="./start-here">시작 가이드</a>에서 이어서 설명합니다.</p>
 
 </section>

@@ -128,6 +128,6 @@ Smart Factory는 연구 문서와 구현체가 같은 저장소에 있기 때문
 
 ## 같이 보면 좋은 문서
 
-- [Architecture](./architecture)
+- [Smart Factory 메인 페이지](./index)
 - [Protocol Stack](./protocol-stack)
 - [Timeseries Pipeline](./timeseries-pipeline)

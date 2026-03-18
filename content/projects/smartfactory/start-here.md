@@ -17,10 +17,9 @@ Smart Factory는 구현 저장소이면서 동시에 연구 노트입니다. 그
 ## 읽기 순서
 
 1. [Smart Factory 메인 페이지](./index)
-2. [Architecture](./architecture)
-3. [Folder Feature Map](./folder-feature-map)
-4. [Protocol Stack](./protocol-stack)
-5. [Timeseries Pipeline](./timeseries-pipeline)
+2. [Folder Feature Map](./folder-feature-map)
+3. [Protocol Stack](./protocol-stack)
+4. [Timeseries Pipeline](./timeseries-pipeline)
 
 ## 문서 역할
 
@@ -28,11 +27,6 @@ Smart Factory는 구현 저장소이면서 동시에 연구 노트입니다. 그
 
 - 이 프로젝트가 기능 목록보다 설계 검토 프로젝트라는 점을 설명합니다.
 - 어떤 문제를 어떤 구성으로 풀려 했는지 한 페이지에서 닫습니다.
-
-### `architecture.md`
-
-- `research`와 `smartpack`이 왜 분리되어 있는지, 구현체는 어떤 파이프라인 기준으로 읽어야 하는지 설명합니다.
-- 연구 문서와 실제 코드 구조를 연결하는 저장소 입구 문서입니다.
 
 ### `folder-feature-map.md`
 
@@ -61,4 +55,4 @@ Smart Factory는 구현 저장소이면서 동시에 연구 노트입니다. 그
 - Smart Factory의 강점은 운영 수치보다도 문제 범위를 구조적으로 잡아낸 데 있습니다.
 - 연구와 구현을 분리하지 않은 이유는 설계 근거 자체가 구현만큼 중요했기 때문입니다.
 - 따라서 이 폴더는 코드보다 판단 기준을 먼저 보여 주는 문서 집합으로 읽어야 합니다.
-- 코드까지 내려가려면 [Architecture](./architecture)에서 `research -> smartpack` 순서를 먼저 잡는 편이 좋습니다.
+- 코드까지 내려가려면 [Smart Factory 메인 페이지](./index)의 아키텍처 섹션 다음 [Folder Feature Map](./folder-feature-map)에서 `research -> smartpack` 순서를 먼저 잡는 편이 좋습니다.
