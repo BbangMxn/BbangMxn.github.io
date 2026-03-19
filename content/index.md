@@ -42,31 +42,6 @@ cssclasses:
 </section>
 
 <section class="portfolio-block">
-  <p class="portfolio-block-kicker">성과</p>
-  <h2>가장 먼저 보여줄 근거</h2>
-  <div class="portfolio-evidence-grid">
-    <article class="portfolio-evidence-card">
-      <span class="portfolio-badge">BagInCoffee</span>
-      <strong class="portfolio-evidence-stat">67 / 34 / 62 / 3</strong>
-      <p class="portfolio-evidence-caption">브랜드 / 카테고리 / 제품 / 언어</p>
-      <p>클라이언트 전환과 도메인 분리 시점을 실제 제품 데이터 확장으로 검증했습니다.</p>
-    </article>
-    <article class="portfolio-evidence-card">
-      <span class="portfolio-badge">Worker</span>
-      <strong class="portfolio-evidence-stat">7 단계 / 75%</strong>
-      <p class="portfolio-evidence-caption">분류 파이프라인 / 호출량 절감 방향</p>
-      <p>Proposal, 분류, 동기화, 개인화 답장 흐름을 연결하고 자동화 비용 구조를 다시 설계했습니다.</p>
-    </article>
-    <article class="portfolio-evidence-card">
-      <span class="portfolio-badge">Nazgul</span>
-      <strong class="portfolio-evidence-stat">3 + 3 / 60,531ms</strong>
-      <p class="portfolio-evidence-caption">카드 / 추천 포스트 / 평균 실험 시간</p>
-      <p>Traceable retrieval을 만들고 실험 결과와 한계를 공개 문서로 함께 남겼습니다.</p>
-    </article>
-  </div>
-</section>
-
-<section class="portfolio-block">
   <p class="portfolio-block-kicker">핵심</p>
   <h2>이런 문제를 풉니다</h2>
   <ul class="portfolio-list">

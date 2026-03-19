@@ -507,45 +507,6 @@
   align-content: start;
 }
 
-.portfolio-home .portfolio-evidence-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--portfolio-evidence-gap);
-}
-
-.portfolio-home .portfolio-evidence-card {
-  display: grid;
-  gap: 0.42rem;
-  min-width: 0;
-  padding: 1rem 1.05rem 1.08rem;
-  border: var(--folio-soft-panel-border);
-  border-radius: 1rem;
-  background: color-mix(in srgb, var(--light) 95%, white);
-}
-
-.portfolio-home .portfolio-evidence-stat {
-  max-width: none;
-  font-size: clamp(1.45rem, 2.4vw, 1.95rem);
-  line-height: 1;
-  letter-spacing: -0.05em;
-  color: var(--dark);
-}
-
-.portfolio-home .portfolio-evidence-caption {
-  margin: 0;
-  color: color-mix(in srgb, var(--secondary) 82%, var(--dark));
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-}
-
-.portfolio-home .portfolio-evidence-card > p:last-child {
-  margin: 0;
-  max-width: none;
-  color: var(--darkgray);
-  line-height: 1.72;
-}
-
 .portfolio-home .portfolio-list,
 .folder-hub .hub-list {
   display: grid;
@@ -1250,10 +1211,6 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   .portfolio-home .portfolio-actions {
     grid-template-columns: minmax(0, 1fr);
     justify-items: start;
-  }
-
-  .portfolio-home .portfolio-evidence-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .portfolio-home .portfolio-block,
