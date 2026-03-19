@@ -343,7 +343,7 @@
   position: relative;
   display: grid;
   gap: clamp(0.85rem, 1.8vw, 1.15rem);
-  width: min(100%, 44rem);
+  width: min(100%, 41rem);
   padding: 1.25rem 1.25rem 1.4rem;
   border: var(--folio-panel-border);
   border-radius: calc(var(--folio-panel-radius) + 0.17rem);
@@ -359,10 +359,10 @@
 }
 
 .portfolio-home .portfolio-hero-main > h1 {
-  max-width: 11.4ch;
-  font-size: clamp(2.15rem, 4.8vw, 3.2rem);
-  line-height: 1;
-  letter-spacing: -0.07em;
+  max-width: 12.2ch;
+  font-size: clamp(1.55rem, 3.05vw, 2.15rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
 }
 
 .portfolio-home .portfolio-identity {
@@ -384,30 +384,30 @@
 
 .portfolio-home .portfolio-intro .portfolio-lede {
   max-width: var(--folio-copy-width);
-  font-size: 1rem;
-  line-height: 1.98;
+  font-size: 0.98rem;
+  line-height: 1.84;
   word-break: keep-all;
 }
 
 .portfolio-home .portfolio-summary {
   margin: 0;
-  max-width: 40rem;
+  max-width: 35rem;
   color: color-mix(in srgb, var(--darkgray) 94%, var(--dark));
-  line-height: 1.84;
+  line-height: 1.76;
   word-break: keep-all;
 }
 
 .portfolio-home .portfolio-focus-line {
   margin: 0;
   color: color-mix(in srgb, var(--darkgray) 92%, var(--dark));
-  font-size: 0.94rem;
-  line-height: 1.76;
+  font-size: 0.9rem;
+  line-height: 1.68;
 }
 
 .portfolio-home .portfolio-focus-line strong {
   margin-inline-end: 0.55rem;
   color: var(--dark);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
@@ -415,42 +415,36 @@
 .portfolio-home .portfolio-reading-path {
   margin: 0;
   color: var(--darkgray);
-  font-size: 0.88rem;
-  line-height: 1.72;
+  font-size: 0.84rem;
+  line-height: 1.68;
 }
 
 .portfolio-home .portfolio-reading-path span {
   margin-inline-end: 0.5rem;
   color: color-mix(in srgb, var(--secondary) 84%, var(--dark));
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
 
 .portfolio-home .portfolio-actions {
   display: grid;
-  gap: 0.8rem;
+  gap: 0.55rem;
   margin-top: 0.15rem;
-  align-items: start;
-}
-
-.portfolio-home .portfolio-action-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem 0.7rem;
+  justify-items: start;
 }
 
 .page article.portfolio-home a.portfolio-action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.5rem;
-  padding: 0.6rem 0.95rem;
+  min-height: 2.28rem;
+  padding: 0.52rem 0.88rem;
   border: var(--folio-chip-border);
   border-radius: 999px;
   background: color-mix(in srgb, var(--folio-chip-bg) 92%, white);
   color: var(--dark);
-  font-size: 0.92rem;
+  font-size: 0.89rem;
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
@@ -464,7 +458,7 @@
 .page article.portfolio-home a.portfolio-action:hover {
   transform: translateY(-1px);
   border-color: color-mix(in srgb, var(--secondary) 34%, var(--nomos-line));
-  background: color-mix(in srgb, var(--highlight) 42%, var(--light));
+  background: color-mix(in srgb, var(--highlight) 34%, var(--light));
   color: color-mix(in srgb, var(--dark) 90%, var(--secondary));
 }
 
@@ -481,26 +475,29 @@
   color: var(--light) !important;
 }
 
-.page article.portfolio-home a.portfolio-action.secondary {
-  background: color-mix(in srgb, var(--folio-chip-bg) 95%, white);
-}
-
-.page article.portfolio-home a.portfolio-action.tertiary {
-  min-height: auto;
-  padding: 0.45rem 0.1rem;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  color: var(--darkgray);
+.portfolio-home .portfolio-link-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.48rem;
+  align-items: center;
+  margin: 0;
+  color: color-mix(in srgb, var(--darkgray) 92%, var(--dark));
   font-size: 0.88rem;
-  font-weight: 600;
+  line-height: 1.6;
 }
 
-.page article.portfolio-home a.portfolio-action.tertiary:hover {
-  transform: none;
-  border-color: transparent;
-  background: transparent;
+.portfolio-home .portfolio-link-strip a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.portfolio-home .portfolio-link-strip a:hover {
   color: color-mix(in srgb, var(--dark) 88%, var(--secondary));
+}
+
+.portfolio-home .portfolio-link-strip span {
+  color: color-mix(in srgb, var(--darkgray) 66%, var(--nomos-line));
 }
 
 .portfolio-home .portfolio-block,
@@ -1252,12 +1249,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
 
   .portfolio-home .portfolio-actions {
     grid-template-columns: minmax(0, 1fr);
-    align-items: start;
-  }
-
-  .portfolio-home .portfolio-action-links {
-    justify-content: flex-start;
-    align-items: center;
+    justify-items: start;
   }
 
   .portfolio-home .portfolio-evidence-grid {
@@ -1454,7 +1446,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
 
   .portfolio-home .portfolio-hero-main > h1 {
     max-width: 11.5ch;
-    font-size: clamp(1.95rem, 7vw, 2.55rem);
+    font-size: clamp(1.5rem, 5.4vw, 1.9rem);
   }
 
   .portfolio-home .portfolio-role,
@@ -1463,21 +1455,18 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   }
 
   .portfolio-home .portfolio-actions {
-    gap: 0.7rem;
-  }
-
-  .portfolio-home .portfolio-action-links {
-    gap: 0.45rem 0.7rem;
+    gap: 0.5rem;
   }
 
   .portfolio-home .portfolio-action {
-    min-height: 2.35rem;
-    padding: 0.58rem 0.86rem;
-    font-size: 0.88rem;
+    min-height: 2.2rem;
+    padding: 0.52rem 0.78rem;
+    font-size: 0.85rem;
   }
 
-  .page article.portfolio-home a.portfolio-action.tertiary {
-    padding: 0.35rem 0.05rem;
+  .portfolio-home .portfolio-link-strip {
+    gap: 0.15rem 0.4rem;
+    font-size: 0.84rem;
   }
 
   .folder-hub {

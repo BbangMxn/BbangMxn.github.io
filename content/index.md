@@ -11,12 +11,12 @@ cssclasses:
       <span class="portfolio-name">Bbang / 호빵맨</span>
       <span class="portfolio-role">Backend Developer / Product Engineer</span>
     </div>
-    <h1>빠르게 만든 제품을 운영 가능한 구조로 다시 설계하는 백엔드 개발자입니다.</h1>
+    <h1>제품 구조를 다시 설계하는 백엔드 개발자입니다.</h1>
     <p class="portfolio-lede">
       도메인 분리, 검색 구조, 캐시 전략, AI 기능 안정화에 강점이 있습니다.
     </p>
     <p class="portfolio-summary">
-      커뮤니티 앱, 업무 도구, 검색 실험을 만들면서 클라이언트 전환 시점, 서비스 경계 재설계, 안전한 AI 실행 구조를 프로젝트 문서로 남기고 있습니다.
+      커뮤니티 앱, 업무 도구, 검색 실험을 만들며 클라이언트 전환 시점과 서비스 경계 재설계를 프로젝트 문서로 정리하고 있습니다.
     </p>
     <p class="portfolio-focus-line">
       <strong>집중하는 문제</strong>
@@ -24,12 +24,15 @@ cssclasses:
     </p>
     <div class="portfolio-actions">
       <a class="portfolio-action primary" href="./projects">프로젝트 보기</a>
-      <div class="portfolio-action-links">
-        <a class="portfolio-action secondary" href="./resume">이력 요약</a>
-        <a class="portfolio-action secondary" href="https://github.com/BbangMxn">GitHub</a>
-        <a class="portfolio-action tertiary" href="./about">소개</a>
-        <a class="portfolio-action tertiary" href="./start-here">읽기 가이드</a>
-      </div>
+      <p class="portfolio-link-strip">
+        <a href="./resume">이력 요약</a>
+        <span>·</span>
+        <a href="https://github.com/BbangMxn">GitHub</a>
+        <span>·</span>
+        <a href="./about">소개</a>
+        <span>·</span>
+        <a href="./start-here">읽기 가이드</a>
+      </p>
     </div>
     <p class="portfolio-reading-path">
       <span>추천 읽기 순서</span>
