@@ -19,6 +19,33 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">요약</p>
+  <h3>빠른 정보</h3>
+  <div class="hub-grid">
+    <div class="hub-card">
+      <span class="hub-label">형태</span>
+      <strong>개인 프로젝트 / AI 워크스페이스 실험</strong>
+      <p>업무 도구에 AI Agent를 넣을 때 필요한 안전장치와 동기화 구조를 검증하는 공개 프로젝트입니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">역할</span>
+      <strong>Next.js UI, Go 백엔드, AI 파이프라인, 데이터 설계</strong>
+      <p>워크스페이스 UI, 분류 구조, Proposal 안전장치, Gmail 동기화, 문서화까지 직접 맡았습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">핵심 결과</span>
+      <strong>Proposal, Gmail 동기화, 7단계 분류, 개인화 답장</strong>
+      <p>LLM 호출량 약 75% 절감 방향을 확인했고 제안과 확인이 있는 업무 흐름을 실제로 연결했습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">현재 상태</span>
+      <strong>동작 검증 완료, 구조 단순화 진행 중</strong>
+      <p>검증이 끝난 뒤 과했던 4개 DB 구성을 줄이며 더 단순한 구조로 재정리하는 단계입니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>
   <div class="hub-proof-grid">
@@ -144,6 +171,51 @@ Personalized Reply</code></pre>
       </div>
     </li>
   </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">로드맵</p>
+  <h3>추후 개발 방향</h3>
+  <div class="hub-grid">
+    <div class="hub-card">
+      <span class="hub-label">현재 초점</span>
+      <strong>구조 단순화</strong>
+      <p>검증 단계에서 과했던 4개 DB 구성을 다시 줄이고, PostgreSQL, MongoDB, Redis 중심으로 운영 가능한 구조를 정리하는 것이 가장 우선입니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">다음 구현</span>
+      <strong>Proposal 실행과 Outlook 동기화</strong>
+      <p>지금은 제안 생성이 중심이지만, 다음 단계에서는 실제 실행 연결을 더 완성하고 Outlook 동기화 범위도 보강할 계획입니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">유지할 기준</span>
+      <strong>안전장치와 관측 가능성</strong>
+      <p>구조를 단순하게 줄이더라도 제안, 확인, 실시간 동기화, 실행 기록 같은 안전 기준은 유지하는 방향으로 정리합니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">마인드맵</p>
+  <h3>다음에 보강할 축</h3>
+  <div class="roadmap-map">
+
+```mermaid
+mindmap
+  root((Worker Next))
+    "구조 단순화"
+      "PostgreSQL / MongoDB / Redis 중심 재정리"
+      "Neo4j 제거 여부 검토"
+    "제품 완성도"
+      "Proposal 실행 플로우"
+      "Outlook 동기화 보강"
+    "운영성"
+      "동기화 품질"
+      "안전장치 유지"
+      "실행 관측 가능성"
+```
+
+  </div>
 </section>
 
 <section class="hub-section">

@@ -14,6 +14,7 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
+      "이력 요약": "/resume",
       "읽기 가이드": "/start-here",
       GitHub: "https://github.com/BbangMxn/BbangMxn.github.io",
     },

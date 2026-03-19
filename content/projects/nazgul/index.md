@@ -19,6 +19,33 @@ cssclasses:
   </p>
 </div>
 
+<section class="hub-section">
+  <p class="hub-section-kicker">요약</p>
+  <h3>빠른 정보</h3>
+  <div class="hub-grid">
+    <div class="hub-card">
+      <span class="hub-label">형태</span>
+      <strong>개인 프로젝트 / 검색 연구 프로토타입</strong>
+      <p>취미 SNS MVP를 바탕으로 retrieval, recommendation, trace 구조를 다시 설계한 연구형 프로젝트입니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">역할</span>
+      <strong>제품 화면, Java 서버, 로컬 AI 실험, 문서화</strong>
+      <p>프론트엔드와 Spring Boot 기반 RAG 서버, 도메인 설계, 실험 노트 정리를 직접 맡았습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">핵심 결과</span>
+      <strong>44개 취미, 9개 카테고리, 카드 3개, 추천 포스트 3개</strong>
+      <p><code>러닝 초보 루틴</code> 질의에서 Card -> Chunk -> Answer -> Trace 흐름이 실제로 이어지는 것을 확인했습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">현재 상태</span>
+      <strong>초기 연구 프로토타입, 평가 체계 확장 예정</strong>
+      <p>현재는 구조 검증 단계이며, 더 큰 데이터셋과 정량 평가 체계를 붙이는 것이 다음 우선순위입니다.</p>
+    </div>
+  </div>
+</section>
+
 <section class="hub-section nazgul-flow-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>
@@ -181,6 +208,54 @@ cssclasses:
       </div>
     </li>
   </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">로드맵</p>
+  <h3>추후 개발 방향</h3>
+  <div class="hub-grid">
+    <div class="hub-card">
+      <span class="hub-label">현재 초점</span>
+      <strong>평가 체계 확장</strong>
+      <p>지금은 구조 검증이 중심이었기 때문에 다음 단계에서는 Recall@k, MRR, nDCG 같은 정량 평가 체계를 붙이는 것이 가장 중요합니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">다음 구현</span>
+      <strong>더 큰 데이터셋과 랭킹 안정성</strong>
+      <p>44개 취미와 9개 카테고리 수준에서 한 단계 더 나아가, 더 큰 데이터셋과 복합 질의 기준 랭킹 안정성을 같이 확인할 계획입니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">개선 목표</span>
+      <strong>지연 시간과 실사용성</strong>
+      <p>현재 평균 60,531ms는 구조 검증에는 의미가 있었지만 실사용 기준으로는 느립니다. 이후에는 지연 시간 개선과 병목 분해가 중요한 축이 됩니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">마인드맵</p>
+  <h3>다음에 보강할 축</h3>
+  <div class="roadmap-map">
+
+```mermaid
+mindmap
+  root((Nazgul Next))
+    "평가 체계"
+      "Recall@k"
+      "MRR"
+      "nDCG"
+    "데이터셋 확장"
+      "더 많은 취미 데이터"
+      "복합 질의 시나리오"
+    "검색 품질"
+      "랭킹 안정성"
+      "후보 선택 기준"
+    "성능"
+      "병목 분해"
+      "지연 시간 개선"
+```
+
+  </div>
 </section>
 
 <section class="hub-section">

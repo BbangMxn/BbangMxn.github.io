@@ -19,6 +19,33 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">요약</p>
+  <h3>빠른 정보</h3>
+  <div class="hub-grid">
+    <div class="hub-card">
+      <span class="hub-label">형태</span>
+      <strong>개인 프로젝트 / 분리 백엔드 서비스</strong>
+      <p>BagInCoffee에서 읽기 중심 장비 도메인을 별도 서비스로 떼어낼 수 있는지 검증한 백엔드 프로젝트입니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">역할</span>
+      <strong>데이터 모델링, Rust API, Redis 캐시, JWT 검증</strong>
+      <p>도메인 분리 판단부터 API 표면, 캐시 전략, 문서화까지 직접 맡았습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">핵심 결과</span>
+      <strong>15개 이상 엔드포인트와 10ms 이하 응답 목표</strong>
+      <p>브랜드, 카테고리, 제품, 필터 검색을 별도 서비스로 묶고 JSONB와 Redis 앞단 전략을 함께 검증했습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">현재 상태</span>
+      <strong>독립 서비스 구조 확인, 운영 정책 보강 중</strong>
+      <p>강점은 분리 판단과 조회 구조 검증에 있고, 무효화 기준과 장기 운영 정책은 더 다듬는 단계입니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>
   <div class="hub-proof-grid">

@@ -19,6 +19,33 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">요약</p>
+  <h3>빠른 정보</h3>
+  <div class="hub-grid">
+    <div class="hub-card">
+      <span class="hub-label">형태</span>
+      <strong>개인 프로젝트 / 제품 구조 검증</strong>
+      <p>웹 프로토타입에서 Flutter 전환과 도메인 분리 시점을 검증하는 공개 포트폴리오 프로젝트입니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">역할</span>
+      <strong>제품 방향, 클라이언트, 백엔드, 데이터 모델링</strong>
+      <p>UI 설계부터 Flutter와 SvelteKit 흐름, 도메인 분리, 문서화까지 직접 맡았습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">핵심 결과</span>
+      <strong>67개 브랜드, 34개 카테고리, 62개 제품, 3개 언어</strong>
+      <p>제품 데이터와 장비 API를 함께 확장하며 클라이언트와 서비스 경계를 실제로 검증했습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">현재 상태</span>
+      <strong>구조 검증 완료, 제품 관점 정리 진행 중</strong>
+      <p>핵심 가치는 완성 제품보다 전환과 분리 판단을 실제 구조로 보여준 경험에 있습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>
   <div class="hub-proof-grid">

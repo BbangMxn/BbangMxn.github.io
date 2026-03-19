@@ -279,11 +279,131 @@
   border-bottom: 1px solid var(--nomos-line);
 }
 
+.portfolio-home .portfolio-hero {
+  position: relative;
+  gap: clamp(0.85rem, 1.8vw, 1.15rem);
+  padding: 1.25rem 1.25rem 1.4rem;
+  border: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--nomos-line));
+  border-radius: 1.35rem;
+  border-bottom-width: 1px;
+  background:
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--highlight) 78%, transparent) 0%,
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
+      color-mix(in srgb, var(--light) 96%, white) 100%
+    );
+}
+
+.portfolio-home .portfolio-hero > h1 {
+  max-width: 16ch;
+}
+
+.portfolio-home .portfolio-identity {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.portfolio-home .portfolio-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: color-mix(in srgb, var(--dark) 86%, var(--secondary));
+}
+
+.portfolio-home .portfolio-role {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--darkgray) 88%, var(--dark));
+}
+
 .portfolio-home .portfolio-intro .portfolio-lede {
   max-width: var(--folio-copy-width);
   font-size: 1rem;
   line-height: 1.98;
   word-break: keep-all;
+}
+
+.portfolio-home .portfolio-summary {
+  margin: 0;
+  max-width: 40rem;
+  color: color-mix(in srgb, var(--darkgray) 94%, var(--dark));
+  line-height: 1.84;
+  word-break: keep-all;
+}
+
+.portfolio-home .portfolio-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.15rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-home .portfolio-keywords li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--light) 92%, white);
+  color: color-mix(in srgb, var(--dark) 88%, var(--secondary));
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-home .portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.1rem;
+}
+
+.page article.portfolio-home a.portfolio-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.6rem 0.95rem;
+  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--light) 94%, white);
+  color: var(--dark);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.page article.portfolio-home a.portfolio-action:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--secondary) 34%, var(--nomos-line));
+  background: color-mix(in srgb, var(--highlight) 42%, var(--light));
+  color: color-mix(in srgb, var(--dark) 90%, var(--secondary));
+}
+
+.page article.portfolio-home a.portfolio-action.primary {
+  border-color: color-mix(in srgb, var(--secondary) 42%, var(--dark));
+  background: var(--dark);
+  background-color: var(--dark);
+  color: var(--light) !important;
+}
+
+.page article.portfolio-home a.portfolio-action.primary:hover {
+  background: color-mix(in srgb, var(--dark) 90%, var(--secondary));
+  background-color: color-mix(in srgb, var(--dark) 90%, var(--secondary));
+  color: var(--light) !important;
 }
 
 .portfolio-home .portfolio-block,
@@ -504,8 +624,11 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step {
   padding: 1rem;
   border: 1px solid var(--nomos-line);
   border-radius: 1.15rem;
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--nomos-surface-soft) 78%, var(--light)) 0%, var(--nomos-surface) 100%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--nomos-surface-soft) 78%, var(--light)) 0%,
+    var(--nomos-surface) 100%
+  );
 }
 
 body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step:not(:last-child)::after {
@@ -538,7 +661,11 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step-media {
   overflow: hidden;
   border: 1px solid var(--nomos-line);
   border-radius: 0.95rem;
-  background: linear-gradient(180deg, var(--light) 0%, color-mix(in srgb, var(--nomos-surface-soft) 90%, white) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--light) 0%,
+    color-mix(in srgb, var(--nomos-surface-soft) 90%, white) 100%
+  );
 }
 
 body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step-media img {
@@ -618,6 +745,197 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
   max-width: none;
 }
 
+.roadmap-hub {
+  --roadmap-complete: #2f6f4f;
+  --roadmap-progress: #996a27;
+  --roadmap-explore: #5c5988;
+}
+
+.roadmap-hub .hub-header {
+  position: relative;
+  padding: 1.45rem 1.35rem 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--nomos-line));
+  border-radius: 1.35rem;
+  background:
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--highlight) 72%, transparent) 0%,
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
+      color-mix(in srgb, var(--light) 96%, white) 100%
+    );
+}
+
+.roadmap-hub .roadmap-section {
+  gap: 1rem;
+}
+
+.roadmap-hub .roadmap-status-board {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.95rem;
+}
+
+.roadmap-hub .roadmap-status-card {
+  display: grid;
+  gap: 0.48rem;
+  min-width: 0;
+  padding: 1rem 1.05rem 1.05rem;
+  border: 1px solid color-mix(in srgb, var(--nomos-line) 85%, transparent);
+  border-radius: 1rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--nomos-surface-soft) 86%, var(--light)) 0%,
+      color-mix(in srgb, var(--light) 98%, white) 100%
+    );
+}
+
+.roadmap-hub .roadmap-status-card strong {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--dark);
+}
+
+.roadmap-hub .roadmap-status-card p {
+  margin: 0;
+  max-width: none;
+  color: var(--darkgray);
+  line-height: 1.72;
+}
+
+.roadmap-hub .roadmap-status-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.roadmap-hub .roadmap-status-label::before,
+.roadmap-hub .roadmap-chip::before {
+  content: "";
+  display: inline-block;
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 999px;
+}
+
+.roadmap-hub .roadmap-status-card.is-complete .roadmap-status-label,
+.roadmap-hub .roadmap-chip.is-complete {
+  color: var(--roadmap-complete);
+}
+
+.roadmap-hub .roadmap-status-card.is-progress .roadmap-status-label,
+.roadmap-hub .roadmap-chip.is-progress {
+  color: var(--roadmap-progress);
+}
+
+.roadmap-hub .roadmap-status-card.is-explore .roadmap-status-label,
+.roadmap-hub .roadmap-chip.is-explore {
+  color: var(--roadmap-explore);
+}
+
+.roadmap-hub .roadmap-status-card.is-complete .roadmap-status-label::before,
+.roadmap-hub .roadmap-chip.is-complete::before {
+  background: color-mix(in srgb, var(--roadmap-complete) 88%, white);
+}
+
+.roadmap-hub .roadmap-status-card.is-progress .roadmap-status-label::before,
+.roadmap-hub .roadmap-chip.is-progress::before {
+  background: color-mix(in srgb, var(--roadmap-progress) 88%, white);
+}
+
+.roadmap-hub .roadmap-status-card.is-explore .roadmap-status-label::before,
+.roadmap-hub .roadmap-chip.is-explore::before {
+  background: color-mix(in srgb, var(--roadmap-explore) 88%, white);
+}
+
+.roadmap-hub .roadmap-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.roadmap-hub .roadmap-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--light) 92%, white);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.roadmap-hub .roadmap-map {
+  padding: 1.05rem;
+  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--highlight) 58%, transparent) 0%,
+      transparent 48%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
+      color-mix(in srgb, var(--light) 96%, white) 100%
+    );
+}
+
+.roadmap-hub .roadmap-map .mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.25rem;
+  overflow-x: auto;
+}
+
+.roadmap-hub .roadmap-map svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.folder-hub .roadmap-map {
+  padding: 1.05rem;
+  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border-radius: 1.1rem;
+  background:
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--highlight) 58%, transparent) 0%,
+      transparent 48%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
+      color-mix(in srgb, var(--light) 96%, white) 100%
+    );
+}
+
+.folder-hub .roadmap-map .mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.25rem;
+  overflow-x: auto;
+}
+
+.folder-hub .roadmap-map svg {
+  max-width: 100%;
+  height: auto;
+}
+
 @media all and (min-width: 960px) {
   .folder-hub .hub-header {
     grid-template-columns: minmax(0, 1fr);
@@ -640,6 +958,10 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
     grid-template-columns: minmax(0, 1fr);
     row-gap: 1rem;
     align-items: start;
+  }
+
+  .portfolio-home .portfolio-hero {
+    padding: 1.45rem 1.5rem 1.55rem;
   }
 
   .portfolio-home .portfolio-lede {
@@ -694,6 +1016,10 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
     gap: 0.05rem;
   }
 
+  .roadmap-hub .roadmap-status-board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow {
     gap: 1.35rem;
   }
@@ -717,11 +1043,17 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
     display: none;
   }
 
-  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step:nth-child(even) .nazgul-flow-step-media {
+  body[data-slug="projects/nazgul/index"]
+    .folder-hub
+    .nazgul-flow-step:nth-child(even)
+    .nazgul-flow-step-media {
     order: 2;
   }
 
-  body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-step:nth-child(even) .nazgul-flow-step-body {
+  body[data-slug="projects/nazgul/index"]
+    .folder-hub
+    .nazgul-flow-step:nth-child(even)
+    .nazgul-flow-step-body {
     order: 1;
   }
 
@@ -747,12 +1079,37 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
     padding: 0.85rem 0 0.85rem 0.2rem;
   }
 
+  .portfolio-home .portfolio-hero {
+    padding: 1rem 0.95rem 1.05rem;
+    border-radius: 1rem;
+  }
+
+  .portfolio-home .portfolio-role,
+  .portfolio-home .portfolio-summary {
+    font-size: 0.94rem;
+  }
+
+  .portfolio-home .portfolio-actions {
+    gap: 0.55rem;
+  }
+
+  .portfolio-home .portfolio-action {
+    min-height: 2.35rem;
+    padding: 0.58rem 0.86rem;
+    font-size: 0.88rem;
+  }
+
   .folder-hub {
     gap: 1rem;
   }
 
   .folder-hub .hub-header {
     padding-bottom: 0.8rem;
+  }
+
+  .roadmap-hub .hub-header {
+    padding: 1.05rem 1rem 1.1rem;
+    border-radius: 1rem;
   }
 
   .folder-hub .hub-grid,
@@ -810,5 +1167,19 @@ body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary p {
 
   body[data-slug="projects/nazgul/index"] .folder-hub .nazgul-flow-summary {
     padding: 0.95rem 1rem;
+  }
+
+  .roadmap-hub .roadmap-status-card {
+    padding: 0.92rem 0.95rem 0.98rem;
+  }
+
+  .roadmap-hub .roadmap-map {
+    padding: 0.85rem;
+    border-radius: 1rem;
+  }
+
+  .folder-hub .roadmap-map {
+    padding: 0.85rem;
+    border-radius: 1rem;
   }
 }

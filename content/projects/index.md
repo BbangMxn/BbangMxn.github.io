@@ -36,6 +36,11 @@ cssclasses:
       <strong>Nazgul 검색 흐름</strong>
       <p>검색 실험 구조와 trace 흐름부터 짧게 보고 싶을 때 바로 들어가는 기술 입구입니다.</p>
     </a>
+    <div class="hub-card">
+      <span class="hub-label">진행 방향</span>
+      <strong>Worker와 Nazgul은 메인 페이지 안에 로드맵이 있습니다</strong>
+      <p>추후 개발 방향은 프로젝트 허브 상단이 아니라 각 프로젝트 메인 페이지에서 직접 설명합니다. 현재 기준으로는 Worker와 Nazgul 두 축만 해당합니다.</p>
+    </div>
   </div>
 </section>
 
@@ -84,6 +89,27 @@ cssclasses:
         <strong>Smart Factory</strong>
         <p>다중 프로토콜 수집, 시계열 저장, 실시간 모니터링을 한 구조 안에서 연결해 본 연구 및 구현 프로젝트입니다.</p>
       </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
+  <p class="hub-section-kicker">진행 중</p>
+  <h3>공개 로드맵으로 관리하는 실험</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./work_framework">
+        <span class="hub-label">로드맵</span>
+        <strong>Work Framework</strong>
+        <p>기존 work 프로젝트를 agent framework 관점에서 다시 정리하는 중인 실험입니다. 현재는 완성본이 아니라 범위, 목표, 다음 문서 계획을 공개 로드맵으로 관리합니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">상태 정리</span>
+        <strong>로드맵은 Worker와 Nazgul 메인 페이지에만 둡니다</strong>
+        <p>전체 프로젝트 허브에는 요약만 두고, 실제 추후 개발 방향은 Worker와 Nazgul 메인 페이지 안에서만 공개합니다.</p>
+      </div>
     </li>
   </ul>
 </section>

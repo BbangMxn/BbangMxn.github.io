@@ -18,6 +18,33 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">요약</p>
+  <h3>빠른 정보</h3>
+  <div class="hub-grid">
+    <div class="hub-card">
+      <span class="hub-label">형태</span>
+      <strong>연구 + 구현 저장소</strong>
+      <p>스마트 팩토리 구조를 문제 정의, 통신 표준, 구현체 설계까지 한 저장소 안에서 함께 다루는 연구형 프로젝트입니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">역할</span>
+      <strong>아키텍처 정리, 프로토콜 분석, 구현 방향 설계</strong>
+      <p>연구 문서와 백엔드 구현 구조를 같이 정리하며 collector, storage, realtime, alert 흐름을 설계했습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">핵심 결과</span>
+      <strong>OPC UA / MQTT -> TimescaleDB / Redis / WebSocket</strong>
+      <p>다중 프로토콜 수집과 시계열 저장, 실시간 전송, 알림 흐름을 하나의 파이프라인 구조로 설명했습니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">현재 상태</span>
+      <strong>설계 범위 검증, 운영 지표는 추후 확장</strong>
+      <p>강점은 문제와 구조를 함께 정리한 점이고, 실제 운영 지표와 대규모 검증은 앞으로 보강할 범위로 남아 있습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">배경</p>
   <h3>배경</h3>
   <ul class="hub-list">

@@ -18,6 +18,33 @@ cssclasses:
 </div>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">기본</p>
+  <h3>빠른 정보</h3>
+  <div class="hub-grid">
+    <a class="hub-card" href="./resume">
+      <span class="hub-label">요약</span>
+      <strong>이력 요약</strong>
+      <p>대표 성과와 공개 가능한 기본 정보를 한 페이지로 압축한 요약 문서입니다.</p>
+    </a>
+    <a class="hub-card" href="https://github.com/BbangMxn">
+      <span class="hub-label">공개 링크</span>
+      <strong>GitHub / BbangMxn</strong>
+      <p>현재 공개 가능한 대표 링크는 GitHub 프로필과 이 포트폴리오 사이트입니다.</p>
+    </a>
+    <div class="hub-card">
+      <span class="hub-label">포지션</span>
+      <strong>Backend Developer / Product Engineer</strong>
+      <p>API, 데이터 모델, 캐시, 검색, AI 안전장치가 얽힌 구조 문제를 주로 다룹니다.</p>
+    </div>
+    <div class="hub-card">
+      <span class="hub-label">작업 형태</span>
+      <strong>개인 프로젝트 중심</strong>
+      <p>대표 공개 프로젝트는 대부분 1인 개발 기준이며, 설계 판단과 문서화를 같이 남깁니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">요약</p>
   <h3>5초 요약</h3>
   <ul class="hub-list">
@@ -165,6 +192,13 @@ cssclasses:
         <span class="hub-label">연구</span>
         <strong>캐시 연구</strong>
         <p>캐시를 운영 비용과 구조 판단의 문제로 정리한 연구입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
+      <a href="./research/DB">
+        <span class="hub-label">로드맵</span>
+        <strong>DB 연구 로드맵</strong>
+        <p>DB 최적화와 구조 판단을 어떤 순서로 확장해 갈지 상태와 다음 질문까지 공개하는 진행 중 연구 허브입니다.</p>
       </a>
     </li>
   </ul>

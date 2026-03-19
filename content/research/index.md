@@ -36,6 +36,13 @@ cssclasses:
         <p>JVM 구조를 이해한 뒤 객체 헤더, 참조 구조, 메모리 비용이 실제 설계에 어떤 제약을 만드는지 추적합니다.</p>
       </a>
     </li>
+    <li class="hub-item">
+      <a href="./DB">
+        <span class="hub-label">로드맵</span>
+        <strong>DB 연구 로드맵</strong>
+        <p>인덱스, 옵티마이저, 클러스터링, 레플리케이션, 샤딩을 어떤 질문 순서로 정리할지 상태와 다음 범위까지 공개하는 진행 중 트랙입니다.</p>
+      </a>
+    </li>
   </ul>
 </section>
 
