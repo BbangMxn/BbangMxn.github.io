@@ -45,39 +45,67 @@ cssclasses:
   </div>
 </section>
 
-<section class="hub-section">
+<section class="hub-section bag-flow-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>
-  <div class="hub-proof-grid">
-    <div class="hub-proof-card">
-      <div class="hub-proof-media">
+  <p class="hub-lede bag-flow-intro">
+    BagInCoffee가 단순 커뮤니티 구현에서 끝나지 않은 이유는 이 세 장의 화면으로 가장 먼저 설명됩니다.
+    웹에서 무엇을 먼저 검증했고, 왜 Flutter로 옮겼고, 어떤 시점에 BagInDB를 분리해야 했는지가 제품 흐름으로 이어집니다.
+  </p>
+  <div class="bag-flow">
+    <article class="bag-flow-step">
+      <div class="bag-flow-step-media">
         <img src="/projects/BagInCoffee/image/web-feed.jpg" alt="BagInCoffee 웹 피드 화면" />
       </div>
-      <span class="hub-label">웹 프로토타입</span>
-      <strong>웹 프로토타입으로 커뮤니티 핵심 흐름을 먼저 검증했기 때문에 무엇을 유지하고 무엇을 버릴지 결정할 수 있었습니다</strong>
-      <p>초기 웹 피드와 콘텐츠 흐름이 있었기 때문에, 제품의 핵심 경험은 살리고 클라이언트 기술만 다시 선택하는 판단이 가능했습니다.</p>
-    </div>
-    <div class="hub-proof-card">
-      <div class="hub-proof-media">
+      <div class="bag-flow-step-body">
+        <div class="bag-flow-step-header">
+          <span class="bag-flow-step-number">01</span>
+          <div class="bag-flow-step-title">
+            <span class="hub-label">웹 프로토타입</span>
+            <strong>웹 피드로 커뮤니티 핵심 흐름을 먼저 검증했습니다</strong>
+          </div>
+        </div>
+        <p>초기 웹 피드와 콘텐츠 흐름이 실제로 있었기 때문에, BagInCoffee는 제품의 핵심 경험은 유지하고 클라이언트 선택만 다시 가져갈 수 있었습니다.</p>
+        <p class="bag-flow-step-note">이 화면이 있었기 때문에 Flutter 전환은 처음부터 다시 만드는 작업이 아니라, 검증된 흐름을 더 적합한 클라이언트 전략으로 옮기는 판단이 됐습니다.</p>
+      </div>
+    </article>
+    <article class="bag-flow-step">
+      <div class="bag-flow-step-media">
         <img src="/projects/BagInCoffee/image/mobile-main.png" alt="BagInCoffee 모바일 메인 화면" />
       </div>
-      <span class="hub-label">Flutter 전환</span>
-      <strong>Flutter 전환은 단순 재구현이 아니라 웹과 모바일 경험을 하나의 코드베이스로 묶기 위한 판단이었습니다</strong>
-      <p>모바일 메인 화면까지 실제로 이어졌기 때문에, SvelteKit에서 Flutter로의 이동이 선언이 아니라 동작 가능한 제품 방향임을 보여줄 수 있습니다.</p>
-    </div>
-    <div class="hub-proof-card">
-      <div class="hub-proof-media">
+      <div class="bag-flow-step-body">
+        <div class="bag-flow-step-header">
+          <span class="bag-flow-step-number">02</span>
+          <div class="bag-flow-step-title">
+            <span class="hub-label">Flutter 전환</span>
+            <strong>클라이언트를 웹과 모바일을 함께 보는 구조로 다시 옮겼습니다</strong>
+          </div>
+        </div>
+        <p>모바일 메인 화면까지 실제로 이어졌기 때문에, SvelteKit에서 Flutter로의 이동은 선언이 아니라 동작 가능한 제품 방향임을 보여줄 수 있습니다.</p>
+        <p class="bag-flow-step-note">이 구간이 있었기 때문에 BagInCoffee는 단순 웹 서비스가 아니라, 웹과 모바일 경험을 하나의 코드베이스로 묶는 제품 전략으로 설명됩니다.</p>
+      </div>
+    </article>
+    <article class="bag-flow-step">
+      <div class="bag-flow-step-media">
         <img src="/projects/BagInCoffee/image/web-brands.png" alt="BagInCoffee 브랜드 탐색 화면" />
       </div>
-      <span class="hub-label">도메인 분리</span>
-      <strong>브랜드와 장비 탐색 화면이 커질수록 커뮤니티 백엔드와 다른 도메인 리듬이 드러나 BagInDB 분리가 필요해졌습니다</strong>
-      <p>브랜드, 카테고리, 제품 스펙 탐색은 커뮤니티 피드와 요구사항이 달랐기 때문에, 별도 장비 API로 나눌 이유를 실제 UI와 데이터 흐름으로 설명할 수 있습니다.</p>
-    </div>
-    <div class="hub-proof-card">
-      <span class="hub-label">검증 범위</span>
-      <strong>브랜드 67개, 카테고리 34개, 제품 62개, 3개 언어 지원과 캐시 적중률 85% 이상 목표까지 구조를 확장했습니다</strong>
-      <p>이 프로젝트는 화면만 만든 수준이 아니라 제품 데이터와 장비 API를 함께 키워가며, 클라이언트 전환과 도메인 분리가 실제로 필요한 순간을 검증한 사례입니다.</p>
-    </div>
+      <div class="bag-flow-step-body">
+        <div class="bag-flow-step-header">
+          <span class="bag-flow-step-number">03</span>
+          <div class="bag-flow-step-title">
+            <span class="hub-label">도메인 분리</span>
+            <strong>브랜드와 장비 탐색이 커뮤니티와 다른 리듬이라는 점을 화면으로 확인했습니다</strong>
+          </div>
+        </div>
+        <p>브랜드, 카테고리, 제품 스펙 탐색은 커뮤니티 피드와 요구사항이 달랐기 때문에, 별도 장비 API로 나눌 이유를 실제 UI와 데이터 흐름으로 설명할 수 있었습니다.</p>
+        <p class="bag-flow-step-note">이 화면이 BagInDB 분리의 근거입니다. 커뮤니티와 장비 데이터가 같은 제품 안에 있어도, 같은 백엔드 안에 계속 쌓을 이유는 없다는 판단이 여기서 분명해졌습니다.</p>
+      </div>
+    </article>
+  </div>
+  <div class="bag-flow-summary">
+    <span class="hub-label">검증 범위</span>
+    <strong>브랜드 67개, 카테고리 34개, 제품 62개, 3개 언어 지원까지 확장하며 클라이언트 전환과 BagInDB 분리 시점을 함께 확인했습니다</strong>
+    <p>이 프로젝트의 핵심은 화면만 만든 것이 아니라, 제품 데이터와 장비 API를 함께 키워 가며 웹 프로토타입, Flutter 전환, 도메인 분리가 실제로 필요해지는 순간을 제품 흐름으로 남겼다는 점입니다.</p>
   </div>
 </section>
 

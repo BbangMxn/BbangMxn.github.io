@@ -198,23 +198,43 @@ Personalized Reply</code></pre>
 <section class="hub-section">
   <p class="hub-section-kicker">마인드맵</p>
   <h3>다음에 보강할 축</h3>
-  <div class="roadmap-map">
-
-```mermaid
-mindmap
-  root((Worker Next))
-    "구조 단순화"
-      "PostgreSQL / MongoDB / Redis 중심 재정리"
-      "Neo4j 제거 여부 검토"
-    "제품 완성도"
-      "Proposal 실행 플로우"
-      "Outlook 동기화 보강"
-    "운영성"
-      "동기화 품질"
-      "안전장치 유지"
-      "실행 관측 가능성"
-```
-
+  <div class="roadmap-visual">
+    <div class="roadmap-visual-core">
+      <span class="hub-label">Worker Next</span>
+      <strong>검증한 기능은 유지하되 구조는 더 단순하게 줄입니다</strong>
+      <p>Worker의 다음 단계는 기능을 더 덧붙이는 것보다 구조를 운영 가능한 수준으로 줄이는 데 있습니다. Proposal 실행, Outlook 동기화, 안전장치 유지 기준을 함께 묶어 정리합니다.</p>
+    </div>
+    <div class="roadmap-branch-grid">
+      <article class="roadmap-branch is-structure">
+        <span class="roadmap-branch-label">구조 단순화</span>
+        <strong>운영 가능한 저장 구조로 다시 묶습니다</strong>
+        <p>검증 단계에서 과했던 4개 DB 구성을 줄이고, 실제 유지 가능한 데이터 경계만 남기는 것이 가장 우선입니다.</p>
+        <ul class="roadmap-branch-list">
+          <li>PostgreSQL 중심 재정리</li>
+          <li>MongoDB / Redis 재배치</li>
+          <li>Neo4j 제거 여부 검토</li>
+        </ul>
+      </article>
+      <article class="roadmap-branch is-product">
+        <span class="roadmap-branch-label">제품 완성도</span>
+        <strong>Proposal과 외부 연동을 실제 실행 흐름까지 잇습니다</strong>
+        <p>지금은 제안 생성이 중심이므로, 다음 단계에서는 실제 실행 연결과 Outlook 동기화 범위를 더 분명히 완성할 계획입니다.</p>
+        <ul class="roadmap-branch-list">
+          <li>Proposal 실행 플로우</li>
+          <li>Outlook 동기화 보강</li>
+        </ul>
+      </article>
+      <article class="roadmap-branch is-ops">
+        <span class="roadmap-branch-label">운영성</span>
+        <strong>안전장치와 관측 가능성은 그대로 유지합니다</strong>
+        <p>구조를 단순화해도 동기화 품질, 실행 기록, 제안-확인 안전장치 같은 운영 기준은 잃지 않도록 설계합니다.</p>
+        <ul class="roadmap-branch-list">
+          <li>동기화 품질</li>
+          <li>안전장치 유지</li>
+          <li>실행 관측 가능성</li>
+        </ul>
+      </article>
+    </div>
   </div>
 </section>
 

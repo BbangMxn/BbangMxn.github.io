@@ -212,49 +212,52 @@ cssclasses:
 
 <section class="hub-section">
   <p class="hub-section-kicker">로드맵</p>
-  <h3>추후 개발 방향</h3>
-  <div class="hub-grid">
-    <div class="hub-card">
-      <span class="hub-label">현재 초점</span>
-      <strong>평가 체계 확장</strong>
-      <p>지금은 구조 검증이 중심이었기 때문에 다음 단계에서는 Recall@k, MRR, nDCG 같은 정량 평가 체계를 붙이는 것이 가장 중요합니다.</p>
+  <h3>추후 개발 로드맵</h3>
+  <div class="roadmap-visual">
+    <div class="roadmap-visual-core">
+      <span class="hub-label">Nazgul Next</span>
+      <strong>구조 검증 이후에는 평가, 데이터, 검색 품질, 성능을 같이 넓혀 갑니다</strong>
+      <p>지금 단계는 entity card 기반 retrieval 구조가 실제로 이어지는지 확인한 구간입니다. 다음부터는 정량 지표와 더 큰 데이터셋, 랭킹 안정성, 지연 시간 개선을 함께 묶어 검증 범위를 넓힙니다.</p>
     </div>
-    <div class="hub-card">
-      <span class="hub-label">다음 구현</span>
-      <strong>더 큰 데이터셋과 랭킹 안정성</strong>
-      <p>44개 취미와 9개 카테고리 수준에서 한 단계 더 나아가, 더 큰 데이터셋과 복합 질의 기준 랭킹 안정성을 같이 확인할 계획입니다.</p>
+    <div class="roadmap-branch-grid">
+      <article class="roadmap-branch is-metric">
+        <span class="roadmap-branch-label">평가 체계</span>
+        <strong>검색 품질을 수치로 비교합니다</strong>
+        <p>구조 판단만으로는 부족하므로 다음 단계에서는 정량 평가 기준을 붙여 retrieval 품질을 분명하게 비교합니다.</p>
+        <ul class="roadmap-branch-list">
+          <li>Recall@k</li>
+          <li>MRR</li>
+          <li>nDCG</li>
+        </ul>
+      </article>
+      <article class="roadmap-branch is-dataset">
+        <span class="roadmap-branch-label">데이터셋 확장</span>
+        <strong>작은 실험 데이터를 더 넓은 취미 데이터로 키웁니다</strong>
+        <p>현재 구조가 작은 범위에서만 맞는 판단인지 확인하기 위해 더 많은 취미 데이터와 복합 질의 시나리오를 붙입니다.</p>
+        <ul class="roadmap-branch-list">
+          <li>더 많은 취미 데이터</li>
+          <li>복합 질의 시나리오</li>
+        </ul>
+      </article>
+      <article class="roadmap-branch is-search">
+        <span class="roadmap-branch-label">검색 품질</span>
+        <strong>랭킹 안정성과 후보 선택 기준을 다듬습니다</strong>
+        <p>카드 중심 retrieval이 실제 추천과 검색에 얼마나 안정적으로 동작하는지, 후보 선택 기준을 더 명확히 잡을 계획입니다.</p>
+        <ul class="roadmap-branch-list">
+          <li>랭킹 안정성</li>
+          <li>후보 선택 기준</li>
+        </ul>
+      </article>
+      <article class="roadmap-branch is-latency">
+        <span class="roadmap-branch-label">성능</span>
+        <strong>병목을 쪼개고 지연 시간을 줄입니다</strong>
+        <p>현재 평균 60,531ms는 구조 검증에는 의미가 있었지만 제품 기준으로는 느립니다. 다음은 병목 분해와 latency 개선입니다.</p>
+        <ul class="roadmap-branch-list">
+          <li>병목 분해</li>
+          <li>지연 시간 개선</li>
+        </ul>
+      </article>
     </div>
-    <div class="hub-card">
-      <span class="hub-label">개선 목표</span>
-      <strong>지연 시간과 실사용성</strong>
-      <p>현재 평균 60,531ms는 구조 검증에는 의미가 있었지만 실사용 기준으로는 느립니다. 이후에는 지연 시간 개선과 병목 분해가 중요한 축이 됩니다.</p>
-    </div>
-  </div>
-</section>
-
-<section class="hub-section">
-  <p class="hub-section-kicker">마인드맵</p>
-  <h3>다음에 보강할 축</h3>
-  <div class="roadmap-map">
-
-```mermaid
-mindmap
-  root((Nazgul Next))
-    "평가 체계"
-      "Recall@k"
-      "MRR"
-      "nDCG"
-    "데이터셋 확장"
-      "더 많은 취미 데이터"
-      "복합 질의 시나리오"
-    "검색 품질"
-      "랭킹 안정성"
-      "후보 선택 기준"
-    "성능"
-      "병목 분해"
-      "지연 시간 개선"
-```
-
   </div>
 </section>
 
@@ -331,26 +334,6 @@ mindmap
     </li>
   </ul>
 </section>
-
-```mermaid
-mindmap
-  root((Nazgul))
-    Product monolith
-      client
-        Home explore flow
-        User entry flow
-      server
-        rag
-          adapter in web
-          application service
-          Persistence index
-        optimization
-          ingest
-          recommend
-          trace
-        common
-          global exception
-```
 
 <section class="hub-section">
   <p class="hub-section-kicker">원본</p>
