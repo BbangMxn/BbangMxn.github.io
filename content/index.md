@@ -5,57 +5,90 @@ cssclasses:
 ---
 
 <section class="portfolio-intro portfolio-hero">
-  <p class="portfolio-kicker">메인</p>
-  <div class="portfolio-identity">
-    <span class="portfolio-name">Bbang / 호빵맨</span>
-    <span class="portfolio-role">Backend Developer / Product Engineer</span>
+  <div class="portfolio-hero-main">
+    <p class="portfolio-kicker">메인</p>
+    <div class="portfolio-identity">
+      <span class="portfolio-name">Bbang / 호빵맨</span>
+      <span class="portfolio-role">Backend Developer / Product Engineer</span>
+    </div>
+    <h1>빠르게 만든 제품을 운영 가능한 구조로 다시 설계하는 백엔드 개발자입니다.</h1>
+    <p class="portfolio-lede">
+      도메인 분리, 검색 구조, 캐시 전략, AI 기능 안정화에 강점이 있습니다.
+    </p>
+    <p class="portfolio-summary">
+      커뮤니티 앱, 업무 도구, 검색 실험을 만들면서 클라이언트 전환 시점, 서비스 경계 재설계, 안전한 AI 실행 구조를 프로젝트 문서로 남기고 있습니다.
+    </p>
+    <div class="portfolio-actions">
+      <a class="portfolio-action primary" href="./projects">프로젝트 보기</a>
+      <div class="portfolio-action-links">
+        <a class="portfolio-action secondary" href="./resume">이력 요약</a>
+        <a class="portfolio-action secondary" href="https://github.com/BbangMxn">GitHub</a>
+        <a class="portfolio-action tertiary" href="./about">소개</a>
+        <a class="portfolio-action tertiary" href="./start-here">읽기 가이드</a>
+      </div>
+    </div>
   </div>
-  <h1>빠르게 만든 제품을 운영 가능한 구조로 다시 설계하는 백엔드 개발자입니다.</h1>
-  <p class="portfolio-lede">
-    도메인 분리, 검색 구조, 캐시 전략, AI 기능 안정화에 강점이 있습니다.
-  </p>
-  <p class="portfolio-summary">
-    커뮤니티 앱, 업무 도구, 검색 실험을 만들면서 클라이언트 전환 시점, 서비스 경계 재설계, 안전한 AI 실행 구조를 프로젝트 문서로 남기고 있습니다.
-  </p>
-  <ul class="portfolio-keywords">
-    <li>Backend</li>
-    <li>Architecture</li>
-    <li>Search</li>
-    <li>Cache</li>
-    <li>AI Integration</li>
-  </ul>
-  <div class="portfolio-actions">
-    <a class="portfolio-action primary" href="./projects">프로젝트 보기</a>
-    <a class="portfolio-action" href="./resume">이력 요약</a>
-    <a class="portfolio-action" href="https://github.com/BbangMxn">GitHub</a>
-    <a class="portfolio-action" href="./about">소개</a>
-    <a class="portfolio-action" href="./start-here">읽기 가이드</a>
-  </div>
+  <aside class="portfolio-hero-side">
+    <div class="portfolio-side-block">
+      <span class="portfolio-side-label">핵심 축</span>
+      <ul class="portfolio-keywords">
+        <li>Backend</li>
+        <li>Architecture</li>
+        <li>Search</li>
+        <li>Cache</li>
+        <li>AI Integration</li>
+      </ul>
+    </div>
+    <div class="portfolio-side-block">
+      <span class="portfolio-side-label">대표 지표</span>
+      <div class="portfolio-metric-grid">
+        <article class="portfolio-metric-card">
+          <span class="portfolio-metric-label">BagInCoffee</span>
+          <strong>67 / 34 / 62 / 3</strong>
+          <p>브랜드 / 카테고리 / 제품 / 언어</p>
+        </article>
+        <article class="portfolio-metric-card">
+          <span class="portfolio-metric-label">Worker</span>
+          <strong>7 단계 / 75%</strong>
+          <p>분류 파이프라인 / 호출량 절감 방향</p>
+        </article>
+        <article class="portfolio-metric-card">
+          <span class="portfolio-metric-label">Nazgul</span>
+          <strong>3 + 3 / 60,531ms</strong>
+          <p>카드 / 추천 포스트 / 평균 실험 시간</p>
+        </article>
+      </div>
+    </div>
+    <div class="portfolio-side-block portfolio-side-note">
+      <span class="portfolio-side-label">빠른 읽기</span>
+      <p>제품 전환, 업무 자동화, 검색 구조 순서로 보면 제가 구조를 바꾸는 기준이 가장 빠르게 보입니다.</p>
+    </div>
+  </aside>
 </section>
 
 <section class="portfolio-block">
   <p class="portfolio-block-kicker">성과</p>
   <h2>가장 먼저 보여줄 근거</h2>
-  <ul class="portfolio-list">
-    <li class="portfolio-item">
-      <div class="portfolio-note">
-        <span class="portfolio-badge">BagInCoffee</span>
-        <p>브랜드 67개, 카테고리 34개, 제품 62개, 3개 언어 지원까지 확장하며 클라이언트 전환과 도메인 분리 시점을 검증했습니다.</p>
-      </div>
-    </li>
-    <li class="portfolio-item">
-      <div class="portfolio-note">
-        <span class="portfolio-badge">Worker</span>
-        <p>Proposal, 분류, 동기화, 개인화 답장 흐름을 연결했고 7단계 분류 파이프라인으로 LLM 호출량 약 75% 절감 방향을 확인했습니다.</p>
-      </div>
-    </li>
-    <li class="portfolio-item">
-      <div class="portfolio-note">
-        <span class="portfolio-badge">Nazgul</span>
-        <p>카드 3개와 추천 포스트 3개를 반환하는 traceable retrieval을 만들었고 평균 60,531ms 실험 결과까지 공개 문서로 남겼습니다.</p>
-      </div>
-    </li>
-  </ul>
+  <div class="portfolio-evidence-grid">
+    <article class="portfolio-evidence-card">
+      <span class="portfolio-badge">BagInCoffee</span>
+      <strong class="portfolio-evidence-stat">67 / 34 / 62 / 3</strong>
+      <p class="portfolio-evidence-caption">브랜드 / 카테고리 / 제품 / 언어</p>
+      <p>클라이언트 전환과 도메인 분리 시점을 실제 제품 데이터 확장으로 검증했습니다.</p>
+    </article>
+    <article class="portfolio-evidence-card">
+      <span class="portfolio-badge">Worker</span>
+      <strong class="portfolio-evidence-stat">7 단계 / 75%</strong>
+      <p class="portfolio-evidence-caption">분류 파이프라인 / 호출량 절감 방향</p>
+      <p>Proposal, 분류, 동기화, 개인화 답장 흐름을 연결하고 자동화 비용 구조를 다시 설계했습니다.</p>
+    </article>
+    <article class="portfolio-evidence-card">
+      <span class="portfolio-badge">Nazgul</span>
+      <strong class="portfolio-evidence-stat">3 + 3 / 60,531ms</strong>
+      <p class="portfolio-evidence-caption">카드 / 추천 포스트 / 평균 실험 시간</p>
+      <p>Traceable retrieval을 만들고 실험 결과와 한계를 공개 문서로 함께 남겼습니다.</p>
+    </article>
+  </div>
 </section>
 
 <section class="portfolio-block">
