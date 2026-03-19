@@ -18,6 +18,10 @@ cssclasses:
     <p class="portfolio-summary">
       커뮤니티 앱, 업무 도구, 검색 실험을 만들면서 클라이언트 전환 시점, 서비스 경계 재설계, 안전한 AI 실행 구조를 프로젝트 문서로 남기고 있습니다.
     </p>
+    <p class="portfolio-focus-line">
+      <strong>집중하는 문제</strong>
+      구조 재설계 · 검색 구조 · 캐시 전략 · AI 실행 안정화
+    </p>
     <div class="portfolio-actions">
       <a class="portfolio-action primary" href="./projects">프로젝트 보기</a>
       <div class="portfolio-action-links">
@@ -27,43 +31,11 @@ cssclasses:
         <a class="portfolio-action tertiary" href="./start-here">읽기 가이드</a>
       </div>
     </div>
+    <p class="portfolio-reading-path">
+      <span>추천 읽기 순서</span>
+      BagInCoffee → Worker → Nazgul
+    </p>
   </div>
-  <aside class="portfolio-hero-side">
-    <div class="portfolio-side-block">
-      <span class="portfolio-side-label">핵심 축</span>
-      <ul class="portfolio-keywords">
-        <li>Backend</li>
-        <li>Architecture</li>
-        <li>Search</li>
-        <li>Cache</li>
-        <li>AI Integration</li>
-      </ul>
-    </div>
-    <div class="portfolio-side-block">
-      <span class="portfolio-side-label">대표 지표</span>
-      <div class="portfolio-metric-grid">
-        <article class="portfolio-metric-card">
-          <span class="portfolio-metric-label">BagInCoffee</span>
-          <strong>67 / 34 / 62 / 3</strong>
-          <p>브랜드 / 카테고리 / 제품 / 언어</p>
-        </article>
-        <article class="portfolio-metric-card">
-          <span class="portfolio-metric-label">Worker</span>
-          <strong>7 단계 / 75%</strong>
-          <p>분류 파이프라인 / 호출량 절감 방향</p>
-        </article>
-        <article class="portfolio-metric-card">
-          <span class="portfolio-metric-label">Nazgul</span>
-          <strong>3 + 3 / 60,531ms</strong>
-          <p>카드 / 추천 포스트 / 평균 실험 시간</p>
-        </article>
-      </div>
-    </div>
-    <div class="portfolio-side-block portfolio-side-note">
-      <span class="portfolio-side-label">빠른 읽기</span>
-      <p>제품 전환, 업무 자동화, 검색 구조 순서로 보면 제가 구조를 바꾸는 기준이 가장 빠르게 보입니다.</p>
-    </div>
-  </aside>
 </section>
 
 <section class="portfolio-block">
