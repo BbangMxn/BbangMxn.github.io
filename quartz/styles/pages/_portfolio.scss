@@ -7,6 +7,34 @@
   --folio-note-indent: 1.05rem;
   --folio-rail-size: 2px;
   --folio-hover-tint: color-mix(in srgb, var(--secondary) 3%, transparent);
+  --folio-panel-border: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--nomos-line));
+  --folio-panel-radius: 1.18rem;
+  --folio-panel-bg:
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--highlight) 72%, transparent) 0%,
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
+      color-mix(in srgb, var(--light) 96%, white) 100%
+    );
+  --folio-soft-panel-border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  --folio-soft-panel-bg:
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--highlight) 58%, transparent) 0%,
+      transparent 48%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
+      color-mix(in srgb, var(--light) 96%, white) 100%
+    );
+  --folio-chip-border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  --folio-chip-bg: color-mix(in srgb, var(--light) 92%, white);
+  --folio-chip-text: color-mix(in srgb, var(--dark) 88%, var(--secondary));
 }
 
 .folder-hub {
@@ -24,6 +52,37 @@
   --hub-proof-card-padding: 1.25rem 0 0.8rem 1rem;
   --hub-proof-media-min-height: clamp(15rem, 28vw, 19rem);
   --hub-proof-media-max-height: 20rem;
+  --hub-flow-gap: 1.5rem;
+  --hub-flow-step-gap: 0.95rem;
+  --hub-flow-step-padding: 1rem;
+  --hub-flow-step-radius: 1.15rem;
+  --hub-flow-step-border: 1px solid var(--nomos-line);
+  --hub-flow-step-divider: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
+  --hub-flow-step-bg:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--nomos-surface-soft) 78%, var(--light)) 0%,
+      var(--nomos-surface) 100%
+    );
+  --hub-flow-arrow-size: 2.1rem;
+  --hub-flow-media-min-height: 22rem;
+  --hub-flow-media-max-width: 34rem;
+  --hub-flow-media-padding: 1rem;
+  --hub-flow-media-radius: 0.95rem;
+  --hub-flow-media-border: 1px solid var(--nomos-line);
+  --hub-flow-media-bg:
+    linear-gradient(
+      180deg,
+      var(--light) 0%,
+      color-mix(in srgb, var(--nomos-surface-soft) 90%, white) 100%
+    );
+  --hub-flow-body-gap: 0.85rem;
+  --hub-flow-header-gap: 0.72rem;
+  --hub-flow-title-gap: 0.26rem;
+  --hub-flow-badge-size: 2.18rem;
+  --hub-flow-badge-font: 0.75rem;
+  --hub-flow-badge-shadow: 0 0 0 0.26rem color-mix(in srgb, var(--light) 92%, transparent);
+  --hub-flow-summary-padding: 1.05rem 1.15rem;
   display: grid;
   max-width: var(--hub-shell-width);
   gap: var(--hub-shell-gap);
@@ -229,7 +288,7 @@
   max-height: var(--hub-proof-media-max-height);
   padding: 1rem;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--nomos-line) 82%, transparent);
+  border: var(--folio-soft-panel-border);
   border-radius: 0.75rem;
   background: color-mix(in srgb, var(--nomos-surface-soft) 58%, transparent);
 }
@@ -283,20 +342,10 @@
   position: relative;
   gap: clamp(0.85rem, 1.8vw, 1.15rem);
   padding: 1.25rem 1.25rem 1.4rem;
-  border: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--nomos-line));
-  border-radius: 1.35rem;
+  border: var(--folio-panel-border);
+  border-radius: calc(var(--folio-panel-radius) + 0.17rem);
   border-bottom-width: 1px;
-  background:
-    radial-gradient(
-      circle at top right,
-      color-mix(in srgb, var(--highlight) 78%, transparent) 0%,
-      transparent 42%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
-      color-mix(in srgb, var(--light) 96%, white) 100%
-    );
+  background: var(--folio-panel-bg);
 }
 
 .portfolio-home .portfolio-hero > h1 {
@@ -349,10 +398,10 @@
   align-items: center;
   min-height: 2rem;
   padding: 0.35rem 0.8rem;
-  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border: var(--folio-chip-border);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--light) 92%, white);
-  color: color-mix(in srgb, var(--dark) 88%, var(--secondary));
+  background: var(--folio-chip-bg);
+  color: var(--folio-chip-text);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -371,9 +420,9 @@
   justify-content: center;
   min-height: 2.5rem;
   padding: 0.6rem 0.95rem;
-  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border: var(--folio-chip-border);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--light) 94%, white);
+  background: color-mix(in srgb, var(--folio-chip-bg) 92%, white);
   color: var(--dark);
   font-size: 0.92rem;
   font-weight: 700;
@@ -494,6 +543,7 @@
   font-size: 1.05rem;
   line-height: 1.42;
   color: var(--dark);
+  text-wrap: pretty;
   word-break: keep-all;
 }
 
@@ -619,7 +669,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   .folder-hub
   :is(.nazgul-flow, .bag-flow) {
   display: grid;
-  gap: 1.5rem;
+  gap: var(--hub-flow-gap);
 }
 
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -628,15 +678,11 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.95rem;
-  padding: 1rem;
-  border: 1px solid var(--nomos-line);
-  border-radius: 1.15rem;
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--nomos-surface-soft) 78%, var(--light)) 0%,
-    var(--nomos-surface) 100%
-  );
+  gap: var(--hub-flow-step-gap);
+  padding: var(--hub-flow-step-padding);
+  border: var(--hub-flow-step-border);
+  border-radius: var(--hub-flow-step-radius);
+  background: var(--hub-flow-step-bg);
 }
 
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -649,8 +695,8 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.1rem;
-  height: 2.1rem;
+  width: var(--hub-flow-arrow-size);
+  height: var(--hub-flow-arrow-size);
   border: 1px solid var(--nomos-line);
   border-radius: 999px;
   background: var(--light);
@@ -665,19 +711,15 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 22rem;
-  max-width: 34rem;
+  min-height: var(--hub-flow-media-min-height);
+  max-width: var(--hub-flow-media-max-width);
   width: 100%;
   margin-inline: auto;
-  padding: 1rem;
+  padding: var(--hub-flow-media-padding);
   overflow: hidden;
-  border: 1px solid var(--nomos-line);
-  border-radius: 0.95rem;
-  background: linear-gradient(
-    180deg,
-    var(--light) 0%,
-    color-mix(in srgb, var(--nomos-surface-soft) 90%, white) 100%
-  );
+  border: var(--hub-flow-media-border);
+  border-radius: var(--hub-flow-media-radius);
+  background: var(--hub-flow-media-bg);
 }
 
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -695,7 +737,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   .folder-hub
   :is(.nazgul-flow-step-body, .bag-flow-step-body) {
   display: grid;
-  gap: 0.85rem;
+  gap: var(--hub-flow-body-gap);
   align-content: start;
   min-width: 0;
 }
@@ -706,7 +748,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.62rem;
+  gap: var(--hub-flow-header-gap);
 }
 
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -715,15 +757,15 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.3rem;
-  height: 2.3rem;
+  width: var(--hub-flow-badge-size);
+  height: var(--hub-flow-badge-size);
   border-radius: 999px;
   background: var(--dark);
   color: var(--light);
-  font-size: 0.78rem;
+  font-size: var(--hub-flow-badge-font);
   font-weight: 700;
   letter-spacing: 0.12em;
-  box-shadow: 0 0 0 0.32rem color-mix(in srgb, var(--light) 92%, transparent);
+  box-shadow: var(--hub-flow-badge-shadow);
   flex: 0 0 auto;
 }
 
@@ -731,7 +773,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   .folder-hub
   :is(.nazgul-flow-step-title, .bag-flow-step-title) {
   display: grid;
-  gap: 0.26rem;
+  gap: var(--hub-flow-title-gap);
   width: 100%;
 }
 
@@ -739,8 +781,9 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   .folder-hub
   :is(.nazgul-flow-step-title, .bag-flow-step-title) strong {
   max-width: none;
-  font-size: 1.1rem;
-  line-height: 1.35;
+  font-size: 1.04rem;
+  line-height: 1.42;
+  text-wrap: balance;
 }
 
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -763,7 +806,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   :is(.nazgul-flow-summary, .bag-flow-summary) {
   display: grid;
   gap: 0.68rem;
-  padding: 1.05rem 1.15rem;
+  padding: var(--hub-flow-summary-padding);
   border: 1px solid color-mix(in srgb, var(--secondary) 22%, var(--nomos-line));
   border-radius: 1rem;
   background: color-mix(in srgb, var(--nomos-surface-soft) 86%, white);
@@ -791,19 +834,9 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
 .roadmap-hub .hub-header {
   position: relative;
   padding: 1.45rem 1.35rem 1.5rem;
-  border: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--nomos-line));
-  border-radius: 1.35rem;
-  background:
-    radial-gradient(
-      circle at top right,
-      color-mix(in srgb, var(--highlight) 72%, transparent) 0%,
-      transparent 42%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
-      color-mix(in srgb, var(--light) 96%, white) 100%
-    );
+  border: var(--folio-panel-border);
+  border-radius: calc(var(--folio-panel-radius) + 0.17rem);
+  background: var(--folio-panel-bg);
 }
 
 .roadmap-hub .roadmap-section {
@@ -905,9 +938,9 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   gap: 0.45rem;
   min-height: 2rem;
   padding: 0.35rem 0.8rem;
-  border: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
+  border: var(--folio-chip-border);
   border-radius: 999px;
-  background: color-mix(in srgb, var(--light) 92%, white);
+  background: var(--folio-chip-bg);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -915,19 +948,9 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
 
 .roadmap-hub .roadmap-map {
   padding: 1.05rem;
-  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border: var(--folio-soft-panel-border);
   border-radius: 1.2rem;
-  background:
-    radial-gradient(
-      circle at top right,
-      color-mix(in srgb, var(--highlight) 58%, transparent) 0%,
-      transparent 48%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
-      color-mix(in srgb, var(--light) 96%, white) 100%
-    );
+  background: var(--folio-soft-panel-bg);
 }
 
 .roadmap-hub .roadmap-map .mermaid {
@@ -945,19 +968,9 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
 
 .folder-hub .roadmap-map {
   padding: 1.05rem;
-  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border: var(--folio-soft-panel-border);
   border-radius: 1.1rem;
-  background:
-    radial-gradient(
-      circle at top right,
-      color-mix(in srgb, var(--highlight) 58%, transparent) 0%,
-      transparent 48%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
-      color-mix(in srgb, var(--light) 96%, white) 100%
-    );
+  background: var(--folio-soft-panel-bg);
 }
 
 .folder-hub .roadmap-map .mermaid {
@@ -984,19 +997,9 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   display: grid;
   gap: 1rem;
   padding: 1.1rem;
-  border: 1px solid color-mix(in srgb, var(--secondary) 18%, var(--nomos-line));
+  border: var(--folio-soft-panel-border);
   border-radius: 1.1rem;
-  background:
-    radial-gradient(
-      circle at top right,
-      color-mix(in srgb, var(--highlight) 58%, transparent) 0%,
-      transparent 48%
-    ),
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--nomos-surface-soft) 84%, var(--light)) 0%,
-      color-mix(in srgb, var(--light) 96%, white) 100%
-    );
+  background: var(--folio-soft-panel-bg);
 }
 
 .folder-hub .roadmap-visual-core {
@@ -1225,17 +1228,27 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
+    .folder-hub {
+    --hub-flow-gap: 1.65rem;
+    --hub-flow-step-gap: 1.82rem;
+    --hub-flow-step-padding: 1.05rem 0 0.42rem;
+    --hub-flow-media-min-height: 17.6rem;
+    --hub-flow-media-max-width: 27rem;
+    --hub-flow-title-gap: 0.22rem;
+  }
+
+  body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow, .bag-flow) {
-    gap: 1.45rem;
+    gap: var(--hub-flow-gap);
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-step, .bag-flow-step) {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-    gap: 1.55rem;
-    padding: 1rem 0 0.35rem;
+    grid-template-columns: minmax(0, 1.18fr) minmax(17.5rem, 0.82fr);
+    gap: var(--hub-flow-step-gap);
+    padding: var(--hub-flow-step-padding);
     border: 0;
     border-top: 1px solid color-mix(in srgb, var(--nomos-line) 88%, transparent);
     border-radius: 0;
@@ -1272,15 +1285,52 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-step-media, .bag-flow-step-media) {
-    min-height: 19rem;
-    max-width: none;
+    min-height: var(--hub-flow-media-min-height);
+    max-width: var(--hub-flow-media-max-width);
     margin-inline: 0;
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-step-body, .bag-flow-step-body) {
-    padding-top: 0.28rem;
+    padding-top: 0;
+    padding-inline: 0.15rem;
+  }
+
+  body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
+    .folder-hub
+    :is(.nazgul-flow-step, .bag-flow-step):nth-child(odd)
+    :is(.nazgul-flow-step-body, .bag-flow-step-body) {
+    padding-left: 0.55rem;
+  }
+
+  body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
+    .folder-hub
+    :is(.nazgul-flow-step, .bag-flow-step):nth-child(even)
+    :is(.nazgul-flow-step-body, .bag-flow-step-body) {
+    padding-right: 0.55rem;
+  }
+
+  body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
+    .folder-hub
+    :is(.nazgul-flow-step-header, .bag-flow-step-header) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+    column-gap: 0.86rem;
+    row-gap: 0;
+  }
+
+  body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
+    .folder-hub
+    :is(.nazgul-flow-step-number, .bag-flow-step-number) {
+    margin-top: 0.08rem;
+  }
+
+  body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
+    .folder-hub
+    :is(.nazgul-flow-step-title, .bag-flow-step-title) {
+    gap: 0.22rem;
   }
 }
 
@@ -1365,17 +1415,29 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
+    .folder-hub {
+    --hub-flow-gap: 1.25rem;
+    --hub-flow-step-gap: 0.85rem;
+    --hub-flow-step-padding: 0.85rem;
+    --hub-flow-media-min-height: 18rem;
+    --hub-flow-media-padding: 0.85rem;
+    --hub-flow-header-gap: 0.6rem;
+    --hub-flow-badge-size: 2.02rem;
+    --hub-flow-summary-padding: 0.95rem 1rem;
+  }
+
+  body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow, .bag-flow) {
-    gap: 1.25rem;
+    gap: var(--hub-flow-gap);
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-step, .bag-flow-step) {
     grid-template-columns: 1fr;
-    gap: 0.85rem;
-    padding: 0.85rem;
+    gap: var(--hub-flow-step-gap);
+    padding: var(--hub-flow-step-padding);
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -1390,8 +1452,8 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-step-media, .bag-flow-step-media) {
-    min-height: 18rem;
-    padding: 0.85rem;
+    min-height: var(--hub-flow-media-min-height);
+    padding: var(--hub-flow-media-padding);
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -1403,20 +1465,20 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-step-header, .bag-flow-step-header) {
-    gap: 0.56rem;
+    gap: var(--hub-flow-header-gap);
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-step-number, .bag-flow-step-number) {
-    width: 2.1rem;
-    height: 2.1rem;
+    width: var(--hub-flow-badge-size);
+    height: var(--hub-flow-badge-size);
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-summary, .bag-flow-summary) {
-    padding: 0.95rem 1rem;
+    padding: var(--hub-flow-summary-padding);
   }
 
   .roadmap-hub .roadmap-status-card {
