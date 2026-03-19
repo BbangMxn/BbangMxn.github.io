@@ -25,9 +25,11 @@ cssclasses:
     <div class="portfolio-actions">
       <a class="portfolio-action primary" href="./projects">프로젝트 보기</a>
       <p class="portfolio-link-strip">
-        <a href="./resume">이력 요약</a>
+        <a href="mailto:jixso6484@gmail.com">Email</a>
         <span>·</span>
         <a href="https://github.com/BbangMxn">GitHub</a>
+        <span>·</span>
+        <a href="./resume">이력 요약</a>
         <span>·</span>
         <a href="./about">소개</a>
         <span>·</span>

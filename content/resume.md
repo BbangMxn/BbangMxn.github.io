@@ -21,10 +21,15 @@ cssclasses:
   <p class="hub-section-kicker">기본</p>
   <h3>빠른 정보</h3>
   <div class="hub-grid">
+    <a class="hub-card" href="mailto:jixso6484@gmail.com">
+      <span class="hub-label">연락</span>
+      <strong>jixso6484@gmail.com</strong>
+      <p>포트폴리오와 공개 프로젝트 관련 연락은 이 이메일로 받을 수 있습니다.</p>
+    </a>
     <a class="hub-card" href="https://github.com/BbangMxn">
       <span class="hub-label">공개 링크</span>
       <strong>GitHub / BbangMxn</strong>
-      <p>현재 공개 가능한 대표 링크는 GitHub 프로필과 이 포트폴리오 사이트입니다.</p>
+      <p>대표 공개 저장소와 이 포트폴리오 사이트는 GitHub 프로필을 기준으로 이어집니다.</p>
     </a>
     <div class="hub-card">
       <span class="hub-label">포지션</span>
