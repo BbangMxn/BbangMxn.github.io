@@ -703,11 +703,10 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
   .folder-hub
   :is(.nazgul-flow-step-header, .bag-flow-step-header) {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0.68rem;
-  align-items: start;
-  justify-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.62rem;
 }
 
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -725,6 +724,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   font-weight: 700;
   letter-spacing: 0.12em;
   box-shadow: 0 0 0 0.32rem color-mix(in srgb, var(--light) 92%, transparent);
+  flex: 0 0 auto;
 }
 
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -732,6 +732,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   :is(.nazgul-flow-step-title, .bag-flow-step-title) {
   display: grid;
   gap: 0.26rem;
+  width: 100%;
 }
 
 body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
@@ -1402,7 +1403,7 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
     .folder-hub
     :is(.nazgul-flow-step-header, .bag-flow-step-header) {
-    gap: 0.6rem;
+    gap: 0.56rem;
   }
 
   body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/index"])
