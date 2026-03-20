@@ -35,7 +35,7 @@ cssclasses:
     <div class="hub-card">
       <span class="hub-label">핵심 결과</span>
       <strong>Proposal, Gmail 동기화, 7단계 분류, 개인화 답장</strong>
-      <p>LLM 호출량 약 75% 절감 방향을 확인했고 제안과 확인이 있는 업무 흐름을 실제로 연결했습니다.</p>
+      <p>불필요한 LLM 호출을 줄이는 분류 방향을 검토했고 제안과 확인이 있는 업무 흐름을 실제로 연결했습니다. 다만 약 75% 수치는 추가 검증이 필요합니다.</p>
     </div>
     <div class="hub-card">
       <span class="hub-label">현재 상태</span>
@@ -68,7 +68,7 @@ Personalized Reply</code></pre>
     <div class="hub-proof-card">
       <span class="hub-label">검증 범위</span>
       <strong>Proposal 생성, Gmail 실시간 동기화, 7단계 분류, 문체 학습 답장까지 이어지는 흐름을 실제로 검증했습니다</strong>
-      <p>이메일 자동 번역, 분류, 요약, Gmail 실시간 동기화, RAG 기반 개인화 답장 구조를 확인했고, 7단계 분류 파이프라인으로 LLM 호출량을 약 75% 줄이는 방향도 검증했습니다.</p>
+      <p>이메일 자동 번역, 분류, 요약, Gmail 실시간 동기화, RAG 기반 개인화 답장 구조를 확인했고, 7단계 분류 파이프라인이 LLM 호출량을 줄이는 방향인지는 검토했습니다. 다만 약 75% 수치는 추가 검증이 필요합니다.</p>
     </div>
   </div>
 </section>
@@ -136,7 +136,7 @@ Personalized Reply</code></pre>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">관찰</span>
-        <p>이메일 자동 번역, 분류, 요약, Gmail 실시간 동기화, RAG 기반 개인화 답장 구조는 동작을 확인했고, 7단계 분류 구조로 LLM 호출량을 약 75% 줄이는 방향도 검증했습니다.</p>
+        <p>이메일 자동 번역, 분류, 요약, Gmail 실시간 동기화, RAG 기반 개인화 답장 구조는 동작을 확인했고, 7단계 분류 구조가 LLM 호출량 절감에 유효한지는 계속 검증 중입니다. 약 75% 수치는 추가 검증이 필요합니다.</p>
       </div>
     </li>
     <li class="hub-item">

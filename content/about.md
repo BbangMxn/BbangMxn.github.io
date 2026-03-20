@@ -10,10 +10,10 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">소개</p>
-  <h2>구조를 다시 나누는 백엔드 개발자</h2>
+  <h2>Spec-driven 개발과 빠른 실행을 중시하는 Product Engineer</h2>
   <p class="hub-lede">
-    커뮤니티 앱, 업무 도구, 검색 실험을 만들면서 제품이 커질 때 구조를 어디서 다시 나눠야 하는지에 집중해 왔습니다.
-    웹에서 Flutter로 전환한 시점, 장비 도메인을 분리한 이유, AI 제안을 바로 실행하지 않게 막은 설계처럼 기능 구현보다 경계 재설계를 먼저 설명하는 문서를 남깁니다.
+    요구사항을 spec-driven 방식으로 정리하고, 빠른 소통으로 구현 범위를 맞추며, 짧은 시간 안에 목표를 만드는 Product Engineer를 지향합니다.
+    Nazgul, BagInCoffee, Smart Factory 같은 프로젝트에서 검색 구조, 제품 경계 분리, 시계열 파이프라인 판단을 문서와 구현으로 함께 남겼습니다.
   </p>
 </div>
 
@@ -33,8 +33,8 @@ cssclasses:
     </a>
     <div class="hub-card">
       <span class="hub-label">포지션</span>
-      <strong>Backend Developer / Product Engineer</strong>
-      <p>API, 데이터 모델, 캐시, 검색, AI 안전장치가 얽힌 구조 문제를 주로 다룹니다.</p>
+      <strong>Product Engineer</strong>
+      <p>Spec-driven 방식, 구현 범위 정렬, 빠른 실행을 중심으로 백엔드와 제품 문제를 함께 다루는 역할을 지향합니다.</p>
     </div>
     <div class="hub-card">
       <span class="hub-label">작업 형태</span>
@@ -51,25 +51,25 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">역할</span>
-        <p>제품을 만들다가 생기는 구조 문제를 API, 데이터 모델, 캐시, 서비스 경계 재설계로 푸는 백엔드 제품개발자입니다.</p>
+        <p>요구사항을 spec-driven 방식으로 정리하고, 빠른 소통으로 범위를 맞추며, 짧은 시간 안에 목표를 만드는 Product Engineer입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">사용 언어</span>
-        <p>Java, Rust, Dart, TypeScript</p>
+        <span class="hub-label">주요 스택</span>
+        <p>Java, Spring Boot, Go, TypeScript, Dart</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">잘 맞는 문제</span>
-        <p>클라이언트 전환, 도메인 분리, 검색 구조, 캐시 전략, AI 안전장치</p>
+        <p>Spec 정의, 빠른 MVP, 도메인 분리, 검색 구조, AI 기능 안정화</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">추천 프로젝트</span>
-        <p>BagInCoffee, Worker, Nazgul</p>
+        <p>Nazgul, BagInCoffee, Smart Factory</p>
       </div>
     </li>
   </ul>
@@ -81,20 +81,20 @@ cssclasses:
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">재정의</span>
-        <p>제품 문제를 백엔드 구조 문제로 다시 정의합니다. 제품 변화가 시스템 경계를 어떻게 바꾸는지 문서로 설명할 수 있습니다.</p>
+        <span class="hub-label">Spec-driven</span>
+        <p>요구사항을 기능 목록이 아니라 spec과 acceptance 기준으로 정리하는 Spec-driven 방식에 가깝습니다. 구현보다 먼저 성공 조건을 맞추는 편입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">근거</span>
-        <p>근거를 남기는 구조를 선호합니다. 관측값, 검증 범위, 실패와 한계를 문서 안에 남겨 다음 판단의 근거로 다시 사용할 수 있게 만듭니다.</p>
+        <span class="hub-label">소통</span>
+        <p>도메인 이해를 바탕으로 팀이 빠르게 같은 그림을 보게 만드는 문서와 예시를 선호합니다. 소통 비용을 줄이는 것이 실행 속도라고 봅니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">운영</span>
-        <p>운영 비용을 같이 봅니다. 캐시, 다중 DB, AI 제안 안전장치, 추적 가능성처럼 기능보다 유지 가능성과 위험 제어를 함께 봅니다.</p>
+        <span class="hub-label">실행</span>
+        <p>필요한 구조와 기능을 짧은 시간 안에 연결하고, 판단 과정은 다음 작업에 바로 재사용할 수 있게 프로젝트 문서로 남깁니다.</p>
       </div>
     </li>
   </ul>
@@ -167,6 +167,13 @@ cssclasses:
   <h3>먼저 볼 문서</h3>
   <ul class="hub-list">
     <li class="hub-item">
+      <a href="./projects/nazgul">
+        <span class="hub-label">검색</span>
+        <strong>Nazgul</strong>
+        <p>제품 문제를 개인화 retrieval 구조로 다시 정의하며 검색과 trace를 함께 검증한 대표 프로젝트입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
       <a href="./projects/BagInCoffee">
         <span class="hub-label">제품</span>
         <strong>BagInCoffee</strong>
@@ -174,17 +181,10 @@ cssclasses:
       </a>
     </li>
     <li class="hub-item">
-      <a href="./projects/worker">
-        <span class="hub-label">업무</span>
-        <strong>Worker</strong>
-        <p>AI Agent를 업무 도구에 붙일 때 필요한 안전장치와 재단순화 판단을 보여주는 프로젝트입니다.</p>
-      </a>
-    </li>
-    <li class="hub-item">
-      <a href="./projects/nazgul">
-        <span class="hub-label">검색</span>
-        <strong>Nazgul</strong>
-        <p>제품 문제를 개인화 retrieval 구조로 다시 정의하며 검색과 trace를 함께 검증한 프로젝트입니다.</p>
+      <a href="./projects/smartfactory">
+        <span class="hub-label">스마트 팩토리</span>
+        <strong>Smart Factory</strong>
+        <p>다중 프로토콜 수집, 시계열 저장, 실시간 전송, alert 흐름을 연구와 구현으로 함께 정리한 프로젝트입니다.</p>
       </a>
     </li>
     <li class="hub-item">

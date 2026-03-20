@@ -22,7 +22,7 @@ cssclasses:
   <div class="hub-grid">
     <a class="hub-card" href="./about">
       <span class="hub-label">빠른 요약</span>
-      <strong>소개 -&gt; 프로젝트 -&gt; BagInCoffee</strong>
+      <strong>소개 -&gt; 프로젝트 -&gt; Nazgul</strong>
       <p>지원자의 역할과 강점을 먼저 보고, 대표 프로젝트 한 개만 확인하고 싶을 때 가장 짧은 경로입니다.</p>
     </a>
     <a class="hub-card" href="./projects">
@@ -45,7 +45,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">먼저</span>
-        <p><a href="./projects">프로젝트</a>에서 대표 프로젝트 3개를 먼저 읽습니다. 이 섹션이 전체 포트폴리오의 핵심 주장과 문제 축을 가장 빨리 보여줍니다.</p>
+        <p><a href="./projects">프로젝트</a>에서 대표 프로젝트 3개를 <code>Nazgul -&gt; BagInCoffee -&gt; Smart Factory</code> 순으로 먼저 읽습니다. 이 섹션이 전체 포트폴리오의 핵심 주장과 문제 축을 가장 빨리 보여줍니다.</p>
       </div>
     </li>
     <li class="hub-item">

@@ -8,11 +8,11 @@ cssclasses:
   <div class="portfolio-hero-main">
     <div class="portfolio-identity">
       <span class="portfolio-name">Bbang / 호빵맨</span>
-      <span class="portfolio-role">Backend Developer / Product Engineer</span>
+      <span class="portfolio-role">Product Engineer</span>
     </div>
-    <h1>제품 구조를 다시 설계하는 백엔드 개발자입니다.</h1>
+    <h1>Spec-driven 개발과 빠른 소통으로 목표를 빠르게 구현합니다.</h1>
     <p class="portfolio-lede">
-      도메인 분리, 검색 구조, 캐시 전략, AI 기능 안정화에 강점이 있고 그 판단 과정을 프로젝트 문서로 남깁니다.
+      요구사항을 spec-driven 방식으로 정리하고, 도메인 이해를 바탕으로 구현 범위를 맞추며, 필요한 구조와 기능을 빠르게 연결합니다. 판단 과정은 프로젝트 문서로 남깁니다.
     </p>
     <div class="portfolio-actions">
       <a class="portfolio-action primary" href="./projects">프로젝트 보기</a>
@@ -37,11 +37,11 @@ cssclasses:
     <div class="portfolio-meta-strip">
       <p>
         <span>집중 축</span>
-        구조 재설계 · 검색 구조 · AI 실행 안정화
+        Spec-driven · 빠른 소통 · 목표 지향 실행
       </p>
       <p>
-        <span>추천 읽기</span>
-        BagInCoffee → Worker → Nazgul
+        <span>근거 방식</span>
+        개인 프로젝트 · 1인 개발 · 구조 검증 및 문서화
       </p>
     </div>
   </div>
@@ -53,20 +53,20 @@ cssclasses:
   <ul class="portfolio-list">
     <li class="portfolio-item">
       <div class="portfolio-note">
-        <span class="portfolio-badge">Architecture</span>
-        <p>빠르게 만든 제품이 다음 단계로 넘어갈 때 클라이언트, 서비스, 데이터 경계를 다시 나누는 구조 재설계를 다룹니다.</p>
+        <span class="portfolio-badge">Spec</span>
+        <p>요구사항을 기능 목록이 아니라 spec과 acceptance 기준으로 정리하는 Spec-driven 방식에 가깝습니다. 구현보다 먼저 성공 조건을 맞추는 편입니다.</p>
       </div>
     </li>
     <li class="portfolio-item">
       <div class="portfolio-note">
-        <span class="portfolio-badge">Search</span>
-        <p>검색 문제를 ingest, retrieval, trace 구조로 다시 정의하고 실험 결과와 한계를 문서 안에 남깁니다.</p>
+        <span class="portfolio-badge">Communication</span>
+        <p>도메인, 우선순위, 구현 범위를 빠르게 맞추기 위해 문서와 예시로 소통합니다. 소통 비용을 줄이는 것이 곧 개발 속도라고 봅니다.</p>
       </div>
     </li>
     <li class="portfolio-item">
       <div class="portfolio-note">
-        <span class="portfolio-badge">AI Integration</span>
-        <p>AI를 붙일 때 바로 실행하지 않고 제안, 승인, 동기화, 관측 가능한 안전장치가 있는 구조를 선호합니다.</p>
+        <span class="portfolio-badge">Execution</span>
+        <p>도메인 분리, 검색 구조, 캐시 전략, AI 기능 안정화처럼 필요한 구조와 기능을 짧은 시간 안에 구현으로 연결합니다.</p>
       </div>
     </li>
   </ul>
@@ -77,6 +77,13 @@ cssclasses:
   <h2>이 세 프로젝트로 설명합니다</h2>
   <ul class="portfolio-list">
     <li class="portfolio-item">
+      <a href="./projects/nazgul">
+        <span class="portfolio-badge">검색 구조</span>
+        <strong>Nazgul</strong>
+        <p>취미 SNS 아이디어를 검색 문제로 다시 정의하고, ingest, retrieval, trace까지 검증한 검색 설계 사례입니다.</p>
+      </a>
+    </li>
+    <li class="portfolio-item">
       <a href="./projects/BagInCoffee">
         <span class="portfolio-badge">제품 전환</span>
         <strong>BagInCoffee</strong>
@@ -84,17 +91,10 @@ cssclasses:
       </a>
     </li>
     <li class="portfolio-item">
-      <a href="./projects/worker">
-        <span class="portfolio-badge">업무 자동화</span>
-        <strong>Worker</strong>
-        <p>AI 자동화를 업무 도구에 넣을 때 제안, 분류, 동기화, 안전장치를 어디서 끊었는지 보여주는 업무 자동화 사례입니다.</p>
-      </a>
-    </li>
-    <li class="portfolio-item">
-      <a href="./projects/nazgul">
-        <span class="portfolio-badge">검색 구조</span>
-        <strong>Nazgul</strong>
-        <p>취미 SNS 아이디어를 검색 문제로 다시 정의하고, ingest, retrieval, trace까지 검증한 검색 설계 사례입니다.</p>
+      <a href="./projects/smartfactory">
+        <span class="portfolio-badge">스마트 팩토리</span>
+        <strong>Smart Factory</strong>
+        <p>OPC UA/MQTT 수집, 시계열 저장, 실시간 전송, alert 흐름을 연구와 구현으로 함께 정리한 스마트팩토리 사례입니다.</p>
       </a>
     </li>
   </ul>

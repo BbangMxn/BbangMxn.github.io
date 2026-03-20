@@ -10,10 +10,10 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">이력 요약</p>
-  <h2>구조 문제를 설계와 문서로 푸는 백엔드 개발자</h2>
+  <h2>Spec-driven 개발로 빠르게 목표를 만드는 Product Engineer</h2>
   <p class="hub-lede">
     이 페이지는 포트폴리오 전체를 읽기 전에 빠르게 훑을 수 있는 압축 요약입니다.
-    현재 공개 가능한 범위 기준으로 역할, 강점, 주요 결과, 대표 프로젝트만 짧게 정리합니다.
+    현재 공개 가능한 개인 프로젝트 기준으로, spec-driven 방식, 빠른 소통, 빠른 실행, 문서화 방식을 짧게 정리합니다.
   </p>
 </div>
 
@@ -33,8 +33,8 @@ cssclasses:
     </a>
     <div class="hub-card">
       <span class="hub-label">포지션</span>
-      <strong>Backend Developer / Product Engineer</strong>
-      <p>제품이 커질 때 API, 데이터, 캐시, 서비스 경계를 다시 나누는 문제에 강점이 있습니다.</p>
+      <strong>Product Engineer</strong>
+      <p>도메인 이해, spec-driven 정리, 구현, 문서화를 한 흐름으로 묶어 목표를 빠르게 달성하는 역할을 지향합니다.</p>
     </div>
     <div class="hub-card">
       <span class="hub-label">작업 형태</span>
@@ -43,8 +43,8 @@ cssclasses:
     </div>
     <div class="hub-card">
       <span class="hub-label">핵심 기술</span>
-      <strong>Java, Rust, Go, TypeScript, Dart</strong>
-      <p>Spring Boot, Redis, PostgreSQL, Next.js, Flutter, Supabase를 문제에 따라 조합해 사용합니다.</p>
+      <strong>Java, Spring Boot, OPC UA, MQTT, TimescaleDB, Redis, WebSocket</strong>
+      <p>제조 데이터 수집, 시계열 저장, 실시간 전달 축을 중심으로 쓰고, 보조로 Go, TypeScript, Dart를 사용했습니다.</p>
     </div>
   </div>
 </section>
@@ -55,20 +55,20 @@ cssclasses:
   <ul class="hub-list">
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">구조 재설계</span>
-        <p>빠르게 만든 제품이 다음 단계로 넘어갈 때, 클라이언트와 서비스, 데이터 경계를 어디서 다시 나눠야 하는지 정리합니다.</p>
+        <span class="hub-label">Spec-driven</span>
+        <p>요구사항을 기능 목록이 아니라 spec과 acceptance 기준으로 정리하는 Spec-driven 방식에 가깝습니다. 구현보다 먼저 성공 조건을 맞추는 편입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">검색과 추적</span>
-        <p>검색과 추천을 단순 조회가 아니라 retrieval, trace, 관찰 가능성의 문제로 다시 정의하는 편을 선호합니다.</p>
+        <span class="hub-label">소통과 정렬</span>
+        <p>도메인 이해를 바탕으로 우선순위와 구현 범위를 빠르게 맞춥니다. 문서와 예시로 소통 비용을 줄이는 편입니다.</p>
       </div>
     </li>
     <li class="hub-item">
       <div class="hub-note">
-        <span class="hub-label">운영 비용</span>
-        <p>캐시 전략, 다중 DB, AI 안전장치처럼 기능 구현 뒤에 남는 운영 복잡도까지 같이 판단합니다.</p>
+        <span class="hub-label">빠른 실행</span>
+        <p>도메인 분리, 검색 구조, 캐시 전략, AI 기능 안정화처럼 필요한 구조와 기능을 빠르게 구현으로 연결하고 문서로 남깁니다.</p>
       </div>
     </li>
   </ul>
@@ -79,6 +79,13 @@ cssclasses:
   <h3>먼저 보여줄 결과</h3>
   <ul class="hub-list">
     <li class="hub-item">
+      <a href="./projects/nazgul">
+        <span class="hub-label">검색 실험</span>
+        <strong>Nazgul</strong>
+        <p>44개 취미와 9개 카테고리 도메인 위에 Card -&gt; Chunk -&gt; Answer -&gt; Trace 흐름을 검증했고 평균 60,531ms 관찰 결과를 남겼습니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
       <a href="./projects/BagInCoffee">
         <span class="hub-label">제품 전환</span>
         <strong>BagInCoffee</strong>
@@ -86,17 +93,10 @@ cssclasses:
       </a>
     </li>
     <li class="hub-item">
-      <a href="./projects/worker">
-        <span class="hub-label">업무 자동화</span>
-        <strong>Worker</strong>
-        <p>Proposal, 분류, Gmail 동기화, 개인화 답장 흐름을 연결했고 7단계 분류 구조로 LLM 호출량 약 75% 절감 방향을 확인했습니다.</p>
-      </a>
-    </li>
-    <li class="hub-item">
-      <a href="./projects/nazgul">
-        <span class="hub-label">검색 실험</span>
-        <strong>Nazgul</strong>
-        <p>44개 취미와 9개 카테고리 도메인 위에 Card -> Chunk -> Answer -> Trace 흐름을 검증했고 평균 60,531ms 관찰 결과를 남겼습니다.</p>
+      <a href="./projects/smartfactory">
+        <span class="hub-label">스마트 팩토리</span>
+        <strong>Smart Factory</strong>
+        <p>OPC UA/MQTT Collector, TimescaleDB, Redis, WebSocket으로 이어지는 시계열·실시간 파이프라인을 연구와 구현 구조로 정리했습니다.</p>
       </a>
     </li>
   </ul>
