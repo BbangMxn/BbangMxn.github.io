@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "GapyeongHanseokbong";
+  src: url("../static/fonts/GapyeongHanseokbong-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GapyeongHanseokbong";
+  src: url("../static/fonts/GapyeongHanseokbong-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --displayFont: "GapyeongHanseokbong", "Song Myung", "Noto Serif KR", serif;
+}

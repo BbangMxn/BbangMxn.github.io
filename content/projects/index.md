@@ -31,10 +31,10 @@ cssclasses:
       <strong>BagInCoffee</strong>
       <p>클라이언트 전환과 도메인 분리처럼 제품 구조가 실제로 어디서 갈라졌는지 메인 페이지 안의 아키텍처 섹션부터 보고 싶다면 여기서 시작하면 됩니다.</p>
     </a>
-    <a class="hub-card" href="./smartfactory/start-here">
+    <a class="hub-card" href="./smartfactory">
       <span class="hub-label">파이프라인 먼저</span>
-      <strong>Smart Factory 시작 가이드</strong>
-      <p>다중 프로토콜 수집, 시계열 저장, 실시간 전송 흐름을 어떤 순서로 읽어야 하는지 따라가는 입구입니다.</p>
+      <strong>Smart Factory</strong>
+      <p>다중 프로토콜 수집, 시계열 저장, 실시간 전송 흐름을 메인 페이지와 아키텍처 섹션 중심으로 바로 읽는 입구입니다.</p>
     </a>
     <div class="hub-card">
       <span class="hub-label">보조 축</span>
@@ -182,34 +182,6 @@ cssclasses:
 </section>
 
 <section class="hub-section">
-  <p class="hub-section-kicker">흐름</p>
-  <h3>읽는 순서를 따라가는 입구</h3>
-  <ul class="hub-list">
-    <li class="hub-item">
-      <a href="./nazgul/start-here">
-        <span class="hub-label">연구 흐름</span>
-        <strong>Nazgul 시작 가이드</strong>
-        <p>취미 SNS에서 RAG 연구형 프로젝트로 문제를 다시 정의한 과정과 세부 문서 연결을 먼저 보여 줍니다.</p>
-      </a>
-    </li>
-    <li class="hub-item">
-      <a href="./BagInCoffee/start-here">
-        <span class="hub-label">제품 흐름</span>
-        <strong>BagInCoffee 시작 가이드</strong>
-        <p>웹 프로토타입에서 Flutter 전환, 그리고 장비 도메인 분리까지 어떤 순서로 판단했는지부터 읽을 수 있습니다.</p>
-      </a>
-    </li>
-    <li class="hub-item">
-      <a href="./smartfactory/start-here">
-        <span class="hub-label">파이프라인 흐름</span>
-        <strong>Smart Factory 시작 가이드</strong>
-        <p>산업 문제 정의에서 다중 프로토콜 수집과 시계열 파이프라인 설계까지 어떤 순서로 읽어야 하는지 먼저 보여 줍니다.</p>
-      </a>
-    </li>
-  </ul>
-</section>
-
-<section class="hub-section">
   <p class="hub-section-kicker">기준</p>
   <h3>선별 기준</h3>
   <ul class="hub-list">
@@ -222,7 +194,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">문서 구조</span>
-        <p>대표 프로젝트는 공통으로 <code>메인 페이지(아키텍처 포함) -&gt; spec -&gt; start-here -&gt; 세부 문서</code> 순서를 가집니다. 메인 페이지는 주장, 검증, 구조 요약을 맡고, <code>spec</code>은 문제, 목표, 핵심 결정, acceptance 기준을 먼저 고정하며, <code>start-here</code>는 읽는 순서를 맡습니다.</p>
+        <p>대표 프로젝트는 공통으로 <code>메인 페이지(아키텍처 포함) -&gt; spec -&gt; 세부 문서</code> 흐름을 가집니다. 메인 페이지는 주장, 검증, 구조 요약을 맡고, <code>spec</code>은 문제, 목표, 핵심 결정, acceptance 기준을 먼저 고정하며, 세부 문서는 설계와 구현 근거를 보강합니다.</p>
       </div>
     </li>
     <li class="hub-item">

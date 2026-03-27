@@ -10,12 +10,13 @@ const sectionExplorer = Component.Explorer({
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [Component.GlobalHeader()],
   afterBody: [],
   footer: Component.Footer({
     links: {
-      "이력 요약": "/resume",
-      "읽기 가이드": "/start-here",
+      Projects: "/projects",
+      Docs: "/docs",
+      Wiki: "/wiki",
       GitHub: "https://github.com/BbangMxn/BbangMxn.github.io",
     },
   }),

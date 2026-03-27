@@ -29,10 +29,10 @@ cssclasses:
   <h3>안내 문서</h3>
   <ul class="hub-list">
     <li class="hub-item">
-      <a href="../start-here">
-        <span class="hub-label">가이드</span>
-        <strong>읽기 가이드</strong>
-        <p>이 사이트를 어떤 순서로 읽으면 전체 구조가 가장 빨리 보이는지 안내합니다.</p>
+      <a href="../projects">
+        <span class="hub-label">프로젝트</span>
+        <strong>프로젝트 허브</strong>
+        <p>대표 프로젝트와 현재 공개한 구조 문서를 가장 빠르게 훑고 싶다면 프로젝트 허브에서 시작하면 됩니다.</p>
       </a>
     </li>
     <li class="hub-item">

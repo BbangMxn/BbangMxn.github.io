@@ -1,8 +1,11 @@
 @use "./base.scss";
+@use "./theme/display-font";
+@use "./theme/motion";
 @use "./theme/tokens";
 @use "./theme/bauhaus";
 @use "./layout/sidebar";
 @use "./layout/shell";
+@use "./layout/bauhaus-header";
 @use "./layout/bauhaus-shell";
 @use "./pages/folio-shell";
 @use "./pages/portfolio";

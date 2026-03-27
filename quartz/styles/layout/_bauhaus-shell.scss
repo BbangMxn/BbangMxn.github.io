@@ -60,9 +60,15 @@ body::after {
   z-index: 1;
 }
 
+.page {
+  width: 100%;
+}
+
 .page > #quartz-body {
   column-gap: clamp(1rem, 1.6vw, 1.55rem);
   row-gap: 0.95rem;
+  width: min(100%, 92rem);
+  margin: 0 auto;
 }
 
 .page > #quartz-body .center > :is(.page-header, .popover-hint, article, .page-footer) {
@@ -79,6 +85,14 @@ body::after {
   color: var(--dark);
   font-weight: 700;
   letter-spacing: -0.04em;
+}
+
+.article-title,
+.page:has(article.research-note) .page-header .article-title,
+.portfolio-home .portfolio-hero-main > h1,
+.folder-hub .hub-header > h2 {
+  font-family: var(--displayFont);
+  font-weight: 700;
 }
 
 .page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > .page-header,

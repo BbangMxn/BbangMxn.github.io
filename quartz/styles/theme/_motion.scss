@@ -1,0 +1,180 @@
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes bauhaus-fade-up {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 18px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes bauhaus-fade-side {
+    from {
+      opacity: 0;
+      transform: translate3d(-18px, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes bauhaus-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) rotate(-18deg);
+    }
+
+    50% {
+      transform: translate3d(0.45rem, -0.35rem, 0) rotate(-15deg);
+    }
+  }
+
+  body::before {
+    animation: bauhaus-fade-up 0.7s ease 0.08s both;
+  }
+
+  body::after {
+    animation:
+      bauhaus-fade-up 0.7s ease 0.14s both,
+      bauhaus-float 8s ease-in-out 1.1s infinite;
+  }
+
+  .site-header-shell,
+  .sidebar.left > .page-title,
+  .sidebar.left > .search,
+  .sidebar.left > .flex-component,
+  .sidebar.left > .explorer,
+  .sidebar.right > *,
+  .page-header,
+  .page article,
+  .page-listing > p,
+  .page-listing .section-li,
+  .portfolio-home > *,
+  .folder-hub > *,
+  .research-note > *,
+  .page-footer,
+  footer {
+    opacity: 0;
+    animation: bauhaus-fade-up 0.72s ease both;
+    will-change: transform, opacity;
+  }
+
+  .site-header-shell {
+    animation-delay: 0.02s;
+  }
+
+  .sidebar.left > .page-title {
+    animation-name: bauhaus-fade-side;
+    animation-delay: 0.08s;
+  }
+
+  .sidebar.left > .search {
+    animation-name: bauhaus-fade-side;
+    animation-delay: 0.14s;
+  }
+
+  .sidebar.left > .flex-component {
+    animation-name: bauhaus-fade-side;
+    animation-delay: 0.2s;
+  }
+
+  .sidebar.left > .explorer {
+    animation-name: bauhaus-fade-side;
+    animation-delay: 0.26s;
+  }
+
+  .sidebar.right > *:nth-child(1) {
+    animation-delay: 0.16s;
+  }
+
+  .sidebar.right > *:nth-child(2) {
+    animation-delay: 0.22s;
+  }
+
+  .sidebar.right > *:nth-child(3) {
+    animation-delay: 0.28s;
+  }
+
+  .page-header {
+    animation-delay: 0.12s;
+  }
+
+  .page article {
+    animation-delay: 0.2s;
+  }
+
+  .page-footer,
+  footer {
+    animation-delay: 0.28s;
+  }
+
+  .portfolio-home > *:nth-child(1),
+  .folder-hub > *:nth-child(1),
+  .research-note > *:nth-child(1) {
+    animation-delay: 0.12s;
+  }
+
+  .portfolio-home > *:nth-child(2),
+  .folder-hub > *:nth-child(2),
+  .research-note > *:nth-child(2) {
+    animation-delay: 0.18s;
+  }
+
+  .portfolio-home > *:nth-child(3),
+  .folder-hub > *:nth-child(3),
+  .research-note > *:nth-child(3) {
+    animation-delay: 0.24s;
+  }
+
+  .portfolio-home > *:nth-child(4),
+  .folder-hub > *:nth-child(4),
+  .research-note > *:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+
+  .portfolio-home > *:nth-child(5),
+  .folder-hub > *:nth-child(5),
+  .research-note > *:nth-child(5) {
+    animation-delay: 0.36s;
+  }
+
+  .page-listing .section-li:nth-child(1) {
+    animation-delay: 0.18s;
+  }
+
+  .page-listing .section-li:nth-child(2) {
+    animation-delay: 0.24s;
+  }
+
+  .page-listing .section-li:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .page-listing .section-li:nth-child(4) {
+    animation-delay: 0.36s;
+  }
+
+  .page-listing .section-li:nth-child(5) {
+    animation-delay: 0.42s;
+  }
+
+  .page-listing .section-li:nth-child(n + 6) {
+    animation-delay: 0.48s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

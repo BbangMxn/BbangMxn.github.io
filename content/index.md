@@ -31,7 +31,7 @@ cssclasses:
         <span>·</span>
         <a href="./about">소개</a>
         <span>·</span>
-        <a href="./start-here">읽기 가이드</a>
+        <a href="./docs">문서 폼</a>
       </p>
     </div>
     <div class="portfolio-meta-strip">
@@ -157,7 +157,7 @@ cssclasses:
   <div class="portfolio-note">
     <span class="portfolio-badge">보조 경로</span>
     <p>
-      더 짧은 읽기 순서는 <a href="./start-here">읽기 가이드</a>, 공개 가능한 짧은 기록은 <a href="./Diary">다이어리</a>에서 이어집니다.
+      공통 문서 form은 <a href="./docs">docs</a>, 공개 가능한 짧은 기록은 <a href="./Diary">다이어리</a>에서 이어집니다.
     </p>
   </div>
 </section>

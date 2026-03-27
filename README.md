@@ -36,7 +36,7 @@ Portfolio-first knowledge site powered by [Quartz](https://quartz.jzhao.xyz/).
 - `content/wiki/`: evergreen notes
 - `content/wiki/site/`: site implementation docs for page architecture and folder structure
 - `content/about.md`: about page
-- `content/start-here.md`: onboarding page
+- `content/docs/`: shared document forms such as `spec`, `design`, and `task`
 
 ## Implementation structure
 
