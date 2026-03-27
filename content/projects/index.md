@@ -9,11 +9,9 @@ cssclasses:
 
 <div class="hub-header">
   <p class="hub-kicker">프로젝트</p>
-  <h2>설명력이 큰 프로젝트 다섯 개</h2>
+  <h2>Project Home</h2>
   <p class="hub-lede">
-    이 허브에는 설명력이 큰 프로젝트 다섯 개만 남겼습니다.
-    Nazgul, BagInCoffee, Smart Factory를 메인 축으로 두고, Worker와 BagInDB를 보강 축으로 배치했습니다.
-    각 문서는 문제, 목표, 판단, spec 기준, 검증 범위를 빠르게 읽을 수 있게 정리했습니다.
+    프로젝트 허브로 메인 프로젝트를 정리한 Page    
   </p>
 </div>
 
