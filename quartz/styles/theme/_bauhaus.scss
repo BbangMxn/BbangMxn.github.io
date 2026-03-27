@@ -6,20 +6,28 @@
   --bauhaus-panel: color-mix(in srgb, white 88%, var(--light));
   --bauhaus-panel-soft: color-mix(in srgb, white 68%, var(--light));
   --bauhaus-panel-strong: linear-gradient(
-    145deg,
-    color-mix(in srgb, var(--bauhaus-yellow) 18%, white) 0 18%,
-    color-mix(in srgb, white 92%, var(--light)) 18% 74%,
-    color-mix(in srgb, var(--bauhaus-blue) 12%, white) 74% 100%
+    138deg,
+    color-mix(in srgb, var(--bauhaus-yellow) 22%, white) 0 14%,
+    color-mix(in srgb, white 94%, var(--light)) 14% 78%,
+    color-mix(in srgb, var(--bauhaus-blue) 16%, white) 78% 100%
   );
   --bauhaus-frame: 2px solid color-mix(in srgb, var(--dark) 84%, black);
   --bauhaus-frame-soft: 1.5px solid color-mix(in srgb, var(--dark) 18%, transparent);
-  --bauhaus-radius-sm: 0.32rem;
-  --bauhaus-radius-md: 0.72rem;
+  --bauhaus-radius-sm: 0.18rem;
+  --bauhaus-radius-md: 0.44rem;
   --bauhaus-grid: color-mix(in srgb, var(--dark) 11%, transparent);
   --bauhaus-grid-strong: color-mix(in srgb, var(--dark) 24%, transparent);
+  --bauhaus-shadow-blue: 0.45rem 0.45rem 0 color-mix(in srgb, var(--bauhaus-blue) 22%, transparent);
+  --bauhaus-shadow-yellow: 0.45rem 0.45rem 0
+    color-mix(in srgb, var(--bauhaus-yellow) 32%, transparent);
+  --bauhaus-shadow-red: 0.62rem 0.62rem 0 color-mix(in srgb, var(--bauhaus-red) 18%, transparent);
   --bauhaus-lift: 0.45rem 0.45rem 0 color-mix(in srgb, var(--bauhaus-yellow) 32%, transparent);
   --bauhaus-lift-strong: 0.62rem 0.62rem 0 color-mix(in srgb, var(--bauhaus-red) 18%, transparent);
   --bauhaus-inset: inset 0 0 0 1px color-mix(in srgb, white 65%, transparent);
+  --bauhaus-hover-shift: 0.18rem;
+  --bauhaus-hover-shift-strong: 0.26rem;
+  --bauhaus-stripe-thickness: 0.32rem;
+  --bauhaus-corner-size: 0.78rem;
   --bauhaus-stripe: linear-gradient(
     90deg,
     var(--bauhaus-blue) 0 34%,
@@ -53,6 +61,9 @@
   --bauhaus-frame-soft: 1.5px solid rgba(255, 246, 235, 0.16);
   --bauhaus-grid: rgba(255, 246, 235, 0.08);
   --bauhaus-grid-strong: rgba(255, 246, 235, 0.18);
+  --bauhaus-shadow-blue: 0.45rem 0.45rem 0 rgba(122, 168, 255, 0.16);
+  --bauhaus-shadow-yellow: 0.45rem 0.45rem 0 rgba(255, 213, 102, 0.16);
+  --bauhaus-shadow-red: 0.62rem 0.62rem 0 rgba(255, 130, 96, 0.14);
   --bauhaus-lift: 0.45rem 0.45rem 0 rgba(122, 168, 255, 0.16);
   --bauhaus-lift-strong: 0.62rem 0.62rem 0 rgba(255, 130, 96, 0.14);
   --bauhaus-inset: inset 0 0 0 1px rgba(255, 255, 255, 0.05);

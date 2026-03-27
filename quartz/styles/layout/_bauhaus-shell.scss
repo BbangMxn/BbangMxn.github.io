@@ -62,6 +62,7 @@ body::after {
 
 .page {
   width: 100%;
+  padding-top: clamp(0.85rem, 1.4vw, 1.1rem);
 }
 
 .page > #quartz-body {
@@ -190,6 +191,10 @@ body::after {
   .page > #quartz-body {
     column-gap: 0.55rem;
     row-gap: 0.65rem;
+  }
+
+  .page {
+    padding-top: 0.55rem;
   }
 
   .page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > .page-header,

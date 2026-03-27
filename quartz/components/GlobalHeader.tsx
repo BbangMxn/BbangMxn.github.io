@@ -48,12 +48,9 @@ const GlobalHeader: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
   return (
     <div class={classNames(displayClass, "site-header-shell")}>
       <div class="site-header-inner">
-        <a href={baseDir} class="site-header-brand">
+        <a href={baseDir} class="site-header-brand" aria-label="홈으로 이동">
           <span class="site-header-mark">B</span>
-          <span class="site-header-copy">
-            <strong>BbangMxn</strong>
-            <span>설계와 구현을 연결하는 포트폴리오</span>
-          </span>
+          <strong class="site-header-wordmark">Bbang</strong>
         </a>
 
         <nav class="site-header-nav" aria-label="주요 섹션">
@@ -66,12 +63,6 @@ const GlobalHeader: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
             </a>
           ))}
         </nav>
-
-        <div class="site-header-actions">
-          <a href="https://github.com/BbangMxn" class="site-header-cta">
-            GitHub
-          </a>
-        </div>
       </div>
     </div>
   )

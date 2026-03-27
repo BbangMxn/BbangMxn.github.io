@@ -1,7 +1,7 @@
 .page:has(article.portfolio-home),
 .page:has(article.folder-hub) {
   --folio-center-width: 44rem;
-  --folio-shell-sidebar-width: 248px;
+  --folio-shell-sidebar-width: 264px;
   --folio-shell-main-width: 50rem;
   --folio-shell-gap: 2.85rem;
   --folio-shell-content-gap: 2.15rem;
@@ -11,7 +11,7 @@
   --folio-header-padding: 1.85rem;
   --folio-header-min-height: 11rem;
   --folio-page-top: 2.2rem;
-  --folio-sidebar-top: 3.95rem;
+  --folio-sidebar-top: var(--folio-page-top);
   --folio-sidebar-bottom: 1.2rem;
 }
 

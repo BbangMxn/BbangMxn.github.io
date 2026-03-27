@@ -1,0 +1,393 @@
+:root {
+  --bauhaus-hover-ease: cubic-bezier(0.2, 0.78, 0.14, 1);
+}
+
+:where(
+  .site-header-link,
+  .sidebar.left .page-title .brand-card,
+  .sidebar.left .search > .search-button,
+  .sidebar.left .darkmode,
+  .sidebar.left .readermode,
+  .sidebar.left .explorer-content ul li > a,
+  .sidebar.left .folder-container > div > a,
+  .sidebar.left .folder-container > div > button,
+  .sidebar.right .backlinks > ul.overflow > li > a,
+  .sidebar.right .toc ul.toc-content.overflow > li > a,
+  .sidebar.right .recent-notes > ul.recent-ul > li .section,
+  .breadcrumb-element,
+  .tags a.internal.tag-link,
+  .page-listing .section,
+  .page article.portfolio-home a.portfolio-contact-chip,
+  .page article.portfolio-home a.portfolio-action,
+  .portfolio-home .portfolio-item > a,
+  .portfolio-home .portfolio-note,
+  .folder-hub .hub-item > a,
+  .folder-hub .hub-card,
+  .folder-hub .hub-note,
+  .folder-hub .hub-proof-card,
+  .roadmap-hub .roadmap-status-card,
+  .roadmap-hub .roadmap-map,
+  .folder-hub .roadmap-map,
+  .folder-hub .roadmap-visual,
+  .folder-hub .roadmap-branch
+) {
+  --bauhaus-accent: var(--bauhaus-yellow);
+  --bauhaus-hover-shadow: 0.38rem 0.38rem 0
+    color-mix(in srgb, var(--bauhaus-accent) 28%, transparent);
+  position: relative;
+  isolation: isolate;
+}
+
+:where(
+  .sidebar.left .page-title .brand-card,
+  .page-listing .section,
+  .page article.portfolio-home a.portfolio-contact-chip,
+  .page article.portfolio-home a.portfolio-action,
+  .portfolio-home .portfolio-item > a,
+  .portfolio-home .portfolio-note,
+  .folder-hub .hub-item > a,
+  .folder-hub .hub-card,
+  .folder-hub .hub-note,
+  .folder-hub .hub-proof-card,
+  .roadmap-hub .roadmap-status-card,
+  .roadmap-hub .roadmap-map,
+  .folder-hub .roadmap-map,
+  .folder-hub .roadmap-visual,
+  .folder-hub .roadmap-branch,
+  .sidebar.right .recent-notes > ul.recent-ul > li .section
+) {
+  overflow: hidden;
+  --bauhaus-hover-shadow: 0.56rem 0.56rem 0
+    color-mix(in srgb, var(--bauhaus-accent) 26%, transparent);
+}
+
+:where(
+    .sidebar.left .page-title .brand-card,
+    .page-listing .section,
+    .page article.portfolio-home a.portfolio-contact-chip,
+    .page article.portfolio-home a.portfolio-action,
+    .portfolio-home .portfolio-item > a,
+    .portfolio-home .portfolio-note,
+    .folder-hub .hub-item > a,
+    .folder-hub .hub-card,
+    .folder-hub .hub-note,
+    .folder-hub .hub-proof-card,
+    .roadmap-hub .roadmap-status-card,
+    .roadmap-hub .roadmap-map,
+    .folder-hub .roadmap-map,
+    .folder-hub .roadmap-visual,
+    .folder-hub .roadmap-branch,
+    .sidebar.right .recent-notes > ul.recent-ul > li .section
+  )
+  > * {
+  position: relative;
+  z-index: 1;
+}
+
+:is(
+  .site-header-link,
+  .sidebar.left .page-title .brand-card,
+  .sidebar.left .search > .search-button,
+  .sidebar.left .darkmode,
+  .sidebar.left .readermode,
+  .sidebar.left .explorer-content ul li > a,
+  .sidebar.left .folder-container > div > a,
+  .sidebar.left .folder-container > div > button,
+  .sidebar.right .backlinks > ul.overflow > li > a,
+  .sidebar.right .toc ul.toc-content.overflow > li > a,
+  .sidebar.right .recent-notes > ul.recent-ul > li .section,
+  .breadcrumb-element,
+  .tags a.internal.tag-link,
+  .page-listing .section,
+  .page article.portfolio-home a.portfolio-contact-chip,
+  .page article.portfolio-home a.portfolio-action,
+  .portfolio-home .portfolio-item > a,
+  .portfolio-home .portfolio-note,
+  .folder-hub .hub-item > a,
+  .folder-hub .hub-card,
+  .folder-hub .hub-note,
+  .folder-hub .hub-proof-card,
+  .roadmap-hub .roadmap-status-card,
+  .roadmap-hub .roadmap-map,
+  .folder-hub .roadmap-map,
+  .folder-hub .roadmap-visual,
+  .folder-hub .roadmap-branch
+)::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 0;
+  height: var(--bauhaus-stripe-thickness);
+  background: var(--bauhaus-accent);
+  transition: width 180ms var(--bauhaus-hover-ease);
+  z-index: 0;
+}
+
+:is(
+  .sidebar.left .page-title .brand-card,
+  .page-listing .section,
+  .page article.portfolio-home a.portfolio-contact-chip,
+  .page article.portfolio-home a.portfolio-action,
+  .portfolio-home .portfolio-item > a,
+  .portfolio-home .portfolio-note,
+  .folder-hub .hub-item > a,
+  .folder-hub .hub-card,
+  .folder-hub .hub-note,
+  .folder-hub .hub-proof-card,
+  .roadmap-hub .roadmap-status-card,
+  .roadmap-hub .roadmap-map,
+  .folder-hub .roadmap-map,
+  .folder-hub .roadmap-visual,
+  .folder-hub .roadmap-branch,
+  .sidebar.right .recent-notes > ul.recent-ul > li .section
+)::after {
+  content: "";
+  position: absolute;
+  right: 0.65rem;
+  bottom: 0.65rem;
+  width: var(--bauhaus-corner-size);
+  height: var(--bauhaus-corner-size);
+  border: 1.5px solid color-mix(in srgb, var(--dark) 80%, transparent);
+  background: color-mix(in srgb, var(--bauhaus-accent) 88%, white);
+  opacity: 0;
+  transform: translate3d(0.35rem, 0.35rem, 0) scale(0.25);
+  transform-origin: bottom right;
+  transition:
+    opacity 140ms linear,
+    transform 180ms var(--bauhaus-hover-ease);
+  z-index: 0;
+}
+
+.site-header-nav > :nth-child(3n + 1),
+.sidebar.left .darkmode,
+.page-listing .section-li:nth-child(3n + 1) .section,
+.portfolio-home .portfolio-list > :nth-child(3n + 1) > :is(a, .portfolio-note),
+.folder-hub .hub-list > :nth-child(3n + 1) > :is(a, .hub-note),
+.folder-hub .hub-grid > :nth-child(3n + 1),
+.sidebar.right .recent-notes > ul.recent-ul > li:nth-child(3n + 1) .section {
+  --bauhaus-accent: var(--bauhaus-blue);
+}
+
+.site-header-nav > :nth-child(3n + 2),
+.sidebar.left .search > .search-button,
+.page-listing .section-li:nth-child(3n + 2) .section,
+.portfolio-home .portfolio-list > :nth-child(3n + 2) > :is(a, .portfolio-note),
+.folder-hub .hub-list > :nth-child(3n + 2) > :is(a, .hub-note),
+.folder-hub .hub-grid > :nth-child(3n + 2),
+.tags a.internal.tag-link {
+  --bauhaus-accent: var(--bauhaus-yellow);
+}
+
+.site-header-nav > :nth-child(3n),
+.sidebar.left .readermode,
+.page-listing .section-li:nth-child(3n) .section,
+.portfolio-home .portfolio-list > :nth-child(3n) > :is(a, .portfolio-note),
+.folder-hub .hub-list > :nth-child(3n) > :is(a, .hub-note),
+.folder-hub .hub-grid > :nth-child(3n),
+.portfolio-home .portfolio-contact-strip > :nth-child(2n),
+.sidebar.left .page-title .brand-card {
+  --bauhaus-accent: var(--bauhaus-red);
+}
+
+.sidebar.right .toc ul.toc-content.overflow > li > a,
+.sidebar.right .backlinks > ul.overflow > li > a {
+  --bauhaus-accent: var(--bauhaus-blue);
+}
+
+.sidebar.left .explorer-content ul li:nth-child(3n + 1) > a,
+.sidebar.left .folder-container:nth-child(3n + 1) > div > :is(a, button) {
+  --bauhaus-accent: var(--bauhaus-blue);
+}
+
+.sidebar.left .explorer-content ul li:nth-child(3n + 2) > a,
+.sidebar.left .folder-container:nth-child(3n + 2) > div > :is(a, button) {
+  --bauhaus-accent: var(--bauhaus-yellow);
+}
+
+.sidebar.left .explorer-content ul li:nth-child(3n) > a,
+.sidebar.left .folder-container:nth-child(3n) > div > :is(a, button) {
+  --bauhaus-accent: var(--bauhaus-red);
+}
+
+.page article.portfolio-home a.portfolio-action.primary {
+  --bauhaus-accent: var(--bauhaus-yellow);
+}
+
+.site-header-link.is-active,
+.sidebar.left .explorer-content ul li > a.active,
+.sidebar.left .folder-container.active > div > a,
+.sidebar.left .folder-container.active > div > button,
+.sidebar.right .toc ul.toc-content.overflow > li > a.in-view {
+  border-color: color-mix(in srgb, var(--bauhaus-accent) 46%, var(--dark));
+}
+
+.site-header-link.is-active::before,
+.sidebar.left .explorer-content ul li > a.active::before,
+.sidebar.left .folder-container.active > div > a::before,
+.sidebar.left .folder-container.active > div > button::before,
+.sidebar.right .toc ul.toc-content.overflow > li > a.in-view::before {
+  width: 100%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :is(
+    .site-header-link,
+    .sidebar.left .search > .search-button,
+    .sidebar.left .darkmode,
+    .sidebar.left .readermode,
+    .sidebar.left .explorer-content ul li > a,
+    .sidebar.left .folder-container > div > a,
+    .sidebar.left .folder-container > div > button,
+    .sidebar.right .backlinks > ul.overflow > li > a,
+    .sidebar.right .toc ul.toc-content.overflow > li > a,
+    .breadcrumb-element,
+    .tags a.internal.tag-link
+  ):hover,
+  :is(
+    .site-header-link,
+    .sidebar.left .search > .search-button,
+    .sidebar.left .darkmode,
+    .sidebar.left .readermode,
+    .sidebar.left .explorer-content ul li > a,
+    .sidebar.left .folder-container > div > a,
+    .sidebar.left .folder-container > div > button,
+    .sidebar.right .backlinks > ul.overflow > li > a,
+    .sidebar.right .toc ul.toc-content.overflow > li > a,
+    .tags a.internal.tag-link
+  ):focus-visible {
+    transform: translate3d(calc(var(--bauhaus-hover-shift) * -1), 0, 0);
+    border-color: color-mix(in srgb, var(--bauhaus-accent) 40%, var(--dark));
+    background: color-mix(in srgb, var(--bauhaus-accent) 12%, white);
+    box-shadow: var(--bauhaus-hover-shadow);
+  }
+
+  :is(
+    .sidebar.left .page-title .brand-card,
+    .page article.portfolio-home a.portfolio-contact-chip,
+    .page article.portfolio-home a.portfolio-action,
+    .portfolio-home .portfolio-item > a,
+    .portfolio-home .portfolio-note,
+    .folder-hub .hub-item > a,
+    .folder-hub .hub-card,
+    .folder-hub .hub-note,
+    .folder-hub .hub-proof-card,
+    .roadmap-hub .roadmap-status-card,
+    .roadmap-hub .roadmap-map,
+    .folder-hub .roadmap-map,
+    .folder-hub .roadmap-visual,
+    .folder-hub .roadmap-branch
+  ):hover,
+  :is(
+    .sidebar.left .page-title .brand-card,
+    .page article.portfolio-home a.portfolio-contact-chip,
+    .page article.portfolio-home a.portfolio-action,
+    .portfolio-home .portfolio-item > a,
+    .folder-hub .hub-item > a,
+    .folder-hub .hub-card
+  ):focus-visible,
+  .page-listing .section-li:hover .section,
+  .sidebar.right .recent-notes > ul.recent-ul > li:hover .section {
+    transform: translate3d(
+      calc(var(--bauhaus-hover-shift-strong) * -1),
+      calc(var(--bauhaus-hover-shift-strong) * -1),
+      0
+    );
+    border-color: color-mix(in srgb, var(--bauhaus-accent) 38%, var(--dark));
+    background: color-mix(in srgb, var(--bauhaus-accent) 10%, white);
+    box-shadow: var(--bauhaus-hover-shadow);
+  }
+
+  :is(
+      .site-header-link,
+      .sidebar.left .page-title .brand-card,
+      .sidebar.left .search > .search-button,
+      .sidebar.left .darkmode,
+      .sidebar.left .readermode,
+      .sidebar.left .explorer-content ul li > a,
+      .sidebar.left .folder-container > div > a,
+      .sidebar.left .folder-container > div > button,
+      .sidebar.right .backlinks > ul.overflow > li > a,
+      .sidebar.right .toc ul.toc-content.overflow > li > a,
+      .page-listing .section-li:hover .section,
+      .page article.portfolio-home a.portfolio-contact-chip,
+      .page article.portfolio-home a.portfolio-action,
+      .portfolio-home .portfolio-item > a,
+      .portfolio-home .portfolio-note,
+      .folder-hub .hub-item > a,
+      .folder-hub .hub-card,
+      .folder-hub .hub-note,
+      .folder-hub .hub-proof-card,
+      .roadmap-hub .roadmap-status-card,
+      .roadmap-hub .roadmap-map,
+      .folder-hub .roadmap-map,
+      .folder-hub .roadmap-visual,
+      .folder-hub .roadmap-branch,
+      .sidebar.right .recent-notes > ul.recent-ul > li:hover .section,
+      .breadcrumb-element,
+      .tags a.internal.tag-link
+    ):hover::before,
+  :is(
+      .site-header-link,
+      .sidebar.left .page-title .brand-card,
+      .sidebar.left .search > .search-button,
+      .sidebar.left .darkmode,
+      .sidebar.left .readermode,
+      .sidebar.left .explorer-content ul li > a,
+      .sidebar.left .folder-container > div > a,
+      .sidebar.left .folder-container > div > button,
+      .sidebar.right .backlinks > ul.overflow > li > a,
+      .sidebar.right .toc ul.toc-content.overflow > li > a,
+      .page article.portfolio-home a.portfolio-contact-chip,
+      .page article.portfolio-home a.portfolio-action,
+      .portfolio-home .portfolio-item > a,
+      .portfolio-home .portfolio-note,
+      .folder-hub .hub-item > a,
+      .folder-hub .hub-card,
+      .folder-hub .hub-note,
+      .folder-hub .hub-proof-card,
+      .roadmap-hub .roadmap-status-card,
+      .roadmap-hub .roadmap-map,
+      .folder-hub .roadmap-map,
+      .folder-hub .roadmap-visual,
+      .folder-hub .roadmap-branch,
+      .tags a.internal.tag-link
+    ):focus-visible::before {
+    width: 100%;
+  }
+
+  :is(
+      .sidebar.left .page-title .brand-card,
+      .page article.portfolio-home a.portfolio-contact-chip,
+      .page article.portfolio-home a.portfolio-action,
+      .portfolio-home .portfolio-item > a,
+      .portfolio-home .portfolio-note,
+      .folder-hub .hub-item > a,
+      .folder-hub .hub-card,
+      .folder-hub .hub-note,
+      .folder-hub .hub-proof-card,
+      .roadmap-hub .roadmap-status-card,
+      .roadmap-hub .roadmap-map,
+      .folder-hub .roadmap-map,
+      .folder-hub .roadmap-visual,
+      .folder-hub .roadmap-branch
+    ):hover::after,
+  :is(
+      .sidebar.left .page-title .brand-card,
+      .page article.portfolio-home a.portfolio-contact-chip,
+      .page article.portfolio-home a.portfolio-action,
+      .portfolio-home .portfolio-item > a,
+      .folder-hub .hub-item > a,
+      .folder-hub .hub-card
+    ):focus-visible::after,
+  .page-listing .section-li:hover .section::after,
+  .sidebar.right .recent-notes > ul.recent-ul > li:hover .section::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.page article.portfolio-home a.portfolio-action.primary:hover,
+.page article.portfolio-home a.portfolio-action.primary:focus-visible {
+  background: color-mix(in srgb, var(--bauhaus-blue) 86%, var(--dark));
+  color: var(--light) !important;
+}

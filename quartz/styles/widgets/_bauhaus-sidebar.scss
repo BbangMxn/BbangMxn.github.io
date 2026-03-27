@@ -50,6 +50,31 @@
   line-height: 1.5;
 }
 
+.page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-card,
+.page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-card {
+  min-height: var(--folio-header-min-height);
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+}
+
+.page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-avatar,
+.page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-avatar {
+  width: clamp(7.5rem, 12vw, 8.6rem);
+  height: clamp(7.5rem, 12vw, 8.6rem);
+}
+
+.page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-copy,
+.page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-copy {
+  display: grid;
+  gap: 0.12rem;
+}
+
+.page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-title,
+.page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-title {
+  font-size: clamp(1.72rem, 2.6vw, 2.05rem);
+}
+
 .sidebar.left .search > .search-button,
 .sidebar.left .darkmode,
 .sidebar.left .readermode {
@@ -170,5 +195,16 @@
 
   .sidebar.left .page-title .brand-card {
     padding: 0.9rem;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-card,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-card {
+    min-height: auto;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-avatar,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-avatar {
+    width: 6.7rem;
+    height: 6.7rem;
   }
 }

@@ -10,7 +10,7 @@ const sectionExplorer = Component.Explorer({
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.GlobalHeader()],
+  header: [],
   afterBody: [],
   footer: Component.Footer({
     links: {
