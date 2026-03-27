@@ -46,6 +46,20 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Spec</p>
+  <h3>Spec 주도 개발</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./spec">
+        <span class="hub-label">Spec</span>
+        <strong>BagInDB Spec</strong>
+        <p>장비 도메인을 무작정 분리하지 않고, 어떤 조회 구조와 응답 기준이 독립 서비스의 성공 조건인지 먼저 정리한 문서입니다. BagInDB는 문제, 목표, 핵심 결정, acceptance 기준을 먼저 고정한 뒤 구현을 확장했습니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>
   <div class="hub-proof-grid">

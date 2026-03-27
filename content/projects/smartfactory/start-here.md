@@ -17,9 +17,10 @@ Smart Factory는 구현 저장소이면서 동시에 연구 노트입니다. 그
 ## 읽기 순서
 
 1. [Smart Factory 메인 페이지](./index)
-2. [Folder Feature Map](./folder-feature-map)
-3. [Protocol Stack](./protocol-stack)
-4. [Timeseries Pipeline](./timeseries-pipeline)
+2. [Smart Factory Spec](./spec)
+3. [Folder Feature Map](./folder-feature-map)
+4. [Protocol Stack](./protocol-stack)
+5. [Timeseries Pipeline](./timeseries-pipeline)
 
 ## 문서 역할
 
@@ -27,6 +28,11 @@ Smart Factory는 구현 저장소이면서 동시에 연구 노트입니다. 그
 
 - 이 프로젝트가 기능 목록보다 설계 검토 프로젝트라는 점을 설명합니다.
 - 어떤 문제를 어떤 구성으로 풀려 했는지 한 페이지에서 닫습니다.
+
+### `spec.md`
+
+- 구현 전에 어떤 프로토콜과 파이프라인을 성공으로 볼지 먼저 고정한 문서입니다.
+- 문제, 목표, 핵심 결정, acceptance 기준을 짧게 읽는 입구입니다.
 
 ### `folder-feature-map.md`
 

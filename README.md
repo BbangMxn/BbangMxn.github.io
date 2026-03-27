@@ -45,6 +45,11 @@ Portfolio-first knowledge site powered by [Quartz](https://quartz.jzhao.xyz/).
 - `quartz/components/pages/`: page body renderers such as `Content.tsx` and `FolderContent.tsx`
 - `quartz/styles/pages/`: page-family styles for home, hubs, and dense notes
 
+## Internal docs
+
+- `docs/README.md`: internal documentation standards and document flow
+- `docs/SPEC.md`: common specification template used before implementation
+
 ## GitHub Pages
 
 After the first push, go to repository settings and set Pages to use `GitHub Actions` as the source.

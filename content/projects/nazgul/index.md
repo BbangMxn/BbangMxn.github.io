@@ -46,6 +46,20 @@ cssclasses:
   </div>
 </section>
 
+<section class="hub-section">
+  <p class="hub-section-kicker">Spec</p>
+  <h3>Spec 주도 개발</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./spec">
+        <span class="hub-label">Spec</span>
+        <strong>Nazgul Spec</strong>
+        <p>커뮤니티 기능 추가보다 먼저 검색 문제를 어떻게 다시 정의할지와 retrieval 성공 조건을 정리한 문서입니다. Nazgul은 문제, 목표, 핵심 결정, acceptance 기준을 먼저 닫고 RAG 실험을 이어갔습니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
 <section class="hub-section nazgul-flow-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>

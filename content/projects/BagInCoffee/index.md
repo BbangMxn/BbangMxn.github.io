@@ -45,6 +45,20 @@ cssclasses:
   </div>
 </section>
 
+<section class="hub-section">
+  <p class="hub-section-kicker">Spec</p>
+  <h3>Spec 주도 개발</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./spec">
+        <span class="hub-label">Spec</span>
+        <strong>BagInCoffee Spec</strong>
+        <p>웹 검증, Flutter 전환, BagInDB 분리의 성공 조건을 먼저 정리한 문서입니다. BagInCoffee는 기능을 계속 붙이는 대신 문제, 목표, 핵심 결정, acceptance 기준을 먼저 닫고 구현을 이어갔습니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
 <section class="hub-section bag-flow-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>

@@ -17,9 +17,10 @@ BagInCoffee는 커뮤니티 앱 하나를 만든 기록이 아니라, 제품을 
 ## 읽기 순서
 
 1. [BagInCoffee 메인 페이지](./index)
-2. [Client Transition](./client-transition)
-3. [Domain Separation](./domain-separation)
-4. [BagInDB](../bagindb)
+2. [BagInCoffee Spec](./spec)
+3. [Client Transition](./client-transition)
+4. [Domain Separation](./domain-separation)
+5. [BagInDB](../bagindb)
 
 ## 문서 역할
 
@@ -27,6 +28,11 @@ BagInCoffee는 커뮤니티 앱 하나를 만든 기록이 아니라, 제품을 
 
 - 이 프로젝트의 핵심 주장을 한 페이지에서 닫습니다.
 - 왜 이 프로젝트가 단순 커뮤니티 앱이 아니라 구조 전환 사례인지 설명합니다.
+
+### `spec.md`
+
+- 구현 전에 무엇을 성공으로 볼지 먼저 고정한 문서입니다.
+- 문제, 목표, 핵심 결정, acceptance 기준을 짧게 읽는 입구입니다.
 
 ### `client-transition.md`
 

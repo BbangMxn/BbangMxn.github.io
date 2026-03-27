@@ -99,6 +99,12 @@ cssclasses:
     </li>
     <li class="hub-item">
       <div class="hub-note">
+        <span class="hub-label">Spec</span>
+        <p>대표 프로젝트는 별도 <code>spec.md</code>를 둡니다. 메인 페이지가 주장과 검증을 맡는다면, spec 문서는 문제, 목표, 핵심 결정, acceptance 기준을 먼저 고정한 흔적을 맡습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
         <span class="hub-label">배경</span>
         <p>왜 이 문제가 중요했고, 기존 접근으로는 왜 부족했는지를 먼저 설명합니다. 시작 배경보다 문제 재정의가 우선입니다.</p>
       </div>
@@ -150,6 +156,12 @@ cssclasses:
       <div class="hub-note">
         <span class="hub-label">시작 문서</span>
         <p>허브가 이미 있는 폴더 안에서 읽는 순서와 핵심 결과를 먼저 안내하는 문서는 `start-here.md`를 사용합니다. 숫자 접두사 기반의 예전 시작 문서 이름은 더 이상 쓰지 않습니다.</p>
+      </div>
+    </li>
+    <li class="hub-item">
+      <div class="hub-note">
+        <span class="hub-label">Spec 문서</span>
+        <p>대표 프로젝트에서 spec-driven 개발 흔적을 남기는 문서는 <code>spec.md</code>를 사용합니다. 제목은 <code>BagInCoffee Spec</code>처럼 프로젝트명과 역할을 함께 씁니다.</p>
       </div>
     </li>
   </ul>

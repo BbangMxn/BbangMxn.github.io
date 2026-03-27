@@ -13,7 +13,7 @@ cssclasses:
   <p class="hub-lede">
     이 허브에는 설명력이 큰 프로젝트 다섯 개만 남겼습니다.
     Nazgul, BagInCoffee, Smart Factory를 메인 축으로 두고, Worker와 BagInDB를 보강 축으로 배치했습니다.
-    각 문서는 문제, 역할, 판단, 검증 범위를 빠르게 읽을 수 있게 정리했습니다.
+    각 문서는 문제, 목표, 판단, spec 기준, 검증 범위를 빠르게 읽을 수 있게 정리했습니다.
   </p>
 </div>
 
@@ -222,7 +222,7 @@ cssclasses:
     <li class="hub-item">
       <div class="hub-note">
         <span class="hub-label">문서 구조</span>
-        <p>대표 프로젝트는 공통으로 <code>메인 페이지(아키텍처 포함) -&gt; start-here -&gt; 세부 문서</code> 순서를 가집니다. 메인 페이지는 주장, 검증, 구조 요약을 함께 맡고, <code>start-here</code>는 읽는 순서를 맡습니다.</p>
+        <p>대표 프로젝트는 공통으로 <code>메인 페이지(아키텍처 포함) -&gt; spec -&gt; start-here -&gt; 세부 문서</code> 순서를 가집니다. 메인 페이지는 주장, 검증, 구조 요약을 맡고, <code>spec</code>은 문제, 목표, 핵심 결정, acceptance 기준을 먼저 고정하며, <code>start-here</code>는 읽는 순서를 맡습니다.</p>
       </div>
     </li>
     <li class="hub-item">

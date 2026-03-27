@@ -46,6 +46,20 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Spec</p>
+  <h3>Spec 주도 개발</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./spec">
+        <span class="hub-label">Spec</span>
+        <strong>Worker Spec</strong>
+        <p>AI 기능을 늘리기 전에 제안-실행 경계와 분류 기준을 먼저 정리한 문서입니다. Worker는 문제, 목표, 핵심 결정, acceptance 기준을 먼저 고정한 뒤 구현을 이어갔습니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">실행</p>
   <h3>실행 화면</h3>
   <div class="hub-proof-grid">

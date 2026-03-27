@@ -45,6 +45,20 @@ cssclasses:
 </section>
 
 <section class="hub-section">
+  <p class="hub-section-kicker">Spec</p>
+  <h3>Spec 주도 개발</h3>
+  <ul class="hub-list">
+    <li class="hub-item">
+      <a href="./spec">
+        <span class="hub-label">Spec</span>
+        <strong>Smart Factory Spec</strong>
+        <p>이 영역은 코드보다 아키텍처 선택이 먼저라서, 프로토콜, 저장, 실시간 전송의 성공 조건을 먼저 정리한 문서입니다. Smart Factory는 문제, 목표, 핵심 결정, acceptance 기준을 먼저 고정한 뒤 구현과 연구를 함께 전개했습니다.</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="hub-section">
   <p class="hub-section-kicker">배경</p>
   <h3>배경</h3>
   <ul class="hub-list">
