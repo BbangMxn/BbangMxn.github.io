@@ -52,7 +52,7 @@
 
 .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-card,
 .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-card {
-  min-height: var(--folio-header-min-height);
+  min-height: clamp(14.5rem, 28vw, 16.8rem);
   display: grid;
   align-content: start;
   gap: 0.9rem;
@@ -60,8 +60,8 @@
 
 .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-avatar,
 .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-avatar {
-  width: clamp(7.5rem, 12vw, 8.6rem);
-  height: clamp(7.5rem, 12vw, 8.6rem);
+  width: clamp(8.1rem, 13vw, 9.2rem);
+  height: clamp(8.1rem, 13vw, 9.2rem);
 }
 
 .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-copy,
@@ -83,24 +83,15 @@
   background: var(--bauhaus-panel);
   box-shadow: var(--bauhaus-lift);
   transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease,
-    background-color 0.18s ease,
-    border-color 0.18s ease,
-    color 0.18s ease;
+    transform 0.18s var(--bauhaus-hover-ease, ease),
+    box-shadow 0.18s var(--bauhaus-hover-ease, ease),
+    background-color 0.18s var(--bauhaus-hover-ease, ease),
+    border-color 0.18s var(--bauhaus-hover-ease, ease),
+    color 0.18s var(--bauhaus-hover-ease, ease);
 }
 
 .sidebar.left .search > .search-button {
   min-height: 3rem;
-}
-
-.sidebar.left .search > .search-button:hover,
-.sidebar.left .darkmode:hover,
-.sidebar.left .readermode:hover {
-  transform: translate(-0.14rem, -0.14rem);
-  border-color: color-mix(in srgb, var(--bauhaus-red) 36%, var(--nomos-line));
-  background: color-mix(in srgb, var(--bauhaus-yellow) 12%, var(--light));
-  box-shadow: var(--bauhaus-lift-strong);
 }
 
 .sidebar.left .search > .search-button .search-hint {
@@ -204,7 +195,7 @@
 
   .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-avatar,
   .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-avatar {
-    width: 6.7rem;
-    height: 6.7rem;
+    width: 7.1rem;
+    height: 7.1rem;
   }
 }
