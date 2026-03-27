@@ -1,0 +1,302 @@
+.folder-hub,
+.portfolio-home {
+  --folio-panel-border: var(--bauhaus-frame);
+  --folio-soft-panel-border: var(--bauhaus-frame);
+  --folio-chip-border: var(--bauhaus-frame);
+  --folio-panel-radius: var(--bauhaus-radius-md);
+  --folio-chip-bg: var(--bauhaus-panel);
+  --hub-card-padding: 1.15rem 1rem 1rem;
+  --hub-note-padding: 1.15rem 1rem 1rem;
+  --hub-proof-card-padding: 1.2rem 1.1rem 1.05rem;
+  --hub-flow-step-border: var(--bauhaus-frame);
+  --hub-flow-step-radius: var(--bauhaus-radius-md);
+  --hub-flow-step-bg: color-mix(in srgb, white 74%, var(--light));
+  --hub-flow-media-border: var(--bauhaus-frame);
+  --hub-flow-media-radius: var(--bauhaus-radius-sm);
+  --hub-flow-media-bg: color-mix(in srgb, white 82%, var(--light));
+}
+
+.portfolio-home .portfolio-intro {
+  gap: 1.5rem;
+}
+
+.folder-hub .hub-header,
+.roadmap-hub .hub-header,
+.portfolio-home .portfolio-hero {
+  position: relative;
+  overflow: hidden;
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-md);
+  background: var(--bauhaus-panel-strong);
+  box-shadow: var(--bauhaus-lift-strong);
+}
+
+.folder-hub .hub-header {
+  padding: clamp(1.15rem, 2vw, 1.55rem);
+}
+
+.folder-hub .hub-header::before,
+.roadmap-hub .hub-header::before,
+.portfolio-home .portfolio-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 5.25rem;
+  height: 0.55rem;
+  background: var(--bauhaus-stripe);
+}
+
+.folder-hub .hub-header::after,
+.roadmap-hub .hub-header::after,
+.portfolio-home .portfolio-hero::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid color-mix(in srgb, var(--dark) 84%, black);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--bauhaus-yellow) 82%, white);
+}
+
+.portfolio-home .portfolio-hero {
+  width: min(100%, 41rem);
+}
+
+.portfolio-home .portfolio-hero-main {
+  gap: 1.05rem;
+}
+
+.portfolio-home .portfolio-hero-main > h1 {
+  max-width: 12ch;
+  font-size: clamp(1.7rem, 3.1vw, 2.35rem);
+}
+
+.folder-hub .hub-kicker,
+.folder-hub .hub-section-kicker,
+.portfolio-home .portfolio-kicker,
+.portfolio-home .portfolio-block-kicker {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.folder-hub .hub-label,
+.portfolio-home .portfolio-badge,
+.roadmap-hub .roadmap-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.5rem;
+  padding: 0.16rem 0.5rem;
+  border: 1.5px solid color-mix(in srgb, var(--dark) 68%, transparent);
+  border-radius: 0.24rem;
+  background: color-mix(in srgb, var(--bauhaus-yellow) 64%, white);
+  color: var(--dark);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.portfolio-home .portfolio-link-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.55rem;
+  align-items: center;
+  font-weight: 700;
+}
+
+.portfolio-home .portfolio-link-strip span {
+  color: var(--gray);
+}
+
+.portfolio-home .portfolio-meta-strip {
+  gap: 0.45rem;
+  padding-top: 0.82rem;
+  border-top: 1.5px solid var(--nomos-line-strong);
+}
+
+.portfolio-home .portfolio-meta-strip p {
+  display: grid;
+  gap: 0.14rem;
+  margin: 0;
+  padding: 0.62rem 0.72rem;
+  border: var(--bauhaus-frame-soft);
+  border-radius: var(--bauhaus-radius-sm);
+  background: color-mix(in srgb, white 54%, var(--light));
+}
+
+.portfolio-home .portfolio-meta-strip span {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.portfolio-home .portfolio-contact-strip {
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.6rem;
+  width: min(100%, 31rem);
+}
+
+.page article.portfolio-home a.portfolio-contact-chip,
+.page article.portfolio-home a.portfolio-action,
+.portfolio-home .portfolio-item > a,
+.folder-hub .hub-item > a,
+.folder-hub .hub-card {
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.page article.portfolio-home a.portfolio-contact-chip,
+.page article.portfolio-home a.portfolio-action,
+.portfolio-home .portfolio-item > a,
+.folder-hub .hub-item > a,
+.folder-hub .hub-note,
+.portfolio-home .portfolio-note,
+.folder-hub .hub-card,
+.folder-hub .hub-proof-card,
+.roadmap-hub .roadmap-status-card,
+.roadmap-hub .roadmap-map,
+.folder-hub .roadmap-map,
+.folder-hub .roadmap-visual,
+.folder-hub .roadmap-branch {
+  position: relative;
+  overflow: hidden;
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-sm);
+  background: var(--bauhaus-panel);
+  box-shadow: var(--bauhaus-lift);
+}
+
+.page article.portfolio-home a.portfolio-contact-chip,
+.page article.portfolio-home a.portfolio-action {
+  min-height: 2.85rem;
+}
+
+.portfolio-home .portfolio-item > a,
+.folder-hub .hub-item > a,
+.folder-hub .hub-note,
+.portfolio-home .portfolio-note,
+.folder-hub .hub-card,
+.folder-hub .hub-proof-card {
+  padding: 1rem 1rem 1.05rem;
+}
+
+.roadmap-hub .roadmap-status-card,
+.roadmap-hub .roadmap-map,
+.folder-hub .roadmap-map,
+.folder-hub .roadmap-visual,
+.folder-hub .roadmap-branch {
+  padding: 1rem;
+}
+
+.portfolio-home .portfolio-item > a::before,
+.folder-hub .hub-item > a::before,
+.folder-hub .hub-card::before,
+.folder-hub .hub-note::before,
+.folder-hub .hub-note::after,
+.portfolio-home .portfolio-note::before,
+.portfolio-home .portfolio-note::after,
+.folder-hub .hub-proof-card::before {
+  content: none;
+}
+
+.page article.portfolio-home a.portfolio-contact-chip:hover,
+.page article.portfolio-home a.portfolio-action:hover,
+.portfolio-home .portfolio-item > a:hover,
+.folder-hub .hub-item > a:hover,
+.folder-hub .hub-card:hover {
+  transform: translate(-0.18rem, -0.18rem);
+  border-color: color-mix(in srgb, var(--bauhaus-red) 32%, var(--dark));
+  background: color-mix(in srgb, var(--bauhaus-yellow) 10%, white);
+  box-shadow: var(--bauhaus-lift-strong);
+}
+
+.page article.portfolio-home a.portfolio-action.primary {
+  background: color-mix(in srgb, var(--bauhaus-blue) 88%, var(--dark));
+  color: var(--light) !important;
+}
+
+.page article.portfolio-home a.portfolio-action.primary:hover {
+  background: color-mix(in srgb, var(--bauhaus-blue) 78%, var(--dark));
+}
+
+.folder-hub .hub-proof-media,
+.folder-hub .hub-proof-code {
+  border: var(--bauhaus-frame-soft);
+  border-radius: var(--bauhaus-radius-sm);
+  background: color-mix(in srgb, white 58%, var(--light));
+}
+
+.folder-hub .hub-proof-code {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, white 40%, transparent);
+}
+
+.roadmap-hub {
+  --roadmap-complete: var(--bauhaus-blue);
+  --roadmap-progress: color-mix(in srgb, var(--bauhaus-yellow) 84%, black);
+  --roadmap-explore: var(--bauhaus-red);
+}
+
+.roadmap-hub .roadmap-status-label::before,
+.roadmap-hub .roadmap-chip::before {
+  border-radius: 0.12rem;
+}
+
+@media all and (min-width: 801px) {
+  .portfolio-home .portfolio-list,
+  .folder-hub .hub-grid,
+  .folder-hub .hub-proof-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .folder-hub .hub-grid.single {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-home .portfolio-actions {
+    grid-template-columns: repeat(2, minmax(0, max-content));
+    align-items: start;
+    column-gap: 0.8rem;
+  }
+
+  .portfolio-home .portfolio-link-strip,
+  .portfolio-home .portfolio-meta-strip {
+    grid-column: 1 / -1;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .portfolio-home .portfolio-hero,
+  .folder-hub .hub-header,
+  .roadmap-hub .hub-header,
+  .page article.portfolio-home a.portfolio-contact-chip,
+  .page article.portfolio-home a.portfolio-action,
+  .portfolio-home .portfolio-item > a,
+  .folder-hub .hub-item > a,
+  .folder-hub .hub-note,
+  .portfolio-home .portfolio-note,
+  .folder-hub .hub-card,
+  .folder-hub .hub-proof-card,
+  .roadmap-hub .roadmap-status-card,
+  .roadmap-hub .roadmap-map,
+  .folder-hub .roadmap-map,
+  .folder-hub .roadmap-visual,
+  .folder-hub .roadmap-branch {
+    box-shadow: 0.28rem 0.28rem 0 color-mix(in srgb, var(--bauhaus-yellow) 18%, transparent);
+  }
+
+  .portfolio-home .portfolio-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-home .portfolio-contact-strip {
+    width: 100%;
+  }
+
+  .portfolio-home .portfolio-meta-strip p {
+    padding: 0.58rem 0.62rem;
+  }
+}

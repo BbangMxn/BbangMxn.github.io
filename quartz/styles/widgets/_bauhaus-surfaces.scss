@@ -1,0 +1,109 @@
+.tags a.internal.tag-link,
+ul.tags > li > p {
+  border: var(--bauhaus-frame-soft);
+  border-radius: var(--bauhaus-radius-sm);
+  background: color-mix(in srgb, white 72%, var(--light));
+  box-shadow: 0.18rem 0.18rem 0 color-mix(in srgb, var(--bauhaus-yellow) 20%, transparent);
+  color: var(--dark);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page article blockquote,
+.research-note blockquote {
+  border: var(--bauhaus-frame);
+  border-left: 0.6rem solid var(--bauhaus-red);
+  border-radius: var(--bauhaus-radius-md);
+  background: color-mix(in srgb, var(--bauhaus-yellow) 12%, var(--light));
+  box-shadow: var(--bauhaus-lift);
+}
+
+.page article pre,
+.page article figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title],
+.page article img,
+.page article video,
+.page article audio,
+.external-embed.youtube,
+iframe.pdf {
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-sm);
+  background: var(--bauhaus-panel);
+  box-shadow: var(--bauhaus-lift);
+}
+
+.page article code {
+  border: 1px solid var(--nomos-line-strong);
+  border-radius: 0.25rem;
+  background: color-mix(in srgb, var(--bauhaus-yellow) 12%, var(--light));
+}
+
+.table-container {
+  margin-top: 0.95rem;
+  overflow: hidden;
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-sm);
+  background: var(--bauhaus-panel);
+  box-shadow: var(--bauhaus-lift);
+}
+
+.table-container > table {
+  margin: 0;
+}
+
+.table-container > table th {
+  background: color-mix(in srgb, var(--bauhaus-yellow) 18%, var(--light));
+}
+
+.search > .search-container > .search-space > * {
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-md);
+  background: var(--bauhaus-panel);
+  box-shadow: var(--bauhaus-lift-strong);
+}
+
+.search > .search-container .result-card:hover,
+.search > .search-container .result-card:focus,
+.search > .search-container .result-card.focus {
+  background: color-mix(in srgb, var(--bauhaus-yellow) 14%, transparent);
+}
+
+.graph > .graph-outer {
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-md);
+  background: var(--bauhaus-panel);
+  box-shadow: var(--bauhaus-lift);
+}
+
+.graph > .global-graph-outer > .global-graph-container {
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-md);
+  background: var(--bauhaus-panel);
+  box-shadow: var(--bauhaus-lift-strong);
+}
+
+footer {
+  border-top: 2px solid var(--nomos-line-strong);
+}
+
+footer a,
+.page-footer a {
+  color: var(--secondary);
+}
+
+@media all and (max-width: 800px) {
+  .tags a.internal.tag-link,
+  ul.tags > li > p,
+  .page article blockquote,
+  .research-note blockquote,
+  .page article pre,
+  .page article figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title],
+  .page article img,
+  .page article video,
+  .page article audio,
+  .external-embed.youtube,
+  iframe.pdf,
+  .table-container,
+  .graph > .graph-outer {
+    box-shadow: 0.26rem 0.26rem 0 color-mix(in srgb, var(--bauhaus-yellow) 18%, transparent);
+  }
+}

@@ -1,0 +1,165 @@
+.page > #quartz-body > .sidebar.left {
+  padding-right: clamp(0.7rem, 1vw, 1rem);
+}
+
+.sidebar.left .page-title .brand-card {
+  position: relative;
+  gap: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-md);
+  background: var(--bauhaus-panel-strong);
+  box-shadow: var(--bauhaus-lift);
+}
+
+.sidebar.left .page-title .brand-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 4.6rem;
+  height: 0.46rem;
+  background: var(--bauhaus-stripe);
+}
+
+.sidebar.left .page-title .brand-avatar {
+  width: 6.5rem;
+  height: 6.5rem;
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-sm);
+  box-shadow: var(--bauhaus-lift);
+}
+
+.sidebar.left .page-title .brand-kicker {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.sidebar.left .page-title .brand-title {
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  line-height: 0.95;
+}
+
+.sidebar.left .page-title .brand-subtitle {
+  max-width: 15rem;
+  line-height: 1.5;
+}
+
+.sidebar.left .search > .search-button,
+.sidebar.left .darkmode,
+.sidebar.left .readermode {
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-sm);
+  background: var(--bauhaus-panel);
+  box-shadow: var(--bauhaus-lift);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.sidebar.left .search > .search-button {
+  min-height: 3rem;
+}
+
+.sidebar.left .search > .search-button:hover,
+.sidebar.left .darkmode:hover,
+.sidebar.left .readermode:hover {
+  transform: translate(-0.14rem, -0.14rem);
+  border-color: color-mix(in srgb, var(--bauhaus-red) 36%, var(--nomos-line));
+  background: color-mix(in srgb, var(--bauhaus-yellow) 12%, var(--light));
+  box-shadow: var(--bauhaus-lift-strong);
+}
+
+.sidebar.left .search > .search-button .search-hint {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sidebar.left .explorer {
+  padding: 0.95rem 0.85rem 0.2rem;
+  margin-top: 0.55rem;
+  border: var(--bauhaus-frame-soft);
+  border-radius: var(--bauhaus-radius-md);
+  background: color-mix(in srgb, white 54%, var(--light));
+  box-shadow: var(--bauhaus-lift);
+}
+
+.sidebar.left .explorer button.desktop-explorer {
+  padding-bottom: 0.74rem;
+}
+
+.sidebar.left .explorer button.desktop-explorer h2 {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.sidebar.left .explorer-content ul li > a,
+.sidebar.left .folder-container > div > a,
+.sidebar.left .folder-container > div > button {
+  border-left: 3px solid transparent;
+  border-radius: var(--bauhaus-radius-sm);
+}
+
+.sidebar.left .explorer-content ul li > a:hover,
+.sidebar.left .folder-container > div > a:hover,
+.sidebar.left .folder-container > div > button:hover {
+  background: color-mix(in srgb, var(--bauhaus-yellow) 16%, transparent);
+  border-left-color: var(--bauhaus-red);
+}
+
+.sidebar.left .explorer-content ul li > a.active,
+.sidebar.left .folder-container.active > div > a,
+.sidebar.left .folder-container.active > div > button {
+  color: var(--dark);
+  border-left-color: var(--bauhaus-blue);
+  background: color-mix(in srgb, var(--bauhaus-blue) 18%, transparent);
+}
+
+.sidebar.right > * {
+  padding: 0.95rem 1rem;
+  border: var(--bauhaus-frame-soft);
+  border-radius: var(--bauhaus-radius-md);
+  background: color-mix(in srgb, white 56%, var(--light));
+  box-shadow: var(--bauhaus-lift);
+}
+
+.sidebar.right :is(.recent-notes, .graph, .toc, .backlinks) > h3 {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.sidebar.right .backlinks > ul.overflow > li > a,
+.sidebar.right .toc ul.toc-content.overflow > li > a,
+.sidebar.right .recent-notes > ul.recent-ul > li > a {
+  border-radius: var(--bauhaus-radius-sm);
+}
+
+.sidebar.right .backlinks > ul.overflow > li > a:hover,
+.sidebar.right .toc ul.toc-content.overflow > li > a:hover,
+.sidebar.right .recent-notes > ul.recent-ul > li > a:hover {
+  background: color-mix(in srgb, var(--bauhaus-yellow) 12%, transparent);
+}
+
+@media all and (max-width: 800px) {
+  .page > #quartz-body > .sidebar.left {
+    padding-right: 0;
+  }
+
+  .sidebar.left .page-title .brand-card,
+  .sidebar.left .search > .search-button,
+  .sidebar.left .darkmode,
+  .sidebar.left .readermode,
+  .sidebar.left .explorer,
+  .sidebar.right > * {
+    box-shadow: 0.28rem 0.28rem 0 color-mix(in srgb, var(--bauhaus-yellow) 20%, transparent);
+  }
+
+  .sidebar.left .page-title .brand-card {
+    padding: 0.9rem;
+  }
+}

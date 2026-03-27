@@ -1,0 +1,185 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--light);
+  background-image:
+    linear-gradient(90deg, var(--bauhaus-grid) 1px, transparent 1px),
+    linear-gradient(var(--bauhaus-grid) 1px, transparent 1px),
+    radial-gradient(
+      circle at 10% 12%,
+      color-mix(in srgb, var(--bauhaus-yellow) 34%, transparent) 0 7rem,
+      transparent 7.15rem
+    ),
+    linear-gradient(
+      145deg,
+      transparent 0 76%,
+      color-mix(in srgb, var(--bauhaus-red) 14%, transparent) 76% 100%
+    ),
+    linear-gradient(180deg, color-mix(in srgb, white 28%, var(--light)) 0%, var(--light) 100%);
+  background-size:
+    1.7rem 1.7rem,
+    1.7rem 1.7rem,
+    auto,
+    auto,
+    auto;
+  background-position: center;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::before {
+  top: 1.6rem;
+  right: min(8vw, 5rem);
+  width: clamp(5rem, 10vw, 8rem);
+  height: clamp(5rem, 10vw, 8rem);
+  border: var(--bauhaus-frame-soft);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--bauhaus-yellow) 22%, transparent);
+}
+
+body::after {
+  left: max(1rem, 4vw);
+  bottom: 10vh;
+  width: clamp(4.5rem, 12vw, 7rem);
+  height: clamp(1rem, 3vw, 1.4rem);
+  border: var(--bauhaus-frame-soft);
+  background: color-mix(in srgb, var(--bauhaus-blue) 72%, transparent);
+  transform: rotate(-18deg);
+}
+
+.page,
+.search > .search-container,
+.graph > .global-graph-outer {
+  position: relative;
+  z-index: 1;
+}
+
+.page > #quartz-body {
+  column-gap: clamp(1rem, 1.6vw, 1.55rem);
+  row-gap: 0.95rem;
+}
+
+.page > #quartz-body .center > :is(.page-header, .popover-hint, article, .page-footer) {
+  max-width: 46.5rem;
+}
+
+.page article {
+  color: var(--darkgray);
+  line-height: 1.78;
+}
+
+.page article :is(h1, h2, h3, h4, h5, h6),
+.article-title {
+  color: var(--dark);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > .page-header,
+.page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > article {
+  border: var(--bauhaus-frame-soft);
+  background: color-mix(in srgb, white 58%, var(--light));
+  box-shadow: var(--bauhaus-lift);
+}
+
+.page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > .page-header {
+  padding: 1rem clamp(1rem, 2vw, 1.4rem);
+  border-bottom: none;
+  border-radius: var(--bauhaus-radius-md) var(--bauhaus-radius-md) 0 0;
+}
+
+.page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > article {
+  padding: clamp(1.1rem, 2.3vw, 1.55rem) clamp(1rem, 2vw, 1.4rem) clamp(1.35rem, 2.6vw, 1.8rem);
+  border-radius: 0 0 var(--bauhaus-radius-md) var(--bauhaus-radius-md);
+}
+
+.page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > article + hr {
+  display: none;
+}
+
+.page article:not(.portfolio-home):not(.folder-hub) h2 {
+  display: grid;
+  gap: 0.48rem;
+  margin-top: 2.4rem;
+  padding-top: 1rem;
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  border-top: 2px solid var(--nomos-line-strong);
+}
+
+.page article:not(.portfolio-home):not(.folder-hub) h2::before {
+  content: "";
+  display: inline-block;
+  width: 2.4rem;
+  height: 0.42rem;
+  background: var(--bauhaus-red);
+}
+
+.page article:not(.portfolio-home):not(.folder-hub) h3 {
+  position: relative;
+  margin-top: 1.7rem;
+  padding-left: 1rem;
+  font-size: clamp(1.04rem, 1.8vw, 1.26rem);
+}
+
+.page article:not(.portfolio-home):not(.folder-hub) h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.48em;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--bauhaus-blue);
+}
+
+.page article:not(.portfolio-home):not(.folder-hub) :is(p, li) {
+  line-height: 1.82;
+}
+
+.page
+  article:not(.portfolio-home):not(.folder-hub)
+  a:not(.brand-card):not(.internal.tag-link):not(.folder-overview):not(
+    :has(p, strong, div, section, ul, ol, img)
+  ) {
+  text-decoration-color: color-mix(in srgb, var(--bauhaus-red) 42%, transparent);
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.18em;
+}
+
+@media all and (max-width: 800px) {
+  body {
+    background-size:
+      1.15rem 1.15rem,
+      1.15rem 1.15rem,
+      auto,
+      auto,
+      auto;
+  }
+
+  body::before {
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0.6;
+  }
+
+  body::after {
+    display: none;
+  }
+
+  .page > #quartz-body {
+    column-gap: 0.55rem;
+    row-gap: 0.65rem;
+  }
+
+  .page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > .page-header,
+  .page:not(:has(article.portfolio-home)):not(:has(article.folder-hub)) .center > article {
+    box-shadow: 0.28rem 0.28rem 0 color-mix(in srgb, var(--bauhaus-yellow) 20%, transparent);
+  }
+}

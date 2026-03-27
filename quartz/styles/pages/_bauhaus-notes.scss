@@ -1,0 +1,155 @@
+.page:has(article.research-note) .page-header {
+  gap: 0.6rem;
+  padding: 1rem 1.1rem 1.05rem;
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-md);
+  background: var(--bauhaus-panel-strong);
+  box-shadow: var(--bauhaus-lift);
+}
+
+.page:has(article.research-note) .page-header .article-title {
+  font-size: clamp(1.55rem, 2.8vw, 2.15rem);
+  line-height: 1.08;
+}
+
+.page:has(article.research-note) article.research-note {
+  position: relative;
+  max-width: 46rem;
+  padding: clamp(1.15rem, 2.3vw, 1.55rem);
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-md);
+  background: color-mix(in srgb, white 60%, var(--light));
+  box-shadow: var(--bauhaus-lift-strong);
+}
+
+.page:has(article.research-note) article.research-note::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 5rem;
+  height: 0.52rem;
+  background: var(--bauhaus-stripe);
+  border-radius: var(--bauhaus-radius-md) 0 0 0;
+}
+
+.research-note h2 {
+  margin-top: 0.25rem;
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--nomos-line-strong);
+}
+
+.research-note h2::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 0.38rem;
+  margin-bottom: 0.55rem;
+  background: var(--bauhaus-red);
+}
+
+.research-note h3 {
+  padding-left: 0.9rem;
+}
+
+.research-note h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.48em;
+  width: 0.46rem;
+  height: 0.46rem;
+  background: var(--bauhaus-blue);
+}
+
+.research-note ul,
+.research-note ol {
+  padding-left: 1.28rem;
+}
+
+.research-note li + li {
+  margin-top: 0.42rem;
+}
+
+.research-note .table-container,
+.research-note pre,
+.research-note img,
+.research-note iframe.pdf {
+  margin-top: 0.35rem;
+}
+
+.page:has(article.research-note) .sidebar.right > * {
+  border: var(--bauhaus-frame);
+}
+
+.page:has(article.research-note) .sidebar.right .graph > .graph-outer {
+  height: 240px;
+}
+
+.page:has(article.folder-hub) .folder-hub + .page-listing {
+  display: grid;
+  gap: 0.95rem;
+  margin-top: 1rem;
+  padding-top: 1.15rem;
+  border-top: 2px solid var(--nomos-line-strong);
+}
+
+.page:has(article.folder-hub) .folder-hub + .page-listing > p {
+  margin-bottom: 0;
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-section {
+  position: relative;
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.25rem;
+  height: 0.42rem;
+  background: color-mix(in srgb, var(--bauhaus-blue) 92%, white);
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-section {
+  padding-top: 0.78rem;
+}
+
+.page:has(article.folder-hub) article.folder-hub .hub-section > h3 {
+  max-width: 28rem;
+}
+
+.page:has(article.folder-hub) article.folder-hub > pre:has(> code.mermaid) {
+  border: var(--bauhaus-frame);
+  border-radius: var(--bauhaus-radius-sm);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--bauhaus-yellow) 12%, white) 0 20%,
+    color-mix(in srgb, white 90%, var(--light)) 20% 100%
+  );
+  box-shadow: var(--bauhaus-lift);
+}
+
+@media all and (max-width: 800px) {
+  .page:has(article.research-note) .page-header,
+  .page:has(article.research-note) article.research-note,
+  .page:has(article.folder-hub) article.folder-hub > pre:has(> code.mermaid) {
+    box-shadow: 0.28rem 0.28rem 0 color-mix(in srgb, var(--bauhaus-yellow) 18%, transparent);
+  }
+
+  .page:has(article.research-note) .page-header {
+    padding: 0.9rem 0.95rem 0.95rem;
+  }
+
+  .page:has(article.research-note) article.research-note {
+    padding: 1rem 0.95rem 1.15rem;
+  }
+
+  .page:has(article.research-note) .page-header .article-title {
+    font-size: clamp(1.4rem, 5.2vw, 1.8rem);
+  }
+
+  .page:has(article.folder-hub) article.folder-hub .hub-section::before {
+    width: 1.8rem;
+  }
+}

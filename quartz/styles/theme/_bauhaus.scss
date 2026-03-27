@@ -1,0 +1,60 @@
+:root {
+  --bauhaus-blue: #0b57d0;
+  --bauhaus-red: #d9482e;
+  --bauhaus-yellow: #f1bf32;
+  --bauhaus-paper: #f6efe2;
+  --bauhaus-panel: color-mix(in srgb, white 88%, var(--light));
+  --bauhaus-panel-soft: color-mix(in srgb, white 68%, var(--light));
+  --bauhaus-panel-strong: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--bauhaus-yellow) 18%, white) 0 18%,
+    color-mix(in srgb, white 92%, var(--light)) 18% 74%,
+    color-mix(in srgb, var(--bauhaus-blue) 12%, white) 74% 100%
+  );
+  --bauhaus-frame: 2px solid color-mix(in srgb, var(--dark) 84%, black);
+  --bauhaus-frame-soft: 1.5px solid color-mix(in srgb, var(--dark) 18%, transparent);
+  --bauhaus-radius-sm: 0.32rem;
+  --bauhaus-radius-md: 0.72rem;
+  --bauhaus-grid: color-mix(in srgb, var(--dark) 11%, transparent);
+  --bauhaus-grid-strong: color-mix(in srgb, var(--dark) 24%, transparent);
+  --bauhaus-lift: 0.45rem 0.45rem 0 color-mix(in srgb, var(--bauhaus-yellow) 32%, transparent);
+  --bauhaus-lift-strong: 0.62rem 0.62rem 0 color-mix(in srgb, var(--bauhaus-red) 18%, transparent);
+  --bauhaus-inset: inset 0 0 0 1px color-mix(in srgb, white 65%, transparent);
+  --bauhaus-stripe: linear-gradient(
+    90deg,
+    var(--bauhaus-blue) 0 34%,
+    var(--bauhaus-yellow) 34% 67%,
+    var(--bauhaus-red) 67% 100%
+  );
+  --nomos-line: var(--bauhaus-grid);
+  --nomos-line-strong: var(--bauhaus-grid-strong);
+  --nomos-surface: var(--bauhaus-panel);
+  --nomos-surface-soft: var(--bauhaus-panel-soft);
+  --nomos-surface-muted: color-mix(in srgb, var(--bauhaus-yellow) 10%, var(--light));
+  --nomos-hover: color-mix(in srgb, var(--bauhaus-yellow) 18%, transparent);
+  --nomos-hover-strong: color-mix(in srgb, var(--bauhaus-blue) 18%, var(--bauhaus-yellow) 8%);
+  --nomos-shadow: var(--bauhaus-lift);
+}
+
+:root[saved-theme="dark"] {
+  --bauhaus-blue: #7aa8ff;
+  --bauhaus-red: #ff8260;
+  --bauhaus-yellow: #ffd566;
+  --bauhaus-paper: #1a1613;
+  --bauhaus-panel: color-mix(in srgb, var(--light) 90%, #241e19);
+  --bauhaus-panel-soft: color-mix(in srgb, var(--light) 84%, #201a16);
+  --bauhaus-panel-strong: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--bauhaus-blue) 14%, #201a16) 0 18%,
+    color-mix(in srgb, var(--light) 90%, #221b17) 18% 72%,
+    color-mix(in srgb, var(--bauhaus-red) 12%, #1c1713) 72% 100%
+  );
+  --bauhaus-frame: 2px solid rgba(255, 246, 235, 0.88);
+  --bauhaus-frame-soft: 1.5px solid rgba(255, 246, 235, 0.16);
+  --bauhaus-grid: rgba(255, 246, 235, 0.08);
+  --bauhaus-grid-strong: rgba(255, 246, 235, 0.18);
+  --bauhaus-lift: 0.45rem 0.45rem 0 rgba(122, 168, 255, 0.16);
+  --bauhaus-lift-strong: 0.62rem 0.62rem 0 rgba(255, 130, 96, 0.14);
+  --bauhaus-inset: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --nomos-surface-muted: color-mix(in srgb, var(--bauhaus-yellow) 8%, var(--light));
+}

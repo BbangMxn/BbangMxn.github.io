@@ -1,7 +1,14 @@
 @use "./base.scss";
 @use "./theme/tokens";
+@use "./theme/bauhaus";
 @use "./layout/sidebar";
 @use "./layout/shell";
+@use "./layout/bauhaus-shell";
 @use "./pages/folio-shell";
 @use "./pages/portfolio";
 @use "./pages/detail";
+@use "./pages/bauhaus-notes";
+@use "./widgets/bauhaus-sidebar";
+@use "./widgets/bauhaus-navigation";
+@use "./widgets/bauhaus-surfaces";
+@use "./pages/bauhaus-pages";
