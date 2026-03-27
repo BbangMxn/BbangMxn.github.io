@@ -47,8 +47,10 @@ Portfolio-first knowledge site powered by [Quartz](https://quartz.jzhao.xyz/).
 
 ## Internal docs
 
-- `docs/README.md`: internal documentation standards and document flow
-- `docs/SPEC.md`: common specification template used before implementation
+- `content/docs/index.md`: shared documentation template hub
+- `content/docs/spec.md`: common specification template used before implementation
+- `content/docs/design.md`: common design template used after spec is fixed
+- `content/docs/task.md`: common task template for implementation tracking
 
 ## GitHub Pages
 

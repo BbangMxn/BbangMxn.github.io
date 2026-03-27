@@ -1,6 +1,12 @@
-# SPEC.md
+---
+title: SPEC Template
+tags:
+  - docs
+  - template
+  - spec
+---
 
-> 문제를 먼저 정의하고, 구현 전에 범위, 제약, 성공 기준을 확정하기 위한 기본 명세 문서
+공통으로 쓰는 기본 명세 문서 form입니다. 새 프로젝트나 기능 문서를 만들 때 이 페이지 구조를 복사해서 `spec.md`로 사용합니다.
 
 ## Usage Rules
 
