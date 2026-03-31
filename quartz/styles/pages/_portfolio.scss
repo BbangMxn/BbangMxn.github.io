@@ -398,6 +398,28 @@
   word-break: keep-all;
 }
 
+.portfolio-home .portfolio-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.portfolio-home .portfolio-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.34rem 0.78rem;
+  border: var(--folio-chip-border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--folio-chip-bg) 92%, white);
+  color: color-mix(in srgb, var(--dark) 88%, var(--secondary));
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
 .portfolio-home .portfolio-actions {
   display: grid;
   gap: 0.48rem;
@@ -525,6 +547,102 @@
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+
+.portfolio-home .portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.95rem;
+  align-items: start;
+}
+
+.portfolio-home .portfolio-facts-grid {
+  gap: 0.9rem;
+}
+
+.portfolio-home .portfolio-project-grid {
+  gap: 1rem;
+}
+
+.portfolio-home .portfolio-card,
+.page article.portfolio-home a.portfolio-project-card {
+  position: relative;
+  display: grid;
+  gap: 0.62rem;
+  min-width: 0;
+  align-content: start;
+  padding: 1.08rem 1.1rem 1.12rem;
+  border: var(--folio-soft-panel-border);
+  border-radius: 1.08rem;
+  background: var(--folio-soft-panel-bg);
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  transition:
+    transform 0.2s var(--bauhaus-hover-ease, ease),
+    border-color 0.2s var(--bauhaus-hover-ease, ease),
+    box-shadow 0.2s var(--bauhaus-hover-ease, ease),
+    background-color 0.2s var(--bauhaus-hover-ease, ease),
+    color 0.2s var(--bauhaus-hover-ease, ease);
+}
+
+.portfolio-home .portfolio-card::before,
+.page article.portfolio-home a.portfolio-project-card::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.95rem;
+  bottom: 0.95rem;
+  width: 0;
+  background: color-mix(in srgb, var(--secondary) 48%, transparent);
+  transition: width 0.2s var(--bauhaus-hover-ease, ease);
+}
+
+.portfolio-home .portfolio-card:hover,
+.page article.portfolio-home a.portfolio-project-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--secondary) 24%, var(--nomos-line));
+  box-shadow: 0 18px 36px color-mix(in srgb, var(--dark) 8%, transparent);
+}
+
+.portfolio-home .portfolio-card:hover::before,
+.page article.portfolio-home a.portfolio-project-card:hover::before {
+  width: var(--folio-rail-size);
+}
+
+.portfolio-home .portfolio-card strong,
+.portfolio-home .portfolio-project-card strong {
+  margin: 0;
+  color: var(--dark);
+  font-size: 1.08rem;
+  line-height: 1.38;
+  text-wrap: pretty;
+  word-break: keep-all;
+}
+
+.portfolio-home .portfolio-card p,
+.portfolio-home .portfolio-project-card p {
+  margin: 0;
+  color: color-mix(in srgb, var(--darkgray) 94%, var(--dark));
+  line-height: 1.72;
+  word-break: keep-all;
+}
+
+.portfolio-home .portfolio-card-meta,
+.portfolio-home .portfolio-card-role {
+  font-size: 0.8rem;
+  line-height: 1.64;
+}
+
+.portfolio-home .portfolio-card-meta {
+  padding-top: 0.55rem;
+  border-top: 1px solid color-mix(in srgb, var(--nomos-line) 92%, white);
+  color: color-mix(in srgb, var(--secondary) 76%, var(--darkgray));
+  font-weight: 600;
+}
+
+.portfolio-home .portfolio-card-role {
+  color: color-mix(in srgb, var(--darkgray) 92%, var(--dark));
 }
 
 .portfolio-home .portfolio-block,
@@ -1208,6 +1326,24 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
 }
 
 @media all and (min-width: 960px) {
+  .portfolio-home .portfolio-facts-grid,
+  .portfolio-home .portfolio-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-home .portfolio-card,
+  .page article.portfolio-home a.portfolio-project-card {
+    min-height: 100%;
+  }
+
+  .portfolio-home .portfolio-hero {
+    gap: 1rem;
+  }
+
+  .portfolio-home .portfolio-chip-list {
+    max-width: 40rem;
+  }
+
   .folder-hub .hub-header {
     grid-template-columns: minmax(0, 1fr);
     row-gap: 0.9rem;
@@ -1472,6 +1608,16 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
     gap: 0.5rem;
   }
 
+  .portfolio-home .portfolio-chip-list {
+    gap: 0.38rem;
+  }
+
+  .portfolio-home .portfolio-chip {
+    min-height: 1.9rem;
+    padding: 0.32rem 0.68rem;
+    font-size: 0.76rem;
+  }
+
   .portfolio-home .portfolio-contact-strip {
     grid-template-columns: 1fr;
     width: 100%;
@@ -1518,9 +1664,27 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   .folder-hub .hub-grid,
   .folder-hub .hub-proof-grid,
   .folder-hub .hub-grid.single,
-  .portfolio-home .portfolio-list {
+  .portfolio-home .portfolio-list,
+  .portfolio-home .portfolio-grid {
     grid-template-columns: 1fr;
     gap: 0.9rem;
+  }
+
+  .portfolio-home .portfolio-card,
+  .page article.portfolio-home a.portfolio-project-card {
+    gap: 0.58rem;
+    padding: 0.92rem 0.94rem 0.96rem;
+    border-radius: 1rem;
+  }
+
+  .portfolio-home .portfolio-card strong,
+  .portfolio-home .portfolio-project-card strong {
+    font-size: 1rem;
+  }
+
+  .portfolio-home .portfolio-card-meta,
+  .portfolio-home .portfolio-card-role {
+    font-size: 0.78rem;
   }
 
   .folder-hub .hub-proof-media {
