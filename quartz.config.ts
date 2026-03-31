@@ -22,17 +22,17 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: {
-          name: "IBM Plex Sans KR",
-          weights: [500, 700],
+          name: "Gothic A1",
+          weights: [500, 700, 800],
         },
         body: {
-          name: "IBM Plex Sans KR",
+          name: "Gothic A1",
           weights: [400, 500, 700],
           includeItalic: false,
         },
         code: {
-          name: "IBM Plex Mono",
-          weights: [400, 500],
+          name: "JetBrains Mono",
+          weights: [400, 500, 600],
           includeItalic: false,
         },
       },

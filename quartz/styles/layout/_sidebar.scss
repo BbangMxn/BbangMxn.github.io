@@ -377,4 +377,52 @@
   .sidebar.left .search > .search-button .search-hint {
     display: none;
   }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-card,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.55rem 0.7rem;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-avatar,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-avatar {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 1rem;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-title,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-title {
+    font-size: 1.22rem;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .page-title .brand-subtitle,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .page-title .brand-subtitle {
+    display: block;
+    font-size: 0.62rem;
+    line-height: 1.35;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .search,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .search {
+    width: 100%;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .search > .search-button,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .search > .search-button {
+    min-height: 2.45rem;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left > .flex-component,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left > .flex-component {
+    gap: 0.38rem !important;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left .explorer.collapsed,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left .explorer.collapsed {
+    flex: 0 0 auto;
+  }
 }

@@ -8,7 +8,7 @@ cssclasses:
   <div class="portfolio-hero-main">
     <div class="portfolio-identity">
       <span class="portfolio-name">Bbang / 호빵맨</span>
-      <span class="portfolio-role">Smart Factory Developer</span>
+      <span class="portfolio-role">스마트 팩토리 개발자[이문규]</span>
     </div>
     <h1>스마트 팩토리 개발자로 현장 데이터 흐름과 운영 구조를 구현합니다.</h1>
     <p class="portfolio-lede">
@@ -63,8 +63,8 @@ cssclasses:
   <div class="portfolio-grid portfolio-facts-grid">
     <article class="portfolio-card">
       <span class="portfolio-badge">포지션</span>
-      <strong>Backend-centered Product Engineer</strong>
-      <p>백엔드 구조, 제품 경계, 구현 범위, 문서화를 한 흐름으로 묶는 역할을 지향합니다.</p>
+      <strong>스마트 팩토리 개발자[이문규]</strong>
+      <p>현장 데이터 흐름, 운영 구조, 구현 범위, 문서화를 한 흐름으로 묶는 역할을 지향합니다.</p>
     </article>
     <article class="portfolio-card">
       <span class="portfolio-badge">강한 문제</span>

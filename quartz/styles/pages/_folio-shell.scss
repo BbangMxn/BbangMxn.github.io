@@ -1,12 +1,12 @@
 .page:has(article.portfolio-home),
 .page:has(article.folder-hub) {
-  --folio-center-width: 44rem;
+  --folio-center-width: 48rem;
   --folio-shell-sidebar-width: 264px;
-  --folio-shell-main-width: 50rem;
+  --folio-shell-main-width: 54rem;
   --folio-shell-gap: 2.85rem;
   --folio-shell-content-gap: 2.15rem;
   --folio-shell-content-bottom: 1.7rem;
-  --folio-copy-width: 35rem;
+  --folio-copy-width: 38rem;
   --folio-header-gap: 1.1rem;
   --folio-header-padding: 1.85rem;
   --folio-header-min-height: 11rem;
@@ -105,8 +105,57 @@
 @media all and (max-width: 800px) {
   .page:has(article.portfolio-home),
   .page:has(article.folder-hub) {
+    --folio-center-width: 100%;
+    --folio-shell-main-width: 100%;
     --folio-shell-content-gap: 1.25rem;
     --folio-header-min-height: auto;
     --folio-page-top: 0.22rem;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "explorer brand brand"
+      "search search controls";
+    align-items: start;
+    gap: 0.65rem 0.6rem;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    padding-top: 0.55rem;
+    padding-bottom: 0.4rem;
+    position: relative;
+    top: auto;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left > .explorer,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left > .explorer {
+    grid-area: explorer;
+    align-self: start;
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 0;
+    flex: 0 0 auto;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left > .page-title,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left > .page-title {
+    grid-area: brand;
+    min-width: 0;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left > .search,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left > .search {
+    grid-area: search;
+    min-width: 0;
+  }
+
+  .page:has(article.portfolio-home) > #quartz-body > .sidebar.left > .flex-component,
+  .page:has(article.folder-hub) > #quartz-body > .sidebar.left > .flex-component {
+    grid-area: controls;
+    align-self: center;
+    justify-self: end;
   }
 }
