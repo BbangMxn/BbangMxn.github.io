@@ -628,6 +628,31 @@
   word-break: keep-all;
 }
 
+.portfolio-home .portfolio-card-specs {
+  display: grid;
+  gap: 0.3rem;
+  padding-top: 0.1rem;
+}
+
+.portfolio-home .portfolio-card-specs p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem 0.55rem;
+  align-items: baseline;
+  font-size: 0.79rem;
+  line-height: 1.58;
+  color: color-mix(in srgb, var(--darkgray) 92%, var(--dark));
+}
+
+.portfolio-home .portfolio-card-specs span {
+  display: inline-flex;
+  align-items: center;
+  color: color-mix(in srgb, var(--secondary) 84%, var(--dark));
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
 .portfolio-home .portfolio-card-meta,
 .portfolio-home .portfolio-card-role {
   font-size: 0.8rem;
@@ -1680,6 +1705,10 @@ body:is([data-slug="projects/nazgul/index"], [data-slug="projects/BagInCoffee/in
   .portfolio-home .portfolio-card strong,
   .portfolio-home .portfolio-project-card strong {
     font-size: 1rem;
+  }
+
+  .portfolio-home .portfolio-card-specs p {
+    font-size: 0.76rem;
   }
 
   .portfolio-home .portfolio-card-meta,
