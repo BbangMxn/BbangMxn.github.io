@@ -195,6 +195,21 @@ describe("transforms", () => {
 })
 
 describe("link strategies", () => {
+  test("explicit relative Markdown links keep their document context", () => {
+    const opts: TransformOptions = { strategy: "shortest", allSlugs: [] }
+    assert.strictEqual(
+      path.transformLink("projects/capstone/index" as FullSlug, "../index.md", opts),
+      "../",
+    )
+    assert.strictEqual(
+      path.transformLink("notes/index" as FullSlug, "./research/Outbox/index.md", opts),
+      "./research/Outbox/",
+    )
+    assert.strictEqual(
+      path.transformLink("notes/research/Outbox/common" as FullSlug, "./design-main.md", opts),
+      "./design-main",
+    )
+  })
   const allSlugs = [
     "a/b/c",
     "a/b/d",

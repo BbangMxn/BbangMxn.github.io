@@ -1,0 +1,54 @@
+/* Common reading surface for projects, notes, and simple information pages. */
+.markdown-page {
+  font-size: 1rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.markdown-page :is(h1, h2, h3, h4) {
+  line-height: 1.4;
+  scroll-margin-top: 2rem;
+}
+
+.markdown-page :is(h2, h3) {
+  margin-top: 2.25rem;
+}
+.markdown-page :is(p, ul, ol, blockquote) {
+  margin-block: 1rem;
+}
+.markdown-page img {
+  max-width: 100%;
+  height: auto;
+}
+.markdown-page pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.markdown-page table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.markdown-page :not(pre) > code {
+  overflow-wrap: anywhere;
+}
+.page:has(.markdown-page) .page-header {
+  display: block;
+}
+.folio-links {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  .page:has(.markdown-page):has(.sidebar.right .toc) {
+    max-width: 1440px;
+  }
+  .page:has(.markdown-page) > #quartz-body:has(.sidebar.right .toc) {
+    grid-template-columns: 170px minmax(0, 1fr) 190px;
+    grid-template-areas: "left main right" "left footer right";
+    column-gap: 32px;
+  }
+  .page:has(.markdown-page) > #quartz-body:has(.sidebar.right .toc) > .sidebar.right {
+    display: flex;
+  }
+}

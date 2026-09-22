@@ -1,43 +1,30 @@
 ---
-title: "프로필 | 백엔드 엔지니어"
+title: 소개
 lang: ko
 portfolio: true
 alternate: /ja/about
 cssclasses: [minimal-detail]
 ---
 
-[← 홈](/)
-
-# 백엔드 엔지니어
+# 소개
 
 일본 백엔드 엔지니어 취업을 준비하고 있습니다. 개인 프로젝트를 중심으로 API, 데이터 모델, 검색 시스템의 설계·구현·검증을 경험하고 있습니다.
 
-## 기술
+## 스킬셋
 
-- Java / Spring Boot — 검색 서버와 RAG 실험
-- Rust / PostgreSQL / Redis — 장비 도메인 API·데이터 모델·캐시
-- OPC UA / MQTT / TimescaleDB — 제조 데이터 파이프라인 연구·설계
+| 기술 | 사용 경험 | 관련 기록 |
+| --- | --- | --- |
+| Java / Spring Boot | 검색 서버, 취미 데이터와 답변 근거를 연결하는 RAG 흐름 구현 | [Nazgul](./projects/nazgul/index.md) |
+| Rust / PostgreSQL / Redis | 장비 도메인 API, 데이터 모델, 캐시와 JWT 검증 구현 | [BagInDB](./projects/bagindb/index.md) |
+| OPC UA / MQTT / TimescaleDB | 장비 데이터 수집·저장·실시간 전달 구조 연구와 프로토타입 설계 | [Smart Factory](./projects/smartfactory/index.md) |
 
-## 대표 프로젝트
+기술별 사용 범위와 남은 과제는 연결된 프로젝트 기록에 정리합니다. 제조 데이터 파이프라인은 연구·프로토타입 단계입니다.
 
-### [Nazgul](/projects/nazgul)
+## 학력
 
-취미 데이터를 검색하고 답변의 근거까지 연결하는 흐름을 설계했습니다. Java 서버와 로컬 AI 실험, 검증 문서를 직접 작성했습니다.
+- 2019.02 — 한림대학교 소프트웨어융합학과 입학
+- 2025.02 — 한림대학교 소프트웨어융합학과 졸업
 
-연구 프로토타입 · 검색 흐름 검증, 정량 평가 확장 예정.
+## 기록과 연락
 
-### [BagInDB](/projects/bagindb)
-
-장비·브랜드 데이터를 별도 도메인으로 분리하고 API, 데이터 모델, Redis 캐시, JWT 검증을 구현했습니다.
-
-개인 프로젝트 · 캐시 무효화와 운영 정책 보강 중.
-
-### [Smart Factory](/projects/smartfactory)
-
-장비 데이터 수집, 시계열 저장, 실시간 전달을 연결하는 구조를 연구하고 프로토타입 구현 방향을 설계했습니다.
-
-연구·프로토타입 · 실제 운영 및 대규모 성능 검증 전.
-
-## 연락
-
-[Email](mailto:bbangmxn6484@outlook.kr) · [GitHub](https://github.com/BbangMxn)
+[포트폴리오](./projects/index.md) · [공부 기록](./notes/index.md) · [Contact Me](./contact.md)

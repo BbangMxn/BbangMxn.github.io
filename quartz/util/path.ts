@@ -229,7 +229,8 @@ export interface TransformOptions {
 export function transformLink(src: FullSlug, target: string, opts: TransformOptions): RelativeURL {
   let targetSlug = transformInternalLink(target)
 
-  if (opts.strategy === "relative") {
+  // Explicit relative paths retain their meaning alongside vault-root and short links.
+  if (opts.strategy === "relative" || /^\.\.?\//.test(target)) {
     return targetSlug as RelativeURL
   } else {
     const folderTail = isFolderPath(targetSlug) ? "/" : ""
