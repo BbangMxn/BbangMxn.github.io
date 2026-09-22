@@ -1,4 +1,6 @@
 ---
+lang: ko
+alternate: /ja/projects/smartfactory
 title: Smart Factory
 tags:
   - portfolio

@@ -1,4 +1,6 @@
 ---
+lang: ko
+alternate: /ja/projects/bagindb
 title: BagInDB
 tags:
   - portfolio
