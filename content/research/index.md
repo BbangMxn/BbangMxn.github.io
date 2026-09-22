@@ -23,6 +23,13 @@ cssclasses:
   <h3>현재 트랙</h3>
   <ul class="hub-list">
     <li class="hub-item">
+      <a href="./Outbox">
+        <span class="hub-label">작성 준비</span>
+        <strong>Outbox 연구</strong>
+        <p>Outbox 구현 방식별 개념과 동작 원리, 장단점과 사용 상황을 정리하는 연구 트랙입니다.</p>
+      </a>
+    </li>
+    <li class="hub-item">
       <a href="./Cache">
         <span class="hub-label">주제</span>
         <strong>캐시 연구</strong>
